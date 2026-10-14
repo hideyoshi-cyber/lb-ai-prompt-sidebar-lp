@@ -32,6 +32,8 @@
 <tr><td>使っているパソコンの番号（ランダムな文字列）と名前（例：「Windows・Chrome」）、最後に使った日</td><td>1つのアカウントで使えるパソコンを4台までにするため。使っていないパソコンを一覧から外すため</td></tr>
 <tr><td><strong>暗号化された同期データ</strong>（任意。同期をオンにしたときだけ）</td><td>複数のパソコンで、自分のプロンプトや設定を同じにするため。<strong>データはお使いのパソコンの中で暗号化してから送られ、暗号の鍵は、あなた自身の Google ドライブの「アプリ専用の領域（appDataFolder）」に置かれます。弊社は鍵を持たないので、中身を読めません。</strong></td></tr>
 </table>
+<p>Google のアクセストークン（ログインの証明）は、本人確認のために、通信のたびに Google に照会するだけで、<strong>弊社のデータベースには保存しません。</strong></p>
+<p>サーバーの運用と不正利用の防止のため、Google Cloud が、通信の記録（日時・アクセス先・IPアドレス・結果）を、一定期間、自動で記録します。この記録は、広告や分析には使いません。</p>
 <p><strong>弊社が取得しないもの：</strong>プロンプトの本文、メモ、入力した内容、参照画像・参照ファイル、閲覧しているページの内容・履歴、AIサービスの API キー（これらは、お使いのパソコンの中だけにあります）。</p>
 
 <h2>4. お支払い</h2>
@@ -97,6 +99,8 @@
 <tr><td>Device ID (random string), device label (e.g. "Windows · Chrome"), last-used date</td><td>To limit one account to 4 computers and to let you remove computers you no longer use</td></tr>
 <tr><td><strong>Encrypted sync data</strong> (optional; only if you turn sync on)</td><td>To keep your own prompts and settings the same across computers. <strong>The data is encrypted on your computer before it is sent, and the encryption key is stored in your own Google Drive "app data folder" (appDataFolder). We do not hold the key and cannot read the contents.</strong></td></tr>
 </table>
+<p>Your Google access token (proof of sign-in) is only checked with Google on each request to verify who you are. <strong>It is not saved in our database.</strong></p>
+<p>For running the server and preventing abuse, Google Cloud automatically keeps request logs (time, path, IP address, result) for a limited period. These logs are not used for advertising or analytics.</p>
 <p><strong>What we do not collect:</strong> the text of your prompts, notes, inputs, reference images/files, the content or history of the pages you visit, and the API keys you set for AI services (these stay on your computer).</p>
 
 <h2>3. Payments</h2>
