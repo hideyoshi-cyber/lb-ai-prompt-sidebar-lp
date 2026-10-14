@@ -44,7 +44,6 @@
 <ul>
 <li><strong>メールアドレスの確認（openid・userinfo.email）</strong>：ログインと、お試し・有料プランの利用者の特定のため。</li>
 <li><strong>Google ドライブの「アプリ専用の領域」（drive.appdata）</strong>：同期データの暗号の鍵を、あなたのドライブに置くため。この領域は、この拡張機能だけが読み書きでき、ドライブのほかのファイルは見えません。</li>
-<li><strong>Google スプレッドシート（spreadsheets）</strong>：「チーム共有」の機能を使うと決めたときだけ。あなたが指定したスプレッドシートを、プロンプトの共有のために読み書きします。</li>
 </ul>
 <p>LB AI Prompt side bar による、Google API から受け取った情報の利用と他者への提供は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>（限定的な使用の要件を含む）に従います。取得した Google のユーザーデータは、上記の目的以外には使わず、広告には使わず、第三者に販売・提供しません。</p>
 
@@ -53,7 +52,7 @@
 <li><strong>弊社のサーバー</strong>：お試し・有料プランの状態の確認、有料のプリセット（定型プロンプト）の受け取り、同期（オンにしたときだけ）。</li>
 <li><strong>AIサービス</strong>：AI翻訳・「AIで作成」などの機能を<strong>あなたが使ったとき</strong>だけ、あなたが設定した API キーを使って、そのAIサービス（Anthropic・OpenAI・Google）へ、翻訳・作成の対象の文章を直接送ります。弊社のサーバーは通りません。各社の取り扱いは、各社の規約に従います。</li>
 <li><strong>ニュースの配信元</strong>：「AIニュース」の表示のため、公開されている RSS を取得します（あなたの情報は送りません）。</li>
-<li><strong>Google</strong>：ログインと、ドライブ・スプレッドシートの利用のため。</li>
+<li><strong>Google</strong>：ログインと、ドライブ（アプリ専用の領域）の利用のため。</li>
 </ul>
 <p>拡張機能は、AIサービスの入力欄にプロンプトを入れるために、そのページの入力欄に文字を書き込みます。ページの内容を読み取って保存・送信することはしません。</p>
 
@@ -110,7 +109,6 @@
 <ul>
 <li><strong>Email address (openid, userinfo.email)</strong>: for sign-in and to identify trial/paid users.</li>
 <li><strong>Google Drive app data folder (drive.appdata)</strong>: to store the sync encryption key in your own Drive. Only this extension can read or write this folder; your other Drive files are not accessible.</li>
-<li><strong>Google Sheets (spreadsheets)</strong>: only if you choose to use the "team sharing" feature; it reads and writes the spreadsheet you specify, to share prompts.</li>
 </ul>
 <p>LB AI Prompt side bar's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We do not use Google user data for anything other than the purposes above, do not use it for advertising, and do not sell or share it with third parties.</p>
 
@@ -119,7 +117,7 @@
 <li><strong>Our server</strong>: to check trial/paid status, to receive paid presets (ready-made prompts), and to sync (only if turned on).</li>
 <li><strong>AI services</strong>: only when <em>you</em> use features such as AI translation or "create with AI", the text you ask it to process is sent directly from your browser to the AI service you configured (Anthropic, OpenAI, Google) using your own API key. It does not pass through our server. Each provider handles the data under its own terms.</li>
 <li><strong>News sources</strong>: public RSS feeds are fetched for the "AI News" view (none of your information is sent).</li>
-<li><strong>Google</strong>: for sign-in and for Drive/Sheets features.</li>
+<li><strong>Google</strong>: for sign-in and the Drive app-data folder.</li>
 </ul>
 <p>To insert a prompt, the extension writes text into the input field of the AI service page you are using. It does not read, store or send the content of pages.</p>
 
