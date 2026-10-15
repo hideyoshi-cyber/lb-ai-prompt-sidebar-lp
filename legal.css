@@ -1,0 +1,61 @@
+/* 規約・ポリシーのページ（privacy / tokushoho / refund）。土台は site.css（フォント・色・ヘッダー・フッター）を使い、ここでは本文の組みだけを決める。
+   長い文章なので、見出しに palt、本文は字詰めをせず、行間を広く、1行の長さを抑える（860px）。 */
+
+.legal-hero { position: relative; isolation: isolate; overflow: clip; color: #fff; background: var(--ink); padding: clamp(116px, 16vh, 150px) 0 clamp(40px, 6vw, 64px); }
+.legal-hero .eyebrow { color: var(--rose-3); }
+.legal-hero h1 { margin: 16px 0 0; font: 900 clamp(2rem, 5.2vw, 3.6rem)/1.25 var(--f-display); letter-spacing: -.02em; font-feature-settings: "palt" 1; text-wrap: balance; text-autospace: no-autospace; }
+.legal-meta { margin-top: 16px; font-size: 14px; color: rgba(255, 255, 255, .68); }
+.legal-lang { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.legal-lang a { display: inline-flex; align-items: center; min-height: 38px; padding: 0 18px; border-radius: 999px; font: 700 13.5px/1 var(--f-display); letter-spacing: .06em; color: #fff; text-decoration: none; background: rgba(255, 255, 255, .08); box-shadow: inset 0 0 0 1px var(--line-d); transition: background .2s, box-shadow .2s; }
+.legal-lang a:hover { background: rgba(255, 255, 255, .16); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .32); }
+
+.legal { background: var(--paper); padding: clamp(40px, 6vw, 72px) 0 clamp(80px, 10vw, 130px); }
+.legal-wrap { max-width: 860px; }
+.legal section { scroll-margin-top: 90px; }
+.legal p, .legal li { font-size: 15.5px; line-height: 2.05; color: #2b2531; }
+.legal p { margin: 0 0 1em; }
+.legal strong { font-weight: 700; color: var(--ink); }
+.legal a { color: var(--rose); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.legal a:hover { text-decoration-thickness: 2px; }
+.legal small { display: block; margin-top: 6px; font-size: 13px; line-height: 1.8; color: var(--muted); }
+
+.legal h2 { position: relative; margin: clamp(44px, 6vw, 64px) 0 16px; padding-left: 18px; font: 900 clamp(1.15rem, 2.2vw, 1.4rem)/1.5 var(--f-display); letter-spacing: .01em; font-feature-settings: "palt" 1; text-wrap: balance; text-autospace: no-autospace; }
+.legal h2::before { content: ""; position: absolute; left: 0; top: .28em; bottom: .28em; width: 4px; border-radius: 4px; background: var(--grad); }
+.legal h3 { margin: 28px 0 8px; font: 700 1.05rem/1.6 var(--f-display); font-feature-settings: "palt" 1; }
+.legal ul, .legal ol { margin: 0 0 1.2em; padding: 0; list-style: none; }
+.legal ul li { position: relative; padding-left: 1.5em; margin: .2em 0; }
+.legal ul li::before { content: ""; position: absolute; left: .35em; top: 1em; width: 6px; height: 6px; border-radius: 50%; background: var(--rose-2); }
+.legal ol { counter-reset: n; }
+.legal ol li { position: relative; padding-left: 2em; margin: .2em 0; counter-increment: n; }
+.legal ol li::before { content: counter(n); position: absolute; left: 0; top: .55em; display: grid; place-items: center; width: 1.5em; height: 1.5em; border-radius: 50%; font: 800 12px/1 var(--f-latin); color: #fff; background: var(--grad); }
+
+.legal .note { margin: 0 0 40px; padding: 22px 26px; border-radius: 18px; background: #fff; box-shadow: 0 0 0 1px rgba(225, 29, 72, .22), 0 24px 50px -34px rgba(225, 29, 72, .5); position: relative; overflow: hidden; }
+.legal .note::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--grad); }
+.legal .note, .legal .note * { font-size: 15.5px; line-height: 2; }
+.legal table + .note { margin-top: 32px; }
+
+.legal table { width: 100%; margin: 14px 0 28px; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: #fff; box-shadow: 0 24px 50px -40px rgba(13, 9, 18, .4); }
+.legal th, .legal td { padding: 17px 22px; text-align: left; vertical-align: top; font-size: 15px; line-height: 1.95; border-bottom: 1px solid var(--line); }
+.legal tr:last-child th, .legal tr:last-child td { border-bottom: 0; }
+.legal th { width: 29%; font: 700 14px/1.9 var(--f-display); font-feature-settings: "palt" 1; letter-spacing: .04em; color: var(--ink); background: var(--paper-2); }
+.legal td { color: #2b2531; }
+.legal thead th, .legal tr:first-child th:not(:only-child):not(:first-child) { background: var(--paper-2); }
+
+.legal .todo { background: #fef3c7; color: #92400e; padding: 0 4px; border-radius: 3px; }
+
+/* 英語の部分：見出し・本文を Inter で、字間は広げない */
+.legal section[lang="en"] { font-family: var(--f-latin); }
+.legal section[lang="en"] p, .legal section[lang="en"] li, .legal section[lang="en"] td, .legal section[lang="en"] th, .legal section[lang="en"] .note, .legal section[lang="en"] .note * { font-family: var(--f-latin); letter-spacing: 0; line-height: 1.85; }
+.legal section[lang="en"] h2, .legal section[lang="en"] h3 { font-family: var(--f-latin); font-weight: 800; letter-spacing: -.005em; }
+.part-title { margin: 0 0 6px; font: 900 clamp(1.8rem, 4vw, 2.6rem)/1.2 var(--f-latin); letter-spacing: -.03em; }
+.legal .meta { margin: 0 0 28px; font-size: 14px; color: var(--muted); }
+.part-sep { margin: clamp(56px, 8vw, 96px) 0; border: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(225, 29, 72, .4), transparent); }
+
+@media (max-width: 640px) {
+  .legal table, .legal tbody, .legal tr, .legal th, .legal td { display: block; width: 100%; }
+  .legal tr { border-bottom: 1px solid var(--line); }
+  .legal tr:last-child { border-bottom: 0; }
+  .legal th { padding: 12px 18px 4px; border-bottom: 0; background: var(--paper-2); }
+  .legal td { padding: 8px 18px 16px; border-bottom: 0; }
+  .legal th + td { background: #fff; }
+}

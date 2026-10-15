@@ -3,21 +3,428 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LB AI Prompt side bar - 規約・ポリシー</title>
-<link rel="stylesheet" href="style.css">
+<title>LB AI Prompt side bar｜選んで、整えて、いつものAIへ。</title>
+<meta name="description" content="AIの相棒が登場。コマンドを選択するようにプロンプトを準備して、ワンクリックでいつものAIへ。ChatGPT・Claude・Gemini・画像／動画生成AIの横に置ける、Chrome のサイドパネル。14日間すべて無料。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="LB AI Prompt side bar｜選んで、整えて、いつものAIへ。">
+<meta property="og:description" content="コマンドを選択するようにプロンプトを準備。ChatGPT・Claude・Gemini・画像／動画生成AIの横に置ける、Chrome のサイドパネル。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Chrome",
+  "description": "コマンドを選択するようにプロンプトを準備して、ワンクリックでいつものAIへ入れる Chrome のサイドパネル。",
+  "inLanguage": ["ja", "en", "zh-TW", "ko", "es", "pt-BR", "fr"],
+  "offers": [
+    { "@type": "Offer", "name": "無料", "price": "0", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "月払い", "price": "3.49", "priceCurrency": "USD" },
+    { "@type": "Offer", "name": "年払い", "price": "30", "priceCurrency": "USD" }
+  ],
+  "author": { "@type": "Organization", "name": "Liquid Block Inc.", "url": "https://www.liquid-block.com" }
+}
+</script>
 </head>
 <body>
-<main>
-<p class="brand">LB AI Prompt side bar</p>
-<h1>規約・ポリシー</h1>
-<p class="meta">株式会社リキッドブロック（Liquid Block Inc.）</p>
-<ul>
-<li><a href="privacy.html">プライバシーポリシー / Privacy Policy</a></li>
-<li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
-<li><a href="refund.html">返金・解約について / Refunds and Cancellation</a></li>
-</ul>
-<p class="meta">お問い合わせ：info@liquid-block.com</p>
-<footer>© Liquid Block Inc.</footer>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+
+<a class="skip" href="#main">本文へ</a>
+
+<!-- ============ ヘッダー ============ -->
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="./" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="#how">使い方</a>
+      <a href="#features">機能</a>
+      <a href="#privacy">プライバシー</a>
+      <a href="#pricing">料金</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="#pricing" aria-label="Chromeに追加（公開準備中）">Chromeに追加<small>公開準備中</small></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ ヒーロー ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker rv"><span class="kicker-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>AIの相棒が登場！！</p>
+      <h1 class="rv">
+        <span class="line">選んで、</span>
+        <span class="line">整えて、</span>
+        <span class="line grad">いつものAIへ。</span>
+      </h1>
+      <p class="lead rv">
+        コマンドを選択するようにプロンプトを準備。<br>
+        <span class="nb">ChatGPT・Claude・Gemini・</span><span class="nb">画像／動画生成AIの</span><span class="nb">横に置ける、</span><span class="nb">プロンプトのサイドパネル。</span>
+      </p>
+      <div class="cta rv">
+        <a class="btn btn-lg btn-soon" href="#pricing">Chromeに追加<small>公開準備中</small></a>
+        <a class="btn btn-lg btn-ghost" href="#how">使い方を見る<span aria-hidden="true">↓</span></a>
+      </div>
+      <ul class="hero-points rv">
+        <li><b>14日間</b>すべて無料</li>
+        <li><b>カード登録</b>なし</li>
+        <li><b>無料版</b>はずっと使える</li>
+      </ul>
+    </div>
+
+    <!-- 図：後ろ＝AIのチャット、前＝サイドパネル -->
+    <div class="hero-visual rv" aria-hidden="true">
+      <div class="mock">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="url">ai.example.com</span></div>
+          <div class="chat">
+            <p class="chat-title">AIに、なにをさせますか？</p>
+            <p class="chat-sub">いつものAIの横に、プロンプトを。</p>
+            <div class="composer" id="composer">
+              <div class="composer-text" id="composerText"><span class="ph">メッセージを入力…</span></div>
+              <span class="composer-send">↑</span>
+            </div>
+          </div>
+        </div>
+        <img class="panel-card" src="img/panel-adjust.webp" width="420" height="900" alt="" fetchpriority="high">
+        <span class="chip chip-1"><b>1</b>選ぶ</span>
+        <span class="chip chip-2"><b>2</b>整える</span>
+        <span class="chip chip-3"><b><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></b>挿入</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 対応しているAI ============ -->
+<section class="ais" aria-label="対応しているAI">
+  <p class="ais-label">いつものAIで、そのまま使えます</p>
+  <div class="marquee" aria-hidden="true">
+    <ul class="marquee-track">
+      <li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>NotebookLM</li><li>AI Studio</li><li>Perplexity</li><li>Kling</li><li>Runway</li><li>Luma</li><li>Hailuo</li><li>Pika</li><li>PixVerse</li><li>Sora</li><li>Higgsfield</li><li>Midjourney</li><li>Leonardo</li><li>Ideogram</li><li>Recraft</li><li>Tripo</li><li>v0</li><li>Bolt</li><li>Lovable</li>
+    </ul>
+  </div>
+  <p class="sr-only">対応：ChatGPT、Claude、Gemini、NotebookLM、AI Studio、Perplexity、Kling、Runway、Luma、Hailuo、Pika、PixVerse、Sora、Higgsfield、Midjourney、Leonardo、Ideogram、Recraft、Tripo、v0、Bolt、Lovable</p>
+</section>
+
+<!-- ============ 困りごと ============ -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <p class="eyebrow rv">こんな毎日に</p>
+    <h2 class="rv"><span class="nb">良いプロンプトほど、</span><span class="nb">使うまでが長い。</span></h2>
+    <div class="why-grid">
+      <article class="why-card rv">
+        <span class="why-no">01</span>
+        <h3>メモ帳から、<wbr>コピペ。</h3>
+        <p>メモ帳やNotionを開いて、探して、貼って、書き換える。使うたびに、同じ手間。</p>
+      </article>
+      <article class="why-card rv">
+        <span class="why-no">02</span>
+        <h3>毎回、<wbr>ゼロから考える。</h3>
+        <p>動画AI・画像AIへの指示は、カメラワーク、ライティング、レンズ…と、決めることが多い。</p>
+      </article>
+      <article class="why-card rv">
+        <span class="why-no">03</span>
+        <h3>どこに置いたか、<wbr>わからない。</h3>
+        <p>よく使うものほど、いざという時に見つからない。探している間に、やる気が冷める。</p>
+      </article>
+    </div>
+    <p class="why-answer rv"><span class="nb">ぜんぶ、</span><span class="nb grad">サイドパネルの中で。</span></p>
+  </div>
+</section>
+
+<!-- ============ 使い方 ============ -->
+<section class="section how" id="how">
+  <div class="wrap">
+    <p class="eyebrow rv">使い方</p>
+    <h2 class="rv"><span class="nb">選んで、</span><span class="nb">整えて、</span><span class="nb"><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>で入れる。</span></h2>
+    <p class="section-lead rv">やることは、3つだけ。コマンドを選ぶ感覚で、プロンプトが仕上がります。</p>
+
+    <div class="step rv">
+      <div class="step-copy">
+        <span class="step-no">01</span>
+        <h3>選ぶ</h3>
+        <p class="step-sub">目的別の一覧から、プロンプトを選ぶ。</p>
+        <p>日常・文章・ビジネス・映像・開発・画像・動画まで、タブで見つかります。まずは「おすすめ」から。何を使えばいいか迷わない。</p>
+      </div>
+      <figure class="device"><img src="img/panel-list.webp" width="420" height="900" loading="lazy" alt="目的別のタブとおすすめのコマンドが並ぶサイドパネル"></figure>
+    </div>
+
+    <div class="step step-rev rv">
+      <div class="step-copy">
+        <span class="step-no">02</span>
+        <h3>整える</h3>
+        <p class="step-sub">選択肢を選んで、空欄を埋めて、仕上げる。</p>
+        <p>役割・目的・背景などを、選ぶか書くだけ。仕上がりはプレビューで確かめられて、そのまま直すこともできます。日本語でも英語でも。</p>
+      </div>
+      <figure class="device"><img src="img/panel-adjust.webp" width="420" height="900" loading="lazy" alt="選択肢と空欄でプロンプトを整えているサイドパネル"></figure>
+    </div>
+
+    <div class="step rv">
+      <div class="step-copy">
+        <span class="step-no">03</span>
+        <h3><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>挿入</h3>
+        <p class="step-sub">ワンクリックで、AIの入力欄へ。</p>
+        <p><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>を押すと、開いているAIの入力欄に、そのまま入ります。コピーもできるので、ほかの場所にも使えます。</p>
+      </div>
+      <div class="insert-demo" aria-hidden="true">
+        <div class="insert-chat">
+          <p class="chat-title">AIに、なにをさせますか？</p>
+          <div class="composer composer-filled">
+            <div class="composer-text">
+              <span class="tok">【役割 (Role / Persona)】</span>
+              経験豊富なシニアITプロダクトマネージャー<br><br>
+              <span class="tok">【目的 (Goal)】</span>
+              15秒の商品紹介映像の台本<br><br>
+              <span class="tok">【背景・文脈 (Context)】</span>
+              やわらかい自然光で、落ち着いた雰囲気
+            </div>
+            <span class="composer-send">↑</span>
+          </div>
+        </div>
+        <span class="insert-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 機能 ============ -->
+<section class="section features" id="features">
+  <div class="wrap">
+    <p class="eyebrow rv">機能</p>
+    <h2 class="rv"><span class="nb">AIの隣に、</span><span class="nb">ぜんぶそろう。</span></h2>
+
+    <div class="bento">
+      <article class="card card-big rv">
+        <div class="card-copy">
+          <p class="num"><b>200</b><span>件以上</span></p>
+          <h3>目的別のAIコマンド</h3>
+          <p>日常／文章／ビジネス／経営／映像のプリプロ／開発・Web・アプリ／素材・デザイン／画像生成／動画生成（画像から・文章から・動画から）／編集 ほか。今後も、増えていきます。</p>
+        </div>
+        <div class="crop crop-tabs"><img src="img/panel-tabs.webp" width="420" height="900" loading="lazy" alt=""></div>
+      </article>
+
+      <article class="card card-launcher rv">
+        <div class="card-copy">
+          <p class="num"><b>22</b><span>のAI</span></p>
+          <h3>AIランチャー</h3>
+          <p>ChatGPT・Claude・Gemini・Kling・Runway…。アイコンを押せば、すぐ開く。</p>
+        </div>
+        <div class="crop crop-launcher"><img src="img/panel-launcher.webp" width="420" height="900" loading="lazy" alt=""></div>
+      </article>
+
+      <article class="card card-keys rv">
+        <div class="keys" aria-hidden="true"><kbd>Alt</kbd><i>+</i><kbd>A</kbd></div>
+        <h3>一緒に開く</h3>
+        <p>ショートカットひとつで、サイドパネルとAIを同時に。</p>
+      </article>
+
+      <article class="card rv">
+        <p class="glyph" aria-hidden="true">★</p>
+        <h3>評価・よく使う順・検索</h3>
+        <p>★をつけて、よく使う順に並べて、検索でも呼び出せる。使うほど、手になじむ。</p>
+      </article>
+
+      <article class="card rv">
+        <p class="glyph glyph-lang" aria-hidden="true">日 / EN</p>
+        <h3>7か国語に対応</h3>
+        <p>日本語・English・繁體中文・한국어・Español・Português・Français。</p>
+      </article>
+
+      <article class="card card-wide rv">
+        <div class="card-copy">
+          <p class="tag">無料版でも</p>
+          <h3>おすすめ・ニュース・セオリー</h3>
+          <p>各タブの「おすすめ」4件ずつ、AIの最新ニュース、「AIを使いこなすセオリー」、挿入・コピー・検索・★評価。ログインなしで使えます。</p>
+        </div>
+      </article>
+
+      <article class="card card-pro rv">
+        <div class="card-copy">
+          <p class="tag tag-pro">有料プラン</p>
+          <h3>自分のプロンプトを育てる</h3>
+          <ul class="ticks">
+            <li>自分のプロンプトの保存</li>
+            <li>案件ごとのセット</li>
+            <li>参照画像・参照ファイル</li>
+            <li>AI翻訳（ご自分のAPIキー）</li>
+            <li>Excelへの保存</li>
+            <li>複数のパソコンで同期</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ プライバシー ============ -->
+<section class="section privacy" id="privacy">
+  <div class="privacy-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">プライバシー</p>
+    <h2 class="rv"><span class="nb">あなたの本文は、</span><span class="nb grad">弊社には見えません。</span></h2>
+    <p class="section-lead rv">プロンプトの本文・メモ・入力内容・参照画像・参照ファイルを、弊社は読めません。そういう作りにしています。</p>
+    <ul class="facts">
+      <li class="rv"><span class="fact-k">無料版</span><p>ログイン不要。何も送信しません。</p></li>
+      <li class="rv"><span class="fact-k">お試し・有料</span><p>記録するのは、メールアドレスと、お支払いの状況だけです。</p></li>
+      <li class="rv"><span class="fact-k">同期</span><p>データはお使いのパソコンで暗号化。鍵は、あなた自身のGoogleドライブにあります。</p></li>
+      <li class="rv"><span class="fact-k">解析</span><p>アクセス解析（利用状況の収集）はありません。</p></li>
+    </ul>
+    <p class="rv"><a class="textlink" href="privacy.html">プライバシーポリシーを読む →</a></p>
+  </div>
+</section>
+
+<!-- ============ 料金 ============ -->
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow rv">料金</p>
+    <h2 class="rv"><span class="nb">まず<span class="lat">14</span>日間、</span><span class="nb">すべて無料。</span></h2>
+    <p class="section-lead rv">カードの登録は、いりません。そのあとも、無料版はずっと使えます。</p>
+
+    <div class="plans">
+      <article class="plan rv">
+        <h3>無料</h3>
+        <p class="price"><b>$0</b></p>
+        <p class="price-note">ずっと無料</p>
+        <ul class="ticks">
+          <li>各タブの「おすすめ」4件ずつ</li>
+          <li>AIニュース・AIを使いこなすセオリー</li>
+          <li>挿入・コピー・検索・★評価・Alt + A</li>
+        </ul>
+      </article>
+      <article class="plan rv">
+        <h3>月払い</h3>
+        <p class="price"><b>$3.49</b><span>／月</span></p>
+        <p class="price-note">いつでも解約できる</p>
+        <ul class="ticks">
+          <li>すべてのAIコマンド（200件以上・随時追加）</li>
+          <li>自分で作ったプロンプト・案件セット</li>
+          <li>参照画像・参照ファイル</li>
+          <li>AI翻訳・Excelで保存</li>
+          <li>複数のPCで同期</li>
+          <li>1つのアカウントで4台まで</li>
+        </ul>
+      </article>
+      <article class="plan plan-main rv">
+        <span class="plan-badge">おすすめ</span>
+        <h3>年払い</h3>
+        <p class="price"><b>$30</b><span>／年</span></p>
+        <p class="price-note">月あたり $2.50。月払いより $11.88 お得</p>
+        <ul class="ticks">
+          <li>月払いのすべての機能</li>
+          <li>1年分をまとめて、いちばん安く</li>
+        </ul>
+        <p class="plan-offer"><b>お試し中に申し込むと、<br>初年度は <span class="lat">$15</span>。<small>2年目から $30／年</small></b></p>
+      </article>
+    </div>
+    <p class="fine rv">価格は税別です（日本では、消費税10％が加わります）。月払いは、あとから年払いに切り替えられます。解約しても、お支払い済みの期間の終わりまで使えます。初回のお支払いから14日以内なら、全額を返金します（<a href="refund.html">返金・解約について</a>）。</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-head">
+      <p class="eyebrow rv">よくある質問</p>
+      <h2 class="rv">FAQ</h2>
+      <p class="faq-note rv">ほかにご不明な点は、<a href="mailto:info@liquid-block.com">info@liquid-block.com</a> までお問い合わせください。</p>
+    </div>
+    <div class="qa rv">
+      <details>
+        <summary>これは、AIそのものですか？</summary>
+        <p>いいえ。ChatGPT・Claude・Gemini など、他のAIを使いこなすための補助ツールです。プロンプトを選んで、整えて、いつものAIの入力欄に入れるまでを手伝います。</p>
+      </details>
+      <details>
+        <summary>無料でどこまで使えますか？</summary>
+        <p>各タブの「おすすめ」4件ずつ、AIニュース、「AIを使いこなすセオリー」、挿入・コピー・検索・★評価が、ずっと無料です。ログインも、いりません。はじめの14日間は、すべての機能を試せます。</p>
+      </details>
+      <details>
+        <summary>お試しに、カードの登録はいりますか？</summary>
+        <p>いりません。Googleアカウントでログインするだけで、14日間、すべての機能が使えます。</p>
+      </details>
+      <details>
+        <summary>書いたプロンプトは、弊社に送られますか？</summary>
+        <p>送られません。弊社は、プロンプトの本文・メモ・入力内容・参照画像・参照ファイルを読めません。同期を使う場合も、データはお使いのパソコンで暗号化されます。くわしくは、<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      </details>
+      <details>
+        <summary>何台のパソコンで使えますか？</summary>
+        <p>1つのアカウントで、4台までです。使わなくなったパソコンは、画面から外せます。60日使っていないパソコンは、自動で外れます。</p>
+      </details>
+      <details>
+        <summary>解約や返金は、どうなりますか？</summary>
+        <p>いつでも解約できて、お支払い済みの期間の終わりまで使えます。初回のお支払いから14日以内なら、全額を返金します。くわしくは、<a href="refund.html">返金・解約について</a>をご覧ください。</p>
+      </details>
+      <details>
+        <summary>どのブラウザで使えますか？</summary>
+        <p>Google Chrome です。サイドパネルの機能を使うので、パソコン版のChromeでお使いください。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 最後の呼びかけ ============ -->
+<section class="final">
+  <div class="final-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="rv"><span class="nb">AIの相棒を、</span><span class="nb">横に置こう。</span></h2>
+    <p class="rv">選んで、整えて、いつものAIへ。</p>
+    <div class="cta cta-center rv">
+      <a class="btn btn-lg btn-light btn-soon" href="#pricing">Chromeに追加<small>公開準備中</small></a>
+    </div>
+  </div>
+</section>
+
 </main>
+
+<!-- ============ フッター ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="./"><img src="img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
 </body>
 </html>

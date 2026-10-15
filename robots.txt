@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://aipromptbar.liquid-block.com/sitemap.xml

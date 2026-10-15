@@ -4,14 +4,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>返金・解約について / Refunds and Cancellation - LB AI Prompt side bar</title>
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="stylesheet" href="legal.css">
+<meta name="theme-color" content="#0b0711">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<main>
-<p class="brand">LB AI Prompt side bar</p>
-<h1>返金・解約について</h1>
-<p class="meta">株式会社リキッドブロック（Liquid Block Inc.）／ 最終更新日：2026年10月13日</p>
-<nav class="lang"><a href="#ja">日本語</a><a href="#en">English</a><a href="./">ほかのページ</a></nav>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="./" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="./#how">使い方</a>
+      <a href="./#features">機能</a>
+      <a href="./#privacy">プライバシー</a>
+      <a href="./#pricing">料金</a>
+      <a href="./#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="./#pricing" aria-label="Chromeに追加（公開準備中）">Chromeに追加<small>公開準備中</small></a>
+  </div>
+</header>
+
+<section class="legal-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow">規約・ポリシー</p>
+    <h1>返金・解約について</h1>
+    <p class="legal-meta">株式会社リキッドブロック（Liquid Block Inc.）／ 最終更新日：2026年10月13日</p>
+    <nav class="legal-lang" aria-label="このページ内の移動"><a href="#ja">日本語</a><a href="#en">English</a><a href="./">トップページ</a></nav>
+  </div>
+</section>
+
+<main class="legal" id="content">
+<div class="wrap legal-wrap">
+
 
 <section id="ja">
 <h2>1. 無料のお試し</h2>
@@ -32,10 +66,10 @@
 <p>メール（info@liquid-block.com）で、お申し込みに使った Google アカウントのメールアドレスと、返金をご希望の旨をお知らせください。確認のうえ、通常、数営業日以内に、元のお支払い方法に返金します（カード会社の処理により、お手元の明細に反映されるまで、さらに時間がかかる場合があります）。</p>
 </section>
 
-<hr style="margin:56px 0;border:0;border-top:2px solid var(--line)">
+<hr class="part-sep">
 
 <section id="en" lang="en">
-<h1>Refunds and Cancellation</h1>
+<h1 class="part-title">Refunds and Cancellation</h1>
 <h2>1. Free trial</h2>
 <p>You can try all features free for the first 14 days, without registering a card. If you don't want to continue, simply let the trial end — you will not be charged.</p>
 <h2>2. Cancellation</h2>
@@ -51,7 +85,36 @@
 <p>Email info@liquid-block.com with the Google account email you used to subscribe and a note that you would like a refund. After checking, we normally refund to the original payment method within a few business days (it may take longer to appear on your statement, depending on your card issuer).</p>
 </section>
 
-<footer>© Liquid Block Inc.</footer>
+</div>
 </main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="./"><img src="img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
 </body>
 </html>
