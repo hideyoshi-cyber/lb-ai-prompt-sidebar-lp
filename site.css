@@ -328,6 +328,36 @@ kbd { display: inline-grid; place-items: center; min-width: 54px; height: 54px; 
 .foot-note { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line-d); font-size: 12.5px; line-height: 1.9; color: rgba(255, 255, 255, .5); }
 .foot-copy { margin-top: 10px; font-size: 12.5px; color: rgba(255, 255, 255, .5); font-family: var(--f-latin); letter-spacing: .02em; }
 
+/* ---------- 言語の切り替え ---------- */
+.nav a.lang-switch { display: inline-flex; align-items: center; justify-content: center; height: 34px; margin-left: 8px; padding: 0 14px; font: 700 12.5px/1 var(--f-latin); letter-spacing: .08em; color: #fff; box-shadow: inset 0 0 0 1px var(--line-d); }
+.nav a.lang-switch[lang="ja"] { font-family: var(--f-body); letter-spacing: .04em; }
+.nav a.lang-switch:hover { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4); }
+
+/* ---------- 英語のページの組み ---------- */
+/* 英語は、字間を広げず、行間を詰め、見出しは Inter の太字で字間を詰める。小見出しは大文字＋広めの字間 */
+html:lang(en) body { letter-spacing: 0; line-height: 1.75; font-family: var(--f-latin); word-break: normal; line-break: auto; overflow-wrap: break-word; }
+html:lang(en) h1, html:lang(en) h2, html:lang(en) h3, html:lang(en) h4, html:lang(en) .kicker, html:lang(en) .btn, html:lang(en) .nav, html:lang(en) .price, html:lang(en) .num, html:lang(en) .why-no, html:lang(en) .step-no, html:lang(en) .plan-badge, html:lang(en) .tag, html:lang(en) .chip, html:lang(en) .qa summary, html:lang(en) .step-sub, html:lang(en) .why-answer, html:lang(en) .final h2, html:lang(en) .num span { font-family: var(--f-latin); font-feature-settings: "kern" 1, "calt" 1; }
+html:lang(en) .eyebrow { font-family: var(--f-latin); font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; }
+html:lang(en) .hero h1 { font-weight: 800; font-size: clamp(2.7rem, 4.9vw, 4.6rem); line-height: 1.06; letter-spacing: -.045em; }
+html:lang(en) .section h2 { font-weight: 800; font-size: clamp(2rem, 4.4vw, 3.3rem); line-height: 1.12; letter-spacing: -.04em; }
+html:lang(en) .final h2 { font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
+html:lang(en) .why-answer { font-weight: 800; letter-spacing: -.035em; }
+html:lang(en) .why-card h3, html:lang(en) .card h3, html:lang(en) .plan h3, html:lang(en) .step h3 { font-weight: 800; letter-spacing: -.02em; }
+html:lang(en) .step h3 { letter-spacing: -.035em; }
+html:lang(en) .lead, html:lang(en) .section-lead { line-height: 1.7; }
+html:lang(en) .btn { letter-spacing: .01em; }
+html:lang(en) .nav a { letter-spacing: .01em; font-weight: 600; }
+html:lang(en) .nav a.lang-switch { font-family: var(--f-body); font-weight: 700; letter-spacing: .04em; }
+html:lang(en) .qa summary { letter-spacing: -.005em; }
+html:lang(en) .kicker { letter-spacing: .02em; }
+html:lang(en) .hero-points { letter-spacing: .005em; }
+html:lang(en) .price-note, html:lang(en) .fine, html:lang(en) .faq-note { letter-spacing: 0; }
+html:lang(en) .chat-title, html:lang(en) .chat-sub { font-family: var(--f-latin); }
+html:lang(en) .composer-text { letter-spacing: 0; font-family: var(--f-latin); }
+html:lang(en) .nb { white-space: normal; }
+html:lang(en) .hero h1 .line { white-space: nowrap; }
+html:lang(en) .nb.grad, html:lang(en) .why-answer .nb { white-space: nowrap; }
+
 /* ---------- 出現のアニメーション ---------- */
 .js .rv { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
 .js .rv.in { opacity: 1; transform: none; }
@@ -344,8 +374,9 @@ kbd { display: inline-grid; place-items: center; min-width: 54px; height: 54px; 
 
 /* ---------- 画面の幅に合わせる ---------- */
 @media (max-width: 980px) {
-  .nav { display: none; }
-  .btn-sm { margin-left: auto; }
+  .nav { margin-left: auto; }
+  .nav a:not(.lang-switch) { display: none; }
+  .btn-sm { margin-left: 4px; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { width: 100%; max-width: 600px; }
   .why-grid { grid-template-columns: 1fr; }

@@ -26,11 +26,9 @@ if (track) track.append(...[...track.children].map(li => li.cloneNode(true)));
 const composer = document.getElementById('composer');
 const text = document.getElementById('composerText');
 if (composer && text) {
-  const parts = [
-    ['【役割】', true], ['経験豊富なシニアITプロダクトマネージャー ', false],
-    ['【目的】', true], ['15秒の商品紹介映像の台本 ', false],
-    ['【背景】', true], ['やわらかい自然光で、落ち着いた雰囲気', false],
-  ];
+  // 文面は、ページの data-parts（JSON）から。言語ごとのページで違う
+  let parts = [];
+  try { parts = JSON.parse(text.dataset.parts || '[]'); } catch { parts = []; }
   const caret = Object.assign(document.createElement('span'), { className: 'caret' });
   const run = async () => {
     const wait = ms => new Promise(r => setTimeout(r, ms));
@@ -44,7 +42,9 @@ if (composer && text) {
       for (const ch of s) { node.textContent += ch; await wait(isTok ? 70 : 34); }
     }
   };
-  if (reduce) {
+  if (!parts.length) {
+    // 文面がなければ、何もしない
+  } else if (reduce) {
     text.replaceChildren(...parts.map(([s, t]) => Object.assign(document.createElement('span'), { className: t ? 'tok' : '', textContent: s })));
     composer.classList.add('on');
   } else {

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方｜LB AI Prompt side bar</title>
+<meta name="description" content="画像生成AIで狙った絵を出すための、プロンプトの組み立て方。主題、構図、光、スタイル、避けたいものを、順番に整理して書く方法を紹介します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/image-ai-prompt-tips.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方｜LB AI Prompt side bar">
+<meta property="og:description" content="画像生成AIで狙った絵を出すための、プロンプトの組み立て方。主題、構図、光、スタイル、避けたいものを、順番に整理して書く方法を紹介します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/image-ai-prompt-tips.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方",
+ "description": "画像生成AIで狙った絵を出すための、プロンプトの組み立て方。主題、構図、光、スタイル、避けたいものを、順番に整理して書く方法を紹介します。",
+ "datePublished": "2026-10-15",
+ "dateModified": "2026-10-15",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/og.png",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/image-ai-prompt-tips.html",
+ "author": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <a class="lang-switch" href="../en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="../#pricing" aria-label="Chromeに追加（公開準備中）">Chromeに追加<small>公開準備中</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方</h1>
+    <div class="post-meta">
+      <span class="post-tag">画像生成</span>
+      <span><time datetime="2026-10-15">2026年10月15日</time></span>
+      <span>読む時間：約6分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<p class="post-lead">画像生成AIは、短い言葉でも、それらしい絵を返してくれます。ただ、「思い描いた絵」に近づけるには、<strong>何を、どこから、どんな光で、どんな画風で</strong>描くかを、言葉にして渡す必要があります。要素を整理して、書き方を紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#parts">画像プロンプトの6つの要素</a></li>
+<li><a href="#composition">構図の言い方</a></li>
+<li><a href="#style">スタイルと素材</a></li>
+<li><a href="#negative">避けたいものの伝え方</a></li>
+<li><a href="#example">例：商品イメージの場合</a></li>
+<li><a href="#iterate">直し方：1回に1か所</a></li>
+</ol></nav>
+
+<h2 id="parts">画像プロンプトの6つの要素</h2>
+<table>
+<tr><th>要素</th><th>決めること</th><th>例</th></tr>
+<tr><td><strong>主題</strong></td><td>何を描くか</td><td>「白い陶器のマグカップ」</td></tr>
+<tr><td><strong>構図</strong></td><td>どこから、どの大きさで</td><td>「真上から」「クローズアップ」</td></tr>
+<tr><td><strong>光</strong></td><td>光の種類と向き</td><td>「窓からの、やわらかい自然光」</td></tr>
+<tr><td><strong>スタイル</strong></td><td>写真か、イラストか</td><td>「商品写真」「水彩画」</td></tr>
+<tr><td><strong>色・背景</strong></td><td>色調と、背景の設定</td><td>「淡いベージュの背景」</td></tr>
+<tr><td><strong>比率</strong></td><td>画面の縦横</td><td>「正方形」「縦長」</td></tr>
+</table>
+<p>すべてを書く必要はありません。まず<strong>主題</strong>を書いて、物足りない要素を、あとから足していきます。</p>
+
+<h2 id="composition">構図の言い方</h2>
+<ul>
+<li><strong>クローズアップ</strong>：被写体に寄る。質感や細部を見せたいとき</li>
+<li><strong>全身・ロングショット</strong>：人物や物の全体と、周囲を見せる</li>
+<li><strong>俯瞰（真上から）</strong>：テーブルの上の料理や小物に向く</li>
+<li><strong>あおり（下から見上げる）</strong>：建物や人物を、力強く見せる</li>
+<li><strong>三分割構図</strong>：被写体を、画面の端寄りに置く。余白が生まれる</li>
+<li><strong>左右対称</strong>：整った、静かな印象</li>
+<li><strong>余白を広くとる</strong>：あとから、文字を載せたいとき</li>
+</ul>
+
+<h2 id="style">スタイルと素材</h2>
+<p>スタイルは、「どんな媒体で作られた絵か」を伝えると、効きやすい項目です。</p>
+<ul>
+<li><strong>写真系</strong>：商品写真、ポートレート、ドキュメンタリー写真、スタジオ撮影</li>
+<li><strong>イラスト系</strong>：フラットイラスト、水彩、ペン画、アニメ調、アイソメトリック</li>
+<li><strong>3D系</strong>：3Dレンダリング、粘土のような質感、ミニチュア風</li>
+</ul>
+<p>実在の作家やブランドの名前を、スタイルの指定に使うのは、避けるのが無難です。サービスの利用規約や、権利の面で、問題になることがあります。「やわらかい水彩」「ミニマルで、線が細い」のように、<strong>特徴を言葉で</strong>伝えます。</p>
+
+<h2 id="negative">避けたいものの伝え方</h2>
+<p>サービスによっては、「ネガティブプロンプト」（出さないでほしいもの）の欄があります。欄があれば、そこに「文字」「透かし」「ぼやけた輪郭」「余計な指」などを入れます。</p>
+<p>欄がないサービスでは、「文字は入れない」「背景には何も置かない」のように、本文に書きます。ただ、否定の指示は、守られないこともあります。<strong>「背景は、無地の白」</strong>のように、してほしい状態を書くほうが、確実です。</p>
+
+<h2 id="example">例：商品イメージの場合</h2>
+<div class="prompt-box"><div class="prompt-box-label">プロンプトの例</div><pre><span class="k">主題</span>：白い陶器のマグカップに、湯気の立つコーヒー
+<span class="k">構図</span>：斜め45度から、少し寄る。右側に余白を広くとる
+<span class="k">光</span>：窓から入る、朝のやわらかい自然光。影はやさしく
+<span class="k">スタイル</span>：商品写真。質感がていねいに見える
+<span class="k">色・背景</span>：淡いベージュの無地の背景。落ち着いた、あたたかい色調
+<span class="k">比率</span>：横長 3:2</pre></div>
+<div class="prompt-box"><div class="prompt-box-label">英語で書く場合</div><pre>A white ceramic mug with steaming coffee, product photo.
+Shot from a 45-degree angle, slightly close, with wide empty space on the right.
+Soft natural morning light from a window, gentle shadows.
+Plain pale beige background, calm warm tones.</pre></div>
+
+<h2 id="iterate">直し方：1回に1か所</h2>
+<p>最初の絵が、思い通りでなくても、すべてを書き直す必要はありません。<strong>気になる1か所だけ</strong>を変えて、もう一度試します。光を変える、構図を変える、というふうに、1回に1項目です。どの言葉が効いたのか、わかりやすくなります。</p>
+<p>気に入った絵が出たときは、そのときのプロンプトを、<strong>必ず取っておきます。</strong>あとで、同じ雰囲気の絵を作りたいときに、役に立ちます。<strong>LB AI Prompt side bar</strong> は、構図・光・スタイルなどを選択肢から選んで、画像生成向けのプロンプトに整えられます。</p>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="video-ai-prompt-camera-lighting.html">動画生成AIへの指示の書き方：カメラワーク・ライティング・レンズ</a>
+<a href="organize-your-prompts.html">よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

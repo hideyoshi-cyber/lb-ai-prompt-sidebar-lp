@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>動画生成AIへの指示の書き方：カメラワーク・ライティング・レンズ｜LB AI Prompt side bar</title>
+<meta name="description" content="動画生成AIに思い通りの映像を作らせるには、被写体だけでなく、カメラの動き・光・レンズを言葉にすることが大切です。要素ごとの言い方と、書き方の順番を解説します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/video-ai-prompt-camera-lighting.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="動画生成AIへの指示の書き方：カメラワーク・ライティング・レンズ｜LB AI Prompt side bar">
+<meta property="og:description" content="動画生成AIに思い通りの映像を作らせるには、被写体だけでなく、カメラの動き・光・レンズを言葉にすることが大切です。要素ごとの言い方と、書き方の順番を解説します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/video-ai-prompt-camera-lighting.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "動画生成AIへの指示の書き方：カメラワーク・ライティング・レンズ",
+ "description": "動画生成AIに思い通りの映像を作らせるには、被写体だけでなく、カメラの動き・光・レンズを言葉にすることが大切です。要素ごとの言い方と、書き方の順番を解説します。",
+ "datePublished": "2026-10-15",
+ "dateModified": "2026-10-15",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/og.png",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/video-ai-prompt-camera-lighting.html",
+ "author": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <a class="lang-switch" href="../en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="../#pricing" aria-label="Chromeに追加（公開準備中）">Chromeに追加<small>公開準備中</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>動画生成AIへの指示の書き方：カメラワーク・ライティング・レンズ</h1>
+    <div class="post-meta">
+      <span class="post-tag">動画生成</span>
+      <span><time datetime="2026-10-15">2026年10月15日</time></span>
+      <span>読む時間：約7分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<p class="post-lead">動画生成AIに「夕方の街を歩く女性」とだけ伝えると、構図も、動きも、光も、AI任せになります。思い通りの映像に近づけるコツは、<strong>映像の「撮り方」を言葉にすること</strong>です。カメラワーク、ライティング、レンズの3つを軸に、書き方を整理します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#order">書く順番：被写体から、撮り方へ</a></li>
+<li><a href="#camera">カメラワーク</a></li>
+<li><a href="#light">ライティング（光）</a></li>
+<li><a href="#lens">レンズと画角</a></li>
+<li><a href="#mood">雰囲気・色調・長さ</a></li>
+<li><a href="#example">まとめた例</a></li>
+<li><a href="#tips">うまくいかないときの見直し</a></li>
+</ol></nav>
+
+<h2 id="order">書く順番：被写体から、撮り方へ</h2>
+<p>指示は、次の順に並べると、整理しやすくなります。</p>
+<ol>
+<li><strong>被写体と動き</strong>：誰が、何を、どうしているか</li>
+<li><strong>場所と時間帯</strong>：どこで、いつの光か</li>
+<li><strong>カメラワーク</strong>：カメラは、どう動くか</li>
+<li><strong>ライティングとレンズ</strong>：光の向き、画角、ピントの深さ</li>
+<li><strong>雰囲気と色調</strong>：全体の印象</li>
+<li><strong>長さ・画面の比率</strong>：サービスの設定で指定する場合もあります</li>
+</ol>
+<p>動画生成のサービスは、それぞれ、得意な書き方や、指定できる項目が違います。ここで紹介するのは、どのサービスでも使いやすい、基本の言葉です。</p>
+
+<h2 id="camera">カメラワーク</h2>
+<p>カメラの動きは、映像の印象を大きく変えます。<strong>1つのカットには、動きを1つ</strong>にするのが基本です。</p>
+<table>
+<tr><th>言い方</th><th>どんな映像か</th><th>向いている場面</th></tr>
+<tr><td>固定（static shot）</td><td>カメラは動かない</td><td>落ち着いた場面、人物の表情</td></tr>
+<tr><td>パン（pan left / right）</td><td>カメラが、横に首を振る</td><td>風景を見渡す、人物を追う</td></tr>
+<tr><td>ティルト（tilt up / down）</td><td>カメラが、縦に首を振る</td><td>建物や人物を、下から上へ見せる</td></tr>
+<tr><td>ドリーイン（dolly in）</td><td>カメラが、被写体に近づく</td><td>注目を集める、感情を強める</td></tr>
+<tr><td>ドリーアウト（dolly out）</td><td>カメラが、被写体から離れる</td><td>状況を明かす、余韻を残す</td></tr>
+<tr><td>ズーム（zoom in / out）</td><td>画角を変える（カメラは動かない）</td><td>素早く寄る・引く</td></tr>
+<tr><td>手持ち（handheld）</td><td>わずかな揺れがある</td><td>ドキュメンタリー風、臨場感</td></tr>
+<tr><td>空撮（aerial / drone shot）</td><td>高い位置から、見下ろして動く</td><td>街や自然のスケール感</td></tr>
+</table>
+
+<h2 id="light">ライティング（光）</h2>
+<p>光の言葉を足すだけで、映像の質感は大きく変わります。</p>
+<ul>
+<li><strong>自然光</strong>（natural light）：やわらかく、自然な印象</li>
+<li><strong>ゴールデンアワー</strong>（golden hour）：日の出・日の入りごろの、あたたかい光</li>
+<li><strong>逆光</strong>（backlit）：被写体の後ろから光が当たり、輪郭が光る</li>
+<li><strong>やわらかい光</strong>（soft light）：影がやさしい。人物向き</li>
+<li><strong>ハードな光</strong>（hard light）：影がはっきり。力強い、ドラマチックな印象</li>
+<li><strong>夜景・ネオン</strong>（night, neon lights）：色のある光が、街に反射する</li>
+</ul>
+
+<h2 id="lens">レンズと画角</h2>
+<ul>
+<li><strong>広角</strong>（wide angle）：広く写る。空間の広がりを見せる</li>
+<li><strong>標準</strong>（35mm・50mm など）：自然な見え方</li>
+<li><strong>望遠</strong>（telephoto）：遠くを引き寄せ、背景が圧縮される</li>
+<li><strong>マクロ</strong>（macro）：ごく小さなものに寄る</li>
+<li><strong>被写界深度が浅い</strong>（shallow depth of field）：被写体にピントが合い、背景が大きくぼける</li>
+</ul>
+<p>画面のサイズ感は、「クローズアップ」「ミディアムショット（腰から上）」「ロングショット（全身と周囲）」のように伝えます。</p>
+
+<h2 id="mood">雰囲気・色調・長さ</h2>
+<p>「落ち着いた」「温かい」「ノスタルジック」「クールで都会的」など、<strong>全体の印象</strong>を1〜2語で添えます。色は「淡いパステル」「彩度を抑えた」のように指定します。</p>
+<p>長さと画面の比率（横長・縦長など）は、プロンプトの文章ではなく、サービスの設定欄で選ぶものもあります。文章に書く前に、設定の項目を確認します。</p>
+
+<h2 id="example">まとめた例</h2>
+<div class="prompt-box"><div class="prompt-box-label">プロンプトの例（英語で書く場合）</div><pre>A woman in a beige coat walks along a quiet shopping street in the evening, holding a paper bag.
+Golden hour, warm backlight, soft glow on her hair.
+Slow dolly in from a medium shot to a close-up of her smile.
+35mm lens, shallow depth of field, blurred warm lights in the background.
+Calm, nostalgic mood, muted warm color palette.</pre></div>
+<div class="prompt-box"><div class="prompt-box-label">同じ内容（日本語で書く場合）</div><pre>ベージュのコートの女性が、夕方の静かな商店街を、紙袋を持って歩く。
+ゴールデンアワー、あたたかい逆光、髪にやわらかい光。
+ミディアムショットから、笑顔のクローズアップへ、ゆっくりドリーイン。
+35mmレンズ、浅い被写界深度、背景にぼやけたあたたかい光。
+落ち着いた、懐かしい雰囲気。彩度を抑えた、あたたかい色調。</pre></div>
+<p>多くの動画生成サービスは、英語のほうが、意図が伝わりやすいことがあります。日本語で試して、思い通りにならないときは、英語でも試してみてください。</p>
+
+<h2 id="tips">うまくいかないときの見直し</h2>
+<ul>
+<li><strong>動きが多すぎないか。</strong>1カットに、カメラの動きと、被写体の動きを、詰め込みすぎない。</li>
+<li><strong>「〜しない」の指示に頼っていないか。</strong>「走らない」より、「ゆっくり歩く」と、してほしい動きを書く。</li>
+<li><strong>画像から動画をつくる場合は、動きだけを書く。</strong>見た目は、元の画像が決めます。書くのは、「カメラが、ゆっくり寄る」「髪が風で揺れる」のような動きです。</li>
+<li><strong>一度に変えるのは、1項目だけ。</strong>どの言葉が効いたのか、分かるようにするためです。</li>
+</ul>
+<p>毎回、これだけの要素を考えるのは大変です。<strong>LB AI Prompt side bar</strong> には、カメラワーク・ライティング・レンズなどを選択肢から選んで、動画生成向けのプロンプトに整えるコマンドが入っています。</p>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="image-ai-prompt-tips.html">画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方</a>
+<a href="prompt-basics-template.html">プロンプトの基本の型：役割・目的・背景・出力形式を決める</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

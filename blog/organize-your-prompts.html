@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす｜LB AI Prompt side bar</title>
+<meta name="description" content="プロンプトを、メモ帳に貯めて終わりにしていませんか。目的別の分け方、名前の付け方、空欄のあるテンプレートにする方法など、使い続けられる整理のコツを紹介します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/organize-your-prompts.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす｜LB AI Prompt side bar">
+<meta property="og:description" content="プロンプトを、メモ帳に貯めて終わりにしていませんか。目的別の分け方、名前の付け方、空欄のあるテンプレートにする方法など、使い続けられる整理のコツを紹介します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/organize-your-prompts.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす",
+ "description": "プロンプトを、メモ帳に貯めて終わりにしていませんか。目的別の分け方、名前の付け方、空欄のあるテンプレートにする方法など、使い続けられる整理のコツを紹介します。",
+ "datePublished": "2026-10-15",
+ "dateModified": "2026-10-15",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/og.png",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/organize-your-prompts.html",
+ "author": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <a class="lang-switch" href="../en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="../#pricing" aria-label="Chromeに追加（公開準備中）">Chromeに追加<small>公開準備中</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす</h1>
+    <div class="post-meta">
+      <span class="post-tag">整理術</span>
+      <span><time datetime="2026-10-15">2026年10月15日</time></span>
+      <span>読む時間：約5分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<p class="post-lead">良いプロンプトを見つけても、<strong>次に使うときに、見つからない</strong>。そんな経験はありませんか。プロンプトは、貯めるだけでは使えません。この記事では、「あとで探せる」「そのまま使える」状態にするための整理のコツを紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#purpose">目的別に分ける</a></li>
+<li><a href="#name">名前は「動詞＋対象」で付ける</a></li>
+<li><a href="#blank">変わる部分を、空欄にする</a></li>
+<li><a href="#rate">評価をつけて、よく使うものを上へ</a></li>
+<li><a href="#review">月に1度、見直す</a></li>
+</ol></nav>
+
+<h2 id="purpose">目的別に分ける</h2>
+<p>プロンプトは、「どのAIで使うか」よりも、<strong>「何をしたいか」</strong>で分けると、探しやすくなります。たとえば、次のような分け方です。</p>
+<ul>
+<li>文章を書く・直す（メール、企画書、SNSの投稿）</li>
+<li>調べる・まとめる（要約、比較、議事録）</li>
+<li>考える（壁打ち、アイデア出し、リスクの洗い出し）</li>
+<li>画像をつくる</li>
+<li>動画をつくる</li>
+<li>プログラムを書く</li>
+</ul>
+<p>フォルダの数は、<strong>5〜8個</strong>までに抑えます。多すぎると、今度は、どこに入れたか迷います。</p>
+
+<h2 id="name">名前は「動詞＋対象」で付ける</h2>
+<p>名前が「プロンプト1」「メモ3」では、中身を開かないと、何のためのものか分かりません。<strong>「動詞＋対象」</strong>で付けると、一覧を見るだけで選べます。</p>
+<table>
+<tr><th>付けにくい名前</th><th>付けやすい名前</th></tr>
+<tr><td>メール用</td><td>営業メールを作る（初回）</td></tr>
+<tr><td>まとめ</td><td>議事録から、決定事項とToDoを抜き出す</td></tr>
+<tr><td>画像</td><td>商品写真風の画像を作る</td></tr>
+</table>
+
+<h2 id="blank">変わる部分を、空欄にする</h2>
+<p>整理で、いちばん効果が大きいのは、<strong>「毎回変わる部分」だけを空欄にしたテンプレートにする</strong>ことです。</p>
+<div class="prompt-box"><div class="prompt-box-label">空欄つきのテンプレート（例）</div><pre><span class="k">【役割】</span>あなたは、{{業種}}の営業担当です。
+<span class="k">【目的】</span>{{相手の会社名}}の{{相手の役職}}あてに、初回の営業メールを書いてください。
+<span class="k">【背景】</span>当社の{{商品名}}は、{{一言の特徴}}です。
+<span class="k">【条件】</span>300字以内。押しつけがましくない。返信しやすい質問で終える。</pre></div>
+<p>空欄を、{{ }} のような目立つ記号で囲んでおくと、埋め忘れに気づけます。固定の部分は、一度よく練れば、それ以降、毎回使えます。</p>
+
+<h2 id="rate">評価をつけて、よく使うものを上へ</h2>
+<p>使ってみて、良かったものに★を付けます。使う回数の多いものが上に来る並びにすれば、<strong>よく使うものは、探さなくても目に入ります。</strong>反対に、1か月以上使わないものは、整理の対象です。</p>
+
+<h2 id="review">月に1度、見直す</h2>
+<ul>
+<li>使わなくなったものを、削除する、または、まとめる</li>
+<li>少し手直しして使っているものは、直した版を、元のテンプレートに反映する</li>
+<li>新しく覚えた書き方を、既存のテンプレートに足す</li>
+</ul>
+<p>この見直しを、習慣にしておくと、プロンプトの集まりが、<strong>使うほど育つ道具</strong>になります。</p>
+<p><strong>LB AI Prompt side bar</strong> は、目的別のタブ、★評価、よく使う順、検索で、プロンプトをすぐ呼び出せます。空欄や選択肢で整えて、ワンクリックでAIの入力欄に入れられます。</p>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="prompt-basics-template.html">プロンプトの基本の型：役割・目的・背景・出力形式を決める</a>
+<a href="compare-ai-with-same-prompt.html">複数のAIを使い分ける：同じプロンプトで比べる方法</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>
