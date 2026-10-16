@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="zh-TW" class="cjk-tc">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LB AI Prompt side bar｜選擇。調整。送進慣用的 AI。</title>
+<meta name="description" content="AI 好夥伴登場。像選擇指令一樣準備提示詞，一鍵插入 ChatGPT、Claude、Gemini 或圖片／影片生成 AI。Chrome 側邊欄，前 14 天免費使用所有功能。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/zh-tw/">
+<link rel="alternate" hreflang="ja" href="https://aipromptbar.liquid-block.com/">
+<link rel="alternate" hreflang="en" href="https://aipromptbar.liquid-block.com/en/">
+<link rel="alternate" hreflang="zh-TW" href="https://aipromptbar.liquid-block.com/zh-tw/">
+<link rel="alternate" hreflang="ko" href="https://aipromptbar.liquid-block.com/ko/">
+<link rel="alternate" hreflang="es" href="https://aipromptbar.liquid-block.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://aipromptbar.liquid-block.com/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://aipromptbar.liquid-block.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://aipromptbar.liquid-block.com/en/">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="LB AI Prompt side bar｜選擇。調整。送進慣用的 AI。">
+<meta property="og:description" content="像選擇指令一樣準備提示詞。放在 ChatGPT、Claude、Gemini 與圖片／影片生成 AI 旁邊的 Chrome 側邊欄。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/zh-tw/">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "LB AI Prompt side bar",
+ "url": "https://aipromptbar.liquid-block.com/zh-tw/",
+ "applicationCategory": "BrowserApplication",
+ "operatingSystem": "Chrome",
+ "description": "像選擇指令一樣準備提示詞。放在 ChatGPT、Claude、Gemini 與圖片／影片生成 AI 旁邊的 Chrome 側邊欄。",
+ "inLanguage": [
+  "ja",
+  "en",
+  "zh-TW",
+  "ko",
+  "es",
+  "pt-BR",
+  "fr"
+ ],
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "免費",
+   "price": "0",
+   "priceCurrency": "USD"
+  },
+  {
+   "@type": "Offer",
+   "name": "月繳",
+   "price": "3.49",
+   "priceCurrency": "USD"
+  },
+  {
+   "@type": "Offer",
+   "name": "年繳",
+   "price": "30",
+   "priceCurrency": "USD"
+  }
+ ],
+ "author": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ }
+}
+</script>
+<script type="application/ld+json" id="faq-ld">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "這本身是 AI 嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不是。它是協助您使用 ChatGPT、Claude、Gemini 等其他 AI 的輔助工具，幫您選擇提示詞、調整，並放進您慣用的 AI 的輸入框。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "免費能用到什麼程度？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "免費版可以一直使用每個分頁 4 個推薦指令、AI 新聞、「AI 活用心法」，以及插入、複製、搜尋與★評分，不需登入。前 14 天可使用所有功能。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "試用需要信用卡嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不需要。用 Google 帳號登入，14 天內就能使用所有功能。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "我的提示詞會傳給你們嗎？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "不會。我們無法讀取您的提示詞、備忘錄、輸入內容、參考圖片或檔案。開啟同步時，資料也會先在您的電腦上加密。詳情請見隱私權政策。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "可以用在幾台電腦？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "每個帳號最多 4 台。不再使用的電腦可以從側邊欄移除，60 天未使用的電腦會自動移除。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "取消與退款怎麼處理？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "可隨時取消，在已付費期間結束前仍可使用所有功能。首次付款後 14 天內可全額退款。請見退款與取消。"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "支援哪些瀏覽器？",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Google Chrome。因為使用 Chrome 的側邊欄，請使用電腦版的 Chrome。"
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+
+<a class="skip" href="#main">跳至主要內容</a>
+
+<!-- ============ Header ============ -->
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="./" aria-label="LB AI Prompt side bar（首頁）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="選單">
+      <a href="#how">使用方式</a>
+      <a href="#features">功能</a>
+      <a href="#privacy">隱私</a>
+      <a href="#pricing">價格</a>
+      <a href="#faq">常見問題</a>
+      <details class="lang-menu"><summary aria-label="語言"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>繁中</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW" aria-current="page">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="#pricing" aria-label="加到 Chrome（即將推出）">加到 Chrome<small>即將推出</small></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker rv"><span class="kicker-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>AI 好夥伴登場！！</p>
+      <h1 class="rv">
+        <span class="line">選擇。</span>
+        <span class="line">調整。</span>
+        <span class="line grad">送進慣用的 AI。</span>
+      </h1>
+      <p class="lead rv">
+        像選擇指令一樣準備提示詞。<br>
+        <span class="nb">放在</span> <span class="nb">ChatGPT、Claude、Gemini</span> <span class="nb">與圖片／影片生成 AI 旁邊的提示詞側邊欄。</span>
+      </p>
+      <div class="cta rv">
+        <a class="btn btn-lg btn-soon" href="#pricing">加到 Chrome<small>即將推出</small></a>
+        <a class="btn btn-lg btn-ghost" href="#how">看看怎麼用<span aria-hidden="true">↓</span></a>
+      </div>
+      <ul class="hero-points rv">
+        <li><b>14 天</b>全部免費</li>
+        <li><b>不需</b>信用卡</li>
+        <li><b>免費版</b>可一直使用</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual rv" aria-hidden="true">
+      <div class="mock">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="url">ai.example.com</span></div>
+          <div class="chat">
+            <p class="chat-title">要請 AI 做什麼呢？</p>
+            <p class="chat-sub">把提示詞放在 AI 旁邊。</p>
+            <div class="composer" id="composer">
+              <div class="composer-text" id="composerText" data-parts='[["【角色】",true],["資深 IT 產品經理 ",false],["【目的】",true],["15 秒商品介紹影片的腳本 ",false],["【背景】",true],["柔和的自然光，沉穩的氛圍",false]]'><span class="ph">輸入訊息…</span></div>
+              <span class="composer-send">↑</span>
+            </div>
+          </div>
+        </div>
+        <img class="panel-card" src="../img/panel-adjust-en.webp" width="420" height="900" alt="" fetchpriority="high">
+        <span class="chip chip-1"><b>1</b>選擇</span>
+        <span class="chip chip-2"><b>2</b>調整</span>
+        <span class="chip chip-3"><b><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></b>插入</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Supported AIs ============ -->
+<section class="ais" aria-label="支援的 AI">
+  <p class="ais-label">直接用在您慣用的 AI</p>
+  <div class="marquee" aria-hidden="true">
+    <ul class="marquee-track">
+      <li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>NotebookLM</li><li>AI Studio</li><li>Perplexity</li><li>Kling</li><li>Runway</li><li>Luma</li><li>Hailuo</li><li>Pika</li><li>PixVerse</li><li>Sora</li><li>Higgsfield</li><li>Midjourney</li><li>Leonardo</li><li>Ideogram</li><li>Recraft</li><li>Tripo</li><li>v0</li><li>Bolt</li><li>Lovable</li>
+    </ul>
+  </div>
+  <p class="sr-only">支援：ChatGPT、Claude、Gemini、NotebookLM、AI Studio、Perplexity、Kling、Runway、Luma、Hailuo、Pika、PixVerse、Sora、Higgsfield、Midjourney、Leonardo、Ideogram、Recraft、Tripo、v0、Bolt、Lovable。</p>
+</section>
+
+<!-- ============ Pain points ============ -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <p class="eyebrow rv">是不是很熟悉？</p>
+    <h2 class="rv"><span class="nb">越好的提示詞，</span> <span class="nb">越要花時間才用得上。</span></h2>
+    <div class="why-grid">
+      <article class="why-card rv">
+        <span class="why-no">01</span>
+        <h3>從記事本複製貼上。</h3>
+        <p>打開記事本或 Notion，找出來、貼上、再改寫。每次都一樣。</p>
+      </article>
+      <article class="why-card rv">
+        <span class="why-no">02</span>
+        <h3>又要從零開始。</h3>
+        <p>給影片與圖片 AI 的指示，要決定運鏡、光線、鏡頭……選項太多了。</p>
+      </article>
+      <article class="why-card rv">
+        <span class="why-no">03</span>
+        <h3>放到哪裡去了？</h3>
+        <p>越常用的提示詞，越是在需要時找不到。找著找著，靈感就沒了。</p>
+      </article>
+    </div>
+    <p class="why-answer rv"><span class="nb">這一切，</span> <span class="nb grad">都在一個側邊欄裡。</span></p>
+  </div>
+</section>
+
+<!-- ============ How it works ============ -->
+<section class="section how" id="how">
+  <div class="wrap">
+    <p class="eyebrow rv">使用方式</p>
+    <h2 class="rv"><span class="nb">選擇。</span> <span class="nb">調整。</span> <span class="nb"><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>插入。</span></h2>
+    <p class="section-lead rv">只要三個步驟。像選擇指令一樣，提示詞就完成了。</p>
+
+    <div class="step rv">
+      <div class="step-copy">
+        <span class="step-no">01</span>
+        <h3>選擇</h3>
+        <p class="step-sub">從依用途整理的清單中選擇提示詞。</p>
+        <p>日常、文章、商務、影片、開發、圖片等，都能依分頁找到。先從「推薦」開始，就不必煩惱要用什麼。</p>
+      </div>
+      <figure class="device"><img src="../img/panel-list-en.webp" width="420" height="900" loading="lazy" alt="依用途分頁並顯示推薦指令的側邊欄"></figure>
+    </div>
+
+    <div class="step step-rev rv">
+      <div class="step-copy">
+        <span class="step-no">02</span>
+        <h3>調整</h3>
+        <p class="step-sub">選擇選項、填寫空格，就完成了。</p>
+        <p>角色、目的、背景等，選擇或輸入即可。可在預覽中確認結果，也能自由修改。</p>
+      </div>
+      <figure class="device"><img src="../img/panel-adjust-en.webp" width="420" height="900" loading="lazy" alt="用選項與空格調整提示詞的側邊欄"></figure>
+    </div>
+
+    <div class="step rv">
+      <div class="step-copy">
+        <span class="step-no">03</span>
+        <h3><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>插入</h3>
+        <p class="step-sub">一鍵放進 AI 的輸入框。</p>
+        <p>按下<span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>，就會直接放進您開啟的 AI 頁面輸入框。也可以複製，用在其他地方。</p>
+      </div>
+      <div class="insert-demo" aria-hidden="true">
+        <div class="insert-chat">
+          <p class="chat-title">要請 AI 做什麼呢？</p>
+          <div class="composer composer-filled">
+            <div class="composer-text">
+              <span class="tok">【角色 (Role / Persona)】</span>
+              資深 IT 產品經理<br><br>
+              <span class="tok">【目的 (Goal)】</span>
+              15 秒商品介紹影片的腳本<br><br>
+              <span class="tok">【背景 (Context)】</span>
+              柔和的自然光，沉穩的氛圍
+            </div>
+            <span class="composer-send">↑</span>
+          </div>
+        </div>
+        <span class="insert-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Features ============ -->
+<section class="section features" id="features">
+  <div class="wrap">
+    <p class="eyebrow rv">功能</p>
+    <h2 class="rv"><span class="nb">需要的一切，</span> <span class="nb">都在 AI 旁邊。</span></h2>
+
+    <div class="bento">
+      <article class="card card-big rv">
+        <div class="card-copy">
+          <p class="num"><b>200+</b></p>
+          <h3>依用途整理的 AI 指令</h3>
+          <p>日常、文章、商務、經營、影像前期製作、開發／網頁／應用程式、素材／設計、圖片生成、影片生成（從圖片、文字或影片）、編輯等。持續新增中。</p>
+        </div>
+        <div class="crop crop-tabs"><img src="../img/panel-tabs-en.webp" width="420" height="900" loading="lazy" alt=""></div>
+      </article>
+
+      <article class="card card-launcher rv">
+        <div class="card-copy">
+          <p class="num"><b>22</b><span>個 AI</span></p>
+          <h3>AI 啟動列</h3>
+          <p>ChatGPT、Claude、Gemini、Kling、Runway……點一下就能開啟。</p>
+        </div>
+        <div class="crop crop-launcher"><img src="../img/panel-launcher-en.webp" width="420" height="900" loading="lazy" alt=""></div>
+      </article>
+
+      <article class="card card-keys rv">
+        <div class="keys" aria-hidden="true"><kbd>Alt</kbd><i>+</i><kbd>A</kbd></div>
+        <h3>一起開啟</h3>
+        <p>一個快捷鍵，同時開啟側邊欄與 AI。</p>
+      </article>
+
+      <article class="card rv">
+        <p class="glyph" aria-hidden="true">★</p>
+        <h3>評分、常用順序、搜尋</h3>
+        <p>用★評分、依常用順序排列、用搜尋叫出來。越用越順手。</p>
+      </article>
+
+      <article class="card rv">
+        <p class="glyph glyph-lang" aria-hidden="true">繁 / EN</p>
+        <h3>7 種語言</h3>
+        <p>日本語、English、繁體中文、한국어、Español、Português、Français。</p>
+      </article>
+
+      <article class="card card-wide rv">
+        <div class="card-copy">
+          <p class="tag">免費版也能用</p>
+          <h3>推薦、新聞與心法</h3>
+          <p>每個分頁 4 個推薦指令、最新的 AI 新聞、「AI 活用心法」，以及插入、複製、搜尋與★評分。不需登入。</p>
+        </div>
+      </article>
+
+      <article class="card card-pro rv">
+        <div class="card-copy">
+          <p class="tag tag-pro">付費方案</p>
+          <h3>培養自己的提示詞</h3>
+          <ul class="ticks">
+            <li>儲存自己的提示詞</li>
+            <li>專案組合</li>
+            <li>參考圖片與檔案</li>
+            <li>AI 翻譯（使用您自己的 API 金鑰）</li>
+            <li>儲存為 Excel</li>
+            <li>跨電腦同步</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Privacy ============ -->
+<section class="section privacy" id="privacy">
+  <div class="privacy-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">隱私</p>
+    <h2 class="rv"><span class="nb">您寫的內容，</span> <span class="nb grad">我們看不到。</span></h2>
+    <p class="section-lead rv">我們無法讀取您的提示詞、備忘錄、輸入內容、參考圖片或檔案。系統從一開始就是這樣設計的。</p>
+    <ul class="facts">
+      <li class="rv"><span class="fact-k">免費版</span><p>不需登入，不傳送任何資料。</p></li>
+      <li class="rv"><span class="fact-k">試用與付費</span><p>只記錄電子郵件地址與付款狀態。</p></li>
+      <li class="rv"><span class="fact-k">同步</span><p>資料會在您的電腦上加密，金鑰存放在您自己的 Google 雲端硬碟。</p></li>
+      <li class="rv"><span class="fact-k">分析</span><p>沒有使用情況分析，也不追蹤。</p></li>
+    </ul>
+    <p class="rv"><a class="textlink" href="../privacy.html#en">閱讀隱私權政策 →</a></p>
+  </div>
+</section>
+
+<!-- ============ Pricing ============ -->
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow rv">價格</p>
+    <h2 class="rv"><span class="nb">前 14 天，</span> <span class="nb">全部免費。</span></h2>
+    <p class="section-lead rv">不需信用卡。之後，免費版也能一直使用。</p>
+
+    <div class="plans">
+      <article class="plan rv">
+        <h3>免費</h3>
+        <p class="price"><b>US$0</b></p>
+        <p class="price-note">永久免費</p>
+        <ul class="ticks">
+          <li>每個分頁 4 個推薦指令</li>
+          <li>AI 新聞與 AI 活用心法</li>
+          <li>插入、複製、搜尋、★評分、Alt + A</li>
+        </ul>
+      </article>
+      <article class="plan rv">
+        <h3>月繳</h3>
+        <p class="price"><b>US$3.49</b><span>／月</span></p>
+        <p class="price-note">可隨時取消</p>
+        <ul class="ticks">
+          <li>所有 AI 指令（200 個以上，持續新增）</li>
+          <li>自己的提示詞與專案組合</li>
+          <li>參考圖片與檔案</li>
+          <li>AI 翻譯與 Excel 匯出</li>
+          <li>跨電腦同步</li>
+          <li>每個帳號最多 4 台電腦</li>
+        </ul>
+      </article>
+      <article class="plan plan-main rv">
+        <span class="plan-badge">最划算</span>
+        <h3>年繳</h3>
+        <p class="price"><b>US$30</b><span>／年</span></p>
+        <p class="price-note">每月只要 2.50 美元，比月繳省 11.88 美元</p>
+        <ul class="ticks">
+          <li>月繳的所有功能</li>
+          <li>一整年，最優惠的價格</li>
+        </ul>
+        <p class="plan-offer"><b>在試用期間選擇年繳，<br>第一年只要<span class="lat">US$15</span>。<small>之後每年 30 美元</small></b></p>
+      </article>
+    </div>
+    <p class="fine rv">價格未含稅。日本的客戶需另加 10% 消費稅。月繳之後可以改為年繳。取消後，在已付費期間結束前仍可使用所有功能。首次付款後 14 天內可全額退款（<a href="../refund.html#en">退款與取消</a>）。</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-head">
+      <p class="eyebrow rv">常見問題</p>
+      <h2 class="rv">常見問題</h2>
+      <p class="faq-note rv">還有其他問題？請寄信到<a href="mailto:info@liquid-block.com">info@liquid-block.com</a>。</p>
+    </div>
+    <div class="qa rv">
+      <details>
+        <summary>這本身是 AI 嗎？</summary>
+        <p>不是。它是協助您使用 ChatGPT、Claude、Gemini 等其他 AI 的輔助工具，幫您選擇提示詞、調整，並放進您慣用的 AI 的輸入框。</p>
+      </details>
+      <details>
+        <summary>免費能用到什麼程度？</summary>
+        <p>免費版可以一直使用每個分頁 4 個推薦指令、AI 新聞、「AI 活用心法」，以及插入、複製、搜尋與★評分，不需登入。前 14 天可使用所有功能。</p>
+      </details>
+      <details>
+        <summary>試用需要信用卡嗎？</summary>
+        <p>不需要。用 Google 帳號登入，14 天內就能使用所有功能。</p>
+      </details>
+      <details>
+        <summary>我的提示詞會傳給你們嗎？</summary>
+        <p>不會。我們無法讀取您的提示詞、備忘錄、輸入內容、參考圖片或檔案。開啟同步時，資料也會先在您的電腦上加密。詳情請見<a href="../privacy.html#en">隱私權政策</a>。</p>
+      </details>
+      <details>
+        <summary>可以用在幾台電腦？</summary>
+        <p>每個帳號最多 4 台。不再使用的電腦可以從側邊欄移除，60 天未使用的電腦會自動移除。</p>
+      </details>
+      <details>
+        <summary>取消與退款怎麼處理？</summary>
+        <p>可隨時取消，在已付費期間結束前仍可使用所有功能。首次付款後 14 天內可全額退款。請見<a href="../refund.html#en">退款與取消</a>。</p>
+      </details>
+      <details>
+        <summary>支援哪些瀏覽器？</summary>
+        <p>Google Chrome。因為使用 Chrome 的側邊欄，請使用電腦版的 Chrome。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Final call ============ -->
+<section class="final">
+  <div class="final-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="rv"><span class="nb">把 AI 好夥伴，</span> <span class="nb">放在身邊。</span></h2>
+    <p class="rv">選擇。調整。送進慣用的 AI。</p>
+    <div class="cta cta-center rv">
+      <a class="btn btn-lg btn-light btn-soon" href="#pricing">加到 Chrome<small>即將推出</small></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="./"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>日本神戶</p>
+      </div>
+      <div class="foot-col">
+        <h4>產品</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/en/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">Giji Memo Rec</a>
+      </div>
+      <div class="foot-col">
+        <h4>公司</h4>
+        <a href="https://www.liquid-block.com/company">關於我們</a>
+        <a href="../privacy.html#en">隱私權政策</a>
+        <a href="../refund.html#en">退款與取消</a>
+        <a href="../tokushoho.html">特定商業交易法標示（日本）</a>
+        <a href="mailto:info@liquid-block.com">聯絡我們</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT、Claude、Gemini 等名稱為各公司的商標。本擴充功能為獨立產品，與各公司無關。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

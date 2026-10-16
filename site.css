@@ -335,28 +335,28 @@ kbd { display: inline-grid; place-items: center; min-width: 54px; height: 54px; 
 
 /* ---------- 英語のページの組み ---------- */
 /* 英語は、字間を広げず、行間を詰め、見出しは Inter の太字で字間を詰める。小見出しは大文字＋広めの字間 */
-html:lang(en) body { letter-spacing: 0; line-height: 1.75; font-family: var(--f-latin); word-break: normal; line-break: auto; overflow-wrap: break-word; }
-html:lang(en) h1, html:lang(en) h2, html:lang(en) h3, html:lang(en) h4, html:lang(en) .kicker, html:lang(en) .btn, html:lang(en) .nav, html:lang(en) .price, html:lang(en) .num, html:lang(en) .why-no, html:lang(en) .step-no, html:lang(en) .plan-badge, html:lang(en) .tag, html:lang(en) .chip, html:lang(en) .qa summary, html:lang(en) .step-sub, html:lang(en) .why-answer, html:lang(en) .final h2, html:lang(en) .num span { font-family: var(--f-latin); font-feature-settings: "kern" 1, "calt" 1; }
-html:lang(en) .eyebrow { font-family: var(--f-latin); font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; }
-html:lang(en) .hero h1 { font-weight: 800; font-size: clamp(2.7rem, 4.9vw, 4.6rem); line-height: 1.06; letter-spacing: -.045em; }
-html:lang(en) .section h2 { font-weight: 800; font-size: clamp(2rem, 4.4vw, 3.3rem); line-height: 1.12; letter-spacing: -.04em; }
-html:lang(en) .final h2 { font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
-html:lang(en) .why-answer { font-weight: 800; letter-spacing: -.035em; }
-html:lang(en) .why-card h3, html:lang(en) .card h3, html:lang(en) .plan h3, html:lang(en) .step h3 { font-weight: 800; letter-spacing: -.02em; }
-html:lang(en) .step h3 { letter-spacing: -.035em; }
-html:lang(en) .lead, html:lang(en) .section-lead { line-height: 1.7; }
-html:lang(en) .btn { letter-spacing: .01em; }
-html:lang(en) .nav a { letter-spacing: .01em; font-weight: 600; }
-html:lang(en) .nav a.lang-switch { font-family: var(--f-body); font-weight: 700; letter-spacing: .04em; }
-html:lang(en) .qa summary { letter-spacing: -.005em; }
-html:lang(en) .kicker { letter-spacing: .02em; }
-html:lang(en) .hero-points { letter-spacing: .005em; }
-html:lang(en) .price-note, html:lang(en) .fine, html:lang(en) .faq-note { letter-spacing: 0; }
-html:lang(en) .chat-title, html:lang(en) .chat-sub { font-family: var(--f-latin); }
-html:lang(en) .composer-text { letter-spacing: 0; font-family: var(--f-latin); }
-html:lang(en) .nb { white-space: normal; }
-html:lang(en) .hero h1 .line { white-space: nowrap; }
-html:lang(en) .nb.grad, html:lang(en) .why-answer .nb { white-space: nowrap; }
+html.latin body { letter-spacing: 0; line-height: 1.75; font-family: var(--f-latin); word-break: normal; line-break: auto; overflow-wrap: break-word; }
+html.latin h1, html.latin h2, html.latin h3, html.latin h4, html.latin .kicker, html.latin .btn, html.latin .nav, html.latin .price, html.latin .num, html.latin .why-no, html.latin .step-no, html.latin .plan-badge, html.latin .tag, html.latin .chip, html.latin .qa summary, html.latin .step-sub, html.latin .why-answer, html.latin .final h2, html.latin .num span { font-family: var(--f-latin); font-feature-settings: "kern" 1, "calt" 1; }
+html.latin .eyebrow { font-family: var(--f-latin); font-size: 12.5px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; }
+html.latin .hero h1 { font-weight: 800; font-size: clamp(2.7rem, 4.9vw, 4.6rem); line-height: 1.06; letter-spacing: -.045em; }
+html.latin .section h2 { font-weight: 800; font-size: clamp(2rem, 4.4vw, 3.3rem); line-height: 1.12; letter-spacing: -.04em; }
+html.latin .final h2 { font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
+html.latin .why-answer { font-weight: 800; letter-spacing: -.035em; }
+html.latin .why-card h3, html.latin .card h3, html.latin .plan h3, html.latin .step h3 { font-weight: 800; letter-spacing: -.02em; }
+html.latin .step h3 { letter-spacing: -.035em; }
+html.latin .lead, html.latin .section-lead { line-height: 1.7; }
+html.latin .btn { letter-spacing: .01em; }
+html.latin .nav a { letter-spacing: .01em; font-weight: 600; }
+html.latin .nav a.lang-switch { font-family: var(--f-body); font-weight: 700; letter-spacing: .04em; }
+html.latin .qa summary { letter-spacing: -.005em; }
+html.latin .kicker { letter-spacing: .02em; }
+html.latin .hero-points { letter-spacing: .005em; }
+html.latin .price-note, html.latin .fine, html.latin .faq-note { letter-spacing: 0; }
+html.latin .chat-title, html.latin .chat-sub { font-family: var(--f-latin); }
+html.latin .composer-text { letter-spacing: 0; font-family: var(--f-latin); }
+html.latin .nb { white-space: normal; }
+html.latin .hero h1 .line { white-space: nowrap; }
+html.latin .nb.grad, html.latin .why-answer .nb { white-space: nowrap; }
 
 /* ---------- 出現のアニメーション ---------- */
 .js .rv { opacity: 0; transform: translateY(26px); transition: opacity .9s var(--ease), transform .9s var(--ease); }
@@ -375,7 +375,7 @@ html:lang(en) .nb.grad, html:lang(en) .why-answer .nb { white-space: nowrap; }
 /* ---------- 画面の幅に合わせる ---------- */
 @media (max-width: 980px) {
   .nav { margin-left: auto; }
-  .nav a:not(.lang-switch) { display: none; }
+  .nav > a:not(.lang-switch) { display: none; }
   .btn-sm { margin-left: 4px; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-visual { width: 100%; max-width: 600px; }
@@ -427,3 +427,41 @@ html:lang(en) .nb.grad, html:lang(en) .why-answer .nb { white-space: nowrap; }
 @media (max-width: 360px) {
   .brand-name span { display: none; }
 }
+
+
+/* ---------- 言語のメニュー（7言語） ---------- */
+.lang-menu { position: relative; margin-left: 8px; flex: none; }
+.lang-menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 13px; border-radius: 999px; font: 700 12.5px/1 var(--f-latin); letter-spacing: .06em; color: #fff; box-shadow: inset 0 0 0 1px var(--line-d); white-space: nowrap; transition: box-shadow .2s, background .2s; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu[open] summary { background: rgba(255, 255, 255, .1); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .35); }
+.lang-menu summary svg { width: 14px; height: 14px; opacity: .85; }
+.lang-menu summary::after { content: ""; width: 5px; height: 5px; margin: -3px 0 0 1px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); opacity: .8; }
+.lang-menu .lang-list { position: absolute; right: 0; top: calc(100% + 10px); z-index: 70; display: grid; min-width: 170px; padding: 6px; border-radius: 16px; background: rgba(23, 15, 31, .97); box-shadow: 0 0 0 1px var(--line-d), 0 24px 50px -14px rgba(0, 0, 0, .7); backdrop-filter: blur(14px); }
+.nav .lang-menu .lang-list a, .lang-menu .lang-list a { display: block; padding: 10px 14px; border-radius: 10px; font: 600 14px/1.2 var(--f-body); letter-spacing: .02em; color: rgba(255, 255, 255, .86); text-decoration: none; }
+.lang-menu .lang-list a:hover { background: rgba(255, 255, 255, .1); color: #fff; }
+.lang-menu .lang-list a[aria-current] { color: #fff; background: rgba(255, 77, 115, .22); }
+@media (max-width: 640px) {
+  .lang-menu { margin-left: 0; }
+  .lang-menu summary { height: 30px; padding: 0 10px; }
+}
+/* スマホ：言語の名前の長いボタンが入っても重ならないように、ロゴは「AI Prompt」だけにする */
+@media (max-width: 480px) {
+  .brand { min-width: 0; }
+  .brand-name span { display: none; }
+  .lang-menu summary { gap: 5px; padding: 0 9px; }
+  .lang-menu summary::after { display: none; }
+}
+@media (max-width: 400px) {
+  .lang-menu summary svg { display: none; }
+  .btn-sm { padding: 0 11px; font-size: 12.5px; }
+}
+
+/* ---------- 繁體中文・한국어 の組み ---------- */
+html.cjk-tc { --f-display: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif; --f-body: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif; }
+html.cjk-ko { --f-display: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; --f-body: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; }
+html.cjk-tc body { letter-spacing: .03em; line-height: 1.9; }
+html.cjk-ko body { letter-spacing: 0; line-height: 1.85; word-break: keep-all; overflow-wrap: break-word; }
+html.cjk-ko h1, html.cjk-ko h2, html.cjk-ko h3, html.cjk-ko .why-answer, html.cjk-ko .final h2 { letter-spacing: -.02em; word-break: keep-all; }
+html.cjk-tc .hero h1, html.cjk-ko .hero h1 { font-size: clamp(2.5rem, 5vw, 4.4rem); }
+html.cjk-ko .nb { white-space: normal; }
+html.cjk-ko .hero h1 .line { white-space: nowrap; }

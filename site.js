@@ -51,3 +51,8 @@ if (composer && text) {
     run();
   }
 }
+
+// 言語のメニュー：外を押したら閉じる
+document.addEventListener('click', e => {
+  document.querySelectorAll('details.lang-menu[open]').forEach(d => { if (!d.contains(e.target)) d.open = false; });
+});

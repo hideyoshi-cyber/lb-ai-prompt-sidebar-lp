@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="es" class="latin">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LB AI Prompt side bar | Elige. Ajusta. A tu IA.</title>
+<meta name="description" content="Llega tu compañero de IA. Prepara prompts tan fácil como elegir un comando e insértalos con un clic en ChatGPT, Claude, Gemini o tu IA de imagen y vídeo. Un panel lateral para Chrome. 14 días con todo gratis.">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/es/">
+<link rel="alternate" hreflang="ja" href="https://aipromptbar.liquid-block.com/">
+<link rel="alternate" hreflang="en" href="https://aipromptbar.liquid-block.com/en/">
+<link rel="alternate" hreflang="zh-TW" href="https://aipromptbar.liquid-block.com/zh-tw/">
+<link rel="alternate" hreflang="ko" href="https://aipromptbar.liquid-block.com/ko/">
+<link rel="alternate" hreflang="es" href="https://aipromptbar.liquid-block.com/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://aipromptbar.liquid-block.com/pt-br/">
+<link rel="alternate" hreflang="fr" href="https://aipromptbar.liquid-block.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://aipromptbar.liquid-block.com/en/">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="LB AI Prompt side bar | Elige. Ajusta. A tu IA.">
+<meta property="og:description" content="Prepara prompts tan fácil como elegir un comando. Un panel lateral de Chrome que se coloca junto a ChatGPT, Claude, Gemini y tu IA de imagen y vídeo.">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/es/">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "LB AI Prompt side bar",
+ "url": "https://aipromptbar.liquid-block.com/es/",
+ "applicationCategory": "BrowserApplication",
+ "operatingSystem": "Chrome",
+ "description": "Prepara prompts tan fácil como elegir un comando. Un panel lateral de Chrome que se coloca junto a ChatGPT, Claude, Gemini y tu IA de imagen y vídeo.",
+ "inLanguage": [
+  "ja",
+  "en",
+  "zh-TW",
+  "ko",
+  "es",
+  "pt-BR",
+  "fr"
+ ],
+ "offers": [
+  {
+   "@type": "Offer",
+   "name": "Gratis",
+   "price": "0",
+   "priceCurrency": "USD"
+  },
+  {
+   "@type": "Offer",
+   "name": "Mensual",
+   "price": "3.49",
+   "priceCurrency": "USD"
+  },
+  {
+   "@type": "Offer",
+   "name": "Anual",
+   "price": "30",
+   "priceCurrency": "USD"
+  }
+ ],
+ "author": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ }
+}
+</script>
+<script type="application/ld+json" id="faq-ld">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Es una IA?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Es una herramienta para usar otras IA, como ChatGPT, Claude y Gemini. Te ayuda a elegir un prompt, ajustarlo y ponerlo en el cuadro de texto de la IA que ya usas."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué puedo usar gratis?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La versión gratuita incluye, sin límite de tiempo, 4 comandos recomendados por pestaña, Noticias de IA, la «Guía de IA» e Insertar, Copiar, buscar y valorar con ★. No hace falta iniciar sesión. Durante los primeros 14 días tienes todas las funciones."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Necesito una tarjeta para probarlo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Inicia sesión con tu cuenta de Google y tendrás todas las funciones durante 14 días."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Recibe la empresa mis prompts?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. No podemos leer tus prompts, notas, textos, imágenes ni archivos de referencia. Si activas la sincronización, tus datos se cifran primero en tu equipo. Consulta la Política de privacidad para más detalles."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿En cuántos equipos puedo usarlo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hasta 4 por cuenta. Puedes quitar desde el panel los equipos que ya no uses, y los que lleven 60 días sin usarse se quitan automáticamente."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo funcionan la cancelación y los reembolsos?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Puedes cancelar cuando quieras y conservar todas las funciones hasta el final del periodo pagado. En los 14 días siguientes a tu primer pago puedes obtener el reembolso completo. Consulta Reembolsos y cancelación."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿En qué navegadores funciona?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Google Chrome. Usa el panel lateral de Chrome, así que utiliza la versión de escritorio de Chrome."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+
+<a class="skip" href="#main">Ir al contenido</a>
+
+<!-- ============ Header ============ -->
+<header class="site-header" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="./" aria-label="LB AI Prompt side bar (inicio)">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="Menú">
+      <a href="#how">Cómo funciona</a>
+      <a href="#features">Funciones</a>
+      <a href="#privacy">Privacidad</a>
+      <a href="#pricing">Precios</a>
+      <a href="#faq">FAQ</a>
+      <details class="lang-menu"><summary aria-label="Idioma"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>ES</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es" aria-current="page">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="#pricing" aria-label="Añadir a Chrome (próximamente)">Añadir a Chrome<small>Próximamente</small></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="kicker rv"><span class="kicker-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>¡¡Llega tu compañero de IA!!</p>
+      <h1 class="rv">
+        <span class="line">Elige.</span>
+        <span class="line">Ajusta.</span>
+        <span class="line grad">A tu IA.</span>
+      </h1>
+      <p class="lead rv">
+        Prepara prompts tan fácil como elegir un comando.<br>
+        <span class="nb">Un panel lateral que se coloca junto a</span> <span class="nb">ChatGPT, Claude, Gemini</span> <span class="nb">y tu IA de imagen y vídeo.</span>
+      </p>
+      <div class="cta rv">
+        <a class="btn btn-lg btn-soon" href="#pricing">Añadir a Chrome<small>Próximamente</small></a>
+        <a class="btn btn-lg btn-ghost" href="#how">Ver cómo funciona<span aria-hidden="true">↓</span></a>
+      </div>
+      <ul class="hero-points rv">
+        <li><b>14 días</b>todo gratis</li>
+        <li><b>Sin tarjeta</b>de crédito</li>
+        <li><b>La versión gratuita</b>es para siempre</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual rv" aria-hidden="true">
+      <div class="mock">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span class="url">ai.example.com</span></div>
+          <div class="chat">
+            <p class="chat-title">¿Qué quieres que haga la IA?</p>
+            <p class="chat-sub">Tus prompts, junto a tu IA.</p>
+            <div class="composer" id="composer">
+              <div class="composer-text" id="composerText" data-parts='[["[Rol] ",true],["Gerente sénior de producto de TI con experiencia ",false],["[Objetivo] ",true],["Guion para un vídeo de producto de 15 segundos ",false],["[Contexto] ",true],["Luz natural suave, ambiente tranquilo",false]]'><span class="ph">Escribe un mensaje…</span></div>
+              <span class="composer-send">↑</span>
+            </div>
+          </div>
+        </div>
+        <img class="panel-card" src="../img/panel-adjust-en.webp" width="420" height="900" alt="" fetchpriority="high">
+        <span class="chip chip-1"><b>1</b>Elige</span>
+        <span class="chip chip-2"><b>2</b>Ajusta</span>
+        <span class="chip chip-3"><b><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></b>Insertar</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Supported AIs ============ -->
+<section class="ais" aria-label="IA compatibles">
+  <p class="ais-label">Funciona con la IA que ya usas</p>
+  <div class="marquee" aria-hidden="true">
+    <ul class="marquee-track">
+      <li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>NotebookLM</li><li>AI Studio</li><li>Perplexity</li><li>Kling</li><li>Runway</li><li>Luma</li><li>Hailuo</li><li>Pika</li><li>PixVerse</li><li>Sora</li><li>Higgsfield</li><li>Midjourney</li><li>Leonardo</li><li>Ideogram</li><li>Recraft</li><li>Tripo</li><li>v0</li><li>Bolt</li><li>Lovable</li>
+    </ul>
+  </div>
+  <p class="sr-only">Compatible con ChatGPT, Claude, Gemini, NotebookLM, AI Studio, Perplexity, Kling, Runway, Luma, Hailuo, Pika, PixVerse, Sora, Higgsfield, Midjourney, Leonardo, Ideogram, Recraft, Tripo, v0, Bolt y Lovable.</p>
+</section>
+
+<!-- ============ Pain points ============ -->
+<section class="section why" id="why">
+  <div class="wrap">
+    <p class="eyebrow rv">¿Te suena?</p>
+    <h2 class="rv"><span class="nb">Cuanto mejor es el prompt,</span> <span class="nb">más tarda en usarse.</span></h2>
+    <div class="why-grid">
+      <article class="why-card rv">
+        <span class="why-no">01</span>
+        <h3>Copiar y pegar desde las notas.</h3>
+        <p>Abres tus notas o Notion, lo buscas, lo pegas, lo reescribes. Cada vez.</p>
+      </article>
+      <article class="why-card rv">
+        <span class="why-no">02</span>
+        <h3>Otra vez desde cero.</h3>
+        <p>Las indicaciones para IA de vídeo e imagen implican movimientos de cámara, iluminación, lentes… demasiadas decisiones.</p>
+      </article>
+      <article class="why-card rv">
+        <span class="why-no">03</span>
+        <h3>¿Dónde lo guardé?</h3>
+        <p>Los prompts que más usas son los que no encuentras cuando los necesitas. Y para entonces, la inspiración se ha ido.</p>
+      </article>
+    </div>
+    <p class="why-answer rv"><span class="nb">Todo eso,</span> <span class="nb grad">en un solo panel lateral.</span></p>
+  </div>
+</section>
+
+<!-- ============ How it works ============ -->
+<section class="section how" id="how">
+  <div class="wrap">
+    <p class="eyebrow rv">Cómo funciona</p>
+    <h2 class="rv"><span class="nb">Elige.</span> <span class="nb">Ajusta.</span> <span class="nb"><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>Inserta.</span></h2>
+    <p class="section-lead rv">Solo tres pasos. Es como elegir un comando, y tu prompt queda listo.</p>
+
+    <div class="step rv">
+      <div class="step-copy">
+        <span class="step-no">01</span>
+        <h3>Elige</h3>
+        <p class="step-sub">Elige un prompt de una lista organizada por objetivo.</p>
+        <p>Vida diaria, redacción, negocios, vídeo, desarrollo, imágenes y más, organizados por pestañas. Empieza por «Recomendados» y no tendrás que pensar qué usar.</p>
+      </div>
+      <figure class="device"><img src="../img/panel-list-en.webp" width="420" height="900" loading="lazy" alt="El panel lateral con pestañas por objetivo y comandos recomendados"></figure>
+    </div>
+
+    <div class="step step-rev rv">
+      <div class="step-copy">
+        <span class="step-no">02</span>
+        <h3>Ajusta</h3>
+        <p class="step-sub">Elige opciones, completa los huecos y listo.</p>
+        <p>Rol, objetivo, contexto y más: elige o escribe. Revisa el resultado en la vista previa y edítalo como quieras.</p>
+      </div>
+      <figure class="device"><img src="../img/panel-adjust-en.webp" width="420" height="900" loading="lazy" alt="El panel lateral mientras se ajusta un prompt con opciones y huecos"></figure>
+    </div>
+
+    <div class="step rv">
+      <div class="step-copy">
+        <span class="step-no">03</span>
+        <h3><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>Insertar</h3>
+        <p class="step-sub">Un clic y va al cuadro de texto de la IA.</p>
+        <p>Pulsa <span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span> y se escribe directamente en la página de IA que tienes abierta. También puedes copiarlo para usarlo en otro sitio.</p>
+      </div>
+      <div class="insert-demo" aria-hidden="true">
+        <div class="insert-chat">
+          <p class="chat-title">¿Qué quieres que haga la IA?</p>
+          <div class="composer composer-filled">
+            <div class="composer-text">
+              <span class="tok">[Rol / Persona]</span>
+              Gerente sénior de producto de TI con experiencia<br><br>
+              <span class="tok">[Objetivo]</span>
+              Guion para un vídeo de producto de 15 segundos<br><br>
+              <span class="tok">[Contexto]</span>
+              Luz natural suave, ambiente tranquilo
+            </div>
+            <span class="composer-send">↑</span>
+          </div>
+        </div>
+        <span class="insert-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Features ============ -->
+<section class="section features" id="features">
+  <div class="wrap">
+    <p class="eyebrow rv">Funciones</p>
+    <h2 class="rv"><span class="nb">Todo lo que necesitas,</span> <span class="nb">justo al lado de tu IA.</span></h2>
+
+    <div class="bento">
+      <article class="card card-big rv">
+        <div class="card-copy">
+          <p class="num"><b>200+</b></p>
+          <h3>Comandos de IA listos para usar</h3>
+          <p>Vida diaria, redacción, negocios, gestión, preproducción de vídeo, desarrollo, web y apps, recursos y diseño, generación de imágenes, generación de vídeo (desde imagen, texto o vídeo), edición y más. Y vienen más.</p>
+        </div>
+        <div class="crop crop-tabs"><img src="../img/panel-tabs-en.webp" width="420" height="900" loading="lazy" alt=""></div>
+      </article>
+
+      <article class="card card-launcher rv">
+        <div class="card-copy">
+          <p class="num"><b>22</b><span>IA</span></p>
+          <h3>Lanzador de IA</h3>
+          <p>ChatGPT, Claude, Gemini, Kling, Runway… Ábrelas con un toque.</p>
+        </div>
+        <div class="crop crop-launcher"><img src="../img/panel-launcher-en.webp" width="420" height="900" loading="lazy" alt=""></div>
+      </article>
+
+      <article class="card card-keys rv">
+        <div class="keys" aria-hidden="true"><kbd>Alt</kbd><i>+</i><kbd>A</kbd></div>
+        <h3>Ábrelos juntos</h3>
+        <p>Un atajo abre a la vez el panel lateral y tu IA.</p>
+      </article>
+
+      <article class="card rv">
+        <p class="glyph" aria-hidden="true">★</p>
+        <h3>Valoraciones, más usados y búsqueda</h3>
+        <p>Valora con ★, ordena por uso y encuéntralos al instante. Cuanto más lo usas, mejor se adapta a ti.</p>
+      </article>
+
+      <article class="card rv">
+        <p class="glyph glyph-lang" aria-hidden="true">ES / EN</p>
+        <h3>7 idiomas</h3>
+        <p>日本語, English, 繁體中文, 한국어, Español, Português, Français.</p>
+      </article>
+
+      <article class="card card-wide rv">
+        <div class="card-copy">
+          <p class="tag">Incluso en la versión gratuita</p>
+          <h3>Recomendados, noticias y guía</h3>
+          <p>4 comandos recomendados por pestaña, las últimas noticias de IA, la «Guía de IA», además de Insertar, Copiar, buscar y valorar con ★. Sin iniciar sesión.</p>
+        </div>
+      </article>
+
+      <article class="card card-pro rv">
+        <div class="card-copy">
+          <p class="tag tag-pro">Planes de pago</p>
+          <h3>Haz crecer tus propios prompts</h3>
+          <ul class="ticks">
+            <li>Guarda tus propios prompts</li>
+            <li>Conjuntos por proyecto</li>
+            <li>Imágenes y archivos de referencia</li>
+            <li>Traducción con IA (con tu propia clave de API)</li>
+            <li>Guardar en Excel</li>
+            <li>Sincronización entre equipos</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Privacy ============ -->
+<section class="section privacy" id="privacy">
+  <div class="privacy-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">Privacidad</p>
+    <h2 class="rv"><span class="nb">No podemos leer</span> <span class="nb grad">lo que escribes.</span></h2>
+    <p class="section-lead rv">No podemos leer tus prompts, notas, textos, imágenes ni archivos de referencia. Está hecho así a propósito.</p>
+    <ul class="facts">
+      <li class="rv"><span class="fact-k">La versión gratuita</span><p>Sin iniciar sesión. No se envía nada.</p></li>
+      <li class="rv"><span class="fact-k">Prueba y pago</span><p>Solo registramos tu correo electrónico y el estado del pago.</p></li>
+      <li class="rv"><span class="fact-k">Sincronización</span><p>Tus datos se cifran en tu equipo. La clave se guarda en tu propio Google Drive.</p></li>
+      <li class="rv"><span class="fact-k">Analíticas</span><p>Sin analíticas ni seguimiento del uso.</p></li>
+    </ul>
+    <p class="rv"><a class="textlink" href="../privacy.html#en">Leer la Política de privacidad →</a></p>
+  </div>
+</section>
+
+<!-- ============ Pricing ============ -->
+<section class="section pricing" id="pricing">
+  <div class="wrap">
+    <p class="eyebrow rv">Precios</p>
+    <h2 class="rv"><span class="nb">14 días</span> <span class="nb">con todo gratis.</span></h2>
+    <p class="section-lead rv">Sin tarjeta. Después, la versión gratuita sigue siendo tuya.</p>
+
+    <div class="plans">
+      <article class="plan rv">
+        <h3>Gratis</h3>
+        <p class="price"><b>0 $</b></p>
+        <p class="price-note">Gratis para siempre</p>
+        <ul class="ticks">
+          <li>4 comandos recomendados por pestaña</li>
+          <li>Noticias de IA y Guía de IA</li>
+          <li>Insertar, Copiar, buscar, valorar con ★, Alt + A</li>
+        </ul>
+      </article>
+      <article class="plan rv">
+        <h3>Mensual</h3>
+        <p class="price"><b>3,49 $</b><span>/mes</span></p>
+        <p class="price-note">Cancela cuando quieras</p>
+        <ul class="ticks">
+          <li>Todos los comandos de IA (más de 200, y creciendo)</li>
+          <li>Tus propios prompts y conjuntos por proyecto</li>
+          <li>Imágenes y archivos de referencia</li>
+          <li>Traducción con IA y exportación a Excel</li>
+          <li>Sincronización entre equipos</li>
+          <li>Hasta 4 equipos por cuenta</li>
+        </ul>
+      </article>
+      <article class="plan plan-main rv">
+        <span class="plan-badge">Mejor precio</span>
+        <h3>Anual</h3>
+        <p class="price"><b>30 $</b><span>/año</span></p>
+        <p class="price-note">Solo 2,50 $ al mes. 11,88 $ menos que el mensual</p>
+        <ul class="ticks">
+          <li>Todas las funciones del plan mensual</li>
+          <li>Un año completo al mejor precio</li>
+        </ul>
+        <p class="plan-offer"><b>Elige el plan anual durante la prueba<br>y el primer año cuesta <span class="lat">15 $</span>.<small>Después, 30 $ al año</small></b></p>
+      </article>
+    </div>
+    <p class="fine rv">Los precios no incluyen impuestos. A los clientes de Japón se les suma el impuesto sobre el consumo (10 %). Puedes pasar de mensual a anual más adelante. Si cancelas, conservas todas las funciones hasta el final del periodo pagado. En los 14 días siguientes a tu primer pago puedes obtener el reembolso completo (<a href="../refund.html#en">Reembolsos y cancelación</a>).</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-head">
+      <p class="eyebrow rv">FAQ</p>
+      <h2 class="rv">Preguntas</h2>
+      <p class="faq-note rv">¿Algo más? Escríbenos a <a href="mailto:info@liquid-block.com">info@liquid-block.com</a>.</p>
+    </div>
+    <div class="qa rv">
+      <details>
+        <summary>¿Es una IA?</summary>
+        <p>No. Es una herramienta para usar otras IA, como ChatGPT, Claude y Gemini. Te ayuda a elegir un prompt, ajustarlo y ponerlo en el cuadro de texto de la IA que ya usas.</p>
+      </details>
+      <details>
+        <summary>¿Qué puedo usar gratis?</summary>
+        <p>La versión gratuita incluye, sin límite de tiempo, 4 comandos recomendados por pestaña, Noticias de IA, la «Guía de IA» e Insertar, Copiar, buscar y valorar con ★. No hace falta iniciar sesión. Durante los primeros 14 días tienes todas las funciones.</p>
+      </details>
+      <details>
+        <summary>¿Necesito una tarjeta para probarlo?</summary>
+        <p>No. Inicia sesión con tu cuenta de Google y tendrás todas las funciones durante 14 días.</p>
+      </details>
+      <details>
+        <summary>¿Recibe la empresa mis prompts?</summary>
+        <p>No. No podemos leer tus prompts, notas, textos, imágenes ni archivos de referencia. Si activas la sincronización, tus datos se cifran primero en tu equipo. Consulta la <a href="../privacy.html#en">Política de privacidad</a> para más detalles.</p>
+      </details>
+      <details>
+        <summary>¿En cuántos equipos puedo usarlo?</summary>
+        <p>Hasta 4 por cuenta. Puedes quitar desde el panel los equipos que ya no uses, y los que lleven 60 días sin usarse se quitan automáticamente.</p>
+      </details>
+      <details>
+        <summary>¿Cómo funcionan la cancelación y los reembolsos?</summary>
+        <p>Puedes cancelar cuando quieras y conservar todas las funciones hasta el final del periodo pagado. En los 14 días siguientes a tu primer pago puedes obtener el reembolso completo. Consulta <a href="../refund.html#en">Reembolsos y cancelación</a>.</p>
+      </details>
+      <details>
+        <summary>¿En qué navegadores funciona?</summary>
+        <p>Google Chrome. Usa el panel lateral de Chrome, así que utiliza la versión de escritorio de Chrome.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Final call ============ -->
+<section class="final">
+  <div class="final-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <h2 class="rv"><span class="nb">Ten un compañero de IA</span> <span class="nb">siempre a tu lado.</span></h2>
+    <p class="rv">Elige. Ajusta. A tu IA.</p>
+    <div class="cta cta-center rv">
+      <a class="btn btn-lg btn-light btn-soon" href="#pricing">Añadir a Chrome<small>Próximamente</small></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="./"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>Kobe, Japón</p>
+      </div>
+      <div class="foot-col">
+        <h4>Productos</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/en/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">Giji Memo Rec</a>
+      </div>
+      <div class="foot-col">
+        <h4>Empresa</h4>
+        <a href="https://www.liquid-block.com/company">Quiénes somos</a>
+        <a href="../privacy.html#en">Política de privacidad</a>
+        <a href="../refund.html#en">Reembolsos y cancelación</a>
+        <a href="../tokushoho.html">Aviso legal (Japón)</a>
+        <a href="mailto:info@liquid-block.com">Contacto</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT, Claude, Gemini y otros nombres son marcas comerciales de sus respectivos propietarios. Esta extensión es un producto independiente y no está afiliada a ellos.</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

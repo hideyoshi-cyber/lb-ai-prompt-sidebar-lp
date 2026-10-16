@@ -1,0 +1,65 @@
+# LB AI Prompt side bar
+
+> A Chrome side panel extension by Liquid Block Inc. (Kobe, Japan). It is not an AI itself: it helps people use other AIs (ChatGPT, Claude, Gemini, Perplexity, image and video AIs such as Kling, Runway, Midjourney). Users pick a ready-made prompt (200+ commands by purpose), adjust it with options and blanks, and insert it into the AI's input box with one click.
+
+- Free plan: 4 recommended commands per tab, AI News, the "AI Playbook", Insert, Copy, search and ratings. No sign-in.
+- Paid plan: 14-day free trial with no card, then US$3.49/month or US$30/year (tax excluded). All commands, your own prompts, project sets, reference files, AI translation with your own API key, Excel export, encrypted sync, up to 4 computers per account.
+- Privacy: the company cannot read users' prompts, notes, inputs or reference files. Sync data is encrypted on the user's computer and the key is kept in the user's own Google Drive. No analytics or usage tracking.
+- Languages: Japanese, English, Traditional Chinese, Korean, Spanish, Portuguese (Brazil), French.
+- Browser: desktop Google Chrome.
+
+## Product pages
+
+- [日本語](https://aipromptbar.liquid-block.com/): Japanese top page
+- [English](https://aipromptbar.liquid-block.com/en/): English top page
+- [繁體中文](https://aipromptbar.liquid-block.com/zh-tw/), [한국어](https://aipromptbar.liquid-block.com/ko/), [Español](https://aipromptbar.liquid-block.com/es/), [Português](https://aipromptbar.liquid-block.com/pt-br/), [Français](https://aipromptbar.liquid-block.com/fr/)
+
+## Policies
+
+- [Privacy Policy](https://aipromptbar.liquid-block.com/privacy.html): Japanese and English
+- [Refunds and Cancellation](https://aipromptbar.liquid-block.com/refund.html): full refund within 14 days of the first payment
+- [Legal notice (Japan)](https://aipromptbar.liquid-block.com/tokushoho.html)
+
+## Blog (Japanese): 使い方（ヘルプ）
+
+- [はじめての使い方：3分でわかる「選ぶ・整える・挿入」](https://aipromptbar.liquid-block.com/blog/getting-started.html): LB AI Prompt side bar の基本の使い方を、3つの手順で説明します。サイドパネルの開き方、プロンプトの選び方、整え方、AIの入力欄への入れ方まで。
+- [AIランチャーの使い方：いつものAIをワンクリックで開く](https://aipromptbar.liquid-block.com/blog/ai-launcher-guide.html): サイドパネルの上にある AI ランチャーで、ChatGPT・Claude・Gemini などをワンクリックで開く方法。好きなサイトの追加、使わないアイコンの隠し方、ショートカットも説明します。
+- [プロンプトを整える：選択肢・空欄・プレビュー・拡大メモ](https://aipromptbar.liquid-block.com/blog/adjust-variables-preview.html): プロンプトの {{変数}} とは何か。選択肢で選ぶ、空欄に書く、プレビューで直す、拡大メモで長い文章を編集する。プロンプトを整える方法をまとめました。
+- [探す・評価する・並べる：★評価と検索、使わないものを隠す](https://aipromptbar.liquid-block.com/blog/search-rating-sort.html): コマンドが増えても迷わないための整理の機能。検索のショートカット、★評価、並び替え、使わないタブやフォルダを隠す方法をまとめました。
+- [案件セットで、案件ごとにプロンプトをまとめる（有料プラン）](https://aipromptbar.liquid-block.com/blog/project-sets-my-prompts.html): 案件ごとに使うプロンプトを、タブをまたいで1か所に集める「案件セット」の使い方。セットの作り方、追加と解除、自分のプロンプトの保存、バックアップの方法を説明します。
+- [参照ファイルと参照画像：資料や写真を、プロンプトと一緒にAIへ渡す](https://aipromptbar.liquid-block.com/blog/reference-files-images.html): PDF・Word・PowerPoint・Excel を読み込ませる「参照ファイル」と、スクショや写真を一緒に送る「参照画像」の使い方。添付と文字での渡し方の違いも説明します。
+- [AI翻訳・AIでの作成・Excel書き出し：APIキーの設定と使い方](https://aipromptbar.liquid-block.com/blog/translate-and-excel.html): 日本語を英語のプロンプトに変換する AI 翻訳、スケジュールの自動作成、Excel への保存。必要な APIキーの設定方法と、使い方、料金や安全面の注意をまとめました。
+- [複数のパソコンで同期する：暗号化のしくみと、4台までの使い方](https://aipromptbar.liquid-block.com/blog/sync-devices.html): 自分のプロンプトや★評価を、複数のパソコンで同じにする同期の使い方。データを暗号化して保存するしくみ、鍵をGoogleドライブに置く理由、台数の上限と外し方を説明します。
+- [無料版・14日のお試し・有料プランの違いと、解約・返金](https://aipromptbar.liquid-block.com/blog/free-trial-plans.html): 無料版でできること、14日間のお試し、月払い・年払いの違い、お試し中の年払いの特別価格、解約と返金の方法を、まとめて説明します。
+- [困ったときは：挿入できない・ログインできない・5台目で使えない](https://aipromptbar.liquid-block.com/blog/troubleshooting.html): LB AI Prompt side bar のよくある困りごとと、直し方。挿入しても入力欄に入らない、翻訳ができない、5台目のパソコンで使えない、ニュースが出ない、などを解説します。
+
+## Blog (Japanese): コマンドの解説
+
+- [「日常」タブ①：トラブル編（困りごと・不調・詐欺・解約・体調・人間関係）](https://aipromptbar.liquid-block.com/blog/presets-daily-trouble.html): 「日常」タブの【トラブル】の6つのコマンドを解説します。何でも相談、PCやスマホの不調、詐欺の判定、買い物・解約のトラブル、体調が気になるとき、人間関係の悩み。
+- [「日常」タブ②：知りたい・暮らし・文面編（教えて・手続き・比較・ニュース・献立・旅行）](https://aipromptbar.liquid-block.com/blog/presets-daily-life.html): 「日常」タブの【知りたい】【暮らし】【文面】のコマンドを解説します。わかりやすく教えて、役所の手続き、買い物の比較、ニュースの解説、献立、旅行、掃除、謝る・断る文面。
+- [「日常」タブ③：災害・勉強・占い編（防災チェック・AI先生・英会話・タロット）](https://aipromptbar.liquid-block.com/blog/presets-daily-disaster-study-fortune.html): 「日常」タブの【災害】【勉強】【占い】のコマンドを解説します。わが家の防災チェック、災害時の行動、被災後の手続き、AI先生、勉強計画、確認テスト、英会話、星座・タロット・数秘術・手相。
+- [「万能・テキスト」タブ①：万能テンプレート・XMLタグ・逆質問・推敲・議事録・壁打ち](https://aipromptbar.liquid-block.com/blog/presets-text-basics.html): 「万能・テキスト」タブの基本のコマンドを解説します。3大AIの推奨をまとめた万能テンプレート、Claude向けのXMLタグ、逆質問ヒアリング、文章の推敲、議事録の抽出、多角的な壁打ち。
+- [「万能・テキスト」タブ②：要約・お詫び・英文メール・表計算・発想法・コード・ストーリー](https://aipromptbar.liquid-block.com/blog/presets-text-advanced.html): 「万能・テキスト」タブの応用のコマンドを解説します。エグゼクティブサマリー、お詫びとリカバリー提案、英文メール、関数・GAS・マクロ、オズボーンのチェックリスト、コードレビュー、ストーリー設計とキャラクター設定書。
+- [「Gem / NotebookLM」タブ：Gemの指示書づくりと改善ループ、NotebookLMの設定](https://aipromptbar.liquid-block.com/blog/presets-gem-notebooklm.html): 「Gem / NotebookLM」タブの8つのコマンドを解説します。Geminiの Gem の指示書の基本形、映像プロンプト作成アシスタント、テストと改善のループ、NotebookLM のチャット設定・音声解説・ソースの点検・比較表。
+- [「ビジネス業務」タブ①：営業編（営業メール・お礼メール・リサーチ・提案書・ロールプレイ）](https://aipromptbar.liquid-block.com/blog/presets-biz-sales.html): 「ビジネス業務」タブの【営業】の6つのコマンドを解説します。営業メール、商談のお礼メール、企業リサーチと仮説、提案書の骨子、AIが顧客役のロールプレイ、想定質問と切り返し。
+- [「ビジネス業務」タブ②：総務・経理編（通達・FAQ・議事録・仕訳・予実・資金繰り）](https://aipromptbar.liquid-block.com/blog/presets-biz-ga-accounting.html): 「ビジネス業務」タブの【総務】【経理】の12のコマンドを解説します。社内通達、問い合わせFAQ、規程の改訂、議事録、イベント企画、手続きチェックリスト、仕訳の提案、予実の差、月次サマリー、資金繰り、経費精算。
+- [「ビジネス業務」タブ③：人事・マネージャー編（求人・面接・評価・1on1・フィードバック）](https://aipromptbar.liquid-block.com/blog/presets-biz-hr-manager.html): 「ビジネス業務」タブの【人事】【マネージャー】の12のコマンドを解説します。求人票、面接の質問と評価シート、評価コメント、選考結果の連絡、オンボーディング、人事FAQ、1on1、フィードバック、面談の練習、育成計画、会議のアジェンダ、優先順位。
+- [「ビジネス業務」タブ④：管理部門・コンサル編（契約書チェック・障害報告・論点整理・フレームワーク）](https://aipromptbar.liquid-block.com/blog/presets-biz-admin-consulting.html): 「ビジネス業務」タブの【管理部門】【コンサル】の12のコマンドを解説します。契約書のリスク確認、規約の下書き、ヘルプデスクのFAQ、障害報告書、業界・競合の調査、経営会議資料、論点と仮説、提案書のストーリー、SWOT・3C、反論の壁打ち、ヒアリングの整理、資料レビュー。
+- [「ビジネス業務」タブ⑤：契約書のひな型編（業務委託・NDA・出演・著作権・生成AI条項）](https://aipromptbar.liquid-block.com/blog/presets-biz-contracts.html): 「ビジネス業務」タブの【契約書】の8つのコマンドを解説します。映像制作の業務委託、秘密保持契約（NDA）、出演契約、著作権と二次利用、生成AIの利用条項、ロケ地の使用許諾、フリーランスへの発注書、相手の案との比較。
+- [「経営」タブ：経営者のための15のコマンド（壁打ち・意思決定・中期計画・想定問答）](https://aipromptbar.liquid-block.com/blog/presets-exec.html): 「経営」タブの15のコマンドを解説します。経営の壁打ち、選択肢の比較、事前検死、中期計画、リスクの洗い出し、新規事業の種、数字が動いた理由、想定問答、銀行・投資家への説明、社員へのメッセージ、言いにくい知らせ、理念づくり、仕事の棚卸し、悩みのヒントになる本・YouTube。
+- [「プリプロ」タブ：映像制作の準備を進める13のコマンド（企画・プロット・台本・カット表）](https://aipromptbar.liquid-block.com/blog/presets-prepro.html): 「🎬 プリプロ」タブの13のコマンドを解説します。企画3案、ヒアリングシート、プロット、秒数配分、ナレーション台本、カット表、ショットリスト、ロケハン、キャスティング、制作スケジュール、当日のタイムテーブル、見積もりの項目、カット別の生成AIプロンプト。
+- [「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド](https://aipromptbar.liquid-block.com/blog/presets-dev.html): 「開発・Web／アプリ」タブの10のコマンドを解説します。汎用開発フレーム、要件定義とユーザーストーリー、DBスキーマと型定義、UIコンポーネント、APIとバリデーション、単体テスト、Next.js、React Native、ディレクトリ設計、OpenAPI。
+- [「素材・デザイン」タブ①：3Dアイコン・切り抜き素材・背景・パターン・ロゴ](https://aipromptbar.liquid-block.com/blog/presets-design-assets.html): 「素材・デザイン」タブの素材づくりの13のコマンドを解説します。粘土風・ガラス風の3Dアイコン、白背景の切り抜き素材、エフェクト、フラットイラスト、図解イラスト、Webの背景、パターン、展示台、ステッカー、ロゴ。
+- [「素材・デザイン」タブ②：ポスターとYouTubeサムネイル（文字の余白つき）](https://aipromptbar.liquid-block.com/blog/presets-design-posters-thumbnails.html): 「素材・デザイン」タブのポスター5種とサムネイル6種のコマンドを解説します。映画風、アート、音楽イベント、レトロ観光、商品広告のポスター。解説・レビュー・比較・Vlog・ゲーム・ミステリーのサムネイル。
+- [「T2I（画像）」タブ①：映画のような光・レンズ・構図の12のコマンド](https://aipromptbar.liquid-block.com/blog/presets-t2i-cinematic.html): 「T2I（画像）」タブの、映画的な演出・質感・構図のコマンドを解説します。シネマティックポートレート、横長レンズ、明暗の強い光、左右対称、前後ダブルピント、ミニチュア、レンブラント照明、ネオン、光の筋、大判フィルム、額縁構図、無人の背景。
+- [「T2I（画像）」タブ②：演者・演技・衣装・ストーリーの16のコマンド](https://aipromptbar.liquid-block.com/blog/presets-t2i-cast.html): 「T2I（画像）」タブの、人物を描くためのコマンドを解説します。主演俳優風、日本人モデル、ビジネスリーダー、シニア、ユース、まなざし・物憂げ・笑顔・緊張の演技、上質な衣装、着物、世界観と連動した人物、SF、レトロ、宇宙、宿命の対峙。
+- [「I2V Builder」タブ：静止画を動かす17のコマンド（カメラワーク・表情・環境）](https://aipromptbar.liquid-block.com/blog/presets-i2v.html): 「★ I2V Builder」タブの17のコマンドを解説します。基本のカメラワーク、ドリーズーム、被写体に固定したカメラ、浮遊する移動、急なズーム、高速パン、時間停止、周回、回転、垂直上昇、ローアングル、表情、歩行、シネマグラフ、会話、振り返り、開眼。
+- [「T2V」「V2V / Edit」タブ：文章から動画、動画の質感・スタイル変換の21のコマンド](https://aipromptbar.liquid-block.com/blog/presets-t2v-v2v.html): 「T2V（動画）」タブの12と、「V2V / Edit」タブの9のコマンドを解説します。FPVドローン、ドリーズーム、空撮、クレーンアップ、スローモーション、追走、振り返り、会話、表情の変化、雨の街の歩行、物語の導入、追走アクション。フィルムの質感、色の調整、白黒、アニメ調・3DCG調への変換。
+
+## Blog (Japanese): プロンプトの書き方
+
+- [プロンプトの基本の型：役割・目的・背景・出力形式を決める](https://aipromptbar.liquid-block.com/blog/prompt-basics-template.html): AIに伝わるプロンプトは、4つの要素でほぼ決まります。役割・目的・背景・出力形式の書き方を、そのまま使える例で解説します。
+- [動画生成AIへの指示の書き方：カメラワーク・ライティング・レンズ](https://aipromptbar.liquid-block.com/blog/video-ai-prompt-camera-lighting.html): 動画生成AIに思い通りの映像を作らせるには、被写体だけでなく、カメラの動き・光・レンズを言葉にすることが大切です。要素ごとの言い方と、書き方の順番を解説します。
+- [画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方](https://aipromptbar.liquid-block.com/blog/image-ai-prompt-tips.html): 画像生成AIで狙った絵を出すための、プロンプトの組み立て方。主題、構図、光、スタイル、避けたいものを、順番に整理して書く方法を紹介します。
+- [よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす](https://aipromptbar.liquid-block.com/blog/organize-your-prompts.html): プロンプトを、メモ帳に貯めて終わりにしていませんか。目的別の分け方、名前の付け方、空欄のあるテンプレートにする方法など、使い続けられる整理のコツを紹介します。
+- [複数のAIを使い分ける：同じプロンプトで比べる方法](https://aipromptbar.liquid-block.com/blog/compare-ai-with-same-prompt.html): ChatGPT・Claude・Geminiなど、複数のAIを使う時代。どれが良いか迷うより、同じプロンプトを入れて比べるのが近道です。比べ方の手順と、見る観点を紹介します。
