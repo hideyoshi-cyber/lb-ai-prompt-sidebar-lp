@@ -595,3 +595,28 @@ html.latin .cat-tabs button, html.latin .cat-list b { font-family: var(--f-latin
   .video-btn svg { width: 28px; height: 28px; }
   .video-cap b { display: block; margin: 0; }
 }
+
+/* ---------- ヘッダーのメニュー：ノートPCの幅でも折り返さないように、狭くなるほど詰めて、優先度の低いものから隠す ---------- */
+.nav a { white-space: nowrap; }
+@media (max-width: 1320px) {
+  .bar { gap: 20px; }
+  .nav { gap: 0; }
+  .nav > a { padding: 8px 10px; letter-spacing: .02em; }
+}
+@media (max-width: 1200px) {
+  .nav > a[href$="#privacy"], .nav > a[href$="#faq"] { display: none; }
+  .btn-sm small { display: none; }
+}
+@media (max-width: 1080px) {
+  .nav > a[href$="#features"], .nav > a[href$="#commands"] { display: none; }
+}
+
+/* ★評価のカード：何段階かが分かるように、★★★★☆ と数で見せる */
+.glyph-stars { font-size: 34px !important; letter-spacing: .04em !important; color: #f5a524 !important; font-family: var(--f-latin) !important; }
+.glyph-stars span { color: #e2d9e6; }
+
+/* 英字のページはメニューの語が長いので、広い画面でも少し詰める */
+html.latin .nav > a { padding: 8px 10px; }
+@media (max-width: 1520px) {
+  html.latin .nav > a[href$="#privacy"], html.latin .nav > a[href$="#faq"] { display: none; }
+}
