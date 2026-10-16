@@ -413,3 +413,17 @@ html:lang(en) .nb.grad, html:lang(en) .why-answer .nb { white-space: nowrap; }
   .qa details p { padding-right: 0; }
   .foot-grid { grid-template-columns: 1fr; }
 }
+
+/* 狭い画面のヘッダー：ロゴの名前・言語の切り替え・ボタンが詰まらないように */
+.brand-name, .nav a.lang-switch, .btn-sm { white-space: nowrap; }
+.nav a.lang-switch { flex: none; }
+@media (max-width: 640px) {
+  .bar { gap: 10px; }
+  .brand img { width: 30px; height: 30px; }
+  .brand-name { font-size: 14px; }
+  .nav a.lang-switch { height: 30px; padding: 0 10px; margin-left: 0; }
+  .btn-sm { padding: 0 12px; font-size: 13px; }
+}
+@media (max-width: 360px) {
+  .brand-name span { display: none; }
+}

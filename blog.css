@@ -82,3 +82,14 @@
 .blog-sec { margin-bottom: clamp(48px, 7vw, 80px); scroll-margin-top: 90px; }
 .legal .blog-sec-title { margin: 0 0 8px; padding-left: 18px; }
 .blog-sec .blog-lead { margin: 0 0 28px; padding-left: 18px; }
+
+/* ヒーロー画像（記事の一番上）と、一覧のサムネイル */
+.post-hero:has(+ .article .post-cover) { padding-bottom: clamp(90px, 12vw, 150px); }
+.article .post-cover { margin: calc(clamp(90px, 12vw, 150px) * -1 + 8px) 0 40px; }
+.article .post-cover img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 22px; box-shadow: 0 0 0 1px rgba(255, 255, 255, .08), 0 40px 80px -40px rgba(225, 29, 72, .55), 0 24px 50px -30px rgba(13, 9, 18, .6); }
+.post-card .post-thumb { display: block; width: calc(100% + 56px); max-width: none; margin: -30px -28px 10px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 22px 22px 0 0; }
+@media (max-width: 640px) {
+  .article .post-cover { margin-bottom: 28px; }
+  .article .post-cover img { border-radius: 16px; }
+}
+.article .post-cover { position: relative; z-index: 2; }
