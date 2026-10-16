@@ -620,3 +620,15 @@ html.latin .nav > a { padding: 8px 10px; }
 @media (max-width: 1520px) {
   html.latin .nav > a[href$="#privacy"], html.latin .nav > a[href$="#faq"] { display: none; }
 }
+
+/* ---------- まもなく追加（v1.0.2） ---------- */
+.upcoming { background: var(--paper); }
+.up-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: clamp(36px, 5vw, 56px); }
+.up-card { position: relative; padding: 28px 24px 26px; border-radius: var(--r); background: #fff; box-shadow: 0 0 0 1px var(--line); border-top: 3px dashed rgba(225, 29, 72, .35); }
+.up-badge { position: absolute; top: 16px; right: 16px; padding: 3px 10px; border-radius: 999px; font-size: 11.5px; font-weight: 700; letter-spacing: .06em; color: var(--rose-deep); background: var(--paper-2); }
+.up-ico { font-size: 34px; line-height: 1; margin-bottom: 14px; }
+.up-card h3 { font-weight: 900; font-size: 1.15rem; line-height: 1.4; }
+.up-card p:last-child { margin-top: 10px; font-size: 14px; line-height: 1.85; color: var(--muted); }
+html.latin .up-card h3 { font-family: var(--f-latin); }
+@media (max-width: 1080px) { .up-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .up-grid { grid-template-columns: minmax(0, 1fr); } }
