@@ -113,6 +113,25 @@
  ]
 }
 </script>
+<script type="application/ld+json" id="video-ld">
+{
+ "@context": "https://schema.org",
+ "@type": "VideoObject",
+ "name": "LB AI Prompt side bar の使い方｜プロンプトを選んで、整えて、ワンクリックでAIへ",
+ "description": "ChatGPT・Claude・Gemini、動画や画像のAIの横に置く Chrome のサイドパネル。目的別のAIコマンドから選んで、選択肢と空欄で整え、ワンクリックでAIの入力欄へ。",
+ "thumbnailUrl": "https://aipromptbar.liquid-block.com/img/video-howto-ja.webp",
+ "uploadDate": "2026-10-16",
+ "duration": "PT1M50S",
+ "inLanguage": "ja",
+ "embedUrl": "https://www.youtube-nocookie.com/embed/pe7AkGzRtdg",
+ "contentUrl": "https://youtu.be/pe7AkGzRtdg",
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ }
+}
+</script>
 </head>
 <body>
 
@@ -130,6 +149,7 @@
     <nav class="nav" aria-label="メニュー">
       <a href="#how">使い方</a>
       <a href="#features">機能</a>
+      <a href="#commands">コマンド</a>
       <a href="#privacy">プライバシー</a>
       <a href="#pricing">料金</a>
       <a href="#faq">FAQ</a>
@@ -235,6 +255,15 @@
     <h2 class="rv"><span class="nb">選んで、</span><span class="nb">整えて、</span><span class="nb"><span class="bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>で入れる。</span></h2>
     <p class="section-lead rv">やることは、3つだけ。コマンドを選ぶ感覚で、プロンプトが仕上がります。</p>
 
+    <!-- 使い方動画：押したときだけ YouTube を読み込む（それまでは YouTube に何も送らない） -->
+    <div class="video rv">
+      <button type="button" class="video-play" data-yt="pe7AkGzRtdg" aria-label="使い方の動画を再生する（1分50秒・YouTube）">
+        <img src="img/video-howto-ja.webp" width="1280" height="720" loading="lazy" alt="使い方の動画：選んで、整えて、AIへ。">
+        <span class="video-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+      </button>
+      <p class="video-cap"><b>使い方を、動画で。</b>1分50秒・音声と字幕つき（YouTube）</p>
+    </div>
+
     <div class="step rv">
       <div class="step-copy">
         <span class="step-no">01</span>
@@ -279,6 +308,65 @@
         </div>
         <span class="insert-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 比べる ============ -->
+<section class="section compare" id="compare">
+  <div class="wrap">
+    <p class="eyebrow rv">ほかの方法と比べる</p>
+    <h2 class="rv"><span class="nb">プロンプトは、</span><span class="nb">持っているだけでは</span><span class="nb">使えない。</span></h2>
+    <p class="section-lead rv">メモ帳に集めても、AIごとの保存機能に入れても、使うたびの手間は残ります。違いは、AIに入れるまでの速さと、どのAIでも同じに使えることです。</p>
+    <div class="cmp-scroll rv">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr-only">比べる点</span></th>
+            <th scope="col">メモ帳から<br>切り貼り</th>
+            <th scope="col">AIごとの<br>保存機能<small>GPTs・Gem など</small></th>
+            <th scope="col" class="cmp-us">LB AI Prompt<br>side bar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">AIに入れるまで</th>
+            <td data-label="メモ帳から切り貼り"><i class="mk mk-x" aria-hidden="true"></i>開く・探す・コピー・貼る</td>
+            <td data-label="AIごとの保存機能"><i class="mk mk-t" aria-hidden="true"></i>そのAIを開いて、選ぶ</td>
+            <td data-label="LB AI Prompt side bar" class="cmp-us"><i class="mk mk-o" aria-hidden="true"></i>選んで、ワンクリック</td>
+          </tr>
+          <tr>
+            <th scope="row">使えるAI</th>
+            <td data-label="メモ帳から切り貼り"><i class="mk mk-t" aria-hidden="true"></i>どこでも（毎回、貼る）</td>
+            <td data-label="AIごとの保存機能"><i class="mk mk-x" aria-hidden="true"></i>そのAIの中だけ</td>
+            <td data-label="LB AI Prompt side bar" class="cmp-us"><i class="mk mk-o" aria-hidden="true"></i>22のAIで、同じ操作</td>
+          </tr>
+          <tr>
+            <th scope="row">画像・動画AI</th>
+            <td data-label="メモ帳から切り貼り"><i class="mk mk-t" aria-hidden="true"></i>貼るだけ</td>
+            <td data-label="AIごとの保存機能"><i class="mk mk-x" aria-hidden="true"></i>なし</td>
+            <td data-label="LB AI Prompt side bar" class="cmp-us"><i class="mk mk-o" aria-hidden="true"></i>Kling・Runway などに直接</td>
+          </tr>
+          <tr>
+            <th scope="row">中身の書き換え</th>
+            <td data-label="メモ帳から切り貼り"><i class="mk mk-x" aria-hidden="true"></i>毎回、手で直す</td>
+            <td data-label="AIごとの保存機能"><i class="mk mk-t" aria-hidden="true"></i>会話で直す</td>
+            <td data-label="LB AI Prompt side bar" class="cmp-us"><i class="mk mk-o" aria-hidden="true"></i>選択肢と空欄で整える</td>
+          </tr>
+          <tr>
+            <th scope="row">すぐ使えるプロンプト</th>
+            <td data-label="メモ帳から切り貼り"><i class="mk mk-x" aria-hidden="true"></i>自分で集める</td>
+            <td data-label="AIごとの保存機能"><i class="mk mk-t" aria-hidden="true"></i>公開されたものを探す</td>
+            <td data-label="LB AI Prompt side bar" class="cmp-us"><i class="mk mk-o" aria-hidden="true"></i>目的別に200件以上</td>
+          </tr>
+          <tr>
+            <th scope="row">書いた内容</th>
+            <td data-label="メモ帳から切り貼り"><i class="mk mk-o" aria-hidden="true"></i>手元のメモ</td>
+            <td data-label="AIごとの保存機能"><i class="mk mk-t" aria-hidden="true"></i>そのAIの会社に保存</td>
+            <td data-label="LB AI Prompt side bar" class="cmp-us"><i class="mk mk-o" aria-hidden="true"></i>弊社には見えない</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -349,6 +437,358 @@
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<!-- ============ 映像クリエイターへ ============ -->
+<section class="section creators" id="creators">
+  <div class="creators-bg" aria-hidden="true"></div>
+  <div class="wrap creators-grid">
+    <div class="creators-copy">
+      <p class="eyebrow rv">映像クリエイターへ</p>
+      <h2 class="rv"><span class="nb">日本語で選ぶと、</span><span class="nb grad">英語の指示書に。</span></h2>
+      <p class="section-lead rv">カメラワーク、光、レンズ、動きの速さ。動画AIへの指示を、日本語の選択肢から組み立てます。仕上がった英語のプロンプトを、Kling・Runway・Luma・Hailuo・Midjourney の入力欄へそのまま。</p>
+      <ul class="creators-points rv">
+        <li><b>画像から動画（I2V）</b>カメラの動き・アングル・レンズ・光を選ぶ</li>
+        <li><b>文章から画像・動画</b>映画の技法の名前で、画づくりを指定</li>
+        <li><b>動画の編集（V2V）</b>フィルムの質感、色調、スタイルの変換</li>
+        <li><b>プリプロ</b>企画の3案、ヒアリングシート、スケジュールを Excel に</li>
+      </ul>
+      <p class="creators-more rv"><a href="blog/presets-i2v.html">I2V のコマンドの解説を読む</a></p>
+    </div>
+    <div class="builder rv" aria-label="I2V のコマンドで、選択肢から英語のプロンプトができる例">
+      <div class="builder-head"><span class="builder-tab">★ I2V Builder</span><span class="builder-title">【カメラワーク】基本カメラムーブ</span></div>
+      <dl class="builder-rows">
+        <div><dt>アングル</dt><dd>ローアングル（あおり）</dd></div>
+        <div><dt>カメラ動作</dt><dd>ドリーズーム</dd></div>
+        <div><dt>スピード</dt><dd>ゆっくり滑らか</dd></div>
+        <div><dt>レンズ</dt><dd>アナモフィック</dd></div>
+        <div><dt>ライティング</dt><dd>ボリュメトリック光</dd></div>
+      </dl>
+      <div class="builder-out" lang="en"><span class="builder-arrow" aria-hidden="true">↓</span>dramatic low-angle shot looking up, heroic posture, <b>dolly zoom</b>, the lone rider, slow and smooth motion, shot on <b>anamorphic lens</b>, 2.39:1 widescreen, <b>volumetric lighting</b>, atmospheric god rays…</div>
+      <div class="builder-send"><span class="builder-bolt"><svg class="ic" aria-hidden="true"><use href="#bolt"/></svg></span><span>Kling・Runway・Luma に挿入</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ コマンドの一覧 ============ -->
+<section class="section catalog-sec" id="commands">
+  <div class="wrap">
+    <p class="eyebrow rv">コマンドの一覧</p>
+    <h2 class="rv"><span class="nb">選ぶだけの</span><span class="nb">AIコマンドが、</span><span class="nb">200件以上。</span></h2>
+    <p class="section-lead rv">タブを押すと、そのタブのコマンドが並びます。「無料版でも」と付いたものは、無料版でずっと使えます。</p>
+    <!-- catalog:start -->
+    <div class="catalog rv" data-catalog>
+<div class="cat-tabs" role="tablist" aria-label="コマンドのタブ">
+<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">日常<small>33</small></button>
+<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">万能・テキスト<small>15</small></button>
+<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">ビジネス業務<small>50</small></button>
+<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">経営<small>15</small></button>
+<button type="button" role="tab" id="cat-t-prepro" aria-controls="cat-prepro" aria-selected="false" tabindex="-1">🎬 プリプロ<small>13</small></button>
+<button type="button" role="tab" id="cat-t-gem" aria-controls="cat-gem" aria-selected="false" tabindex="-1">Gem / NotebookLM<small>8</small></button>
+<button type="button" role="tab" id="cat-t-dev" aria-controls="cat-dev" aria-selected="false" tabindex="-1">開発・Web/アプリ<small>10</small></button>
+<button type="button" role="tab" id="cat-t-graphic" aria-controls="cat-graphic" aria-selected="false" tabindex="-1">素材・デザイン<small>24</small></button>
+<button type="button" role="tab" id="cat-t-t2i" aria-controls="cat-t2i" aria-selected="false" tabindex="-1">T2I (画像)<small>28</small></button>
+<button type="button" role="tab" id="cat-t-i2v" aria-controls="cat-i2v" aria-selected="false" tabindex="-1">★ I2V Builder<small>17</small></button>
+<button type="button" role="tab" id="cat-t-t2v" aria-controls="cat-t2v" aria-selected="false" tabindex="-1">T2V (動画)<small>12</small></button>
+<button type="button" role="tab" id="cat-t-v2v" aria-controls="cat-v2v" aria-selected="false" tabindex="-1">V2V / Edit<small>9</small></button>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-daily" aria-labelledby="cat-t-daily">
+<ul class="cat-list">
+<li><span class="cat-tag">トラブル</span><b>困りごと相談（何でも）</b><em class="cat-free">無料版でも</em><span class="cat-desc">どこに相談すればいいかわからない困りごとを、思いつくまま書くだけで整理し、やることと相談先を教えてもらいます。</span></li>
+<li><span class="cat-tag">トラブル</span><b>パソコン・スマホ・家電の不調</b><span class="cat-desc">動かない・遅い・つながらないなどの不調を、かんたんな順に一つずつ確かめていきます。</span></li>
+<li><span class="cat-tag">トラブル</span><b>これって詐欺？（怪しいメール・SMS・電話）</b><em class="cat-free">無料版でも</em><span class="cat-desc">届いたメール・SMS・電話の内容を貼り付けると、詐欺の可能性と、やるべきことを教えてもらいます。</span></li>
+<li><span class="cat-tag">トラブル</span><b>買い物・契約・解約のトラブル</b><span class="cat-desc">届かない・返品できない・解約できない・思っていた契約と違う、などのトラブルの対処と、問い合わせの文面を作ります。</span></li>
+<li><span class="cat-tag">トラブル</span><b>体調が気になるとき（受診の目安）</b><span class="cat-desc">気になる症状から、急いだほうがいいサインと、何科にかかればいいかの目安を教えてもらいます。診断ではありません。</span></li>
+<li><span class="cat-tag">トラブル</span><b>ご近所・人間関係の悩み</b><span class="cat-desc">ご近所・友人・家族・職場などの人間関係の悩みを、気持ちと事実に分けて整理し、伝え方を考えます。</span></li>
+<li><span class="cat-tag">文面</span><b>謝る・断る・お願いする文面</b><span class="cat-desc">言いにくいことを、相手に失礼なく伝える文面を3パターン作ります。</span></li>
+<li><span class="cat-tag">知りたい</span><b>わかりやすく教えて（〇〇とは？）</b><em class="cat-free">無料版でも</em><span class="cat-desc">気になった言葉や仕組みを、たとえ話つきでわかりやすく説明してもらいます。</span></li>
+<li><span class="cat-tag">知りたい</span><b>役所・お金の手続きを調べる</b><span class="cat-desc">引っ越し・保険・年金・税金・各種の届け出など、手続きの流れと必要なものを整理します。</span></li>
+<li><span class="cat-tag">知りたい</span><b>どれを買うか比べる</b><span class="cat-desc">家電・日用品・サービスなどを買う前に、選ぶポイントと候補を比べます。</span></li>
+<li><span class="cat-tag">知りたい</span><b>ニュースをわかりやすく</b><span class="cat-desc">ニュース記事を貼り付けると、要点・背景・自分への影響をわかりやすくまとめます。</span></li>
+<li><span class="cat-tag">暮らし</span><b>冷蔵庫の残りもので献立</b><span class="cat-desc">ある材料だけで作れる献立を、作り方つきで考えてもらいます。</span></li>
+<li><span class="cat-tag">暮らし</span><b>旅行・おでかけの計画</b><span class="cat-desc">行き先・日数・予算から、無理のないおでかけの計画を立てます。</span></li>
+<li><span class="cat-tag">暮らし</span><b>掃除・洗濯・シミ落とし</b><span class="cat-desc">汚れやシミの落とし方を、素材を傷めない安全な順に教えてもらいます。</span></li>
+<li><span class="cat-tag">災害</span><b>わが家の防災チェック（備え）</b><span class="cat-desc">住まいと家族に合わせて、備蓄・避難先・連絡方法をチェックリストにします。</span></li>
+<li><span class="cat-tag">災害</span><b>いま災害が起きたら（取るべき行動の確認）</b><span class="cat-desc">地震・大雨・台風・停電などのときに、命を守る行動と、情報の集め方を確認します。</span></li>
+<li><span class="cat-tag">災害</span><b>被災したあとの手続き（り災証明・保険・支援）</b><span class="cat-desc">被災したあとにやることの順番と、り災証明書・保険・公的な支援の申請の流れを整理します。</span></li>
+<li><span class="cat-tag">占い</span><b>今日の運勢（星座で気軽に）</b><span class="cat-desc">星座から、今日を前向きに過ごすためのひとこと占いをします。</span></li>
+<li><span class="cat-tag">占い</span><b>タロットで気持ちを整理する</b><span class="cat-desc">悩みに合わせてタロットカードを引き、気持ちを整理するヒントにします。</span></li>
+<li><span class="cat-tag">占い</span><b>誕生日の数字で占う（数秘術）</b><span class="cat-desc">生年月日から「運命数」を計算し、性格の傾向や今年のテーマを占います。</span></li>
+<li><span class="cat-tag">占い</span><b>相性占い（星座・数秘術）</b><span class="cat-desc">ふたりの星座や誕生日から、相性と、仲良くするコツを占います。</span></li>
+<li><span class="cat-tag">占い</span><b>手相占い（手のひらの写真で）</b><span class="cat-desc">手のひらの写真を「📷 参照画像」に貼り付けると、手相の線から性格の傾向や運勢を占います。</span></li>
+<li><span class="cat-tag">勉強</span><b>AI先生にわからないところを教わる</b><em class="cat-free">無料版でも</em><span class="cat-desc">わからないところを、AIが質問しながら一歩ずつ教えてくれます。答えだけを教わらず、自分で解けるようになるための使い方です。</span></li>
+<li><span class="cat-tag">勉強</span><b>試験・資格の勉強計画</b><span class="cat-desc">目標の試験日から逆算して、1日ごとの勉強計画を立てます。</span></li>
+<li><span class="cat-tag">勉強</span><b>確認テストを作る（理解チェック）</b><span class="cat-desc">教科書やノートの内容を貼り付けると、理解できているか確かめるテストを作ります。</span></li>
+<li><span class="cat-tag">勉強</span><b>覚え方を考えてもらう（暗記のコツ）</b><span class="cat-desc">覚えにくい言葉・年号・単語などの、覚え方を考えてもらいます。</span></li>
+<li><span class="cat-tag">勉強</span><b>英会話の練習相手</b><span class="cat-desc">AIと英語で会話の練習をします。レベルに合わせて、間違いをやさしく直してもらえます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>無理のないダイエット計画（カロリー・習慣）</b><span class="cat-desc">今の体型・生活リズム・目標から、リバウンドしにくい1日のカロリー目安と行動目標を作ります。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>食べたものからカロリー・PFC（栄養）計算</b><span class="cat-desc">食べたもの（または📷食事の写真）から、ざっくりとしたカロリー・栄養バランスと「次の食事で調整するコツ」を出してもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>冷蔵庫の食材で高タンパク・低脂質レシピ</b><span class="cat-desc">家にある食材やコンビニ食材で、満足感があって太りにくい献立を考えてもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>外食・コンビニでの太りにくいメニュー選び</b><span class="cat-desc">コンビニ・外食・飲み会に行くとき、何を選べば太りにくいか組み合わせを提案してもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>自宅でできる運動・宅トレメニュー</b><span class="cat-desc">器具なし・部屋の中で、体力や使える時間に合った運動メニューを組んでもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>停滞期・食べすぎた翌日のリセット相談</b><span class="cat-desc">食べすぎた翌日や、体重が減らない停滞期に、焦らず立て直すための行動プランとメンタルケア。</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-daily-trouble.html">「日常」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-text" aria-labelledby="cat-t-text" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">万能構造</span><b>3大AI公式推奨・万能テンプレート</b><em class="cat-free">無料版でも</em><span class="cat-desc">Gemini・OpenAI・Claude公式推奨要素を統合した、最も精度高く指示を通す基本形</span></li>
+<li><span class="cat-tag">Claude構造</span><b>Anthropic公式推奨・XMLタグテンプレート</b><span class="cat-desc">Claudeの認識精度を最大化する公式推奨のXMLタグ（instructions / context / input / output_format）構造</span></li>
+<li><span class="cat-tag">思考整理</span><b>要件定義・逆質問ヒアリング（Gemini流）</b><em class="cat-free">無料版でも</em><span class="cat-desc">アイデアの断片から、AIが逆質問を5つ投げかけて仕様や要件を深掘り整理</span></li>
+<li><span class="cat-tag">文章推敲</span><b>ビジネスメール・文章リライト（OpenAI流）</b><em class="cat-free">無料版でも</em><span class="cat-desc">冗長な文章や言いにくい連絡を、プロフェッショナルかつ簡潔なメールに最適化</span></li>
+<li><span class="cat-tag">議事録</span><b>決定事項＆ToDo抽出（Claude流XML構造）</b><em class="cat-free">無料版でも</em><span class="cat-desc">議事録やチャットログから決定事項と担当・期限付きToDoをJSON/表で精密抽出</span></li>
+<li><span class="cat-tag">意思決定</span><b>多角的壁打ち・Pros/Cons＆リスク分析</b><span class="cat-desc">施策や方針の決定時に、メリット・デメリット・第3の代替案を客観的に検証</span></li>
+<li><span class="cat-tag">要約</span><b>エグゼクティブサマリー（長文資料・PDF）</b><span class="cat-desc">忙しい意思決定者向けに、背景・課題・核心・アクションを1分で把握できる構成に凝縮</span></li>
+<li><span class="cat-tag">トラブル対応</span><b>誠実なお詫び＆リカバリー提案文</b><span class="cat-desc">納期遅延・不具合等が発生した際、真摯なお詫びと原因・再発防止策を整理した文面</span></li>
+<li><span class="cat-tag">英語ビジネス</span><b>フォーマル英文メール作成・和文英訳</b><span class="cat-desc">日本語のニュアンスを汲み取り、ネイティブが使う洗練された英語ビジネスメールを作成</span></li>
+<li><span class="cat-tag">表計算</span><b>関数・GAS/マクロ自動作成</b><span class="cat-desc">やりたいことから最適なExcel関数・Googleスプレッドシート関数またはスクリプトを生成</span></li>
+<li><span class="cat-tag">企画発想</span><b>オズボーンのチェックリスト（10案展開）</b><span class="cat-desc">既存の製品・業務・企画の行き詰まりを打破する9つの視点でアイデア展開</span></li>
+<li><span class="cat-tag">コードレビュー</span><b>論理検証・リファクタリング（推論型）</b><span class="cat-desc">バグ発見、セキュリティ、パフォーマンス改善をステップバイステップで論理的にレビュー</span></li>
+<li><span class="cat-tag">開発マスター</span><b>全スタック対応・汎用開発フレーム</b><span class="cat-desc">技術スタック・設計原則・型安全・エラー規約を固定し高品質コードを生成</span></li>
+<li><span class="cat-tag">ストーリー設計</span><b>世界観・時代・キャラクター段階構築マスター</b><span class="cat-desc">世界観・時代・人種・世代・ファッション・葛藤を段階選択し、映画企画書・シノプシス・映像プロンプトを一気通貫で自動生成</span></li>
+<li><span class="cat-tag">キャラクター設定書</span><b>人種・世代・衣装・生い立ちシート</b><span class="cat-desc">演者の外見、人種的ルーツ、ファッションの年代・素材感、行動原理、代表的な台詞を完全固定する詳細プロファイル</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-text-basics.html">「万能・テキスト」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-biz" aria-labelledby="cat-t-biz" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">営業</span><b>営業メール（初回・フォロー・掘り起こし）</b><em class="cat-free">無料版でも</em><span class="cat-desc">相手の状況に合わせた営業メールを作ります。件名案も出ます。</span></li>
+<li><span class="cat-tag">営業</span><b>商談後のお礼メールを商談メモから作る</b><span class="cat-desc">商談メモを貼るだけで、要点と次のアクションを入れたお礼メールを作ります。</span></li>
+<li><span class="cat-tag">営業</span><b>商談前の企業リサーチと課題の仮説</b><span class="cat-desc">公開情報をもとに、相手企業の要点と「困っていそうなこと」の仮説を整理します。</span></li>
+<li><span class="cat-tag">営業</span><b>提案書の骨子（章立て）を作る</b><span class="cat-desc">提案先の課題と自社の提案内容から、提案書の章立てと各ページで言うことを作ります。</span></li>
+<li><span class="cat-tag">営業</span><b>商談ロールプレイ（AIが顧客役）</b><span class="cat-desc">AIに顧客役をやってもらい、商談の練習をします。終わったら「終了」と送ると、良かった点と改善点を教えてくれます。</span></li>
+<li><span class="cat-tag">営業</span><b>想定質問と切り返し方を準備する</b><span class="cat-desc">商談で出そうな質問・反論と、その答え方を事前に用意します。</span></li>
+<li><span class="cat-tag">総務</span><b>全社向けの通達・案内文</b><span class="cat-desc">制度変更・ルール・イベントなどの社内案内文を作ります。</span></li>
+<li><span class="cat-tag">総務</span><b>社員からの問い合わせFAQを作る</b><span class="cat-desc">社内ルールと過去の問い合わせから、よくある質問と回答を作ります。</span></li>
+<li><span class="cat-tag">総務</span><b>社内規程・マニュアルの改訂案</b><span class="cat-desc">今の規程と改訂の方針から、改訂案と新旧対照表を作ります。</span></li>
+<li><span class="cat-tag">総務</span><b>会議メモから議事録を作る</b><em class="cat-free">無料版でも</em><span class="cat-desc">会議のメモや文字起こしから、決定事項とToDoが分かる議事録を作ります。</span></li>
+<li><span class="cat-tag">総務</span><b>社内イベント・研修の企画案</b><span class="cat-desc">目的・人数・予算から、社内イベントや研修の企画案を複数出します。</span></li>
+<li><span class="cat-tag">総務</span><b>手続きのチェックリストを作る</b><span class="cat-desc">入社・退社・オフィス移転などの手続きを、漏れのないチェックリストにします。</span></li>
+<li><span class="cat-tag">経理</span><b>取引内容から仕訳・勘定科目を提案</b><span class="cat-desc">取引の内容から、仕訳案と勘定科目を理由つきで提案します。</span></li>
+<li><span class="cat-tag">経理</span><b>予算と実績の差の理由とコメント</b><span class="cat-desc">月次の数値から、予算・前年との差が大きい項目とその理由の仮説、報告用コメントを作ります。</span></li>
+<li><span class="cat-tag">経理</span><b>経営陣向けの月次サマリー</b><span class="cat-desc">売上・利益などの数値から、経営陣が1分で読める要約を作ります。</span></li>
+<li><span class="cat-tag">経理</span><b>資金繰りの見通し（3つのシナリオ）</b><span class="cat-desc">現預金・入出金の予定から、楽観・標準・悲観の3つのシナリオで資金繰りの見通しを作ります。</span></li>
+<li><span class="cat-tag">経理</span><b>経費精算が規程に合っているかチェック</b><span class="cat-desc">経費申請の内容を社内規程と照らし合わせて、問題がありそうな点を指摘します。</span></li>
+<li><span class="cat-tag">経理</span><b>経費精算ルールの社員向け案内</b><span class="cat-desc">経費規程を、社員が迷わず使えるやさしい案内文とFAQにします。</span></li>
+<li><span class="cat-tag">人事</span><b>求人票・求人広告を作る</b><span class="cat-desc">仕事内容・条件・求める人物像から、応募したくなる求人票を作ります。</span></li>
+<li><span class="cat-tag">人事</span><b>面接の質問と評価シート</b><span class="cat-desc">ポジションの要件から、面接の質問と評価の基準をそろえます。面接官ごとのブレを減らせます。</span></li>
+<li><span class="cat-tag">人事</span><b>人事評価のコメントを書く</b><span class="cat-desc">事実（成果・行動）をもとに、納得感のある評価コメントを作ります。</span></li>
+<li><span class="cat-tag">人事</span><b>選考結果の連絡メール</b><span class="cat-desc">書類通過・面接日程・不採用・内定などの連絡メールを作ります。</span></li>
+<li><span class="cat-tag">人事</span><b>研修・オンボーディング計画</b><span class="cat-desc">新人研修やOJTなどの計画を、ゴールから逆算して作ります。</span></li>
+<li><span class="cat-tag">人事</span><b>人事・労務の社内FAQ</b><span class="cat-desc">就業規則や制度から、社員がよく聞く人事・労務の質問と回答を作ります。</span></li>
+<li><span class="cat-tag">マネージャー</span><b>1on1の準備（話すテーマと質問）</b><em class="cat-free">無料版でも</em><span class="cat-desc">部下の状況から、1on1で話すテーマと質問を準備します。</span></li>
+<li><span class="cat-tag">マネージャー</span><b>言いにくいフィードバックを前向きな言い方に</b><span class="cat-desc">伝えたいことのメモを、相手が受け取りやすく、行動が変わる言い方に直します。</span></li>
+<li><span class="cat-tag">マネージャー</span><b>難しい面談のロールプレイ</b><span class="cat-desc">AIに部下役をやってもらい、難しい面談の練習をします。「終了」と送ると振り返りをもらえます。</span></li>
+<li><span class="cat-tag">マネージャー</span><b>部下の育成計画</b><span class="cat-desc">部下の今のスキルと目標から、期間ごとの育成計画を作ります。</span></li>
+<li><span class="cat-tag">マネージャー</span><b>定例会議のアジェンダ</b><span class="cat-desc">進み具合と課題から、時間内に終わる定例会議のアジェンダを作ります。</span></li>
+<li><span class="cat-tag">マネージャー</span><b>タスクの優先順位付け</b><span class="cat-desc">たまったタスクを、重要度と緊急度で整理し、任せるものを決めます。</span></li>
+<li><span class="cat-tag">管理部門</span><b>法務：契約書のリスク確認と修正案</b><em class="cat-free">無料版でも</em><span class="cat-desc">契約書のリスクのある条項を洗い出し、修正案を出します。</span></li>
+<li><span class="cat-tag">管理部門</span><b>法務：規約・ポリシーの下書き</b><span class="cat-desc">利用規約・プライバシーポリシー・社内規程などの下書きを作ります。</span></li>
+<li><span class="cat-tag">管理部門</span><b>情シス：ヘルプデスクのFAQ・回答文</b><span class="cat-desc">過去の問い合わせとマニュアルから、社内ヘルプデスクのFAQを作ります。</span></li>
+<li><span class="cat-tag">管理部門</span><b>情シス：障害報告書を作る</b><span class="cat-desc">対応メモやログから、経緯・原因・再発防止策が分かる障害報告書を作ります。</span></li>
+<li><span class="cat-tag">管理部門</span><b>経営企画：業界・競合の調査を整理</b><span class="cat-desc">集めた情報から、業界の動きと競合比較を整理します。</span></li>
+<li><span class="cat-tag">管理部門</span><b>経営企画：経営会議資料の骨子</b><span class="cat-desc">伝えたい結論とデータから、経営会議で通りやすい資料の構成を作ります。</span></li>
+<li><span class="cat-tag">コンサル</span><b>論点の整理と最初の仮説</b><span class="cat-desc">クライアントの状況から、論点を分解し、最初の仮説を立てます。</span></li>
+<li><span class="cat-tag">コンサル</span><b>提案書のストーリーとページ構成</b><span class="cat-desc">背景と仮説から、相手に合わせた提案書のストーリーと各ページの主張を作ります。</span></li>
+<li><span class="cat-tag">コンサル</span><b>フレームワークで分析する</b><span class="cat-desc">SWOT・3C・PESTなどのフレームワークで、集めた情報を整理します。</span></li>
+<li><span class="cat-tag">コンサル</span><b>仮説に反論させる（壁打ち）</b><span class="cat-desc">自分の仮説にAIが反論し、弱いところを洗い出します。提案前の確認に使います。</span></li>
+<li><span class="cat-tag">コンサル</span><b>ヒアリングメモを「現状・課題・原因」に整理</b><span class="cat-desc">バラバラなヒアリングメモを、構造化された整理表にします。</span></li>
+<li><span class="cat-tag">コンサル</span><b>資料をレビューして弱い点を指摘させる</b><span class="cat-desc">作った資料をAIにレビューさせ、論理の弱さや足りない情報を指摘させます。</span></li>
+<li><span class="cat-tag">契約書</span><b>映像制作の業務委託契約書</b><span class="cat-desc">映像制作を受注・発注するときの業務委託契約書のひな型を作ります。</span></li>
+<li><span class="cat-tag">契約書</span><b>秘密保持契約書（NDA）</b><span class="cat-desc">打ち合わせや企画の前に結ぶ秘密保持契約書のひな型を作ります。</span></li>
+<li><span class="cat-tag">契約書</span><b>出演契約書（肖像・音声の利用許諾）</b><span class="cat-desc">モデル・タレント・一般の出演者との出演契約書のひな型を作ります。使う媒体・期間・地域をはっきりさせ、後のトラブルを防ぎます。</span></li>
+<li><span class="cat-tag">契約書</span><b>著作権の帰属と二次利用の条項</b><span class="cat-desc">制作物の著作権を誰が持つか、二次利用（別媒体・期間延長・改変）をどう扱うかの条項を作ります。既存の契約書に追加して使えます。</span></li>
+<li><span class="cat-tag">契約書</span><b>生成AIの利用に関する条項</b><span class="cat-desc">制作で画像・動画・音声の生成AIを使う場合の条項を作ります。クライアントとの認識のずれや権利のトラブルを防ぎます。</span></li>
+<li><span class="cat-tag">契約書</span><b>ロケ地・施設の撮影使用許諾書</b><span class="cat-desc">店舗・施設・個人宅などで撮影させてもらうときの使用許諾書を作ります。</span></li>
+<li><span class="cat-tag">契約書</span><b>フリーランス・外注スタッフへの発注書</b><span class="cat-desc">カメラマン・編集者などフリーランスへの発注で、条件をはっきり書面にします。フリーランス法で示すことが求められる内容を確認できます。</span></li>
+<li><span class="cat-tag">契約書</span><b>相手方の契約書案と自社のひな型を比べる</b><span class="cat-desc">相手から届いた契約書案を自社のひな型と比べて、違い・不利な点・交渉の優先順位を整理します。</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-biz-sales.html">「ビジネス業務」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-exec" aria-labelledby="cat-t-exec" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">考える・決める</span><b>経営の壁打ち相手（AIが質問して論点を整理）</b><em class="cat-free">無料版でも</em><span class="cat-desc">まだまとまっていない悩みを、AIの質問に答えながら論点に分けます。</span></li>
+<li><span class="cat-tag">考える・決める</span><b>選択肢を並べて比べる（意思決定の補助）</b><em class="cat-free">無料版でも</em><span class="cat-desc">「やる／やらない」の二択にせず、複数の案を同じ物差しで比べます。</span></li>
+<li><span class="cat-tag">考える・決める</span><b>失敗から逆算する点検（事前検死）</b><em class="cat-free">無料版でも</em><span class="cat-desc">「この計画は1年後に失敗した」と仮定して、見落としや甘い前提を洗い出します。</span></li>
+<li><span class="cat-tag">考える・決める</span><b>中期計画（3か年）のたたき台</b><span class="cat-desc">ビジョンと今の数字から、3か年の計画の骨組みと節目の表を作ります。補助金の申請書類の下書きにも使えます。</span></li>
+<li><span class="cat-tag">考える・決める</span><b>経営リスクの洗い出しと対策</b><span class="cat-desc">会社を取り巻くリスクを、起こりやすさと影響の大きさで整理し、対策を考えます。</span></li>
+<li><span class="cat-tag">考える・決める</span><b>新しい事業の種さがし（強みから考える）</b><span class="cat-desc">自社の強みと今のお客様から、まだ手を付けていない顧客層・商品・売り方を探します。</span></li>
+<li><span class="cat-tag">数字</span><b>数字が動いた理由を推測して確かめ方を決める</b><span class="cat-desc">売上や利益が大きく動いたとき、理由の候補と、それを確かめる方法を整理します。</span></li>
+<li><span class="cat-tag">対外</span><b>厳しい質問への備え（想定問答）</b><em class="cat-free">無料版でも</em><span class="cat-desc">役員会・銀行・投資家・取引先などから来そうな厳しい質問と、回答案を準備します。</span></li>
+<li><span class="cat-tag">対外</span><b>銀行・投資家・取引先向けの説明文</b><span class="cat-desc">伝えたい数字や施策を、読み手に合わせて1枚の説明やメールにまとめます。</span></li>
+<li><span class="cat-tag">組織・人</span><b>社員へのメッセージ（朝礼・年頭・全体会議）</b><span class="cat-desc">方針や想いを、社員に伝わる平易な言葉の原稿にします。</span></li>
+<li><span class="cat-tag">組織・人</span><b>言いにくい知らせの伝え方（組織変更・方針転換）</b><span class="cat-desc">組織変更・方針転換・制度の見直しなど、受け止め方が分かれる知らせを、伝える順番と文面ごと考えます。</span></li>
+<li><span class="cat-tag">組織・人</span><b>理念・ビジョン・行動指針を言葉にする</b><span class="cat-desc">創業の想いや大事にしていることから、理念・ビジョン・行動指針の案をいくつか作ります。</span></li>
+<li><span class="cat-tag">自分の時間</span><b>仕事の棚卸しと任せ方（社長の時間を空ける）</b><span class="cat-desc">自分の仕事を「自分にしかできない／任せる／教えて任せる／やめる」に分け、任せ方を考えます。</span></li>
+<li><span class="cat-tag">自分の時間</span><b>悩みのヒントになる本を紹介してもらう</b><span class="cat-desc">思いつくままに書いた悩みから、考えるヒントになる本を紹介してもらいます。検索できるAI（Gemini・ChatGPT の検索・Perplexity など）で使うと確実です。</span></li>
+<li><span class="cat-tag">自分の時間</span><b>悩みのヒントになるYouTubeを探す</b><span class="cat-desc">思いつくままに書いた悩みから、ヒントになりそうなYouTube動画の探し方と候補を出してもらいます。すぐ開ける検索リンクも作ります。</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-exec.html">「経営」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-prepro" aria-labelledby="cat-t-prepro" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">企画</span><b>企画の方向性を3案出す</b><em class="cat-free">無料版でも</em><span class="cat-desc">目的・ターゲット・媒体から、方向性の違う企画案を3つ出します。企画会議のたたき台に。</span></li>
+<li><span class="cat-tag">企画</span><b>クライアントへのヒアリングシート</b><span class="cat-desc">最初の打ち合わせで聞き漏らしがないよう、映像の種類に合わせたヒアリング項目を作ります。</span></li>
+<li><span class="cat-tag">プロット</span><b>プロット（あらすじと構成）を作る</b><em class="cat-free">無料版でも</em><span class="cat-desc">企画の方向性から、映像のプロット（あらすじ・構成・見せ場）を作ります。</span></li>
+<li><span class="cat-tag">プロット</span><b>尺に合わせたシーン構成と秒数配分</b><span class="cat-desc">プロットを、尺に収まるシーン構成に分け、各シーンの秒数を割り振ります。</span></li>
+<li><span class="cat-tag">台本</span><b>ナレーション・セリフ台本（尺から文字数を逆算）</b><em class="cat-free">無料版でも</em><span class="cat-desc">尺から読める文字数を逆算し、ナレーションやセリフの台本を作ります。</span></li>
+<li><span class="cat-tag">絵コンテ</span><b>カット表（絵コンテの文字版）を作る</b><em class="cat-free">無料版でも</em><span class="cat-desc">構成から、カットごとの画面・カメラ・動きをまとめたカット表を作ります。絵コンテを描く前の設計図に。</span></li>
+<li><span class="cat-tag">撮影準備</span><b>ショットリストと撮影香盤表</b><span class="cat-desc">カット表から、撮影順に並べたショットリストと、場所・人ごとの香盤表を作ります。</span></li>
+<li><span class="cat-tag">撮影準備</span><b>ロケハンのチェックリスト</b><span class="cat-desc">ロケ地の下見で確認すべきことを、撮影内容に合わせてチェックリストにします。</span></li>
+<li><span class="cat-tag">撮影準備</span><b>キャスティングの依頼書</b><span class="cat-desc">求める出演者像から、キャスティング会社・事務所への依頼書を作ります。</span></li>
+<li><span class="cat-tag">スケジュール</span><b>制作スケジュール（Excel書き出し用）</b><span class="cat-desc">納品日から逆算した制作スケジュールを作ります。返ってきた表は、このタブ上部の「📅 スケジュール作成ツール」に貼るとExcelに書き出せます。</span></li>
+<li><span class="cat-tag">スケジュール</span><b>撮影当日のタイムテーブル（Excel書き出し用）</b><span class="cat-desc">撮影当日の分刻みのタイムテーブルを作ります。表は「📅 スケジュール作成ツール」でExcelに書き出せます。</span></li>
+<li><span class="cat-tag">見積</span><b>概算見積もりの項目出し</b><span class="cat-desc">企画内容から、見積もりに入れるべき項目を漏れなく洗い出します（金額は自社の単価で入れてください）。</span></li>
+<li><span class="cat-tag">生成AI</span><b>プロットからカット別の画像・動画生成プロンプトを作る</b><span class="cat-desc">プロットやカット表から、カットごとの画像生成（T2I）と動画化（I2V）の英語プロンプトを作ります。I2V Builder やランチャーと組み合わせて使えます。</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-prepro.html">「プリプロ」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-gem" aria-labelledby="cat-t-gem" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">Gem</span><b>指示書の基本形（役割・目的・回答のしかた）</b><em class="cat-free">無料版でも</em><span class="cat-desc">Gemの編集画面の「指示」欄に貼る基本形。選択肢を選び、空欄を埋めるだけで骨組みができます。まずこれで作り、下の「改善ループ」で育てます。</span></li>
+<li><span class="cat-tag">Gem</span><b>映像プロンプト作成アシスタント（I2V / T2V）</b><span class="cat-desc">日本語の演出意図を、動画生成AI向けの英語プロンプトに変換するGemの指示。リキッドブロックの制作フロー（静止画→動画化）向け。</span></li>
+<li><span class="cat-tag">Gem</span><b>改善ループ①：テスト質問を作らせる</b><span class="cat-desc">Geminiの通常チャットに貼って使います。今のGemの指示を貼ると、意図どおり動くか確かめるためのテスト質問を作ってくれます。出てきた質問をGemに投げて、結果を確認します。</span></li>
+<li><span class="cat-tag">Gem</span><b>改善ループ②：うまくいかなかった例から指示を直す</b><em class="cat-free">無料版でも</em><span class="cat-desc">Gemが期待どおりに答えなかったときに、Geminiの通常チャットに貼って使います。原因の分析と、修正版の指示全文が返ってくるので、Gemの指示を差し替えて再テストします。</span></li>
+<li><span class="cat-tag">NotebookLM</span><b>チャットの役割・回答スタイルの設定</b><em class="cat-free">無料版でも</em><span class="cat-desc">NotebookLMのチャット設定（会話のカスタマイズ）に入れる指示です。ノートブックごとに役割を決めておくと、回答の質がそろいます。</span></li>
+<li><span class="cat-tag">NotebookLM</span><b>音声解説（Audio Overview）のカスタマイズ</b><em class="cat-free">無料版でも</em><span class="cat-desc">音声解説を作るときの「カスタマイズ」欄に入れる指示です。聞き手と焦点を決めると、社内共有に使いやすい解説になります。</span></li>
+<li><span class="cat-tag">NotebookLM</span><b>ソースの不足・食い違いを洗い出す</b><span class="cat-desc">ノートブックを育てるための確認用プロンプト。チャットに貼ると、足りない資料や矛盾が分かり、次に追加すべきソースを判断できます。</span></li>
+<li><span class="cat-tag">NotebookLM</span><b>比較表・ブリーフィング資料を作る</b><span class="cat-desc">集めた記事や資料から、会議でそのまま使える比較表と要約を作ります。RSSニュースの「📚 NotebookLM用にURLをコピー」で記事を入れたあとに使うと便利です。</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-gem-notebooklm.html">「Gem / NotebookLM」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-dev" aria-labelledby="cat-t-dev" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">開発マスター</span><b>全スタック対応・汎用開発フレーム</b><em class="cat-free">無料版でも</em><span class="cat-desc">プロジェクト固有の技術スタック・設計原則・型安全・エラー規約をAIに一度で正確に認識させる基本枠</span></li>
+<li><span class="cat-tag">要件定義</span><b>機能要件＆ユーザーストーリー化</b><em class="cat-free">無料版でも</em><span class="cat-desc">アイデア段階の機能から、アジャイル開発でそのまま使えるGiven-When-Then受入条件付きバックログを作成</span></li>
+<li><span class="cat-tag">設計</span><b>DBスキーマ＆TypeScript型定義の自動生成</b><em class="cat-free">無料版でも</em><span class="cat-desc">画面仕様やエンティティ関係から、Prisma Schemaとフロント/バック共通TypeScript型を一括生成</span></li>
+<li><span class="cat-tag">フロントエンド</span><b>再利用可能UIコンポーネント実装</b><span class="cat-desc">Tailwind CSSとTypeScriptを用いた、ローディング/エラー状態やa11yを考慮した即実用Reactコンポーネント</span></li>
+<li><span class="cat-tag">バックエンド</span><b>APIハンドラー＆Zodバリデーション</b><span class="cat-desc">入力チェック、DB操作、401/400/500エラー応答を一連のServer Actions/Route Handlerとして生成</span></li>
+<li><span class="cat-tag">QA・テスト</span><b>単体テスト自動生成（Vitest / Jest）</b><span class="cat-desc">正常系だけでなく、エッジケース（Null/境界値/空配列/タイムアウト）を網羅したUnit Testコードを出力</span></li>
+<li><span class="cat-tag">Webフルスタック</span><b>Next.js (App Router) + Prisma + Tailwind 最適化</b><em class="cat-free">無料版でも</em><span class="cat-desc">Server/Client境界の厳格分離、Zod検証、Prismaトランザクションを安全に扱うNext.js特化プロンプト</span></li>
+<li><span class="cat-tag">モバイルアプリ</span><b>React Native (Expo) + Supabase + RLS 最適化</b><span class="cat-desc">SafeArea、FlashListパフォーマンス、Supabase RLSセキュリティSQLを落とし込んだモバイル特化プロンプト</span></li>
+<li><span class="cat-tag">アーキテクチャ</span><b>Feature-Drivenディレクトリ構成＆規約設計</b><span class="cat-desc">Next.js (App Router) + Prismaでスケールしても破綻しない機能単位ディレクトリと6つの配置ルールを策定</span></li>
+<li><span class="cat-tag">API連携</span><b>OpenAPI / Swagger 仕様定義（YAML自動生成）</b><span class="cat-desc">フロントとバックの繋ぎ込み齟齬を防止するため、仕様決定時点でOpenAPI 3.0形式（YAML）に一発変換</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-dev.html">「開発・Web/アプリ」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-graphic" aria-labelledby="cat-t-graphic" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">3Dアイコン</span><b>クレイモーフィズム・アプリUIアイコン</b><span class="cat-desc">Blender調のやわらかい粘土質感の3Dアプリアイコン。親しみやすい丸みとソフトシャドウ</span></li>
+<li><span class="cat-tag">3Dアイコン</span><b>グラスモーフィズム・すりガラスUI</b><span class="cat-desc">透明・半透明のすりガラス、内部の屈折光とエッジのハイライトが美しい次世代プレミアムUIアイコン</span></li>
+<li><span class="cat-tag">切り抜き素材</span><b>純白背景・単体オブジェクト（3Dプロダクト）</b><em class="cat-free">無料版でも</em><span class="cat-desc">PhotoshopやFigmaでワンクリック背景切り抜きが完璧にできる純白背景の高品質3D単体オブジェクト</span></li>
+<li><span class="cat-tag">切り抜き素材</span><b>エフェクト・パーティクル・立体スプラッシュ</b><span class="cat-desc">デザインやバナーの前面に重ねて躍動感を演出する流体スプラッシュや光の粒子、エネルギーエフェクト</span></li>
+<li><span class="cat-tag">ベクター</span><b>現代的フラットイラスト・ビジネス＆テック</b><span class="cat-desc">SaaSのLPやオウンドメディアで定番の、シンプルで洗練された現代的フラットベクターイラスト</span></li>
+<li><span class="cat-tag">ベクター</span><b>アイソメトリック・テックシーン</b><span class="cat-desc">クラウド連携やデータフロー、オフィスワークを立体俯瞰で表現するアイソメトリック図解イラスト</span></li>
+<li><span class="cat-tag">抽象背景</span><b>流体3Dリキッドウェーブ・LPキービジュアル</b><em class="cat-free">無料版でも</em><span class="cat-desc">Webサイトのファーストビューや広告バナーの背景に最適な、滑らかで光沢のある3D流体リボンウェーブ</span></li>
+<li><span class="cat-tag">抽象背景</span><b>オーロラ・メッシュグラデーション</b><span class="cat-desc">トレンディなApple風のぼかしとオーロラ光が美しく溶け合う、洗練されたメッシュグラデーション背景</span></li>
+<li><span class="cat-tag">パターン</span><b>シームレス・リピート幾何学パターン</b><span class="cat-desc">包装紙、パッケージ、Web背景として無限に並べて繋がるシームレス（タイル状）幾何学テクスチャ</span></li>
+<li><span class="cat-tag">パターン</span><b>ラグジュアリー・大理石＆金継ぎテクスチャ</b><span class="cat-desc">高級感あふれるプレミアムな大理石の流れる模様と金継ぎ（ゴールドライン）のクラフトテクスチャ</span></li>
+<li><span class="cat-tag">モックアップ</span><b>3D円柱ポディウム・商品展示スタジオ</b><span class="cat-desc">コスメボトルやプロダクト画像を配置するだけで即プロ仕様になる、スタジオライティングの円柱台座</span></li>
+<li><span class="cat-tag">ステッカー</span><b>太い白フチ・ダイカットステッカー素材</b><span class="cat-desc">白フチとわずかなドロップシャドウのついた、ポップで可愛いダイカット（型抜き）ステッカー素材</span></li>
+<li><span class="cat-tag">ロゴ</span><b>黄金比・ミニマル幾何学ベクターロゴ</b><span class="cat-desc">黄金比グリッドで設計された、スタートアップやブランドに最適なミニマルシンボルマーク</span></li>
+<li><span class="cat-tag">ポスター</span><b>映画・シネマティックティザーポスター</b><span class="cat-desc">上下にタイトル・クレジット用の余白を確保した、ドラマチックで映画館に掲出されているような重厚なキービジュアル（--ar 2:3）</span></li>
+<li><span class="cat-tag">ポスター</span><b>展示会・スイススタイル現代アートポスター</b><span class="cat-desc">バウハウスや国際タイポグラフィ様式に基づいた、幾何学アートと計算された洗練の余白（--ar 2:3）</span></li>
+<li><span class="cat-tag">ポスター</span><b>音楽フェス＆イベント・ライブポスター</b><span class="cat-desc">躍動感あふれる流体・ネオン・サイケデリック調のビジュアルで、イベント名が引き立つデザイン（--ar 2:3）</span></li>
+<li><span class="cat-tag">ポスター</span><b>レトロ観光・ヴィンテージトラベルポスター</b><span class="cat-desc">1930〜50年代のシルクスクリーン印刷風、美しい風景と力強い構図のクラシックポスター（--ar 2:3）</span></li>
+<li><span class="cat-tag">ポスター</span><b>商業広告・商品プロモーションポスター</b><em class="cat-free">無料版でも</em><span class="cat-desc">キャッチコピーが最も目立つ位置に余白を空けた、新商品やブランドキャンペーン用キービジュアル（--ar 2:3）</span></li>
+<li><span class="cat-tag">サムネイル</span><b>ビジネス・教養・解説系（王道・左文字余白）</b><em class="cat-free">無料版でも</em><span class="cat-desc">ビジネス、投資、最新テック、ノウハウ解説用。右側に知的・自信ある演者、左側に巨大テロップを配置できる暗色余白（--ar 16:9）。【本人の写真を使うとき】ChatGPT・Gemini など画像を添付できるAIに本人の写真を添付してから、このプロンプトを送ってください（本人の許可がある写真だけを使ってください）。</span></li>
+<li><span class="cat-tag">サムネイル</span><b>ガジェット開封・衝撃レビュー（右提示・左余白）</b><span class="cat-desc">新型スマホ、カメラ、PC、家電レビュー用。演者が商品を前に掲げ、驚きの表情と発光リムライトで惹きつける（--ar 16:9）。【本人の写真を使うとき】ChatGPT・Gemini など画像を添付できるAIに本人の写真を添付してから、このプロンプトを送ってください（本人の許可がある写真だけを使ってください）。</span></li>
+<li><span class="cat-tag">サムネイル</span><b>徹底対決・VSスプリット（左右比較）</b><span class="cat-desc">「A vs B」「プロ vs 素人」「100均 vs 高級品」など、中央のエネルギー衝突と対照的なライティングで対比（--ar 16:9）</span></li>
+<li><span class="cat-tag">サムネイル</span><b>シネマティックVlog・日常・ルームツアー</b><span class="cat-desc">暮らし、モーニングルーティン、作業用BGM、旅Vlog用。35mmフィルム調の美しい自然光とエモーショナルな構図（--ar 16:9）。【本人の写真を使うとき】ChatGPT・Gemini など画像を添付できるAIに本人の写真を添付してから、このプロンプトを送ってください（本人の許可がある写真だけを使ってください）。</span></li>
+<li><span class="cat-tag">サムネイル</span><b>ゲーム実況・エンタメ・サイバーネオン</b><span class="cat-desc">ゲーム実況、VTuber、大会ハイライト、激アツ展開用。高彩度、稲妻、スピードエフェクト、迫力のアングル（--ar 16:9）。実況者を入れる場合は「登場する人物」を選んでください。【本人の写真を使うとき】ChatGPT・Gemini など画像を添付できるAIに本人の写真を添付してから、このプロンプトを送ってください（本人の許可がある写真だけを使ってください）。</span></li>
+<li><span class="cat-tag">サムネイル</span><b>都市伝説・未解決事件・ダークサスペンス</b><span class="cat-desc">歴史の闇、未解決事件、ミステリー、恐怖、警告用。不穏な空気感、不気味な陰影、惹きつけられる謎の演出（--ar 16:9）</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-design-assets.html">「素材・デザイン」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-t2i" aria-labelledby="cat-t-t2i" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">人物</span><b>シネマティックポートレート</b><em class="cat-free">無料版でも</em><span class="cat-desc">映画のワンシーン風の人物写真。被写界深度とライティングの調和</span></li>
+<li><span class="cat-tag">映画演出</span><b>アナモフィック・シネマスコープ</b><em class="cat-free">無料版でも</em><span class="cat-desc">ハリウッド大作映画の風格。横長の青いレンズフレア、楕円ボケ、2.39:1の迫力</span></li>
+<li><span class="cat-tag">映画演出</span><b>キアロスクーロ・ダークノワール</b><span class="cat-desc">強烈な光と深い闇が彫刻のように輪郭を切り取る、重厚なドラマチック光彩</span></li>
+<li><span class="cat-tag">構図美学</span><b>シンメトリー・ウェスアンダーソン調</b><span class="cat-desc">厳密な左右対称構図とパステルカラーが生み出す、童話的でスタイリッシュな映像美</span></li>
+<li><span class="cat-tag">映画演出</span><b>スプリットダイオプター（前後ダブルピント）</b><span class="cat-desc">手前の極近接被写体と、奥の背景被写体の両方に同時にピントが合う不気味な緊張感</span></li>
+<li><span class="cat-tag">映画演出</span><b>ティルトシフト・ミニチュアジオラマ</b><span class="cat-desc">極端に浅い傾斜ピント面によって、本物の街や巨大な風景をおもちゃのように見せる錯覚</span></li>
+<li><span class="cat-tag">映画演出</span><b>レンブラント・ポートレート</b><span class="cat-desc">斜め45度からの光源が、影側の頬に美しい「光の三角形」を描き出すクラシック肖像</span></li>
+<li><span class="cat-tag">映画演出</span><b>ネオンノワール・サイバーパンク</b><em class="cat-free">無料版でも</em><span class="cat-desc">夜の雨に濡れたアスファルトが、シアンとマゼンタの光を妖艶に反射するサイバーパンク美学</span></li>
+<li><span class="cat-tag">映画演出</span><b>ボリュメトリック・ゴッドレイ（薄明光線）</b><span class="cat-desc">空気中の埃や霧を貫いて差し込む神聖で荘厳な光の筋</span></li>
+<li><span class="cat-tag">映画質感</span><b>70mm IMAX ラージフォーマット撮影</b><span class="cat-desc">圧倒的な解像度と極小のフィルム粒子。クリストファー・ノーラン作品のような壮大なスケール感</span></li>
+<li><span class="cat-tag">構図美学</span><b>フレーム・イン・フレーム（額縁構図）</b><span class="cat-desc">窓、ドア、廃墟のアーチ越しに被写体を捉え、覗き見のような視線と重層的な奥行きを演出</span></li>
+<li><span class="cat-tag">背景</span><b>空舞台の背景美術（キャラクター合成用無人背景）</b><span class="cat-desc">後から人物やCGを合成するための、クオリティの高い無人エスタブリッシング背景</span></li>
+<li><span class="cat-tag">演者</span><b>シネマティック主演・実力派俳優</b><span class="cat-desc">映画賞受賞作の風格。微細な肌の質感、印象的な瞳、映画用35mmフィルムで捉えた存在感ある主役</span></li>
+<li><span class="cat-tag">演者</span><b>日本人モデル・ナチュラル＆透明感</b><em class="cat-free">無料版でも</em><span class="cat-desc">飾らない自然光と透明感。等身大の親しみやすさと洗練を兼ね備えた日本の広告・MV風ポートレート</span></li>
+<li><span class="cat-tag">演者</span><b>知性派ビジネスリーダー・エグゼクティブ</b><span class="cat-desc">自信に満ちたオーラと知性。モダンオフィスやスタジオでの信頼感あるグローバルリーダーの肖像</span></li>
+<li><span class="cat-tag">演者</span><b>年輪と風格・シニアキャスト</b><span class="cat-desc">人生の深みを感じさせる銀髪と温かい眼差し。映画の指導者や名優のような圧倒的説得力</span></li>
+<li><span class="cat-tag">演者</span><b>次世代ユース・ストリート＆テックウェア</b><span class="cat-desc">ユースカルチャーの気だるさと鋭い視線。オーバーサイズや機能美テックウェアのMVスタイル</span></li>
+<li><span class="cat-tag">演技</span><b>静かな決意・カメラを射抜く眼差し</b><span class="cat-desc">瞳に宿る不退転の光。引き締まった口元と微動だにしない強い意志を感じさせる映画のクライマックス</span></li>
+<li><span class="cat-tag">演技</span><b>物憂げ・窓辺の思案と哀愁（メランコリー）</b><span class="cat-desc">遠くの記憶を辿るような物憂げな視線。雨や夕暮れの光が織りなす詩的で叙情的な感情表現</span></li>
+<li><span class="cat-tag">演技</span><b>歓喜と笑顔・飾らない自然体のリラックス</b><span class="cat-desc">作られた笑顔ではない、目尻の笑いジワとこぼれる白い歯。命の躍動と幸福感が溢れるドキュメンタリータッチ</span></li>
+<li><span class="cat-tag">演技</span><b>息を呑む緊張・衝撃の瞬間</b><span class="cat-desc">見開かれた瞳、わずかに開いた口元。予期せぬ真実に直面したサスペンス映画の緊迫した感情</span></li>
+<li><span class="cat-tag">衣装</span><b>クワイエットラグジュアリー・洗練の極致</b><span class="cat-desc">ロゴを排した最高峰のカシミヤ、ウール、シルク。無駄を削ぎ落とした富と品格の佇まい</span></li>
+<li><span class="cat-tag">衣装</span><b>和モダン・シネマティック着物</b><span class="cat-desc">伝統的な和装と現代的シネマライティングの融合。凛とした立ち姿と着物の精緻な織り目</span></li>
+<li><span class="cat-tag">段階設計</span><b>世界観×時代×人種×ファッション完全連動ポートレート</b><span class="cat-desc">①世界観 ②時代 ③人種 ④世代 ⑤ファッション ⑥視線を上から選ぶだけで、必然的に設定が組み上がる映画マスターポートレート</span></li>
+<li><span class="cat-tag">SFシネマ</span><b>近未来サイバーパンク＆テックウェアエージェント</b><span class="cat-desc">2070sの雨のネオンメガロポリス。発光インターフェース、機能美あふれるテックウェアを纏った工作員</span></li>
+<li><span class="cat-tag">ヴィンテージシネマ</span><b>時代劇・1920s〜1990sレトロポートレート</b><span class="cat-desc">時代背景と人種、当時のヴィンテージファブリックの質感を忠実に再現するノスタルジック肖像</span></li>
+<li><span class="cat-tag">宇宙SF</span><b>深宇宙探査・EVAバイザーポートレート</b><span class="cat-desc">2150年代の深宇宙ステーション。宇宙服の気圧ヘルメット越しに見つめる孤独と決意の眼差し</span></li>
+<li><span class="cat-tag">ストーリー対峙</span><b>映画的ドラマシーン・宿命の遭遇</b><span class="cat-desc">世界観の中でキャラクターが対峙し、物語が大きく動き出す瞬間を切り取ったシネマティックショット</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-t2i-cinematic.html">「T2I (画像)」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-i2v" aria-labelledby="cat-t-i2v" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">カメラワーク</span><b>基本カメラムーブ</b><em class="cat-free">無料版でも</em><span class="cat-desc">カメラの動きで画を動かす。被写体は静止気味で安定させる基本指示</span></li>
+<li><span class="cat-tag">映画演出</span><b>ヒッチコック・ドリーズーム（空間歪曲）</b><em class="cat-free">無料版でも</em><span class="cat-desc">カメラが後退（または前進）しながら逆方向にズーム。被写体の大きさを保ったまま背景空間が激しく歪む</span></li>
+<li><span class="cat-tag">映画演出</span><b>スノリカム・心理的緊迫感（被写体固定）</b><span class="cat-desc">被写体にリグで固定されたカメラ。人物の顔と上半身は中央で固定され、周囲の世界だけが激しく揺れ動く</span></li>
+<li><span class="cat-tag">映画演出</span><b>ダブルドリー・シュール浮遊（スパイク・リー風）</b><span class="cat-desc">台車の上にカメラと人物が同時に乗って滑走。歩いていないのに宙を滑るように前進する異様な浮遊感</span></li>
+<li><span class="cat-tag">映画演出</span><b>クラッシュズーム・緊迫の瞬間（タランティーノ風）</b><span class="cat-desc">目にも留まらぬ速さで被写体の目や表情に急激に飛び込む、ドラマチックなショック演出</span></li>
+<li><span class="cat-tag">映画演出</span><b>ウィップパン・キネティックトランジション</b><span class="cat-desc">水平方向に超高速でカメラを振り、強いモーションブラーで画面を流して視点を転換する</span></li>
+<li><span class="cat-tag">映画演出</span><b>バレットタイム・タイムフリーズ（360度静止公転）</b><span class="cat-desc">時空が完全に停止し、空中に浮遊した被写体や飛沫の周りをカメラが滑らかに360度周回する</span></li>
+<li><span class="cat-tag">カメラワーク</span><b>360度オービット＆全景展開</b><span class="cat-desc">被写体を中心にカメラが円を描いて回り込み、徐々に周囲の壮大な環境を明らかにする</span></li>
+<li><span class="cat-tag">カメラワーク</span><b>ロールショット（天地反転・めまい演出）</b><span class="cat-desc">光軸を中心にカメラが連続回転し、重力感覚を失わせる映画的めまい演出</span></li>
+<li><span class="cat-tag">カメラワーク</span><b>ペデスタル＆垂直上昇（足元から空へ）</b><span class="cat-desc">カメラの傾きを変えずに垂直真上にリフトアップし、足元から広大な全景へと視界を広げる</span></li>
+<li><span class="cat-tag">カメラワーク</span><b>低角度ズームイン（迫力と臨場感）</b><span class="cat-desc">地面すれすれの低い位置から被写体に寄る。アクション・臨場感向け</span></li>
+<li><span class="cat-tag">モーション</span><b>表情・人物の変化（同一性維持）</b><em class="cat-free">無料版でも</em><span class="cat-desc">顔のアップで感情を変化させる。顔の崩れを防ぎ人物の同一性を保つ</span></li>
+<li><span class="cat-tag">モーション</span><b>歩行・アクション（物理挙動の安定）</b><span class="cat-desc">全身の動き。物理的に自然な足取りやアクションを指定</span></li>
+<li><span class="cat-tag">環境・エフェクト</span><b>シネマグラフ風（被写体静止＋環境流動）</b><span class="cat-desc">被写体はほぼ静止したまま、風・雨・光・パーティクルだけを動かす高品位な演出</span></li>
+<li><span class="cat-tag">演者・演技</span><b>会話・自然な口元とアイコンタクト</b><span class="cat-desc">話しているような自然な唇の動き、微妙な頷き、視線の移動。AI動画特有の違和感を抑えた自然な演技</span></li>
+<li><span class="cat-tag">演者・演技</span><b>ドラマチックな振り返り・視線交差</b><em class="cat-free">無料版でも</em><span class="cat-desc">背後からの呼びかけにゆっくりと振り返る。風に髪が揺れ、カメラと視線が交差する映画的な名シーン</span></li>
+<li><span class="cat-tag">演者・演技</span><b>感情の高まり（目を閉じてから深く見開く）</b><span class="cat-desc">目を静かに閉じ、息を深く吸い込んでから決意の眼差しで見開く。人物の崩れを完全に抑えた映画的演出</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-i2v.html">「I2V Builder」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-t2v" aria-labelledby="cat-t-t2v" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">シーン</span><b>FPVドローン・ダイナミックチェイス</b><em class="cat-free">無料版でも</em><span class="cat-desc">超低空・狭所を高速ですり抜ける、息を呑むようなアクロバティック追跡ショット</span></li>
+<li><span class="cat-tag">映画演出</span><b>ヒッチコック・ドリーズーム・オープニング</b><span class="cat-desc">空間が歪曲しながら物語が始まる、衝撃と気付きを伝えるオープニングカット</span></li>
+<li><span class="cat-tag">映画演出</span><b>ドローン空撮・エスタブリッシングショット</b><em class="cat-free">無料版でも</em><span class="cat-desc">広大な自然や都市の全景をゆっくりと見渡す、映画冒頭の壮大な導入カット</span></li>
+<li><span class="cat-tag">映画演出</span><b>クレーンアップ＆スケール公開</b><span class="cat-desc">地面や人物の手元からクレーンが空高く上昇し、世界全体の巨大なスケールを一気に公開する</span></li>
+<li><span class="cat-tag">映画演出</span><b>スローモーション＆レイン（雨滴弾ける超高速度撮影）</b><em class="cat-free">無料版でも</em><span class="cat-desc">120fpsのスローモーションで、雨粒が空中で静止するかのように輝きながら弾ける叙情シーン</span></li>
+<li><span class="cat-tag">映画演出</span><b>追跡トラッキング・キネティックラン</b><span class="cat-desc">全力疾走する被写体に真横から並走して密着トラッキングする、緊迫の追走シークエンス</span></li>
+<li><span class="cat-tag">演者</span><b>ドラマチックな振り返り・視線誘導</b><em class="cat-free">無料版でも</em><span class="cat-desc">背後からの呼びかけにゆっくりと振り返る。風に髪が揺れ、カメラと視線が交差する映画的な名シーン</span></li>
+<li><span class="cat-tag">演者</span><b>会話と自然なアイコンタクト（演技のリアリズム）</b><span class="cat-desc">相手と話しているような自然な唇の動き、微妙な頷き、視線のゆらぎ。AI動画特有の違和感を抑えた自然な演技</span></li>
+<li><span class="cat-tag">演者</span><b>感情のグラデーション（真顔から柔らかな笑みへ）</b><span class="cat-desc">張り詰めた真顔から、ふっと緊張が解けて温かい微笑みがこぼれるまでの滑らかな心理変化</span></li>
+<li><span class="cat-tag">演者</span><b>雨の街を歩くウォーキング・追従ショット</b><span class="cat-desc">都会の雑踏や雨のストリートを凛として前進する演者。服の揺れと自然な歩行の重厚感</span></li>
+<li><span class="cat-tag">段階連動</span><b>世界観×キャラクター・物語の導入シークエンス</b><span class="cat-desc">壮大な世界観の広がりから、キャラクターの存在感ある佇まいへとカメラが流麗に寄っていく導入カット</span></li>
+<li><span class="cat-tag">ストーリー対峙</span><b>宿命の遭遇・シネマティック追走アクション</b><span class="cat-desc">葛藤や対立が爆発する瞬間。息詰まる追跡や運命の対峙を切り取るダイナミックな映画シークエンス</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-t2v-v2v.html">「T2V (動画)」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-v2v" aria-labelledby="cat-t-v2v" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">映画質感</span><b>35mmフィルムグレイン＆ブリーチバイパス（銀残し）</b><em class="cat-free">無料版でも</em><span class="cat-desc">彩度を抑え、コントラストと硬質なフィルム粒子を強調した『セブン』『プライベート・ライアン』調の銀残しルック</span></li>
+<li><span class="cat-tag">映画質感</span><b>ティール＆オレンジ・ハリウッドカラーグレーディング</b><em class="cat-free">無料版でも</em><span class="cat-desc">肌色の温かなオレンジと、背景・影の深みあるティール（青緑）を際立たせるハリウッド大作映画の黄金律</span></li>
+<li><span class="cat-tag">映画質感</span><b>フィルムノワール・モノクローム（高コントラスト白黒）</b><span class="cat-desc">光と影のみで世界を構成する、クラシックなフィルムノワールの最高峰モノクロ調</span></li>
+<li><span class="cat-tag">映画質感</span><b>ヴィンテージ・テクニカラー（1950年代極彩色）</b><span class="cat-desc">黄金期のハリウッド映画特有の、深く鮮やかな原色発色と温かみを持つ3ストリップ・テクニカラー調</span></li>
+<li><span class="cat-tag">映画質感</span><b>70mm IMAX ラージフォーマット・マスターリマスター</b><span class="cat-desc">クリストファー・ノーラン映画のような圧倒的な解像感、超高精細テクスチャと極小グレインを付与</span></li>
+<li><span class="cat-tag">映画質感</span><b>16mm ヴィンテージフィルム＆レトロウォーム</b><span class="cat-desc">インディーズ映画や80年代フィルムのような、少し褪せた温かみと豊かなフィルムの揺らぎ・粒子感</span></li>
+<li><span class="cat-tag">スタイル変換</span><b>日本のセルアニメ調（一貫したセル画シェーディング）</b><em class="cat-free">無料版でも</em><span class="cat-desc">実写動画を高品質な日本のアニメ調に変換。輪郭線と美しい色彩アニメーション</span></li>
+<li><span class="cat-tag">スタイル変換</span><b>シネマティック3DCG（ピクサースタイル）</b><em class="cat-free">無料版でも</em><span class="cat-desc">実写動画を温かみのあるハイエンド3Dアニメーション風に変換</span></li>
+<li><span class="cat-tag">映画質感</span><b>クロスプロセス現像（異色ケミカル・エメラルドシアン）</b><span class="cat-desc">ネガ現像液でリバーサルフィルムを現像するクロスプロセス特有の強烈なコントラストと緑青の変色美</span></li>
+</ul>
+<a class="cat-more" href="blog/presets-t2v-v2v.html">「V2V / Edit」のコマンドの解説を読む</a>
+</div>
+    </div>
+    <!-- catalog:end -->
   </div>
 </section>
 

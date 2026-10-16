@@ -56,3 +56,42 @@ if (composer && text) {
 document.addEventListener('click', e => {
   document.querySelectorAll('details.lang-menu[open]').forEach(d => { if (!d.contains(e.target)) d.open = false; });
 });
+
+// コマンドの一覧：タブの切り替え（矢印キーでも動く）
+document.querySelectorAll('[data-catalog]').forEach(root => {
+  const tabs = [...root.querySelectorAll('[role="tab"]')];
+  const select = (tab, focus) => {
+    tabs.forEach(t => {
+      const on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      const panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.toggleAttribute('data-hide', !on);
+    });
+    if (focus) tab.focus();
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      const k = { ArrowRight: 1, ArrowLeft: -1 }[e.key];
+      if (k) { e.preventDefault(); select(tabs[(i + k + tabs.length) % tabs.length], true); }
+      if (e.key === 'Home') { e.preventDefault(); select(tabs[0], true); }
+      if (e.key === 'End') { e.preventDefault(); select(tabs[tabs.length - 1], true); }
+    });
+  });
+});
+
+// 使い方動画：押したときに、YouTube（プライバシー強化モード）の再生画面に差し替える
+document.querySelectorAll('.video-play[data-yt]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const wrap = document.createElement('div');
+    wrap.className = 'video-frame';
+    const f = document.createElement('iframe');
+    f.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0&modestbranding=1`;
+    f.title = btn.getAttribute('aria-label') || 'YouTube';
+    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+    f.allowFullscreen = true;
+    wrap.append(f);
+    btn.replaceWith(wrap);
+  });
+});
