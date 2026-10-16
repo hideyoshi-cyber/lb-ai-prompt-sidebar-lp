@@ -73,3 +73,12 @@
   .post-list { grid-template-columns: 1fr; }
   .prompt-box pre { padding: 16px 18px; font-size: 14px; }
 }
+
+/* 一覧：分類ごとの見出し・分類のリンク */
+.blog-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.blog-nav a { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 18px; border-radius: 999px; font: 700 13.5px/1 var(--f-display); letter-spacing: .06em; color: #fff; text-decoration: none; background: rgba(255, 255, 255, .08); box-shadow: inset 0 0 0 1px var(--line-d); transition: background .2s; }
+.blog-nav a:hover { background: rgba(255, 255, 255, .16); }
+.blog-nav small { padding: 3px 8px; border-radius: 999px; font: 800 11px/1 var(--f-latin); background: var(--grad); }
+.blog-sec { margin-bottom: clamp(48px, 7vw, 80px); scroll-margin-top: 90px; }
+.legal .blog-sec-title { margin: 0 0 8px; padding-left: 18px; }
+.blog-sec .blog-lead { margin: 0 0 28px; padding-left: 18px; }

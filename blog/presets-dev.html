@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド｜LB AI Prompt side bar</title>
+<meta name="description" content="「開発・Web／アプリ」タブの10のコマンドを解説します。汎用開発フレーム、要件定義とユーザーストーリー、DBスキーマと型定義、UIコンポーネント、APIとバリデーション、単体テスト、Next.js、React Native、ディレクトリ設計、OpenAPI。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/presets-dev.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド｜LB AI Prompt side bar">
+<meta property="og:description" content="「開発・Web／アプリ」タブの10のコマンドを解説します。汎用開発フレーム、要件定義とユーザーストーリー、DBスキーマと型定義、UIコンポーネント、APIとバリデーション、単体テスト、Next.js、React Native、ディレクトリ設計、OpenAPI。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/presets-dev.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド",
+ "description": "「開発・Web／アプリ」タブの10のコマンドを解説します。汎用開発フレーム、要件定義とユーザーストーリー、DBスキーマと型定義、UIコンポーネント、APIとバリデーション、単体テスト、Next.js、React Native、ディレクトリ設計、OpenAPI。",
+ "datePublished": "2026-10-15",
+ "dateModified": "2026-10-15",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/og.png",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/presets-dev.html",
+ "author": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <a class="lang-switch" href="../en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <a class="btn btn-sm btn-soon" href="../#pricing" aria-label="Chromeに追加（公開準備中）">Chromeに追加<small>公開準備中</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド</h1>
+    <div class="post-meta">
+      <span class="post-tag">開発</span>
+      <span><time datetime="2026-10-15">2026年10月15日</time></span>
+      <span>読む時間：約7分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<p class="post-lead">AIにコードを書かせるとき、いちばん大事なのは、<strong>前提（使う技術や約束ごと）を最初にそろえること</strong>です。「開発・Web／アプリ」タブは、その前提を毎回きちんと渡すための、10のコマンドです。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#base">土台になる3つ</a></li>
+<li><a href="#build">作る・確かめる4つ</a></li>
+<li><a href="#stack">技術別・設計の3つ</a></li>
+<li><a href="#tips">上手に使うコツ</a></li>
+</ol></nav>
+<div class="note">この記事では、コマンドの<strong>意味と使いどころ</strong>を説明します。コマンドの本文（AIに渡す文章）は、LB AI Prompt side bar の中で、選択肢や空欄を整えながら確認できます。AIの答えは「たたき台」として使い、大事な判断は、ご自身や専門家が行ってください。</div>
+<h2 id="base">土台になる3つ</h2>
+<h3>汎用開発フレーム（全スタック対応） <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>フロントエンド、バックエンド、データベースなどの技術を選んで固定し、設計の原則、型安全、エラーの扱いの約束ごとを、AIに一度で正確に伝える基本の枠です。</p>
+<ul>
+<li><strong>こんなときに</strong>：新しい会話で、開発の相談を始めるとき</li>
+<li><strong>選ぶ・書く項目</strong>：フロントエンド（Next.js／React／React Native／Vue など）、バックエンド（Server Actions／Hono／Express／FastAPI など）、データベース、作りたいもの</li>
+</ul>
+<h3>要件定義・ユーザーストーリー化 <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>アイデアの段階の機能から、そのまま開発に使える、受け入れ条件（Given-When-Then）つきのバックログを作ります。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：サービス、作りたい機能</li>
+</ul>
+<h3>DBスキーマ＆型定義の自動生成 <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>画面の仕様や、データの関係から、Prisma のスキーマと、フロント・バック共通の TypeScript の型を、まとめて作ります。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：画面やデータの仕様</li>
+</ul>
+<h2 id="build">作る・確かめる4つ</h2>
+<h3>再利用できるUIコンポーネント</h3>
+<p>Tailwind CSS と TypeScript で、読み込み中・エラーの状態や、アクセシビリティまで考えた React コンポーネントを作ります。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：フロントエンド、作りたいUI</li>
+</ul>
+<h3>APIハンドラー＆入力チェック（Zod）</h3>
+<p>入力のチェック、データベースの操作、エラーの応答（401／400／500）までを、一連の処理として作ります。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：エンドポイント、目的</li>
+</ul>
+<h3>単体テストの自動生成（Vitest / Jest）</h3>
+<p>正常な場合だけでなく、空の値、境界の値、空の配列、時間切れなどの「端のケース」まで網羅した、テストのコードを作ります。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：テストしたいコード</li>
+</ul>
+<h3>OpenAPI / Swagger の仕様定義</h3>
+<p>フロントとバックの食い違いを防ぐため、仕様を決めた時点で、OpenAPI 3.0 形式（YAML）にします。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：エンドポイントの仕様</li>
+</ul>
+<h2 id="stack">技術別・設計の3つ</h2>
+<h3>Next.js（App Router）フルスタック <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>サーバーとクライアントの境界の分け方、入力チェック、トランザクションを、安全に扱うための、Next.js 向けの指示です。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：作りたいもの</li>
+</ul>
+<h3>React Native（Expo）＋ Supabase</h3>
+<p>画面の安全領域、一覧の表示速度、Supabase の行レベルのセキュリティ（RLS）まで落とし込んだ、モバイルアプリ向けの指示です。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：作りたいもの</li>
+</ul>
+<h3>機能別のディレクトリ構成と規約</h3>
+<p>大きくなっても破綻しない、機能単位のディレクトリ構成と、ファイルの置き場所のルールを決めます。</p>
+<ul>
+<li><strong>選ぶ・書く項目</strong>：サービスの概要</li>
+</ul>
+<h2 id="tips">上手に使うコツ</h2>
+<ul>
+<li>最初に「汎用開発フレーム」で前提を渡してから、個別のコマンドを使うと、答えのぶれが減ります。</li>
+<li>生成されたコードは、<strong>必ず動かして、テストしてから</strong>使ってください。秘密の鍵やパスワードは、プロンプトに書かないでください。</li>
+<li>「万能・テキスト」タブの「コードレビュー」も、書いたコードの点検に使えます（<a href="presets-text-advanced.html">万能・テキスト②</a>）。</li>
+</ul>
+<p>使い方は、どのコマンドも同じです。「開発・Web／アプリ」タブを開き、コマンドの行を押して、選択肢を選び、空欄に書き込みます。プレビューで確かめてから、「⚡ 挿入」で、開いているAIの入力欄に入れます（<a href="getting-started.html">はじめての使い方</a>）。</p>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="presets-design-assets.html">「素材・デザイン」タブ①：3Dアイコン・切り抜き素材・背景・パターン・ロゴ</a>
+<a href="presets-design-posters-thumbnails.html">「素材・デザイン」タブ②：ポスターとYouTubeサムネイル（文字の余白つき）</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

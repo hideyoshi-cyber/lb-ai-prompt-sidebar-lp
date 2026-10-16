@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ブログ｜LB AI Prompt side bar</title>
-<meta name="description" content="AIを使いこなすための、プロンプトの書き方・整理術のブログ。ChatGPT・Claude・Gemini・画像／動画生成AIに共通して使える、実践のコツを紹介します。">
+<meta name="description" content="LB AI Prompt side bar の使い方、用意されている AI コマンドの解説、プロンプトの書き方のブログ。ChatGPT・Claude・Gemini・画像／動画生成AIに共通して使える、実践のコツを紹介します。">
 <link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/">
 <meta name="theme-color" content="#0b0711">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LB AI Prompt side bar">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:title" content="ブログ｜LB AI Prompt side bar">
-<meta property="og:description" content="AIを使いこなすための、プロンプトの書き方・整理術のブログ。ChatGPT・Claude・Gemini・画像／動画生成AIに共通して使える、実践のコツを紹介します。">
+<meta property="og:description" content="LB AI Prompt side bar の使い方、用意されている AI コマンドの解説、プロンプトの書き方のブログ。ChatGPT・Claude・Gemini・画像／動画生成AIに共通して使える、実践のコツを紹介します。">
 <meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/">
 <meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -53,12 +53,237 @@
   <div class="wrap">
     <p class="eyebrow">ブログ</p>
     <h1>AIを使いこなす、プロンプトの書き方と整え方。</h1>
+    <nav class="blog-nav" aria-label="分類"><a href="#help">使い方（ヘルプ）<small>10</small></a><a href="#preset">コマンドの解説<small>20</small></a><a href="#write">プロンプトの書き方<small>5</small></a></nav>
   </div>
 </section>
 
 <main class="legal" id="content">
 <div class="wrap">
-<p class="blog-lead">ChatGPT・Claude・Gemini・画像／動画生成AIに共通して使える、実践のコツをまとめています。</p>
+<section class="blog-sec" id="help">
+<h2 class="blog-sec-title">使い方（ヘルプ）</h2>
+<p class="blog-lead">LB AI Prompt side bar の使い方を、順を追って説明します。</p>
+<div class="post-list">
+<a class="post-card" href="getting-started.html">
+  <span class="post-tag">はじめに</span>
+  <h2>はじめての使い方：3分でわかる「選ぶ・整える・挿入」</h2>
+  <p>LB AI Prompt side bar の基本の使い方を、3つの手順で説明します。サイドパネルの開き方、プロンプトの選び方、整え方、AIの入力欄への入れ方まで。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="ai-launcher-guide.html">
+  <span class="post-tag">AIランチャー</span>
+  <h2>AIランチャーの使い方：いつものAIをワンクリックで開く</h2>
+  <p>サイドパネルの上にある AI ランチャーで、ChatGPT・Claude・Gemini などをワンクリックで開く方法。好きなサイトの追加、使わないアイコンの隠し方、ショートカットも説明します。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="adjust-variables-preview.html">
+  <span class="post-tag">整える</span>
+  <h2>プロンプトを整える：選択肢・空欄・プレビュー・拡大メモ</h2>
+  <p>プロンプトの {{変数}} とは何か。選択肢で選ぶ、空欄に書く、プレビューで直す、拡大メモで長い文章を編集する。プロンプトを整える方法をまとめました。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="search-rating-sort.html">
+  <span class="post-tag">探す・整理</span>
+  <h2>探す・評価する・並べる：★評価と検索、使わないものを隠す</h2>
+  <p>コマンドが増えても迷わないための整理の機能。検索のショートカット、★評価、並び替え、使わないタブやフォルダを隠す方法をまとめました。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="project-sets-my-prompts.html">
+  <span class="post-tag">案件セット</span>
+  <h2>案件セットで、案件ごとにプロンプトをまとめる（有料プラン）</h2>
+  <p>案件ごとに使うプロンプトを、タブをまたいで1か所に集める「案件セット」の使い方。セットの作り方、追加と解除、自分のプロンプトの保存、バックアップの方法を説明します。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="reference-files-images.html">
+  <span class="post-tag">参照ファイル</span>
+  <h2>参照ファイルと参照画像：資料や写真を、プロンプトと一緒にAIへ渡す</h2>
+  <p>PDF・Word・PowerPoint・Excel を読み込ませる「参照ファイル」と、スクショや写真を一緒に送る「参照画像」の使い方。添付と文字での渡し方の違いも説明します。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="translate-and-excel.html">
+  <span class="post-tag">AI翻訳・Excel</span>
+  <h2>AI翻訳・AIでの作成・Excel書き出し：APIキーの設定と使い方</h2>
+  <p>日本語を英語のプロンプトに変換する AI 翻訳、スケジュールの自動作成、Excel への保存。必要な APIキーの設定方法と、使い方、料金や安全面の注意をまとめました。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="sync-devices.html">
+  <span class="post-tag">同期</span>
+  <h2>複数のパソコンで同期する：暗号化のしくみと、4台までの使い方</h2>
+  <p>自分のプロンプトや★評価を、複数のパソコンで同じにする同期の使い方。データを暗号化して保存するしくみ、鍵をGoogleドライブに置く理由、台数の上限と外し方を説明します。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="free-trial-plans.html">
+  <span class="post-tag">料金</span>
+  <h2>無料版・14日のお試し・有料プランの違いと、解約・返金</h2>
+  <p>無料版でできること、14日間のお試し、月払い・年払いの違い、お試し中の年払いの特別価格、解約と返金の方法を、まとめて説明します。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="troubleshooting.html">
+  <span class="post-tag">困ったとき</span>
+  <h2>困ったときは：挿入できない・ログインできない・5台目で使えない</h2>
+  <p>LB AI Prompt side bar のよくある困りごとと、直し方。挿入しても入力欄に入らない、翻訳ができない、5台目のパソコンで使えない、ニュースが出ない、などを解説します。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+</div>
+</section>
+<section class="blog-sec" id="preset">
+<h2 class="blog-sec-title">コマンドの解説</h2>
+<p class="blog-lead">用意されている AI コマンド（プリセットのプロンプト）が、それぞれ何のためのものかを説明します。</p>
+<div class="post-list">
+<a class="post-card" href="presets-daily-trouble.html">
+  <span class="post-tag">日常</span>
+  <h2>「日常」タブ①：トラブル編（困りごと・不調・詐欺・解約・体調・人間関係）</h2>
+  <p>「日常」タブの【トラブル】の6つのコマンドを解説します。何でも相談、PCやスマホの不調、詐欺の判定、買い物・解約のトラブル、体調が気になるとき、人間関係の悩み。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-daily-life.html">
+  <span class="post-tag">日常</span>
+  <h2>「日常」タブ②：知りたい・暮らし・文面編（教えて・手続き・比較・ニュース・献立・旅行）</h2>
+  <p>「日常」タブの【知りたい】【暮らし】【文面】のコマンドを解説します。わかりやすく教えて、役所の手続き、買い物の比較、ニュースの解説、献立、旅行、掃除、謝る・断る文面。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-daily-disaster-study-fortune.html">
+  <span class="post-tag">日常</span>
+  <h2>「日常」タブ③：災害・勉強・占い編（防災チェック・AI先生・英会話・タロット）</h2>
+  <p>「日常」タブの【災害】【勉強】【占い】のコマンドを解説します。わが家の防災チェック、災害時の行動、被災後の手続き、AI先生、勉強計画、確認テスト、英会話、星座・タロット・数秘術・手相。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-text-basics.html">
+  <span class="post-tag">万能・テキスト</span>
+  <h2>「万能・テキスト」タブ①：万能テンプレート・XMLタグ・逆質問・推敲・議事録・壁打ち</h2>
+  <p>「万能・テキスト」タブの基本のコマンドを解説します。3大AIの推奨をまとめた万能テンプレート、Claude向けのXMLタグ、逆質問ヒアリング、文章の推敲、議事録の抽出、多角的な壁打ち。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-text-advanced.html">
+  <span class="post-tag">万能・テキスト</span>
+  <h2>「万能・テキスト」タブ②：要約・お詫び・英文メール・表計算・発想法・コード・ストーリー</h2>
+  <p>「万能・テキスト」タブの応用のコマンドを解説します。エグゼクティブサマリー、お詫びとリカバリー提案、英文メール、関数・GAS・マクロ、オズボーンのチェックリスト、コードレビュー、ストーリー設計とキャラクター設定書。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-gem-notebooklm.html">
+  <span class="post-tag">Gem / NotebookLM</span>
+  <h2>「Gem / NotebookLM」タブ：Gemの指示書づくりと改善ループ、NotebookLMの設定</h2>
+  <p>「Gem / NotebookLM」タブの8つのコマンドを解説します。Geminiの Gem の指示書の基本形、映像プロンプト作成アシスタント、テストと改善のループ、NotebookLM のチャット設定・音声解説・ソースの点検・比較表。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-biz-sales.html">
+  <span class="post-tag">ビジネス業務</span>
+  <h2>「ビジネス業務」タブ①：営業編（営業メール・お礼メール・リサーチ・提案書・ロールプレイ）</h2>
+  <p>「ビジネス業務」タブの【営業】の6つのコマンドを解説します。営業メール、商談のお礼メール、企業リサーチと仮説、提案書の骨子、AIが顧客役のロールプレイ、想定質問と切り返し。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-biz-ga-accounting.html">
+  <span class="post-tag">ビジネス業務</span>
+  <h2>「ビジネス業務」タブ②：総務・経理編（通達・FAQ・議事録・仕訳・予実・資金繰り）</h2>
+  <p>「ビジネス業務」タブの【総務】【経理】の12のコマンドを解説します。社内通達、問い合わせFAQ、規程の改訂、議事録、イベント企画、手続きチェックリスト、仕訳の提案、予実の差、月次サマリー、資金繰り、経費精算。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-biz-hr-manager.html">
+  <span class="post-tag">ビジネス業務</span>
+  <h2>「ビジネス業務」タブ③：人事・マネージャー編（求人・面接・評価・1on1・フィードバック）</h2>
+  <p>「ビジネス業務」タブの【人事】【マネージャー】の12のコマンドを解説します。求人票、面接の質問と評価シート、評価コメント、選考結果の連絡、オンボーディング、人事FAQ、1on1、フィードバック、面談の練習、育成計画、会議のアジェンダ、優先順位。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-biz-admin-consulting.html">
+  <span class="post-tag">ビジネス業務</span>
+  <h2>「ビジネス業務」タブ④：管理部門・コンサル編（契約書チェック・障害報告・論点整理・フレームワーク）</h2>
+  <p>「ビジネス業務」タブの【管理部門】【コンサル】の12のコマンドを解説します。契約書のリスク確認、規約の下書き、ヘルプデスクのFAQ、障害報告書、業界・競合の調査、経営会議資料、論点と仮説、提案書のストーリー、SWOT・3C、反論の壁打ち、ヒアリングの整理、資料レビュー。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-biz-contracts.html">
+  <span class="post-tag">ビジネス業務</span>
+  <h2>「ビジネス業務」タブ⑤：契約書のひな型編（業務委託・NDA・出演・著作権・生成AI条項）</h2>
+  <p>「ビジネス業務」タブの【契約書】の8つのコマンドを解説します。映像制作の業務委託、秘密保持契約（NDA）、出演契約、著作権と二次利用、生成AIの利用条項、ロケ地の使用許諾、フリーランスへの発注書、相手の案との比較。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-exec.html">
+  <span class="post-tag">経営</span>
+  <h2>「経営」タブ：経営者のための15のコマンド（壁打ち・意思決定・中期計画・想定問答）</h2>
+  <p>「経営」タブの15のコマンドを解説します。経営の壁打ち、選択肢の比較、事前検死、中期計画、リスクの洗い出し、新規事業の種、数字が動いた理由、想定問答、銀行・投資家への説明、社員へのメッセージ、言いにくい知らせ、理念づくり、仕事の棚卸し、悩みのヒントになる本・YouTube。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-prepro.html">
+  <span class="post-tag">プリプロ</span>
+  <h2>「プリプロ」タブ：映像制作の準備を進める13のコマンド（企画・プロット・台本・カット表）</h2>
+  <p>「🎬 プリプロ」タブの13のコマンドを解説します。企画3案、ヒアリングシート、プロット、秒数配分、ナレーション台本、カット表、ショットリスト、ロケハン、キャスティング、制作スケジュール、当日のタイムテーブル、見積もりの項目、カット別の生成AIプロンプト。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-dev.html">
+  <span class="post-tag">開発</span>
+  <h2>「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド</h2>
+  <p>「開発・Web／アプリ」タブの10のコマンドを解説します。汎用開発フレーム、要件定義とユーザーストーリー、DBスキーマと型定義、UIコンポーネント、APIとバリデーション、単体テスト、Next.js、React Native、ディレクトリ設計、OpenAPI。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-design-assets.html">
+  <span class="post-tag">素材・デザイン</span>
+  <h2>「素材・デザイン」タブ①：3Dアイコン・切り抜き素材・背景・パターン・ロゴ</h2>
+  <p>「素材・デザイン」タブの素材づくりの13のコマンドを解説します。粘土風・ガラス風の3Dアイコン、白背景の切り抜き素材、エフェクト、フラットイラスト、図解イラスト、Webの背景、パターン、展示台、ステッカー、ロゴ。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-design-posters-thumbnails.html">
+  <span class="post-tag">素材・デザイン</span>
+  <h2>「素材・デザイン」タブ②：ポスターとYouTubeサムネイル（文字の余白つき）</h2>
+  <p>「素材・デザイン」タブのポスター5種とサムネイル6種のコマンドを解説します。映画風、アート、音楽イベント、レトロ観光、商品広告のポスター。解説・レビュー・比較・Vlog・ゲーム・ミステリーのサムネイル。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-t2i-cinematic.html">
+  <span class="post-tag">T2I（画像）</span>
+  <h2>「T2I（画像）」タブ①：映画のような光・レンズ・構図の12のコマンド</h2>
+  <p>「T2I（画像）」タブの、映画的な演出・質感・構図のコマンドを解説します。シネマティックポートレート、横長レンズ、明暗の強い光、左右対称、前後ダブルピント、ミニチュア、レンブラント照明、ネオン、光の筋、大判フィルム、額縁構図、無人の背景。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-t2i-cast.html">
+  <span class="post-tag">T2I（画像）</span>
+  <h2>「T2I（画像）」タブ②：演者・演技・衣装・ストーリーの16のコマンド</h2>
+  <p>「T2I（画像）」タブの、人物を描くためのコマンドを解説します。主演俳優風、日本人モデル、ビジネスリーダー、シニア、ユース、まなざし・物憂げ・笑顔・緊張の演技、上質な衣装、着物、世界観と連動した人物、SF、レトロ、宇宙、宿命の対峙。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-i2v.html">
+  <span class="post-tag">I2V（画像→動画）</span>
+  <h2>「I2V Builder」タブ：静止画を動かす17のコマンド（カメラワーク・表情・環境）</h2>
+  <p>「★ I2V Builder」タブの17のコマンドを解説します。基本のカメラワーク、ドリーズーム、被写体に固定したカメラ、浮遊する移動、急なズーム、高速パン、時間停止、周回、回転、垂直上昇、ローアングル、表情、歩行、シネマグラフ、会話、振り返り、開眼。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+<a class="post-card" href="presets-t2v-v2v.html">
+  <span class="post-tag">T2V・V2V（動画）</span>
+  <h2>「T2V」「V2V / Edit」タブ：文章から動画、動画の質感・スタイル変換の21のコマンド</h2>
+  <p>「T2V（動画）」タブの12と、「V2V / Edit」タブの9のコマンドを解説します。FPVドローン、ドリーズーム、空撮、クレーンアップ、スローモーション、追走、振り返り、会話、表情の変化、雨の街の歩行、物語の導入、追走アクション。フィルムの質感、色の調整、白黒、アニメ調・3DCG調への変換。</p>
+  <time datetime="2026-10-15">2026.10.15</time>
+  <span class="more">記事を読む →</span>
+</a>
+</div>
+</section>
+<section class="blog-sec" id="write">
+<h2 class="blog-sec-title">プロンプトの書き方</h2>
+<p class="blog-lead">どのAIにも通じる、プロンプトの書き方と整え方のコツです。</p>
 <div class="post-list">
 <a class="post-card" href="prompt-basics-template.html">
   <span class="post-tag">基本</span>
@@ -96,6 +321,7 @@
   <span class="more">記事を読む →</span>
 </a>
 </div>
+</section>
 </div>
 </main>
 
