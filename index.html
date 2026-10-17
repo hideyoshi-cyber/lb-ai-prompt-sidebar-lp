@@ -480,10 +480,12 @@
     <!-- catalog:start -->
     <div class="catalog rv" data-catalog>
 <div class="cat-tabs" role="tablist" aria-label="コマンドのタブ">
-<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">日常<small>27</small></button>
-<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">万能・テキスト<small>15</small></button>
-<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">ビジネス業務<small>50</small></button>
-<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">経営<small>15</small></button>
+<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">日常<small>33</small></button>
+<button type="button" role="tab" id="cat-t-student" aria-controls="cat-student" aria-selected="false" tabindex="-1">🎓 学生・就活<small>12</small></button>
+<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">万能・テキスト<small>16</small></button>
+<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">ビジネス業務<small>60</small></button>
+<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">経営<small>22</small></button>
+<button type="button" role="tab" id="cat-t-trade" aria-controls="cat-trade" aria-selected="false" tabindex="-1">投資・トレード<small>12</small></button>
 <button type="button" role="tab" id="cat-t-prepro" aria-controls="cat-prepro" aria-selected="false" tabindex="-1">🎬 プリプロ<small>13</small></button>
 <button type="button" role="tab" id="cat-t-gem" aria-controls="cat-gem" aria-selected="false" tabindex="-1">Gem / NotebookLM<small>8</small></button>
 <button type="button" role="tab" id="cat-t-dev" aria-controls="cat-dev" aria-selected="false" tabindex="-1">開発・Web/アプリ<small>10</small></button>
@@ -522,8 +524,30 @@
 <li><span class="cat-tag">勉強</span><b>確認テストを作る（理解チェック）</b><span class="cat-desc">教科書やノートの内容を貼り付けると、理解できているか確かめるテストを作ります。</span></li>
 <li><span class="cat-tag">勉強</span><b>覚え方を考えてもらう（暗記のコツ）</b><span class="cat-desc">覚えにくい言葉・年号・単語などの、覚え方を考えてもらいます。</span></li>
 <li><span class="cat-tag">勉強</span><b>英会話の練習相手</b><span class="cat-desc">AIと英語で会話の練習をします。レベルに合わせて、間違いをやさしく直してもらえます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>無理のないダイエット計画（カロリー・習慣）</b><span class="cat-desc">今の体型・生活リズム・目標から、リバウンドしにくい1日のカロリー目安と行動目標を作ります。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>食べたものからカロリー・PFC（栄養）計算</b><span class="cat-desc">食べたもの（または📷食事の写真）から、ざっくりとしたカロリー・栄養バランスと「次の食事で調整するコツ」を出してもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>冷蔵庫の食材で高タンパク・低脂質レシピ</b><span class="cat-desc">家にある食材やコンビニ食材で、満足感があって太りにくい献立を考えてもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>外食・コンビニでの太りにくいメニュー選び</b><span class="cat-desc">コンビニ・外食・飲み会に行くとき、何を選べば太りにくいか組み合わせを提案してもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>自宅でできる運動・宅トレメニュー</b><span class="cat-desc">器具なし・部屋の中で、体力や使える時間に合った運動メニューを組んでもらいます。</span></li>
+<li><span class="cat-tag">ダイエット</span><b>停滞期・食べすぎた翌日のリセット相談</b><span class="cat-desc">食べすぎた翌日や、体重が減らない停滞期に、焦らず立て直すための行動プランとメンタルケア。</span></li>
 </ul>
 <a class="cat-more" href="blog/presets-daily-trouble.html">「日常」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-student" aria-labelledby="cat-t-student" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">レポート・論文</span><b>テーマ探し＆高評価される構成（アウトライン）作成</b><em class="cat-free">無料版でも</em><span class="cat-desc">授業の課題文や漠然とした興味から、「ありきたりにならない切り口3案」と「序論・本論・結論の章立て」を作ります。</span></li>
+<li><span class="cat-tag">レポート・論文</span><b>提出前の辛口添削（教授・採点者の目線）</b><span class="cat-desc">自分が書いたレポート・小論文・卒論の下書きを貼ると、採点する先生の目線で「論理の飛躍・根拠不足・話し言葉・文字数調整」を添削します。</span></li>
+<li><span class="cat-tag">レポート・論文</span><b>難解な論文・英語論文・PDF資料のスピード読解</b><span class="cat-desc">ゼミの輪読や先行研究で読む論文（📎PDF添付または本文貼り付け）を、「背景・手法・結果・新規性・限界」に噛み砕いて要約します。</span></li>
+<li><span class="cat-tag">レポート・論文</span><b>ゼミ・授業・卒論のプレゼン構成＆教授からの質問対策</b><span class="cat-desc">発表スライドのページ割り（時間配分）と、先生や先輩から飛んでくる「鋭い質問と答え方」を準備します。</span></li>
+<li><span class="cat-tag">就活・進路</span><b>自己分析：ガクチカ・強みの言語化インタビュー</b><em class="cat-free">無料版でも</em><span class="cat-desc">「特別な実績がない…」と悩んでいても大丈夫。アルバイト・ゼミ・部活・趣味の経験をAIが質問しながら掘り下げ、面接官に伝わる「再現性のある強み」にします。</span></li>
+<li><span class="cat-tag">就活・進路</span><b>ES（エントリーシート）・志望動機の作成＆指定文字数ピタリ調整</b><em class="cat-free">無料版でも</em><span class="cat-desc">ガクチカや志望動機を、「300字以内」「400字以内」などの指定文字数に合わせて、結論ファーストで熱意が伝わる文章に推敲します。</span></li>
+<li><span class="cat-tag">就活・進路</span><b>面接ロールプレイ（1次・最終・深掘り対策・大学推薦入試）</b><em class="cat-free">無料版でも</em><span class="cat-desc">AIが面接官になりきって模擬面接をします。「なぜ？」「具体的には？」の深掘り練習ができ、「終了」と送ると採点と改善アドバイスが出ます。</span></li>
+<li><span class="cat-tag">就活・進路</span><b>企業・業界研究＆面接官が唸る「逆質問」5選</b><span class="cat-desc">企業の採用ページやニュース・四季報情報から、「ビジネスモデル・強み・課題」を整理し、面接最後の「何か質問はありますか？」で差がつく逆質問を作ります。</span></li>
+<li><span class="cat-tag">試験・勉強</span><b>授業レジュメ・板書から「試験に出る要点まとめ＆予想問題」</b><span class="cat-desc">授業のレジュメ・ノート（📎PDF/Word添付や📷板書・スライド写真の貼り付け対応）から、試験直前用の暗記シートと予想問題を作ります。</span></li>
+<li><span class="cat-tag">試験・勉強</span><b>AI家庭教師（答えをすぐ言わず一歩ずつ教える）</b><span class="cat-desc">わからない問題や概念を、いきなり答えを丸写しさせるのではなく、ヒントを出しながら一歩ずつ理解できるまで教えてもらいます。</span></li>
+<li><span class="cat-tag">学生生活</span><b>教授・ゼミ・バイト先・OB訪問への「失礼のない連絡文面」</b><span class="cat-desc">「教授への質問・欠席・アポメール」「OB/OG訪問やインターンのお礼」「バイトのシフト相談」など、書き方に迷うメールやLINEを3パターン作ります。</span></li>
+<li><span class="cat-tag">学生生活</span><b>サークル・学園祭・ゼミ合宿の企画＆役割分担シート</b><span class="cat-desc">新歓イベント、学園祭の出店、ゼミ合宿やグループワークの計画・予算・当日までのスケジュールを一気に整理します。</span></li>
+</ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-text" aria-labelledby="cat-t-text" data-hide>
 <ul class="cat-list">
@@ -542,6 +566,7 @@
 <li><span class="cat-tag">開発マスター</span><b>全スタック対応・汎用開発フレーム</b><span class="cat-desc">技術スタック・設計原則・型安全・エラー規約を固定し高品質コードを生成</span></li>
 <li><span class="cat-tag">ストーリー設計</span><b>世界観・時代・キャラクター段階構築マスター</b><span class="cat-desc">世界観・時代・人種・世代・ファッション・葛藤を段階選択し、映画企画書・シノプシス・映像プロンプトを一気通貫で自動生成</span></li>
 <li><span class="cat-tag">キャラクター設定書</span><b>人種・世代・衣装・生い立ちシート</b><span class="cat-desc">演者の外見、人種的ルーツ、ファッションの年代・素材感、行動原理、代表的な台詞を完全固定する詳細プロファイル</span></li>
+<li><span class="cat-tag">スラッシュコマンド</span><b>AIにショートカット指示（/3行・/表・/辛口など）を覚えさせる</b><span class="cat-desc">ChatGPT（カスタム指示・マイGPT）・Claude（Projects）・Gemini（Gem）やチャットの最初に貼っておくと、「/3行」「/表」「/辛口」と打つだけで一発で指示が通るようになります。</span></li>
 </ul>
 <a class="cat-more" href="blog/presets-text-basics.html">「万能・テキスト」のコマンドの解説を読む</a>
 </div>
@@ -551,8 +576,14 @@
 <li><span class="cat-tag">営業</span><b>商談後のお礼メールを商談メモから作る</b><span class="cat-desc">商談メモを貼るだけで、要点と次のアクションを入れたお礼メールを作ります。</span></li>
 <li><span class="cat-tag">営業</span><b>商談前の企業リサーチと課題の仮説</b><span class="cat-desc">公開情報をもとに、相手企業の要点と「困っていそうなこと」の仮説を整理します。</span></li>
 <li><span class="cat-tag">営業</span><b>提案書の骨子（章立て）を作る</b><span class="cat-desc">提案先の課題と自社の提案内容から、提案書の章立てと各ページで言うことを作ります。</span></li>
-<li><span class="cat-tag">営業</span><b>商談ロールプレイ（AIが顧客役）</b><span class="cat-desc">AIに顧客役をやってもらい、商談の練習をします。終わったら「終了」と送ると、良かった点と改善点を教えてくれます。</span></li>
+<li><span class="cat-tag">営業</span><b>商談ロールプレイ（相手タイプ・心の声つき）</b><span class="cat-desc">AIにリアルな顧客役（多忙な役員・価格に厳しい担当・懐疑的な相手など）を演じてもらい、商談の本番リハーサルをします。「終了」と送ると採点と改善フレーズが出ます。</span></li>
 <li><span class="cat-tag">営業</span><b>想定質問と切り返し方を準備する</b><span class="cat-desc">商談で出そうな質問・反論と、その答え方を事前に用意します。</span></li>
+<li><span class="cat-tag">営業</span><b>断り文句・切り返し千本ノック（連続ロープレ）</b><span class="cat-desc">「予算がない」「検討します」「他社で決まりそう」など、営業現場で一番言われる断り文句をAIが次々に投げてくる特訓ロープレです。</span></li>
+<li><span class="cat-tag">営業</span><b>電話営業（テレアポ）：受付突破＆30秒トークスクリプトとロープレ</b><span class="cat-desc">ガチャ切りを防ぎ、受付を突破して担当者から15分のアポをもらうためのトーク台本作成と、声に出して練習できるテレアポロ―プレです。</span></li>
+<li><span class="cat-tag">営業</span><b>メール営業・DM：開封率＆返信率を高める3通ステップ作成</b><span class="cat-desc">読まれずに捨てられる長文営業メールを卒業し、思わず開封して返信したくなる「初回・追客・最終」のシークエンス（連続メール）を作ります。</span></li>
+<li><span class="cat-tag">マーケ・集客</span><b>ブログ・コラム・noteのネタ出し30選＆構成案</b><span class="cat-desc">「今日何を書こう…」をゼロにします。ターゲットの検索意図（悩み）から、アクセスと問い合わせを生む記事ネタと構成案を一気に作ります。</span></li>
+<li><span class="cat-tag">マーケ・集客</span><b>売れるマーケティング心理・仕掛けアイデア（行動経済学）</b><span class="cat-desc">同じ商品でも「見せ方・オファーの作り方」ひとつで反応率が2倍変わります。行動経済学とマーケティングの定石を使った改善アイデアを出します。</span></li>
+<li><span class="cat-tag">マーケ・集客</span><b>LP・セールスレター・広告文の黄金構成（PASONA/AIDMA）</b><span class="cat-desc">商品の魅力を「顧客が欲しくなる順番」に並べ替え、LP（ランディングページ）や紹介ページの構成とコピーを一気に作ります。</span></li>
 <li><span class="cat-tag">総務</span><b>全社向けの通達・案内文</b><span class="cat-desc">制度変更・ルール・イベントなどの社内案内文を作ります。</span></li>
 <li><span class="cat-tag">総務</span><b>社員からの問い合わせFAQを作る</b><span class="cat-desc">社内ルールと過去の問い合わせから、よくある質問と回答を作ります。</span></li>
 <li><span class="cat-tag">総務</span><b>社内規程・マニュアルの改訂案</b><span class="cat-desc">今の規程と改訂の方針から、改訂案と新旧対照表を作ります。</span></li>
@@ -589,6 +620,10 @@
 <li><span class="cat-tag">コンサル</span><b>仮説に反論させる（壁打ち）</b><span class="cat-desc">自分の仮説にAIが反論し、弱いところを洗い出します。提案前の確認に使います。</span></li>
 <li><span class="cat-tag">コンサル</span><b>ヒアリングメモを「現状・課題・原因」に整理</b><span class="cat-desc">バラバラなヒアリングメモを、構造化された整理表にします。</span></li>
 <li><span class="cat-tag">コンサル</span><b>資料をレビューして弱い点を指摘させる</b><span class="cat-desc">作った資料をAIにレビューさせ、論理の弱さや足りない情報を指摘させます。</span></li>
+<li><span class="cat-tag">データ・分析</span><b>バラバラなデータの集計・クレンジング・クロス集計表</b><span class="cat-desc">アンケート結果・売上リスト・問い合わせ履歴・CSVやExcelの表（📎ファイル添付も可）を貼り付けるだけで、表記ゆれを整えて軸別に集計します。</span></li>
+<li><span class="cat-tag">データ・分析</span><b>データ分析：傾向・異常値・ボトルネックと打ち手の抽出</b><span class="cat-desc">数字の表から「単なる結果の読み上げ」ではなく、「なぜそうなったか（要因）」「どこがボトルネックか」「次に何をすべきか」の示唆を引き出します。</span></li>
+<li><span class="cat-tag">データ・分析</span><b>リサーチ深掘り：市場・競合・顧客インサイトの多段階調査</b><span class="cat-desc">表面的なネット検索まとめで終わらせず、構造・プレイヤー・顧客の「言えていない本音」まで3段階で深く掘り下げます。</span></li>
+<li><span class="cat-tag">データ・分析</span><b>横展開（水平展開）・アナロジー発想マップ</b><span class="cat-desc">1つの成功事例・ノウハウ・強み・ヒット企画を、「他の客層・他の用途・他の業界・他の媒体」へどう横展開できるか一気に広げます。</span></li>
 <li><span class="cat-tag">契約書</span><b>映像制作の業務委託契約書</b><span class="cat-desc">映像制作を受注・発注するときの業務委託契約書のひな型を作ります。</span></li>
 <li><span class="cat-tag">契約書</span><b>秘密保持契約書（NDA）</b><span class="cat-desc">打ち合わせや企画の前に結ぶ秘密保持契約書のひな型を作ります。</span></li>
 <li><span class="cat-tag">契約書</span><b>出演契約書（肖像・音声の利用許諾）</b><span class="cat-desc">モデル・タレント・一般の出演者との出演契約書のひな型を作ります。使う媒体・期間・地域をはっきりさせ、後のトラブルを防ぎます。</span></li>
@@ -617,8 +652,31 @@
 <li><span class="cat-tag">自分の時間</span><b>仕事の棚卸しと任せ方（社長の時間を空ける）</b><span class="cat-desc">自分の仕事を「自分にしかできない／任せる／教えて任せる／やめる」に分け、任せ方を考えます。</span></li>
 <li><span class="cat-tag">自分の時間</span><b>悩みのヒントになる本を紹介してもらう</b><span class="cat-desc">思いつくままに書いた悩みから、考えるヒントになる本を紹介してもらいます。検索できるAI（Gemini・ChatGPT の検索・Perplexity など）で使うと確実です。</span></li>
 <li><span class="cat-tag">自分の時間</span><b>悩みのヒントになるYouTubeを探す</b><span class="cat-desc">思いつくままに書いた悩みから、ヒントになりそうなYouTube動画の探し方と候補を出してもらいます。すぐ開ける検索リンクも作ります。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>COO（参謀・秘書）役：今日の最優先タスクと時間割</b><span class="cat-desc">AIに「優秀なCOO（最高執行責任者）兼秘書」の役目を与え、頭の中のやることリストを「売上に直結する仕事／AIに振る仕事／やめる仕事」に仕分けてもらいます。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>辛口CFO（金庫番）役：出費・投資・値決めのシビア点検</b><span class="cat-desc">AIに「数字とキャッシュに厳しいCFO（最高財務責任者）」の役目を与え、機材購入・外注・サブスク課金・見積金額が本当に妥当かシビアに審査してもらいます。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>CMO（広報・営業部長）役：1日15分の集客・発信プラン</b><span class="cat-desc">AIに「少人数・低予算の集客に強いCMO（マーケティング責任者）」の役目を与え、手間をかけずに売上・リピートにつながる動き方を設計してもらいます。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>法務・交渉の盾役：角を立てずに身を守る切り返しと文面</b><span class="cat-desc">AIに「タフな交渉人と法務参謀」の役目を与え、仕様変更・追加作業の請求・値引き要求・スコープ外のお願いから社長を守る文面を作ります。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>仮想ボード（3人役員会議）：イケイケ営業×慎重財務×辛口顧客</b><span class="cat-desc">AIが「攻めの営業部長」「守りの財務部長」「本音の顧客代表」の3役を同時に演じ、一人では気づけない視点からあなたの企画や悩みを議論します。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>伴走メンター・保健室役：孤独やモヤモヤの吐き出しと整理</b><span class="cat-desc">誰にも弱音を吐けない一人経営者のために、AIが「否定せず聴くエグゼクティブコーチ」になり、感情のクールダウンと思考整理を手伝います。</span></li>
+<li><span class="cat-tag">ひとり社長の右腕</span><b>専属AI社員の「任命書（カスタム指示）」を作る</b><span class="cat-desc">ChatGPT（マイGPT）・Claude（Projects）・Gemini（Gem）に貼るだけで、あなたの事業や口調を覚えた「専属の右腕AI」を作れる指示書を生成します。</span></li>
 </ul>
 <a class="cat-more" href="blog/presets-exec.html">「経営」のコマンドの解説を読む</a>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-trade" aria-labelledby="cat-t-trade" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">相場・ニュース</span><b>経済指標・要人発言のサプライズ分析</b><em class="cat-free">無料版でも</em><span class="cat-desc">FOMC・日銀会合・雇用統計・CPIなどの結果やニュースを貼り付けると、市場予想とのギャップと株・為替への影響シナリオを整理します。</span></li>
+<li><span class="cat-tag">相場・ニュース</span><b>為替（FX）通貨ペアの強弱・テーマ整理</b><span class="cat-desc">金利差・中央銀行の姿勢・リスクオン/オフから、狙っている通貨ペアの強弱ドライバーとシナリオを整理します。</span></li>
+<li><span class="cat-tag">相場・ニュース</span><b>今日のマーケット振り返り＆翌日シナリオ</b><span class="cat-desc">その日の指数・為替・セクターの値動きメモから、資金の流れを整理し、翌営業日の作戦を立てます。</span></li>
+<li><span class="cat-tag">株式・決算</span><b>決算短信・決算説明資料のスピード要約</b><em class="cat-free">無料版でも</em><span class="cat-desc">決算短信や説明資料（📎ファイル添付またはテキスト貼り付け）から、ポジティブ・ネガティブ要因と通期見通しの強弱を抽出します。</span></li>
+<li><span class="cat-tag">株式・決算</span><b>銘柄のビジネスモデル・競争優位性（モート）分析</b><span class="cat-desc">気になる銘柄が「結局何で稼いでいて、なぜ強いのか（または何が脆いのか）」を投資家目線で解剖します。</span></li>
+<li><span class="cat-tag">株式・決算</span><b>テーマ株・関連セクターの連想マップ</b><span class="cat-desc">新しいニュース・政策・技術トレンドから、恩恵を受ける業界・サプライチェーン・周辺セクターを連想して整理します。</span></li>
+<li><span class="cat-tag">チャート・戦略</span><b>チャート画像から環境認識・節目チェック</b><em class="cat-free">無料版でも</em><span class="cat-desc">📷 チャートのスクリーンショットを貼り付けると、トレンド・サポレジ（節目）・チャートパターン・ダマシ警戒ポイントを客観的に言語化します。</span></li>
+<li><span class="cat-tag">チャート・戦略</span><b>トレードシナリオ構築（エントリー前の作戦会議）</b><em class="cat-free">無料版でも</em><span class="cat-desc">発注前に「根拠・利確・損切り・撤退条件」を言語化し、根拠の薄いギャンブルトレードを防ぎます。</span></li>
+<li><span class="cat-tag">チャート・戦略</span><b>適正ロット・リスクリワード（資金管理）計算</b><span class="cat-desc">口座資金・許容損失％・エントリー価格・損切り価格から、1回のトレードで張ってよい適正ロット数（株数・通貨数）を計算します。</span></li>
+<li><span class="cat-tag">記録・メンタル</span><b>トレード日誌・勝ちパターンと敗因の分析</b><span class="cat-desc">トレードの記録や振り返りメモを貼り付けると、感情的なミスや「自分の勝ちパターン・負けパターン」を客観的に分析します。</span></li>
+<li><span class="cat-tag">記録・メンタル</span><b>飛び乗り・損切り遅れ防止のメンタル壁打ち</b><span class="cat-desc">急騰を見て飛び乗りたいとき（FOMO）や、含み損に耐えてお祈りしているときに、頭を冷やして冷静な判断を取り戻します。</span></li>
+<li><span class="cat-tag">記録・メンタル</span><b>マイルール・発注前10秒チェックリスト作成</b><span class="cat-desc">自分のトレード手法やよくやる失敗に合わせて、モニター横に貼れる「発注前チェックリスト」と「退場防止の鉄則」を作ります。</span></li>
+</ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-prepro" aria-labelledby="cat-t-prepro" data-hide>
 <ul class="cat-list">

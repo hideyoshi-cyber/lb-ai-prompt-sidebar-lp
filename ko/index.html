@@ -476,10 +476,12 @@
     <!-- catalog:start -->
     <div class="catalog rv" data-catalog>
 <div class="cat-tabs" role="tablist" aria-label="명령 탭">
-<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">일상<small>20</small></button>
-<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">범용 텍스트<small>15</small></button>
-<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">비즈니스<small>41</small></button>
-<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">경영<small>15</small></button>
+<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">일상<small>26</small></button>
+<button type="button" role="tab" id="cat-t-student" aria-controls="cat-student" aria-selected="false" tabindex="-1">🎓 학생·취업<small>12</small></button>
+<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">범용 텍스트<small>16</small></button>
+<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">비즈니스<small>51</small></button>
+<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">경영<small>22</small></button>
+<button type="button" role="tab" id="cat-t-trade" aria-controls="cat-trade" aria-selected="false" tabindex="-1">투자·트레이딩<small>12</small></button>
 <button type="button" role="tab" id="cat-t-prepro" aria-controls="cat-prepro" aria-selected="false" tabindex="-1">🎬 프리프로덕션<small>13</small></button>
 <button type="button" role="tab" id="cat-t-gem" aria-controls="cat-gem" aria-selected="false" tabindex="-1">Gem / NotebookLM<small>8</small></button>
 <button type="button" role="tab" id="cat-t-dev" aria-controls="cat-dev" aria-selected="false" tabindex="-1">개발·웹/앱<small>10</small></button>
@@ -511,6 +513,28 @@
 <li><span class="cat-tag">공부</span><b>확인 테스트 만들기 (이해도 체크)</b><span class="cat-desc">교과서나 노트 내용을 붙여 넣으면 이해했는지 확인하는 테스트를 만들어 줍니다.</span></li>
 <li><span class="cat-tag">공부</span><b>외우는 방법 만들기 (암기 비결)</b><span class="cat-desc">외우기 어려운 용어·연도·단어 등의 암기법을 만들어 줍니다.</span></li>
 <li><span class="cat-tag">공부</span><b>영어 회화 연습 상대</b><span class="cat-desc">AI와 영어로 대화 연습을 합니다. 수준에 맞춰 틀린 부분을 부드럽게 고쳐 줍니다.</span></li>
+<li><span class="cat-tag">다이어트</span><b>무리 없는 다이어트 계획(칼로리·습관)</b><span class="cat-desc">지금의 체형·생활 리듬·목표를 바탕으로 요요가 잘 오지 않는 하루 칼로리 기준과 행동 목표를 만듭니다.</span></li>
+<li><span class="cat-tag">다이어트</span><b>먹은 음식으로 칼로리·탄단지(영양) 계산</b><span class="cat-desc">먹은 음식(또는 📷 식사 사진)을 바탕으로 대략적인 칼로리·영양 균형과 「다음 식사에서 조정하는 요령」을 알려 줍니다.</span></li>
+<li><span class="cat-tag">다이어트</span><b>냉장고 속 재료로 고단백·저지방 레시피</b><span class="cat-desc">집에 있는 재료나 편의점 재료로 든든하면서 살이 잘 찌지 않는 식단을 생각해 줍니다.</span></li>
+<li><span class="cat-tag">다이어트</span><b>외식·편의점에서 살 덜 찌는 메뉴 고르기</b><span class="cat-desc">편의점·외식·회식에 갈 때 무엇을 고르면 살이 덜 찌는지 조합을 제안해 줍니다.</span></li>
+<li><span class="cat-tag">다이어트</span><b>집에서 하는 운동·홈트레이닝 메뉴</b><span class="cat-desc">기구 없이 방 안에서, 체력과 쓸 수 있는 시간에 맞는 운동 메뉴를 짜 줍니다.</span></li>
+<li><span class="cat-tag">다이어트</span><b>정체기·과식한 다음 날 리셋 상담</b><span class="cat-desc">과식한 다음 날이나 체중이 줄지 않는 정체기에 조급해하지 않고 다시 일어서기 위한 행동 계획과 마음 관리.</span></li>
+</ul>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-student" aria-labelledby="cat-t-student" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">리포트·논문</span><b>주제 찾기 &amp; 높은 평가를 받는 구성(아웃라인) 만들기</b><em class="cat-free">무료 버전</em><span class="cat-desc">수업 과제문이나 막연한 관심사에서 「뻔하지 않은 관점 3가지」와 「서론·본론·결론 목차」를 만듭니다.</span></li>
+<li><span class="cat-tag">리포트·논문</span><b>제출 전 깐깐한 첨삭(교수·채점자 시선)</b><span class="cat-desc">직접 쓴 리포트·논술·졸업논문 초안을 붙여 넣으면, 채점하는 선생님의 시선으로 「논리의 비약·근거 부족·구어체·분량 조정」을 첨삭합니다.</span></li>
+<li><span class="cat-tag">리포트·논문</span><b>어려운 논문·영어 논문·PDF 자료 빠른 독해</b><span class="cat-desc">세미나 윤독이나 선행 연구로 읽는 논문(📎 PDF 첨부 또는 본문 붙여넣기)을 「배경·방법·결과·새로운 점·한계」로 쉽게 풀어 요약합니다.</span></li>
+<li><span class="cat-tag">리포트·논문</span><b>세미나·수업·졸업논문 발표 구성 &amp; 교수 질문 대비</b><span class="cat-desc">발표 슬라이드의 페이지 배분(시간 배분)과 교수나 선배에게서 날아올 「날카로운 질문과 답하는 법」을 준비합니다.</span></li>
+<li><span class="cat-tag">취업·진로</span><b>자기분석: 핵심 경험·강점 정리 인터뷰</b><em class="cat-free">무료 버전</em><span class="cat-desc">「특별한 실적이 없어서…」라고 고민해도 괜찮습니다. 아르바이트·세미나·동아리·취미 경험을 AI가 질문하며 파고들어, 면접관에게 전달되는 「재현성 있는 강점」으로 만듭니다.</span></li>
+<li><span class="cat-tag">취업·진로</span><b>자기소개서·지원동기 작성 &amp; 지정 글자 수 딱 맞추기</b><em class="cat-free">무료 버전</em><span class="cat-desc">대학 시절 경험이나 지원동기를 「300자 이내」「400자 이내」 같은 지정 글자 수에 맞춰, 결론부터 말하고 열정이 전해지는 글로 다듬습니다.</span></li>
+<li><span class="cat-tag">취업·진로</span><b>면접 롤플레이(1차·최종·꼬리 질문 대비·대학 추천 입시)</b><em class="cat-free">무료 버전</em><span class="cat-desc">AI가 면접관이 되어 모의 면접을 진행합니다. 「왜요?」「구체적으로는요?」 같은 꼬리 질문 연습을 할 수 있고, 「종료」라고 보내면 채점과 개선 조언이 나옵니다.</span></li>
+<li><span class="cat-tag">취업·진로</span><b>기업·업계 분석 &amp; 면접관이 감탄하는 「역질문」 5선</b><span class="cat-desc">기업의 채용 페이지나 뉴스·DART 공시 정보를 바탕으로 「비즈니스 모델·강점·과제」를 정리하고, 면접 마지막 「질문 있으신가요?」에서 차이를 만드는 역질문을 만듭니다.</span></li>
+<li><span class="cat-tag">시험·공부</span><b>수업 자료·판서로 「시험에 나올 요점 정리 &amp; 예상 문제」</b><span class="cat-desc">수업 자료·노트(📎 PDF/Word 첨부나 📷 판서·슬라이드 사진 붙여넣기 가능)로 시험 직전용 암기 시트와 예상 문제를 만듭니다.</span></li>
+<li><span class="cat-tag">시험·공부</span><b>AI 과외 선생님(답을 바로 말하지 않고 한 단계씩 가르치기)</b><span class="cat-desc">모르는 문제나 개념을 처음부터 답을 베끼게 하는 대신, 힌트를 주면서 이해할 때까지 한 단계씩 가르쳐 줍니다.</span></li>
+<li><span class="cat-tag">학교생활</span><b>교수·세미나·아르바이트처·선배 방문에 보내는 「실례 없는 연락 문안」</b><span class="cat-desc">「교수님께 질문·결석·면담 요청 메일」「선배 방문이나 인턴십 감사 인사」「아르바이트 근무 일정 상담」 등 쓰는 법이 헷갈리는 메일이나 메시지를 3가지 버전으로 만듭니다.</span></li>
+<li><span class="cat-tag">학교생활</span><b>동아리·대학 축제·MT 기획 &amp; 역할 분담 시트</b><span class="cat-desc">신입생 환영 행사, 대학 축제 부스, 세미나 MT나 조별 과제의 계획·예산·당일까지의 일정을 한 번에 정리합니다.</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-text" aria-labelledby="cat-t-text" data-hide>
@@ -530,6 +554,7 @@
 <li><span class="cat-tag">개발 마스터</span><b>풀스택 대응·범용 개발 프레임</b><span class="cat-desc">기술 스택·설계 원칙·타입 안전성·에러 규약을 고정해 고품질 코드를 생성합니다</span></li>
 <li><span class="cat-tag">스토리 설계</span><b>세계관·시대·캐릭터 단계별 구축 마스터</b><span class="cat-desc">세계관·시대·인종·세대·패션·갈등을 단계별로 선택하면, 영화 기획서·시놉시스·영상 프롬프트를 한 번에 자동 생성합니다</span></li>
 <li><span class="cat-tag">캐릭터 설정서</span><b>인종·세대·의상·성장 배경 시트</b><span class="cat-desc">출연자의 외모, 인종적 뿌리, 패션의 시대감·소재감, 행동 원리, 대표 대사를 완전히 고정하는 상세 프로필입니다</span></li>
+<li><span class="cat-tag">슬래시 명령어</span><b>AI에게 단축 지시(/tldr·/table·/critic 등) 기억시키기</b><span class="cat-desc">ChatGPT(맞춤형 지침·내 GPT), Claude(Projects), Gemini(Gem)나 채팅 첫머리에 붙여 두면 「/tldr」「/table」「/critic」만 입력해도 한 번에 지시가 통하게 됩니다.</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-biz" aria-labelledby="cat-t-biz" data-hide>
@@ -538,8 +563,14 @@
 <li><span class="cat-tag">영업</span><b>미팅 메모로 감사 메일 쓰기</b><span class="cat-desc">미팅 메모를 붙여 넣기만 하면 요점과 다음 액션이 담긴 감사 메일을 작성합니다.</span></li>
 <li><span class="cat-tag">영업</span><b>미팅 전 기업 조사와 과제 가설</b><span class="cat-desc">공개 정보를 바탕으로 상대 기업의 요점과 '어려움을 겪고 있을 법한 점'에 대한 가설을 정리합니다.</span></li>
 <li><span class="cat-tag">영업</span><b>제안서 뼈대(목차) 만들기</b><span class="cat-desc">제안 대상의 과제와 자사의 제안 내용을 바탕으로 제안서의 목차와 각 페이지에서 전할 내용을 만듭니다.</span></li>
-<li><span class="cat-tag">영업</span><b>영업 미팅 롤플레이 (AI가 고객 역할)</b><span class="cat-desc">AI에게 고객 역할을 맡겨 영업 미팅을 연습합니다. 끝나면 '종료'라고 보내면 잘한 점과 개선할 점을 알려 줍니다.</span></li>
+<li><span class="cat-tag">영업</span><b>영업 미팅 롤플레이(고객 유형·속마음 포함)</b><span class="cat-desc">AI가 실감 나는 고객 역할(바쁜 임원·가격에 깐깐한 담당자·의심 많은 상대 등)을 맡아 영업 미팅 실전 리허설을 합니다. 「종료」라고 보내면 채점과 개선 문구가 나옵니다.</span></li>
 <li><span class="cat-tag">영업</span><b>예상 질문과 대응 방법 준비하기</b><span class="cat-desc">영업 미팅에서 나올 법한 질문·반론과 그 대답 방법을 미리 준비합니다.</span></li>
+<li><span class="cat-tag">영업</span><b>거절 멘트 반박 집중 훈련(연속 롤플레이)</b><span class="cat-desc">「예산이 없어요」「검토해 볼게요」「다른 곳으로 정해질 것 같아요」 등 영업 현장에서 가장 많이 듣는 거절 멘트를 AI가 연달아 던지는 특훈 롤플레이입니다.</span></li>
+<li><span class="cat-tag">영업</span><b>전화 영업(텔레마케팅): 안내 데스크 돌파 &amp; 30초 토크 스크립트와 롤플레이</b><span class="cat-desc">바로 끊기는 것을 막고 안내 데스크를 돌파해 담당자에게서 15분 미팅 약속을 받아 내기 위한 토크 대본 작성과, 소리 내어 연습할 수 있는 전화 영업 롤플레이입니다.</span></li>
+<li><span class="cat-tag">영업</span><b>영업 메일·DM: 오픈율 &amp; 회신율을 높이는 3단계 메일 작성</b><span class="cat-desc">읽히지 않고 버려지는 장문 영업 메일은 이제 그만. 저도 모르게 열어 보고 답장하고 싶어지는 「첫 메일·후속·마지막」 시퀀스(연속 메일)를 만듭니다.</span></li>
+<li><span class="cat-tag">마케팅·집객</span><b>블로그·칼럼·브런치 소재 발굴 30선 &amp; 구성안</b><span class="cat-desc">「오늘은 뭘 쓰지…」를 없애 줍니다. 타깃의 검색 의도(고민)에서 방문과 문의를 만들어 내는 글 소재와 구성안을 한 번에 만듭니다.</span></li>
+<li><span class="cat-tag">마케팅·집객</span><b>잘 팔리는 마케팅 심리·장치 아이디어(행동경제학)</b><span class="cat-desc">같은 상품이라도 「보여 주는 방식·오퍼 구성」 하나로 반응률이 2배 달라집니다. 행동경제학과 마케팅의 정석을 활용한 개선 아이디어를 냅니다.</span></li>
+<li><span class="cat-tag">마케팅·집객</span><b>랜딩 페이지·세일즈 레터·광고 문구의 황금 구성(PASONA/AIDMA)</b><span class="cat-desc">상품의 매력을 「고객이 갖고 싶어지는 순서」로 재배열해, 랜딩 페이지(LP)나 소개 페이지의 구성과 카피를 한 번에 만듭니다.</span></li>
 <li><span class="cat-tag">총무</span><b>전사 공지·안내문</b><span class="cat-desc">제도 변경·규칙·이벤트 등에 대한 사내 안내문을 작성합니다.</span></li>
 <li><span class="cat-tag">총무</span><b>직원 문의 FAQ 만들기</b><span class="cat-desc">사내 규정과 과거 문의를 바탕으로 자주 묻는 질문과 답변을 만듭니다.</span></li>
 <li><span class="cat-tag">총무</span><b>사내 규정·매뉴얼 개정안</b><span class="cat-desc">현재 규정과 개정 방침을 바탕으로 개정안과 신구 대조표를 만듭니다.</span></li>
@@ -575,6 +606,10 @@
 <li><span class="cat-tag">컨설팅</span><b>가설에 반론시키기 (토론 상대)</b><span class="cat-desc">내 가설에 AI가 반론해 약한 부분을 찾아냅니다. 제안 전 점검에 사용합니다.</span></li>
 <li><span class="cat-tag">컨설팅</span><b>인터뷰 메모를 '현황·과제·원인'으로 정리</b><span class="cat-desc">흩어져 있는 인터뷰 메모를 구조화된 정리표로 만듭니다.</span></li>
 <li><span class="cat-tag">컨설팅</span><b>자료를 리뷰해 약한 점 짚어내기</b><span class="cat-desc">작성한 자료를 AI에게 리뷰시켜 논리의 약점이나 부족한 정보를 짚어 냅니다.</span></li>
+<li><span class="cat-tag">데이터·분석</span><b>흩어진 데이터의 집계·정제·교차 집계표</b><span class="cat-desc">설문 결과·매출 목록·문의 이력·CSV나 Excel 표(📎 파일 첨부도 가능)를 붙여 넣기만 하면 표기 차이를 정리하고 기준별로 집계합니다.</span></li>
+<li><span class="cat-tag">데이터·분석</span><b>데이터 분석: 추세·이상치·병목과 대책 도출</b><span class="cat-desc">숫자 표에서 「단순한 결과 읽기」가 아니라 「왜 그렇게 되었는지(원인)」「어디가 병목인지」「다음에 무엇을 해야 하는지」의 시사점을 끌어냅니다.</span></li>
+<li><span class="cat-tag">데이터·분석</span><b>심층 리서치: 시장·경쟁·고객 인사이트의 다단계 조사</b><span class="cat-desc">표면적인 인터넷 검색 요약으로 끝내지 않고, 구조·플레이어·고객이 「말하지 못한 속마음」까지 3단계로 깊이 파고듭니다.</span></li>
+<li><span class="cat-tag">데이터·분석</span><b>수평 전개·유추 발상 맵</b><span class="cat-desc">하나의 성공 사례·노하우·강점·히트 기획을 「다른 고객층·다른 용도·다른 업계·다른 매체」로 어떻게 수평 전개할 수 있는지 한 번에 넓혀 봅니다.</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-exec" aria-labelledby="cat-t-exec" data-hide>
@@ -594,6 +629,29 @@
 <li><span class="cat-tag">내 시간</span><b>업무 점검과 위임 방법 (사장의 시간 확보)</b><span class="cat-desc">내 업무를 '나만 할 수 있는 것 / 맡기기 / 가르쳐서 맡기기 / 그만두기'로 나누고 위임 방법을 생각합니다.</span></li>
 <li><span class="cat-tag">내 시간</span><b>고민의 힌트가 되는 책 추천받기</b><span class="cat-desc">떠오르는 대로 적은 고민을 바탕으로 생각의 힌트가 되는 책을 추천받습니다. 검색할 수 있는 AI(Gemini·ChatGPT의 검색·Perplexity 등)에서 사용하면 확실합니다.</span></li>
 <li><span class="cat-tag">내 시간</span><b>고민의 힌트가 되는 YouTube 찾기</b><span class="cat-desc">떠오르는 대로 적은 고민을 바탕으로 힌트가 될 만한 YouTube 동영상의 검색 방법과 후보를 제안받습니다. 바로 열 수 있는 검색 링크도 만들어 줍니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>COO(참모·비서) 역할: 오늘의 최우선 업무와 시간표</b><span class="cat-desc">AI에게 「유능한 COO(최고운영책임자) 겸 비서」 역할을 맡겨, 머릿속 할 일 목록을 「매출에 직결되는 일/AI에 맡길 일/그만둘 일」로 나눕니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>깐깐한 CFO(금고지기) 역할: 지출·투자·가격 결정 엄격 점검</b><span class="cat-desc">AI에게 「숫자와 현금에 엄격한 CFO(최고재무책임자)」 역할을 맡겨, 장비 구입·외주·구독 결제·견적 금액이 정말 타당한지 엄격하게 심사합니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>CMO(홍보·영업 부장) 역할: 하루 15분 집객·홍보 플랜</b><span class="cat-desc">AI에게 「소규모·저예산 집객에 강한 CMO(마케팅 책임자)」 역할을 맡겨, 수고를 들이지 않고 매출·재구매로 이어지는 움직임을 설계합니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>법무·협상의 방패 역할: 관계를 해치지 않고 나를 지키는 대응과 문안</b><span class="cat-desc">AI에게 「노련한 협상가 겸 법무 참모」 역할을 맡겨, 사양 변경·추가 작업 요구·할인 요구·범위 밖의 부탁으로부터 대표를 지키는 문안을 만듭니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>가상 이사회(3인 임원 회의): 공격적 영업×신중한 재무×깐깐한 고객</b><span class="cat-desc">AI가 「공격적인 영업 부장」「보수적인 재무 부장」「솔직한 고객 대표」 세 역할을 동시에 맡아, 혼자서는 깨닫기 어려운 관점에서 당신의 기획이나 고민을 토론합니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>동행 멘토·보건실 역할: 외로움과 답답함 털어놓기와 정리</b><span class="cat-desc">누구에게도 약한 소리를 할 수 없는 1인 경영자를 위해, AI가 「부정하지 않고 들어 주는 임원 코치」가 되어 감정을 가라앉히고 생각을 정리하도록 돕습니다.</span></li>
+<li><span class="cat-tag">1인 대표의 오른팔</span><b>전속 AI 직원의 「임명장(맞춤 지침)」 만들기</b><span class="cat-desc">ChatGPT(내 GPT), Claude(Projects), Gemini(Gem)에 붙여 넣기만 하면 당신의 사업과 말투를 기억한 「전속 오른팔 AI」를 만들 수 있는 지시서를 생성합니다.</span></li>
+</ul>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-trade" aria-labelledby="cat-t-trade" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">시황·뉴스</span><b>경제지표·주요 인사 발언의 서프라이즈 분석</b><em class="cat-free">무료 버전</em><span class="cat-desc">FOMC·한국은행 금리 결정·고용지표·CPI 등의 결과나 뉴스를 붙여 넣으면, 시장 예상과의 차이와 주식·외환에 미칠 영향 시나리오를 정리합니다.</span></li>
+<li><span class="cat-tag">시황·뉴스</span><b>외환(FX) 통화쌍의 강약·테마 정리</b><span class="cat-desc">금리차·중앙은행의 태도·리스크 온/오프를 바탕으로, 관심 있는 통화쌍의 강약 요인과 시나리오를 정리합니다.</span></li>
+<li><span class="cat-tag">시황·뉴스</span><b>오늘의 시황 복기 &amp; 다음 날 시나리오</b><span class="cat-desc">그날의 지수·환율·섹터 움직임 메모를 바탕으로 자금 흐름을 정리하고 다음 거래일의 작전을 세웁니다.</span></li>
+<li><span class="cat-tag">주식·실적</span><b>실적 발표·IR 자료 빠른 요약</b><em class="cat-free">무료 버전</em><span class="cat-desc">실적 발표나 IR 자료(📎 파일 첨부 또는 텍스트 붙여넣기)에서 긍정·부정 요인과 연간 전망의 강약을 추출합니다.</span></li>
+<li><span class="cat-tag">주식·실적</span><b>종목의 비즈니스 모델·경쟁 우위(해자) 분석</b><span class="cat-desc">관심 종목이 「결국 무엇으로 돈을 벌고, 왜 강한지(또는 무엇이 취약한지)」를 투자자 시선으로 해부합니다.</span></li>
+<li><span class="cat-tag">주식·실적</span><b>테마주·관련 섹터 연상 맵</b><span class="cat-desc">새로운 뉴스·정책·기술 트렌드에서 수혜를 받는 업종·공급망·주변 섹터를 연상해서 정리합니다.</span></li>
+<li><span class="cat-tag">차트·전략</span><b>차트 이미지로 시장 환경 인식·주요 가격대 점검</b><em class="cat-free">무료 버전</em><span class="cat-desc">📷 차트 스크린샷을 붙여 넣으면 추세·지지/저항(주요 가격대)·차트 패턴·속임수 경계 포인트를 객관적으로 정리합니다.</span></li>
+<li><span class="cat-tag">차트·전략</span><b>트레이드 시나리오 수립(진입 전 작전 회의)</b><em class="cat-free">무료 버전</em><span class="cat-desc">주문 전에 「근거·익절·손절·철수 조건」을 말로 정리해, 근거 없는 도박성 트레이드를 막습니다.</span></li>
+<li><span class="cat-tag">차트·전략</span><b>적정 수량·손익비(자금 관리) 계산</b><span class="cat-desc">계좌 자금·허용 손실 %·진입 가격·손절 가격을 바탕으로, 한 번의 트레이드에 걸어도 되는 적정 수량(주식 수·통화 수량)을 계산합니다.</span></li>
+<li><span class="cat-tag">기록·멘탈</span><b>매매 일지·승리 패턴과 패인 분석</b><span class="cat-desc">매매 기록이나 복기 메모를 붙여 넣으면 감정적인 실수와 「나의 승리 패턴·패배 패턴」을 객관적으로 분석합니다.</span></li>
+<li><span class="cat-tag">기록·멘탈</span><b>추격 매수·손절 지연 방지 멘탈 점검</b><span class="cat-desc">급등을 보고 따라 들어가고 싶을 때(FOMO)나 평가 손실을 버티며 기도하고 있을 때, 머리를 식히고 냉정한 판단을 되찾게 합니다.</span></li>
+<li><span class="cat-tag">기록·멘탈</span><b>나만의 규칙·주문 전 10초 체크리스트 만들기</b><span class="cat-desc">나의 트레이드 기법과 자주 하는 실수에 맞춰, 모니터 옆에 붙여 둘 수 있는 「주문 전 체크리스트」와 「시장 퇴출 방지 철칙」을 만듭니다.</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-prepro" aria-labelledby="cat-t-prepro" data-hide>

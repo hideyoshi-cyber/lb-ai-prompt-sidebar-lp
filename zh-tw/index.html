@@ -476,10 +476,12 @@
     <!-- catalog:start -->
     <div class="catalog rv" data-catalog>
 <div class="cat-tabs" role="tablist" aria-label="指令分頁">
-<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">日常<small>20</small></button>
-<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">萬用文字<small>15</small></button>
-<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">商務<small>41</small></button>
-<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">經營<small>15</small></button>
+<button type="button" role="tab" id="cat-t-daily" aria-controls="cat-daily" aria-selected="true">日常<small>26</small></button>
+<button type="button" role="tab" id="cat-t-student" aria-controls="cat-student" aria-selected="false" tabindex="-1">🎓 學生、求職<small>12</small></button>
+<button type="button" role="tab" id="cat-t-text" aria-controls="cat-text" aria-selected="false" tabindex="-1">萬用文字<small>16</small></button>
+<button type="button" role="tab" id="cat-t-biz" aria-controls="cat-biz" aria-selected="false" tabindex="-1">商務<small>51</small></button>
+<button type="button" role="tab" id="cat-t-exec" aria-controls="cat-exec" aria-selected="false" tabindex="-1">經營<small>22</small></button>
+<button type="button" role="tab" id="cat-t-trade" aria-controls="cat-trade" aria-selected="false" tabindex="-1">投資、交易<small>12</small></button>
 <button type="button" role="tab" id="cat-t-prepro" aria-controls="cat-prepro" aria-selected="false" tabindex="-1">🎬 前製<small>13</small></button>
 <button type="button" role="tab" id="cat-t-gem" aria-controls="cat-gem" aria-selected="false" tabindex="-1">Gem / NotebookLM<small>8</small></button>
 <button type="button" role="tab" id="cat-t-dev" aria-controls="cat-dev" aria-selected="false" tabindex="-1">開發、網站/App<small>10</small></button>
@@ -511,6 +513,28 @@
 <li><span class="cat-tag">學習</span><b>出小考題（確認理解程度）</b><span class="cat-desc">貼上課本或筆記的內容，就會出題幫你確認是否真的理解了。</span></li>
 <li><span class="cat-tag">學習</span><b>幫我想記憶方法（背誦訣竅）</b><span class="cat-desc">針對不好記的詞彙、年份、單字等，幫你想出好記的方法。</span></li>
 <li><span class="cat-tag">學習</span><b>英文會話練習夥伴</b><span class="cat-desc">和 AI 用英文練習會話。會配合你的程度，溫和地幫你修正錯誤。</span></li>
+<li><span class="cat-tag">減重</span><b>不勉強的減重計畫（熱量、習慣）</b><span class="cat-desc">根據目前的體型、生活作息與目標，制定不易復胖的每日熱量目標與行動目標。</span></li>
+<li><span class="cat-tag">減重</span><b>從吃過的東西計算熱量、PFC（營養）</b><span class="cat-desc">從吃過的東西（或📷餐點照片）大致算出熱量、營養比例，以及「下一餐如何調整的訣竅」。</span></li>
+<li><span class="cat-tag">減重</span><b>用冰箱食材做高蛋白、低脂食譜</b><span class="cat-desc">用家裡現有的食材或超商食材，想出有飽足感又不易發胖的菜單。</span></li>
+<li><span class="cat-tag">減重</span><b>外食、超商不易發胖的餐點選擇</b><span class="cat-desc">去超商、外食或聚餐時，建議怎麼搭配才不易發胖。</span></li>
+<li><span class="cat-tag">減重</span><b>在家就能做的運動、居家健身菜單</b><span class="cat-desc">不需器材、在房間裡就能做，依體力與可用時間安排運動菜單。</span></li>
+<li><span class="cat-tag">減重</span><b>停滯期、吃太多隔天的重整諮詢</b><span class="cat-desc">吃太多的隔天，或體重降不下來的停滯期，幫你不慌不忙重新調整的行動計畫與心理照護。</span></li>
+</ul>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-student" aria-labelledby="cat-t-student" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">報告、論文</span><b>找主題＆規劃高分架構（大綱）</b><em class="cat-free">免費版</em><span class="cat-desc">從課堂作業題目或模糊的興趣出發，做出「不落俗套的 3 種切入點」與「緒論、本論、結論的章節安排」。</span></li>
+<li><span class="cat-tag">報告、論文</span><b>繳交前的嚴格批改（教授、評分者觀點）</b><span class="cat-desc">貼上自己寫的報告、小論文、畢業論文草稿，就會以評分老師的觀點批改「邏輯跳躍、依據不足、口語用詞、字數調整」。</span></li>
+<li><span class="cat-tag">報告、論文</span><b>艱深論文、英文論文、PDF 資料快速閱讀</b><span class="cat-desc">把專題讀書會或文獻回顧要讀的論文（📎附加 PDF 或貼上內文），拆解成「背景、方法、結果、創新性、限制」來摘要。</span></li>
+<li><span class="cat-tag">報告、論文</span><b>專題、課堂、畢業論文的簡報架構＆教授提問準備</b><span class="cat-desc">規劃發表簡報的頁數分配（時間分配），並準備老師或學長姐會提出的「尖銳問題與回答方式」。</span></li>
+<li><span class="cat-tag">求職、升學</span><b>自我分析：在校經歷、優勢的整理訪談</b><em class="cat-free">免費版</em><span class="cat-desc">就算煩惱「沒有特別的成績……」也沒關係。AI 會一邊提問一邊深挖打工、專題、社團、興趣的經驗，整理成能打動面試官、「可重現的優勢」。</span></li>
+<li><span class="cat-tag">求職、升學</span><b>履歷自傳、求職動機撰寫＆精準符合規定字數</b><em class="cat-free">免費版</em><span class="cat-desc">將在校經歷或求職動機，配合「300 字以內」「400 字以內」等規定字數，潤飾成結論先行、傳達熱忱的文章。</span></li>
+<li><span class="cat-tag">求職、升學</span><b>面試模擬（初試、決選、深入追問、大學推甄）</b><em class="cat-free">免費版</em><span class="cat-desc">AI 扮演面試官進行模擬面試。可以練習「為什麼？」「具體來說呢？」的深入追問，送出「結束」就會給出評分與改善建議。</span></li>
+<li><span class="cat-tag">求職、升學</span><b>企業、產業研究＆讓面試官讚賞的「反問」5 選</b><span class="cat-desc">從公司徵才頁面、新聞、年報等資訊，整理出「商業模式、優勢、課題」，並準備在面試最後「你有什麼問題嗎？」時拉開差距的反問。</span></li>
+<li><span class="cat-tag">考試、學習</span><b>從上課講義、板書做「考試重點整理＆猜題」</b><span class="cat-desc">從上課的講義、筆記（支援📎附加 PDF／Word，或貼上📷板書、投影片照片）製作考前背誦表與猜題。</span></li>
+<li><span class="cat-tag">考試、學習</span><b>AI 家教（不直接給答案，一步步教）</b><span class="cat-desc">不懂的題目或概念，不是直接讓你照抄答案，而是一邊給提示，一步步教到你理解為止。</span></li>
+<li><span class="cat-tag">學生生活</span><b>給教授、專題、打工單位、學長姐訪談的「不失禮聯絡文」</b><span class="cat-desc">「向教授提問、請假、約時間的信」「學長姐訪談或實習的感謝信」「打工排班商量」等不知道怎麼寫的 Email 或 LINE，幫你寫出 3 種版本。</span></li>
+<li><span class="cat-tag">學生生活</span><b>社團、校慶、專題營隊的企劃＆分工表</b><span class="cat-desc">一次整理迎新活動、校慶擺攤、專題營隊或分組作業的計畫、預算，以及到當天為止的時程。</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-text" aria-labelledby="cat-t-text" data-hide>
@@ -530,6 +554,7 @@
 <li><span class="cat-tag">開發大師</span><b>支援全端的通用開發框架</b><span class="cat-desc">固定技術堆疊、設計原則、型別安全與錯誤處理規範，產生高品質程式碼</span></li>
 <li><span class="cat-tag">故事設計</span><b>世界觀、時代與角色逐步建構大師</b><span class="cat-desc">依序選擇世界觀、時代、族裔、世代、服裝風格與衝突，一氣呵成自動產生電影企劃書、故事大綱與影像提示詞</span></li>
 <li><span class="cat-tag">角色設定書</span><b>族裔、世代、服裝與成長背景表</b><span class="cat-desc">完整固定演員的外貌、族裔根源、服裝的年代感與材質感、行動原則與代表性台詞的詳細檔案</span></li>
+<li><span class="cat-tag">斜線指令</span><b>讓 AI 記住快捷指示（/tldr、/table、/critic 等）</b><span class="cat-desc">先貼到 ChatGPT（自訂指示、我的 GPT）、Claude（Projects）、Gemini（Gem）或對話的開頭，之後只要輸入「/tldr」「/table」「/critic」，指示就能一次到位。</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-biz" aria-labelledby="cat-t-biz" data-hide>
@@ -538,8 +563,14 @@
 <li><span class="cat-tag">銷售</span><b>用洽談筆記寫會後感謝信</b><span class="cat-desc">只要貼上洽談筆記，就能產出包含重點與下一步行動的感謝信。</span></li>
 <li><span class="cat-tag">銷售</span><b>洽談前的企業研究與痛點假設</b><span class="cat-desc">根據公開資訊，整理對方企業的重點，以及「可能遇到的困擾」的假設。</span></li>
 <li><span class="cat-tag">銷售</span><b>擬定提案書架構（章節大綱）</b><span class="cat-desc">根據提案對象的課題與我方的提案內容，列出提案書的章節架構與每一頁要傳達的重點。</span></li>
-<li><span class="cat-tag">銷售</span><b>洽談角色扮演（AI 扮演客戶）</b><span class="cat-desc">請 AI 扮演客戶，練習洽談。結束時傳送「結束」，就會告訴你做得好的地方與可以改進之處。</span></li>
+<li><span class="cat-tag">銷售</span><b>商談模擬（附對方類型、內心話）</b><span class="cat-desc">請 AI 扮演真實的客戶（忙碌的高層、對價格很嚴格的窗口、多疑的對象等），進行商談的實戰彩排。送出「結束」就會給出評分與改善話術。</span></li>
 <li><span class="cat-tag">銷售</span><b>預先準備可能的提問與應對方式</b><span class="cat-desc">事先準備洽談中可能出現的提問、反駁，以及回答方式。</span></li>
+<li><span class="cat-tag">銷售</span><b>拒絕話術、反駁千本特訓（連續模擬）</b><span class="cat-desc">「沒有預算」「我再考慮看看」「好像要選別家了」等，業務現場最常聽到的拒絕說法，由 AI 接連丟出來的特訓角色扮演。</span></li>
+<li><span class="cat-tag">銷售</span><b>電話行銷（陌生開發）：突破總機＆30 秒話術腳本與模擬</b><span class="cat-desc">避免被直接掛電話，突破總機、從負責窗口拿到 15 分鐘會面的話術腳本製作，以及可以實際開口練習的電話行銷角色扮演。</span></li>
+<li><span class="cat-tag">銷售</span><b>Email 行銷、私訊：提高開信率＆回覆率的 3 封步驟信</b><span class="cat-desc">告別沒人讀就被丟掉的冗長業務信，打造讓人忍不住打開、想回覆的「首封、追蹤、最後一封」連續郵件。</span></li>
+<li><span class="cat-tag">行銷、集客</span><b>部落格、專欄、方格子題材 30 選＆架構案</b><span class="cat-desc">讓「今天要寫什麼……」歸零。從目標讀者的搜尋意圖（煩惱）出發，一次做出能帶來流量與詢問的文章題材與架構。</span></li>
+<li><span class="cat-tag">行銷、集客</span><b>會賣的行銷心理、巧思點子（行為經濟學）</b><span class="cat-desc">同樣的商品，光是「呈現方式、方案設計」就能讓反應率差到 2 倍。運用行為經濟學與行銷的經典手法提出改善點子。</span></li>
+<li><span class="cat-tag">行銷、集客</span><b>銷售頁、銷售信、廣告文案的黃金架構（PASONA/AIDMA）</b><span class="cat-desc">把商品的魅力重新排成「讓顧客想要的順序」，一次做出 LP（銷售頁）或介紹頁的架構與文案。</span></li>
 <li><span class="cat-tag">總務</span><b>全公司的公告與通知文</b><span class="cat-desc">撰寫制度變更、規定、活動等的公司內部公告文。</span></li>
 <li><span class="cat-tag">總務</span><b>製作員工常見問題 FAQ</b><span class="cat-desc">根據公司內部規定與過去的詢問，整理常見問題與回答。</span></li>
 <li><span class="cat-tag">總務</span><b>公司規章、手冊的修訂草案</b><span class="cat-desc">根據現行規章與修訂方針，製作修訂草案與新舊對照表。</span></li>
@@ -575,6 +606,10 @@
 <li><span class="cat-tag">顧問</span><b>讓 AI 反駁假設（思考陪練）</b><span class="cat-desc">請 AI 反駁你自己的假設，找出薄弱之處。可用於提案前的確認。</span></li>
 <li><span class="cat-tag">顧問</span><b>把訪談筆記整理成「現況、課題、原因」</b><span class="cat-desc">把零散的訪談筆記，整理成有結構的整理表。</span></li>
 <li><span class="cat-tag">顧問</span><b>審閱資料並指出弱點</b><span class="cat-desc">讓 AI 審閱你做好的資料，指出邏輯上的薄弱處與不足的資訊。</span></li>
+<li><span class="cat-tag">資料、分析</span><b>零散資料的彙總、清理、交叉分析表</b><span class="cat-desc">只要貼上問卷結果、銷售清單、詢問紀錄、CSV 或 Excel 表格（也可📎附加檔案），就會統一不一致的寫法並依軸彙總。</span></li>
+<li><span class="cat-tag">資料、分析</span><b>資料分析：找出趨勢、異常值、瓶頸與對策</b><span class="cat-desc">不只是「照念數字表的結果」，而是從中找出「為什麼會這樣（成因）」「瓶頸在哪裡」「下一步該做什麼」的洞察。</span></li>
+<li><span class="cat-tag">資料、分析</span><b>深入研究：市場、競爭、顧客洞察的多階段調查</b><span class="cat-desc">不停留在表面的網路搜尋整理，而是分 3 個階段，深挖到結構、主要業者，以及顧客「說不出口的真心話」。</span></li>
+<li><span class="cat-tag">資料、分析</span><b>橫向展開（水平展開）、類比發想地圖</b><span class="cat-desc">把一個成功案例、know-how、優勢或熱門企劃，一口氣擴展到「其他客群、其他用途、其他產業、其他媒體」。</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-exec" aria-labelledby="cat-t-exec" data-hide>
@@ -594,6 +629,29 @@
 <li><span class="cat-tag">個人時間</span><b>盤點工作與授權方式（為社長騰出時間）</b><span class="cat-desc">把自己的工作分成「只有自己能做／交辦／教會後交辦／不做」，並思考交辦的方式。</span></li>
 <li><span class="cat-tag">個人時間</span><b>請 AI 推薦能為煩惱帶來提示的書</b><span class="cat-desc">從你隨手寫下的煩惱，推薦能提供思考線索的書。搭配能搜尋的 AI（Gemini、ChatGPT 的搜尋功能、Perplexity 等）使用會更可靠。</span></li>
 <li><span class="cat-tag">個人時間</span><b>尋找能為煩惱帶來提示的 YouTube 影片</b><span class="cat-desc">從你隨手寫下的煩惱，提供尋找可能有幫助的 YouTube 影片的方法與候選，並製作可以直接點開的搜尋連結。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>COO（參謀、秘書）角色：今天的最優先任務與時間表</b><span class="cat-desc">讓 AI 擔任「優秀的 COO（營運長）兼秘書」，把腦中的待辦清單分成「直接帶來營收的工作／交給 AI 的工作／該停止的工作」。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>嚴格 CFO（管帳人）角色：支出、投資、定價的嚴格檢查</b><span class="cat-desc">讓 AI 擔任「對數字與現金很嚴格的 CFO（財務長）」，嚴格審查購買器材、外包、訂閱付費、報價金額是否真的合理。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>CMO（公關、業務部長）角色：每天 15 分鐘的集客、發文計畫</b><span class="cat-desc">讓 AI 擔任「擅長少人數、低預算集客的 CMO（行銷長）」，設計不費工夫就能帶來營收與回購的做法。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>法務、談判之盾角色：不傷和氣保護自己的應對與文字</b><span class="cat-desc">讓 AI 擔任「強悍的談判者兼法務參謀」，寫出保護老闆免於規格變更、追加工作、殺價要求、範圍外請託的文字。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>虛擬董事會（3 人董事會議）：積極業務×謹慎財務×嚴格客戶</b><span class="cat-desc">AI 同時扮演「進攻的業務部長」「防守的財務部長」「說真話的顧客代表」三個角色，從一個人想不到的觀點討論你的企劃或煩惱。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>陪跑導師、保健室角色：傾吐並整理孤獨與煩悶</b><span class="cat-desc">為了無法向任何人示弱的一人經營者，AI 會成為「不否定、專心傾聽的高階主管教練」，幫忙讓情緒冷靜下來並整理思緒。</span></li>
+<li><span class="cat-tag">一人老闆的得力助手</span><b>製作專屬 AI 員工的「任命書（自訂指示）」</b><span class="cat-desc">產生一份指示書，只要貼到 ChatGPT（我的 GPT）、Claude（Projects）、Gemini（Gem），就能打造記住你的事業與語氣的「專屬得力 AI」。</span></li>
+</ul>
+</div>
+<div class="cat-panel" role="tabpanel" id="cat-trade" aria-labelledby="cat-t-trade" data-hide>
+<ul class="cat-list">
+<li><span class="cat-tag">盤勢、新聞</span><b>經濟指標、要人發言的意外分析</b><em class="cat-free">免費版</em><span class="cat-desc">貼上 FOMC、各國央行會議、美國就業報告、CPI 等的結果或新聞，就會整理出與市場預期的落差，以及對股市、匯市的影響情境。</span></li>
+<li><span class="cat-tag">盤勢、新聞</span><b>外匯（FX）貨幣對的強弱、主題整理</b><span class="cat-desc">從利差、央行態度、風險偏好（Risk-on/off），整理目標貨幣對的強弱驅動因素與情境。</span></li>
+<li><span class="cat-tag">盤勢、新聞</span><b>今日盤勢回顧＆隔日情境</b><span class="cat-desc">從當天指數、匯率、類股的價格變動筆記，整理資金流向，擬定下一個交易日的策略。</span></li>
+<li><span class="cat-tag">股票、財報</span><b>財報、法說會資料的快速摘要</b><em class="cat-free">免費版</em><span class="cat-desc">從財報或法說會簡報（📎附加檔案或貼上文字），擷取利多、利空因素與全年展望的強弱。</span></li>
+<li><span class="cat-tag">股票、財報</span><b>個股的商業模式、競爭優勢（護城河）分析</b><span class="cat-desc">以投資人的觀點，拆解在意的個股「到底靠什麼賺錢、為什麼強（或哪裡脆弱）」。</span></li>
+<li><span class="cat-tag">股票、財報</span><b>題材股、相關類股的聯想地圖</b><span class="cat-desc">從新的新聞、政策、技術趨勢，聯想並整理出受惠的產業、供應鏈與周邊類股。</span></li>
+<li><span class="cat-tag">K 線圖、策略</span><b>從 K 線圖圖片判讀盤勢、檢查關鍵價位</b><em class="cat-free">免費版</em><span class="cat-desc">貼上📷 K 線圖截圖，就會客觀地用文字說明趨勢、支撐壓力（關鍵價位）、圖形型態與假突破的警戒點。</span></li>
+<li><span class="cat-tag">K 線圖、策略</span><b>建立交易情境（進場前的作戰會議）</b><em class="cat-free">免費版</em><span class="cat-desc">在下單前把「依據、停利、停損、撤退條件」說清楚，避免依據薄弱的賭博式交易。</span></li>
+<li><span class="cat-tag">K 線圖、策略</span><b>適當部位、風險報酬（資金管理）計算</b><span class="cat-desc">從帳戶資金、可承受虧損％、進場價、停損價，計算單筆交易適合的部位大小（股數、張數、貨幣單位）。</span></li>
+<li><span class="cat-tag">紀錄、心態</span><b>交易日誌、獲勝模式與敗因分析</b><span class="cat-desc">貼上交易紀錄或檢討筆記，就會客觀分析情緒性的失誤，以及「自己的獲勝模式、虧損模式」。</span></li>
+<li><span class="cat-tag">紀錄、心態</span><b>防止追高、停損太慢的心態對練</b><span class="cat-desc">看到急漲想追進時（FOMO），或抱著未實現虧損、只能祈禱時，幫你讓頭腦冷靜下來，找回冷靜的判斷。</span></li>
+<li><span class="cat-tag">紀錄、心態</span><b>製作個人規則、下單前 10 秒檢查清單</b><span class="cat-desc">配合自己的交易手法與常犯的失誤，製作可以貼在螢幕旁的「下單前檢查清單」與「避免出局的鐵則」。</span></li>
 </ul>
 </div>
 <div class="cat-panel" role="tabpanel" id="cat-prepro" aria-labelledby="cat-t-prepro" data-hide>
