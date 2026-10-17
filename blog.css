@@ -93,3 +93,7 @@
   .article .post-cover img { border-radius: 16px; }
 }
 .article .post-cover { position: relative; z-index: 2; }
+
+/* ---------- 記事の下の使い方動画（site.js が出す。legal.css の p の指定に負けないように、記事の中でだけ指定） ---------- */
+.article .video { margin: 48px 0 8px; max-width: none; }
+.article .video-cap { margin: 14px 0 0; font-size: 14px; line-height: 1.7; color: var(--muted); }

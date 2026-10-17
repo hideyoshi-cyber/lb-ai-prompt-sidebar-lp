@@ -81,6 +81,21 @@ document.querySelectorAll('[data-catalog]').forEach(root => {
   });
 });
 
+// ブログの記事ページの下（「くわしく見る」の枠の手前）に、使い方の動画を出す。
+// トップページと同じ「押したときだけ YouTube を読み込む」形（それまでは YouTube に何も送らない）。
+// ここで出すので、ブログの記事を作り直しても、動画は消えない。ほかの動画にするときは data-yt の値を変える。
+(() => {
+  const cta = document.querySelector('.article .cta-box');
+  if (!cta || document.querySelector('.video-play[data-yt]')) return;
+  const box = document.createElement('div');
+  box.className = 'video';
+  box.innerHTML = '<button type="button" class="video-play" data-yt="pe7AkGzRtdg" aria-label="使い方の動画を再生する（1分50秒・YouTube）">'
+    + '<img src="../img/video-howto-ja.webp" width="1280" height="720" loading="lazy" alt="使い方の動画：選んで、整えて、AIへ。">'
+    + '<span class="video-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span></button>'
+    + '<p class="video-cap"><b>使い方を、動画で。</b>1分50秒・音声と字幕つき（YouTube）</p>';
+  cta.before(box);
+})();
+
 // 使い方動画：押したときに、YouTube（プライバシー強化モード）の再生画面に差し替える
 document.querySelectorAll('.video-play[data-yt]').forEach(btn => {
   btn.addEventListener('click', () => {
