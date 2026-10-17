@@ -26,6 +26,8 @@
 - [AIランチャーの使い方：いつものAIをワンクリックで開く](https://aipromptbar.liquid-block.com/blog/ai-launcher-guide.html): サイドパネルの上にある AI ランチャーで、ChatGPT・Claude・Gemini などをワンクリックで開く方法。好きなサイトの追加、使わないアイコンの隠し方、ショートカットも説明します。
 - [プロンプトを整える：選択肢・空欄・プレビュー・拡大メモ](https://aipromptbar.liquid-block.com/blog/adjust-variables-preview.html): プロンプトの {{変数}} とは何か。選択肢で選ぶ、空欄に書く、プレビューで直す、拡大メモで長い文章を編集する。プロンプトを整える方法をまとめました。
 - [探す・評価する・並べる：★評価と検索、使わないものを隠す](https://aipromptbar.liquid-block.com/blog/search-rating-sort.html): コマンドが増えても迷わないための整理の機能。検索のショートカット、★評価、並び替え、使わないタブやフォルダを隠す方法をまとめました。
+- [スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種](https://aipromptbar.liquid-block.com/blog/slash-commands.html): 押すだけでAIへ追加の指示を送れる「スラッシュコマンド」の使い方。コマンド辞典、AIの答えのあとの「追撃」、プロンプトカードの出力タグ、ChatGPT・Claude・Geminiに覚えさせる辞書プロンプトを説明します。
+- [ソースポケット：ページの本文を集めて、集めた資料だけで答えさせる](https://aipromptbar.liquid-block.com/blog/source-pocket.html): 開いているページの本文を1クリックで集める「ソースポケット」の使い方。集めた資料だけを根拠にAIに答えさせる「限定ソースモード」、NotebookLMへまとめて渡す方法、データの扱いを説明します。
 - [案件セットで、案件ごとにプロンプトをまとめる（有料プラン）](https://aipromptbar.liquid-block.com/blog/project-sets-my-prompts.html): 案件ごとに使うプロンプトを、タブをまたいで1か所に集める「案件セット」の使い方。セットの作り方、追加と解除、自分のプロンプトの保存、バックアップの方法を説明します。
 - [参照ファイルと参照画像：資料や写真を、プロンプトと一緒にAIへ渡す](https://aipromptbar.liquid-block.com/blog/reference-files-images.html): PDF・Word・PowerPoint・Excel を読み込ませる「参照ファイル」と、スクショや写真を一緒に送る「参照画像」の使い方。添付と文字での渡し方の違いも説明します。
 - [AI翻訳・AIでの作成・Excel書き出し：APIキーの設定と使い方](https://aipromptbar.liquid-block.com/blog/translate-and-excel.html): 日本語を英語のプロンプトに変換する AI 翻訳、スケジュールの自動作成、Excel への保存。必要な APIキーの設定方法と、使い方、料金や安全面の注意をまとめました。
@@ -38,6 +40,7 @@
 - [「日常」タブ①：トラブル編（困りごと・不調・詐欺・解約・体調・人間関係）](https://aipromptbar.liquid-block.com/blog/presets-daily-trouble.html): 「日常」タブの【トラブル】の6つのコマンドを解説します。何でも相談、PCやスマホの不調、詐欺の判定、買い物・解約のトラブル、体調が気になるとき、人間関係の悩み。
 - [「日常」タブ②：知りたい・暮らし・文面編（教えて・手続き・比較・ニュース・献立・旅行）](https://aipromptbar.liquid-block.com/blog/presets-daily-life.html): 「日常」タブの【知りたい】【暮らし】【文面】のコマンドを解説します。わかりやすく教えて、役所の手続き、買い物の比較、ニュースの解説、献立、旅行、掃除、謝る・断る文面。
 - [「日常」タブ③：災害・勉強・占い編（防災チェック・AI先生・英会話・タロット）](https://aipromptbar.liquid-block.com/blog/presets-daily-disaster-study-fortune.html): 「日常」タブの【災害】【勉強】【占い】のコマンドを解説します。わが家の防災チェック、災害時の行動、被災後の手続き、AI先生、勉強計画、確認テスト、英会話、星座・タロット・数秘術・手相。
+- [「学生・就活」タブ：レポート・就活・試験・学生生活の12コマンド](https://aipromptbar.liquid-block.com/blog/presets-student.html): 「学生・就活」タブの12のコマンドを解説します。レポートの構成づくりと添削、論文の読解、自己分析、ES、面接の練習、試験対策、AI家庭教師、連絡文面、企画書まで。AIの答えを、自分の言葉で仕上げるための使い方です。
 - [「万能・テキスト」タブ①：万能テンプレート・XMLタグ・逆質問・推敲・議事録・壁打ち](https://aipromptbar.liquid-block.com/blog/presets-text-basics.html): 「万能・テキスト」タブの基本のコマンドを解説します。3大AIの推奨をまとめた万能テンプレート、Claude向けのXMLタグ、逆質問ヒアリング、文章の推敲、議事録の抽出、多角的な壁打ち。
 - [「万能・テキスト」タブ②：要約・お詫び・英文メール・表計算・発想法・コード・ストーリー](https://aipromptbar.liquid-block.com/blog/presets-text-advanced.html): 「万能・テキスト」タブの応用のコマンドを解説します。エグゼクティブサマリー、お詫びとリカバリー提案、英文メール、関数・GAS・マクロ、オズボーンのチェックリスト、コードレビュー、ストーリー設計とキャラクター設定書。
 - [「Gem / NotebookLM」タブ：Gemの指示書づくりと改善ループ、NotebookLMの設定](https://aipromptbar.liquid-block.com/blog/presets-gem-notebooklm.html): 「Gem / NotebookLM」タブの8つのコマンドを解説します。Geminiの Gem の指示書の基本形、映像プロンプト作成アシスタント、テストと改善のループ、NotebookLM のチャット設定・音声解説・ソースの点検・比較表。
@@ -47,6 +50,7 @@
 - [「ビジネス業務」タブ④：管理部門・コンサル編（契約書チェック・障害報告・論点整理・フレームワーク）](https://aipromptbar.liquid-block.com/blog/presets-biz-admin-consulting.html): 「ビジネス業務」タブの【管理部門】【コンサル】の12のコマンドを解説します。契約書のリスク確認、規約の下書き、ヘルプデスクのFAQ、障害報告書、業界・競合の調査、経営会議資料、論点と仮説、提案書のストーリー、SWOT・3C、反論の壁打ち、ヒアリングの整理、資料レビュー。
 - [「ビジネス業務」タブ⑤：契約書のひな型編（業務委託・NDA・出演・著作権・生成AI条項）](https://aipromptbar.liquid-block.com/blog/presets-biz-contracts.html): 「ビジネス業務」タブの【契約書】の8つのコマンドを解説します。映像制作の業務委託、秘密保持契約（NDA）、出演契約、著作権と二次利用、生成AIの利用条項、ロケ地の使用許諾、フリーランスへの発注書、相手の案との比較。
 - [「経営」タブ：経営者のための15のコマンド（壁打ち・意思決定・中期計画・想定問答）](https://aipromptbar.liquid-block.com/blog/presets-exec.html): 「経営」タブの15のコマンドを解説します。経営の壁打ち、選択肢の比較、事前検死、中期計画、リスクの洗い出し、新規事業の種、数字が動いた理由、想定問答、銀行・投資家への説明、社員へのメッセージ、言いにくい知らせ、理念づくり、仕事の棚卸し、悩みのヒントになる本・YouTube。
+- [「投資・トレード」タブ：相場・決算・チャート・メンタルの12コマンド](https://aipromptbar.liquid-block.com/blog/presets-trade.html): 「投資・トレード」タブの12のコマンドを解説します。経済指標の分析、為替、決算の要約、銘柄の分析、チャート画像の読み取り、売買前のシナリオ、資金管理、トレード日誌、メンタルの整え方まで。投資の助言ではありません。
 - [「プリプロ」タブ：映像制作の準備を進める13のコマンド（企画・プロット・台本・カット表）](https://aipromptbar.liquid-block.com/blog/presets-prepro.html): 「🎬 プリプロ」タブの13のコマンドを解説します。企画3案、ヒアリングシート、プロット、秒数配分、ナレーション台本、カット表、ショットリスト、ロケハン、キャスティング、制作スケジュール、当日のタイムテーブル、見積もりの項目、カット別の生成AIプロンプト。
 - [「開発・Web／アプリ」タブ：AIに良いコードを書かせる10のコマンド](https://aipromptbar.liquid-block.com/blog/presets-dev.html): 「開発・Web／アプリ」タブの10のコマンドを解説します。汎用開発フレーム、要件定義とユーザーストーリー、DBスキーマと型定義、UIコンポーネント、APIとバリデーション、単体テスト、Next.js、React Native、ディレクトリ設計、OpenAPI。
 - [「素材・デザイン」タブ①：3Dアイコン・切り抜き素材・背景・パターン・ロゴ](https://aipromptbar.liquid-block.com/blog/presets-design-assets.html): 「素材・デザイン」タブの素材づくりの13のコマンドを解説します。粘土風・ガラス風の3Dアイコン、白背景の切り抜き素材、エフェクト、フラットイラスト、図解イラスト、Webの背景、パターン、展示台、ステッカー、ロゴ。

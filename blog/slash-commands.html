@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種｜LB AI Prompt side bar</title>
+<meta name="description" content="押すだけでAIへ追加の指示を送れる「スラッシュコマンド」の使い方。コマンド辞典、AIの答えのあとの「追撃」、プロンプトカードの出力タグ、ChatGPT・Claude・Geminiに覚えさせる辞書プロンプトを説明します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/slash-commands.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種｜LB AI Prompt side bar">
+<meta property="og:description" content="押すだけでAIへ追加の指示を送れる「スラッシュコマンド」の使い方。コマンド辞典、AIの答えのあとの「追撃」、プロンプトカードの出力タグ、ChatGPT・Claude・Geminiに覚えさせる辞書プロンプトを説明します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/slash-commands.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/blog/slash-commands-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種",
+ "description": "押すだけでAIへ追加の指示を送れる「スラッシュコマンド」の使い方。コマンド辞典、AIの答えのあとの「追撃」、プロンプトカードの出力タグ、ChatGPT・Claude・Geminiに覚えさせる辞書プロンプトを説明します。",
+ "datePublished": "2026-10-17",
+ "dateModified": "2026-10-17",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/blog/slash-commands-og.jpg",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/slash-commands.html",
+ "author": {
+  "@type": "Organization",
+  "name": "株式会社リキッドブロック（Liquid Block Inc.）",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ },
+ "about": {
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "url": "https://aipromptbar.liquid-block.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "LB AI Prompt side bar",
+   "item": "https://aipromptbar.liquid-block.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "ブログ",
+   "item": "https://aipromptbar.liquid-block.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種",
+   "item": "https://aipromptbar.liquid-block.com/blog/slash-commands.html"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#commands">コマンド</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh" target="_blank" rel="noopener">Chromeに追加</a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</h1>
+    <div class="post-meta">
+      <span class="post-tag">スラッシュコマンド</span>
+      <span><time datetime="2026-10-17">2026年10月17日</time></span>
+      <span>読む時間：約8分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<figure class="post-cover"><img src="../img/blog/slash-commands.webp" width="1344" height="756" alt="スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種のイメージ" fetchpriority="high"></figure>
+<p class="post-lead">AIの答えが出たあとで、「もっと短く」「表にして」「辛口で見て」と、毎回、打つのは手間です。<strong>スラッシュコマンド</strong>は、そうした追加の指示を、<code>/3行</code> のような短い名前にして、<strong>押すだけで送れる</strong>ようにしたものです。全部で45種あります。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#what">スラッシュコマンドとは</a></li>
+<li><a href="#open">辞典を開く</a></li>
+<li><a href="#follow">使い方①：追撃（追加の指示）を送る</a></li>
+<li><a href="#tag">使い方②：プロンプトの末尾に条件を足す</a></li>
+<li><a href="#teach">使い方③：AIに覚えさせて、チャットで打つ</a></li>
+<li><a href="#list">45のコマンド一覧</a></li>
+<li><a href="#tips">上手に使うコツ</a></li>
+</ol></nav>
+<h2 id="what">スラッシュコマンドとは</h2>
+<p>AIに、毎回のように出す指示（「3行で」「表で」「辛口で」…）を、<code>/3行</code>・<code>/表</code>・<code>/辛口</code> のような名前にして、一覧にしたものです。名前を押すと、その意味の指示が、開いているAIに送られます。</p>
+<p>45種は、6つの分類に分かれています。「要約・整理・抽出」「文章推敲・トーン変更」「深掘り・ツッコミ・壁打ち」「精度アップ・嘘防止」「役割スイッチ（右腕AI）」「専門ショートカット（投資・栄養・翻訳・開発）」です。</p>
+<p>使い方は3つあります。いちばん手軽なのは、①の「追撃」です。登録などは要らず、いますぐ使えます。</p>
+<h2 id="open">辞典を開く</h2>
+<p>画面の上の段にある<strong>「⚡ /コマンド」</strong>を押すと、「⚡ スラッシュコマンド辞典」が開きます。45種の一覧に、コマンドの名前（<code>/3行</code>）、英語の名前（<code>/tldr</code>）、何をするかが並びます。検索欄では、「/表」「要約」「辛口」「CFO」「ロット」のような言葉で、絞り込めます。</p>
+<h2 id="follow">使い方①：追撃（追加の指示）を送る</h2>
+<p>辞典の各行にある<strong>「⚡ 追撃挿入」</strong>を押すと、そのコマンドの意味の指示が、開いているAIの入力欄に入ります。たとえば <code>/3行</code> なら、「直前の内容の結論と一番大事なポイントだけを、3行以内で要約してください」という指示です。</p>
+<p>コマンドの横の「📋」を押すと、指示の文章をコピーできます。</p>
+<p>AIの返答のあとに、すぐ送りたいときは、テキスト系のタブの上にある<strong>「⚡ 追撃:」のバー</strong>が便利です。よく使う21のコマンドが並んでいて、ワンクリックで追加の指示を送れます。バーの右端の「すべて見る ›」で、辞典が開きます。</p>
+<h2 id="tag">使い方②：プロンプトの末尾に条件を足す</h2>
+<p>テキスト系のコマンドのカードを開くと、<strong>「⚡ スラッシュ・出力タグ（押すと末尾に追加）」</strong>の欄が出ます。<code>/3行</code>・<code>/表</code>・<code>/辛口</code> など17のタグを押すと、プロンプトの最後に、「【出力条件：/3行】結論と最も重要なポイントだけを、最初に3行以内で簡潔にまとめてください。」のような条件が足されます。もう一度押すと、外れます。</p>
+<p>AIに送る前に、条件を足しておく使い方です。「最初から表で」「最後にToDoをつけて」と決めたいときに向いています。辞典では、このタグとして使えるコマンドに、「カード内タグ」の印が付いています。</p>
+<h2 id="teach">使い方③：AIに覚えさせて、チャットで打つ</h2>
+<p>辞典の一番上にある「辞書プロンプト」を、ChatGPTの<strong>カスタム指示</strong>、Claudeの<strong>Projects</strong>、Geminiの<strong>Gem</strong>に、一度だけ貼っておくと、チャット欄で <code>/3行</code> や <code>/辛口</code> と打つだけで、通じるようになります。</p>
+<ul>
+<li><strong>⚡ AIに辞書を挿入</strong>：開いているAIの入力欄に、辞書プロンプトを入れます。</li>
+<li><strong>📋 辞書プロンプトをコピー</strong>：コピーして、カスタム指示などに貼ります。</li>
+</ul>
+<div class="note">カスタム指示・Projects・Gem の場所や名前は、各サービスの更新で変わることがあります。</div>
+<h2 id="list">45のコマンド一覧</h2>
+<p>各行の終わりの「追撃バー」は、テキスト系のタブの「⚡ 追撃:」バーに並ぶ21のコマンドの印です。「カード内タグ」は、プロンプトカードの出力タグとしても使える17のコマンドの印です。</p>
+<h3>要約・整理・抽出（9）</h3>
+<ul>
+<li><code>/3行</code> <strong>3行で結論</strong>：結論と一番大事なポイントだけを3行以内で要約する（追撃バー・カード内タグ）</li>
+<li><code>/要約</code> <strong>要点まとめ</strong>：全体の要点を、見出し＋箇条書きでコンパクトにまとめる</li>
+<li><code>/表</code> <strong>表で整理</strong>：内容をMarkdownの比較表（テーブル）に整理する（追撃バー・カード内タグ）</li>
+<li><code>/ToDo</code> <strong>ToDo抽出</strong>：「誰が・いつまでに・何をするか」のアクションだけを抜く（追撃バー・カード内タグ）</li>
+<li><code>/結論先</code> <strong>結論から（PREP）</strong>：結論 → 理由 → 具体例 → 結論 の順番で構成する（カード内タグ）</li>
+<li><code>/論点</code> <strong>論点整理</strong>：「事実」「解釈」「決めるべき論点」の3つに切り分ける</li>
+<li><code>/比較</code> <strong>メリット・デメリット比較</strong>：複数案のメリット・デメリット・コスト・おすすめ条件を並べる</li>
+<li><code>/図解</code> <strong>テキスト図解</strong>：関係性や手順をテキストのフロー図（矢印やツリー）で視覚化する</li>
+<li><code>/集計</code> <strong>データ集計・クロス表</strong>：バラバラな数値やリストを、項目別・時系列・クロス集計表にまとめる（追撃バー）</li>
+</ul>
+<h3>文章推敲・トーン変更（7）</h3>
+<ul>
+<li><code>/推敲</code> <strong>自然に推敲</strong>：意味は変えずに、誤字やねじれを直して自然な日本語に磨く（追撃バー）</li>
+<li><code>/短く</code> <strong>半分に短縮</strong>：冗長な表現を削り、文字数を半分〜6割に凝縮する（追撃バー・カード内タグ）</li>
+<li><code>/丁寧に</code> <strong>丁寧な敬語</strong>：取引先や目上の人にそのまま送れるビジネス敬語にする（追撃バー）</li>
+<li><code>/やわらかく</code> <strong>やわらかい表現</strong>：硬すぎる文章を、親しみやすく角が立たない表現に直す</li>
+<li><code>/小学生</code> <strong>やさしく解説</strong>：専門用語を使わず、中学生〜小学生にもわかる言葉とたとえ話で説明する（追撃バー・カード内タグ）</li>
+<li><code>/3案</code> <strong>3パターン出す</strong>：1つに決めず、切り口やトーンが違う3案を出して選べるようにする（追撃バー・カード内タグ）</li>
+<li><code>/タイトル</code> <strong>見出し・件名10案</strong>：思わず開封・クリックしたくなるタイトルや件名を10個出す</li>
+</ul>
+<h3>深掘り・ツッコミ・壁打ち（11）</h3>
+<ul>
+<li><code>/分析</code> <strong>要因・ボトルネック分析</strong>：単なる結果の羅列ではなく「傾向・異常値・原因仮説・次の一手」を抽出する（追撃バー・カード内タグ）</li>
+<li><code>/深掘り</code> <strong>リサーチ3層深掘り</strong>：表面的な一般論をやめ、構造・競合の隙・顧客の本音まで3段階で深く掘る（追撃バー・カード内タグ）</li>
+<li><code>/横展開</code> <strong>横展開（水平展開）</strong>：この成功・強み・企画を「別ターゲット・別用途・別業界・別媒体」へ転用する案を出す（追撃バー・カード内タグ）</li>
+<li><code>/逆質問</code> <strong>まず逆質問3つ</strong>：いきなり答えを出さず、まずAIから確認質問を3つして前提を固める（追撃バー・カード内タグ）</li>
+<li><code>/辛口</code> <strong>辛口で点検</strong>：忖度や褒め言葉をやめ、論理の甘さ・抜け漏れ・リスクを厳しく指摘する（追撃バー・カード内タグ）</li>
+<li><code>/反論</code> <strong>あえて反論</strong>：反対派（悪魔の代弁者）の立場になり、一番痛い反論と対策を出す</li>
+<li><code>/なぜ5回</code> <strong>なぜ5回（根本原因）</strong>：表面的な原因で止めず、「なぜ？」を5段階掘り下げて真因を特定する</li>
+<li><code>/失敗逆算</code> <strong>失敗から逆算</strong>：「半年後に失敗した」と仮定し、原因トップ3と予防策を洗い出す</li>
+<li><code>/3人会議</code> <strong>3人会議で議論</strong>：「攻めの営業」「守りの財務」「辛口の顧客」の3役で議論させる（追撃バー・カード内タグ）</li>
+<li><code>/次の一手</code> <strong>今日15分の一手</strong>：抽象論をやめ、「今日これから15分でできる具体的な最初の一歩」に落とす（追撃バー）</li>
+<li><code>/ロープレ</code> <strong>商談・交渉ロープレ</strong>：今の内容をもとに、AIがリアルな顧客・交渉相手役になって対話練習を始める（追撃バー・カード内タグ）</li>
+</ul>
+<h3>精度アップ・嘘防止（4）</h3>
+<ul>
+<li><code>/事実のみ</code> <strong>事実のみ・推測禁止</strong>：推測で埋めず、確実な事実だけから答え、不明点は「要確認」と書く（追撃バー・カード内タグ）</li>
+<li><code>/根拠</code> <strong>根拠・出典を明記</strong>：主張ごとに「なぜそう言えるのか」の根拠や出典を明記する</li>
+<li><code>/一歩ずつ</code> <strong>ステップ順で思考</strong>：飛躍せず、思考のプロセスや計算手順を1ステップずつ順番に書き出す</li>
+<li><code>/自己採点</code> <strong>自己採点して改善</strong>：AI自身の回答を100点満点で採点させ、弱点を直した完成版を出させる（追撃バー・カード内タグ）</li>
+</ul>
+<h3>役割スイッチ（右腕AI）（6）</h3>
+<ul>
+<li><code>/COO</code> <strong>右腕COO（優先順位）</strong>：優秀な参謀・秘書モード（優先順位づけ・タスク仕分け・時間割作成）</li>
+<li><code>/CFO</code> <strong>辛口CFO（採算・金庫番）</strong>：辛口の財務責任者モード（投資対効果・コスト削減・値決めのシビア審査）</li>
+<li><code>/CMO</code> <strong>右腕CMO（集客・強み）</strong>：マーケター・広報部長モード（顧客目線での強み言語化・集客導線）</li>
+<li><code>/法務</code> <strong>交渉の盾・リスク管理</strong>：リスク管理・交渉参謀モード（不利な条件の指摘・角を立てずに断る文面）</li>
+<li><code>/編集者</code> <strong>プロの編集者</strong>：読者が飽きる箇所の指摘・構成の組み替え・リズム改善</li>
+<li><code>/コーチ</code> <strong>伴走メンター・傾聴</strong>：否定せず傾聴し、感情と事実を分けて思考を整理する</li>
+</ul>
+<h3>専門ショートカット（投資・栄養・翻訳・開発）（8）</h3>
+<ul>
+<li><code>/両目線</code> <strong>強気・弱気の両目線</strong>：【投資】買い（ブル）と売り（ベア）の両方のシナリオと撤退条件を出す（追撃バー・カード内タグ）</li>
+<li><code>/サプライズ</code> <strong>市場予想とのギャップ</strong>：【投資】決算や経済指標を「コンセンサス比のサプライズと織り込み度」で整理</li>
+<li><code>/ロット</code> <strong>適正ロット・RR計算</strong>：【投資】許容損失額と損切り幅から、適正なポジションサイズとリスクリワードを計算</li>
+<li><code>/PFC</code> <strong>カロリー・PFC概算</strong>：【ダイエット】カロリーとタンパク質・脂質・炭水化物の目安と次の調整案を出す</li>
+<li><code>/英訳</code> <strong>自然な英語に翻訳</strong>：直前の内容を、ネイティブに通じる自然な英語（標準・丁寧の2案）に翻訳する</li>
+<li><code>/和訳</code> <strong>自然な日本語に翻訳</strong>：英語の文章を、直訳調ではない読みやすい自然な日本語に翻訳する</li>
+<li><code>/プロンプト化</code> <strong>再利用プロンプト化</strong>：今のやり取りや雑なメモを、いつでも再利用できる構造化プロンプトに変換する（追撃バー）</li>
+<li><code>/レビュー</code> <strong>コード・設計レビュー</strong>：【開発】バグ・エッジケース・セキュリティ懸念・改善コードを指摘する</li>
+</ul>
+<h2 id="tips">上手に使うコツ</h2>
+<ul>
+<li>長い答えが出たら <code>/3行</code>、比べたいときは <code>/表</code>、自分の案の穴を見つけたいときは <code>/辛口</code> や <code>/失敗逆算</code>。まずは、この4つから試してみてください。</li>
+<li><code>/事実のみ</code> や <code>/根拠</code> は、数字・出典・固有名詞のように、AIがもっともらしく間違えやすい場面で、役に立ちます。ただし、AIの答えが正しくなるとは限りません。大事なことは、元の資料で確かめてください。</li>
+<li><code>/ロープレ</code>・<code>/3人会議</code> のように、AIに役を演じてもらうコマンドは、いまの話題を、そのまま材料にして始まります。</li>
+</ul>
+<div class="note">【投資】【ダイエット】などの専門ショートカット（<code>/両目線</code>・<code>/サプライズ</code>・<code>/ロット</code>・<code>/PFC</code>）は、情報を整理するための目安です。投資の助言や、医療・栄養の指導ではありません。</div>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="getting-started.html">はじめての使い方：3分でわかる「選ぶ・整える・挿入」</a>
+<a href="presets-text-basics.html">「万能・テキスト」タブ①：万能テンプレート・XMLタグ・逆質問・推敲・議事録・壁打ち</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>
