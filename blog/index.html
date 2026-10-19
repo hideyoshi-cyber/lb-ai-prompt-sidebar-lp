@@ -15,7 +15,10 @@
 <meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/">
 <meta property="og:image" content="https://aipromptbar.liquid-block.com/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icon-192.png">
 <link rel="apple-touch-icon" href="../img/logo256.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +48,7 @@
       <a href="./">ブログ</a>
       <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
     </nav>
-    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh" target="_blank" rel="noopener">Chromeに追加</a>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh?hl=ja" target="_blank" rel="noopener" aria-label="Chromeに追加（Chrome ウェブストアが開きます）">Chromeに追加<small>無料</small></a>
   </div>
 </header>
 
@@ -54,7 +57,7 @@
   <div class="wrap">
     <p class="eyebrow">ブログ</p>
     <h1>AIを使いこなす、プロンプトの書き方と整え方。</h1>
-    <nav class="blog-nav" aria-label="分類"><a href="#help">使い方（ヘルプ）<small>12</small></a><a href="#preset">コマンドの解説<small>22</small></a><a href="#write">プロンプトの書き方<small>5</small></a></nav>
+    <nav class="blog-nav" aria-label="分類"><a href="#help">使い方（ヘルプ）<small>10</small></a><a href="#preset">コマンドの解説<small>20</small></a><a href="#write">プロンプトの書き方<small>5</small></a></nav>
   </div>
 </section>
 
@@ -94,22 +97,6 @@
   <h2>探す・評価する・並べる：★評価と検索、使わないものを隠す</h2>
   <p>コマンドが増えても迷わないための整理の機能。検索のショートカット、★評価、並び替え、使わないタブやフォルダを隠す方法をまとめました。</p>
   <time datetime="2026-10-15">2026.10.15</time>
-  <span class="more">記事を読む →</span>
-</a>
-<a class="post-card" href="slash-commands.html">
-  <img class="post-thumb" src="../img/blog/slash-commands-s.webp" width="640" height="360" alt="" loading="lazy">
-  <span class="post-tag">スラッシュコマンド</span>
-  <h2>スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</h2>
-  <p>押すだけでAIへ追加の指示を送れる「スラッシュコマンド」の使い方。コマンド辞典、AIの答えのあとの「追撃」、プロンプトカードの出力タグ、ChatGPT・Claude・Geminiに覚えさせる辞書プロンプトを説明します。</p>
-  <time datetime="2026-10-17">2026.10.17</time>
-  <span class="more">記事を読む →</span>
-</a>
-<a class="post-card" href="source-pocket.html">
-  <img class="post-thumb" src="../img/blog/source-pocket-s.webp" width="640" height="360" alt="" loading="lazy">
-  <span class="post-tag">ソースポケット</span>
-  <h2>ソースポケット：ページの本文を集めて、集めた資料だけで答えさせる</h2>
-  <p>開いているページの本文を1クリックで集める「ソースポケット」の使い方。集めた資料だけを根拠にAIに答えさせる「限定ソースモード」、NotebookLMへまとめて渡す方法、データの扱いを説明します。</p>
-  <time datetime="2026-10-17">2026.10.17</time>
   <span class="more">記事を読む →</span>
 </a>
 <a class="post-card" href="project-sets-my-prompts.html">
@@ -190,14 +177,6 @@
   <time datetime="2026-10-15">2026.10.15</time>
   <span class="more">記事を読む →</span>
 </a>
-<a class="post-card" href="presets-student.html">
-  <img class="post-thumb" src="../img/blog/presets-student-s.webp" width="640" height="360" alt="" loading="lazy">
-  <span class="post-tag">学生・就活</span>
-  <h2>「学生・就活」タブ：レポート・就活・試験・学生生活の12コマンド</h2>
-  <p>「学生・就活」タブの12のコマンドを解説します。レポートの構成づくりと添削、論文の読解、自己分析、ES、面接の練習、試験対策、AI家庭教師、連絡文面、企画書まで。AIの答えを、自分の言葉で仕上げるための使い方です。</p>
-  <time datetime="2026-10-17">2026.10.17</time>
-  <span class="more">記事を読む →</span>
-</a>
 <a class="post-card" href="presets-text-basics.html">
   <img class="post-thumb" src="../img/blog/presets-text-basics-s.webp" width="640" height="360" alt="" loading="lazy">
   <span class="post-tag">万能・テキスト</span>
@@ -268,14 +247,6 @@
   <h2>「経営」タブ：経営者のための15のコマンド（壁打ち・意思決定・中期計画・想定問答）</h2>
   <p>「経営」タブの15のコマンドを解説します。経営の壁打ち、選択肢の比較、事前検死、中期計画、リスクの洗い出し、新規事業の種、数字が動いた理由、想定問答、銀行・投資家への説明、社員へのメッセージ、言いにくい知らせ、理念づくり、仕事の棚卸し、悩みのヒントになる本・YouTube。</p>
   <time datetime="2026-10-15">2026.10.15</time>
-  <span class="more">記事を読む →</span>
-</a>
-<a class="post-card" href="presets-trade.html">
-  <img class="post-thumb" src="../img/blog/presets-trade-s.webp" width="640" height="360" alt="" loading="lazy">
-  <span class="post-tag">投資・トレード</span>
-  <h2>「投資・トレード」タブ：相場・決算・チャート・メンタルの12コマンド</h2>
-  <p>「投資・トレード」タブの12のコマンドを解説します。経済指標の分析、為替、決算の要約、銘柄の分析、チャート画像の読み取り、売買前のシナリオ、資金管理、トレード日誌、メンタルの整え方まで。投資の助言ではありません。</p>
-  <time datetime="2026-10-17">2026.10.17</time>
   <span class="more">記事を読む →</span>
 </a>
 <a class="post-card" href="presets-prepro.html">
