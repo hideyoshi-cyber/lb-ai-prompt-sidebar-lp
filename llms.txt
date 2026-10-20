@@ -69,3 +69,7 @@
 - [画像生成AIのプロンプトのコツ：主題・構図・光・スタイルの伝え方](https://aipromptbar.liquid-block.com/blog/image-ai-prompt-tips.html): 画像生成AIで狙った絵を出すための、プロンプトの組み立て方。主題、構図、光、スタイル、避けたいものを、順番に整理して書く方法を紹介します。
 - [よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす](https://aipromptbar.liquid-block.com/blog/organize-your-prompts.html): プロンプトを、メモ帳に貯めて終わりにしていませんか。目的別の分け方、名前の付け方、空欄のあるテンプレートにする方法など、使い続けられる整理のコツを紹介します。
 - [複数のAIを使い分ける：同じプロンプトで比べる方法](https://aipromptbar.liquid-block.com/blog/compare-ai-with-same-prompt.html): ChatGPT・Claude・Geminiなど、複数のAIを使う時代。どれが良いか迷うより、同じプロンプトを入れて比べるのが近道です。比べ方の手順と、見る観点を紹介します。
+
+## Blog (Japanese): 仕事術
+
+- [議事録を「次の一手」に変える、AIへの3つの指示（ToDo・連絡文・次回の議題）](https://aipromptbar.liquid-block.com/blog/meeting-minutes-to-next-actions.html): 会議の議事録は、読んで終わりにすると、次の行動につながりません。決定事項とToDoの抜き出し、相手に送る文面、次の会議の議題づくりの3つを、AIに頼む順番と、人が確かめる点にまとめました。
