@@ -74,3 +74,4 @@
 
 - [議事録を「次の一手」に変える、AIへの3つの指示（ToDo・連絡文・次回の議題）](https://aipromptbar.liquid-block.com/blog/meeting-minutes-to-next-actions.html): 会議の議事録は、読んで終わりにすると、次の行動につながりません。決定事項とToDoの抜き出し、相手に送る文面、次の会議の議題づくりの3つを、AIに頼む順番と、人が確かめる点にまとめました。
 - [営業の一日をAIで短くする：商談前のリサーチ、商談の記録、お礼メール、次の準備](https://aipromptbar.liquid-block.com/blog/sales-day-research-meeting-followup.html): 営業の仕事は、商談そのものより、前後の準備と後片づけに時間がかかります。企業リサーチ、商談の記録、お礼メール、顧客ごとの資料の整理までを、1日の流れに沿って、AIと道具で短くする方法を紹介します。
+- [ひとり社長・フリーランスの「右腕」をつくる：打ち合わせの記録、AIとの壁打ち、案件ごとのタブ](https://aipromptbar.liquid-block.com/blog/solo-business-ai-right-hand.html): ひとりで仕事をしていると、相談相手も、記録係も、資料係も自分です。打ち合わせの記録、AIを相手にした論点の整理、案件ごとの資料の置き場を、3つの道具に分けて持つ方法を紹介します。
