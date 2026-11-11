@@ -79,3 +79,5 @@
 - [AIに「集めた資料だけ」で答えさせる方法：調べもののタブから、出典つきの答えへ](https://aipromptbar.liquid-block.com/blog/ai-answer-only-from-your-sources.html): AIは、知らないことも、それらしく答えることがあります。調べもので開いたページを集めて、「この資料だけを根拠に、出典の番号つきで」答えさせる手順と、NotebookLM に渡す方法、答えの確かめ方をまとめました。
 - [定例会議を短くする：前回の宿題から議題を組む、30分の進め方](https://aipromptbar.liquid-block.com/blog/shorter-regular-meetings-from-last-todos.html): 定例会議が長くなるのは、毎回、ゼロから話し始めるからです。前回の議事録から宿題を拾い、時間つきの議題にして、資料を会議の前にそろえる手順を、30分の型にまとめました。
 - [決まらない会議の、決め方の型：選択肢を並べ、物差しをそろえ、決めたことだけ残す](https://aipromptbar.liquid-block.com/blog/how-to-decide-in-stuck-meetings.html): 話し合っても決まらない会議には、「決め方」が決まっていないという共通点があります。選択肢と物差しを先に並べる型、AIを使った比べ方と点検のしかた、決めたことの残し方を紹介します。
+- [ゼミと講義の記録から、レポートの構成をつくる方法：学生のためのAIの使い方（丸写しはしない）](https://aipromptbar.liquid-block.com/blog/students-seminar-notes-to-report-outline.html): ゼミや講義の記録、読んだ文献のメモから、レポートの構成（章立て）をつくる手順です。録音の許可、AIに頼んでよいことと自分で書くこと、文献のタブの整理まで、大学や授業のルールに沿って使う前提でまとめました。
+- [同じ議事録を3つのAIに要約させて比べる：ChatGPT・Claude・Gemini で見る6つの観点](https://aipromptbar.liquid-block.com/blog/compare-three-ais-meeting-summary.html): 会議の要約は、AIによって、拾うところと落とすところが違います。同じ議事録と同じ指示を ChatGPT・Claude・Gemini に入れて比べる手順と、会議ならではの見る観点、結果の残し方をまとめました。
