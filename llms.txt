@@ -81,3 +81,4 @@
 - [決まらない会議の、決め方の型：選択肢を並べ、物差しをそろえ、決めたことだけ残す](https://aipromptbar.liquid-block.com/blog/how-to-decide-in-stuck-meetings.html): 話し合っても決まらない会議には、「決め方」が決まっていないという共通点があります。選択肢と物差しを先に並べる型、AIを使った比べ方と点検のしかた、決めたことの残し方を紹介します。
 - [ゼミと講義の記録から、レポートの構成をつくる方法：学生のためのAIの使い方（丸写しはしない）](https://aipromptbar.liquid-block.com/blog/students-seminar-notes-to-report-outline.html): ゼミや講義の記録、読んだ文献のメモから、レポートの構成（章立て）をつくる手順です。録音の許可、AIに頼んでよいことと自分で書くこと、文献のタブの整理まで、大学や授業のルールに沿って使う前提でまとめました。
 - [同じ議事録を3つのAIに要約させて比べる：ChatGPT・Claude・Gemini で見る6つの観点](https://aipromptbar.liquid-block.com/blog/compare-three-ais-meeting-summary.html): 会議の要約は、AIによって、拾うところと落とすところが違います。同じ議事録と同じ指示を ChatGPT・Claude・Gemini に入れて比べる手順と、会議ならではの見る観点、結果の残し方をまとめました。
+- [データを持たない道具を選ぶ理由：会議・AI・タブの道具を「どこに何が残るか」で比べる](https://aipromptbar.liquid-block.com/blog/choosing-tools-that-dont-keep-your-data.html): 仕事の道具を選ぶとき、機能や値段と同じくらい大事なのが、「入れたデータがどこに残るか」です。確かめる6つの観点と、データを預からない作りの長所と短所を、弊社の3つの道具を例に、正直にまとめました。
