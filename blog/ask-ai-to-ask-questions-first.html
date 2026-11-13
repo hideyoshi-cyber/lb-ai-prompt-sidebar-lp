@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト｜LB AI Prompt side bar</title>
+<meta name="description" content="AIの答えが的外れになるのは、足りない情報を、AIが想像で補うからです。先にAIから質問してもらう「逆質問」の頼み方を、悪い例と良い例、使える一言、やり過ぎないコツでまとめました。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/ask-ai-to-ask-questions-first.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト｜LB AI Prompt side bar">
+<meta property="og:description" content="AIの答えが的外れになるのは、足りない情報を、AIが想像で補うからです。先にAIから質問してもらう「逆質問」の頼み方を、悪い例と良い例、使える一言、やり過ぎないコツでまとめました。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/ask-ai-to-ask-questions-first.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/blog/ask-ai-to-ask-questions-first-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト",
+ "description": "AIの答えが的外れになるのは、足りない情報を、AIが想像で補うからです。先にAIから質問してもらう「逆質問」の頼み方を、悪い例と良い例、使える一言、やり過ぎないコツでまとめました。",
+ "datePublished": "2026-11-13",
+ "dateModified": "2026-11-13",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/blog/ask-ai-to-ask-questions-first-og.jpg",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/ask-ai-to-ask-questions-first.html",
+ "author": {
+  "@type": "Organization",
+  "name": "株式会社リキッドブロック（Liquid Block Inc.）",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ },
+ "about": {
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "url": "https://aipromptbar.liquid-block.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "LB AI Prompt side bar",
+   "item": "https://aipromptbar.liquid-block.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "ブログ",
+   "item": "https://aipromptbar.liquid-block.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト",
+   "item": "https://aipromptbar.liquid-block.com/blog/ask-ai-to-ask-questions-first.html"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#commands">コマンド</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh?hl=ja" target="_blank" rel="noopener" aria-label="Chromeに追加（Chrome ウェブストアが開きます）">Chromeに追加<small>無料</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト</h1>
+    <div class="post-meta">
+      <span class="post-tag">プロンプトの書き方</span>
+      <span><time datetime="2026-11-13">2026年11月13日</time></span>
+      <span>読む時間：約7分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<figure class="post-cover"><img src="../img/blog/ask-ai-to-ask-questions-first.webp" width="1344" height="756" alt="AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプトのイメージ" fetchpriority="high"></figure>
+<p class="post-lead">「それっぽいけれど、使えない」という答えが返ってきたとき、原因は、AIの力不足より、<strong>こちらが渡していない情報</strong>にあることが多いです。足りない分を、AIに想像で補わせるのではなく、<strong>先にAIから質問してもらう</strong>。これが「逆質問」です。この記事では、頼み方の型と、やり過ぎないコツを紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#why">答えが的外れになる、本当の理由</a></li>
+<li><a href="#what">逆質問とは何か</a></li>
+<li><a href="#example">悪い例と、良い例</a></li>
+<li><a href="#phrases">そのまま使える頼み方の一言</a></li>
+<li><a href="#answer">質問への答え方のコツ</a></li>
+<li><a href="#limits">逆質問が向かない場面</a></li>
+<li><a href="#more">もう1つの例：企画の相談</a></li>
+<li><a href="#tool">手間を減らす道具</a></li>
+<li><a href="#faq">よくある疑問</a></li>
+</ol></nav>
+<h2 id="why">答えが的外れになる、本当の理由</h2>
+<p>たとえば「新しい企画書を書いて」と頼んだとします。AIは、誰に向けた企画か、予算はいくらか、何のための企画かを、知りません。知らないまま書くので、無難で、誰にでも当てはまる文章になります。</p>
+<p>人間の部下なら、「誰向けですか？」「いつまでですか？」と、聞き返してくれます。AIは、何も言わなければ、聞き返さずに、そのまま書き始めます。だから、<strong>「聞き返してください」と、こちらから頼む</strong>必要があります。</p>
+<h2 id="what">逆質問とは何か</h2>
+<p>逆質問は、答えを出してもらう前に、AIに<strong>確認の質問</strong>をしてもらう頼み方です。流れは3つです。</p>
+<ol>
+<li>やりたいことを、ざっくり書く。</li>
+<li>AIが、足りない情報を、数個の質問にして返す。</li>
+<li>質問に答える。そのあとで、AIが本番の答えを出す。</li>
+</ol>
+<p>ポイントは、「<strong>質問の数を決める</strong>」ことと、「<strong>答えを出すのは、質問に答えたあと</strong>」と書くことです。この2つがないと、AIは、質問を山ほど並べたり、質問と本番の答えを一度に出したりします。</p>
+<h2 id="example">悪い例と、良い例</h2>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例（情報が足りないまま依頼）</div><pre>社内向けの勉強会の案内文を書いてください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例（先に質問してもらう）</div><pre>社内向けの勉強会の案内文を書きたいです。
+いきなり案内文を書かず、書くために必要な確認事項を、重要な順に3つだけ質問してください。
+私が答えてから、案内文を書いてください。</pre></div><p>すると、AIは、たとえば「参加者は誰ですか」「日時と場所は決まっていますか」「参加してほしい理由は何ですか」のように返します。これに答えるだけで、案内文の材料がそろいます。</p>
+<p>質問が3つなのは、答える側の負担を考えた数です。多すぎると、答えるのが面倒になり、途中でやめてしまいます。</p>
+<h2 id="phrases">そのまま使える頼み方の一言</h2>
+<table>
+<tr><th>場面</th><th>頼み方の一言</th></tr>
+<tr><td>依頼の最初に</td><td>「書き始める前に、確認したいことを3つ質問してください。」</td></tr>
+<tr><td>答えが的外れだったあと</td><td>「的外れでした。足りない前提があれば、3つ質問してください。」</td></tr>
+<tr><td>選択肢で答えたいとき</td><td>「質問は、はい・いいえか、A・Bで答えられる形にしてください。」</td></tr>
+<tr><td>質問が多すぎるとき</td><td>「いちばん重要な質問だけ、2つに絞ってください。」</td></tr>
+<tr><td>もう十分なとき</td><td>「もう質問は不要です。いまの情報で、書いてください。」</td></tr>
+</table>
+<p>最後の一言は、大事です。質問がいつまでも続くときは、「もう十分です」と伝えて、打ち切ります。</p>
+<h2 id="answer">質問への答え方のコツ</h2>
+<ul>
+<li><strong>分からないときは、「未定」と書く。</strong>AIは、未定のところを、仮に置いて進めてくれます。</li>
+<li><strong>番号をつけて答える。</strong>「1. 〇〇　2. 〇〇　3. 〇〇」のように、質問の番号と合わせます。</li>
+<li><strong>長く書かなくていい。</strong>単語や、箇条書きで十分です。</li>
+<li><strong>決めていないことは、迷っていると書く。</strong>「AかBか迷っている。どちらが向くか意見がほしい」と書くと、意見を添えてくれます。</li>
+</ul>
+<h2 id="limits">逆質問が向かない場面</h2>
+<p>逆質問は、いつでも良いわけではありません。次のような場面では、使わないほうが早いです。</p>
+<ul>
+<li>答えが、1つの事実で決まる質問（「東京と大阪の距離は」など）。</li>
+<li>条件が、すでに十分に書けている依頼。質問が、ただの確認作業になります。</li>
+<li>急いでいるとき。まず、たたき台を出してもらい、直すほうが早い場合があります。</li>
+</ul>
+<p>目安は、<strong>「頼んだあとに、自分で書き足したくなりそうか」</strong>です。書き足したくなりそうな依頼ほど、先に聞いてもらう価値があります。</p>
+<h2 id="more">もう1つの例：仕事の相談で使う</h2>
+<p>逆質問は、文章を書く依頼だけでなく、<strong>相談</strong>にも向いています。たとえば、「新しいサービスを始めたい」と、ぼんやり相談する場面です。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>新しいサービスを始めたいので、アイデアをください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例</div><pre>新しいサービスを始めたいので、アイデアを相談したいです。
+アイデアを出す前に、考えるために必要な質問を、5つだけしてください。
+質問は、お客様・予算・期間・自社の強み・やりたくないこと、の観点から選んでください。
+私が答えたあとで、アイデアを3つ出してください。</pre></div><p>悪い例では、AIは、誰にでも当てはまる、ありがちなアイデアを並べます。良い例では、質問に答える過程で、<strong>自分の考えが整理される</strong>効果もあります。「予算」や「やりたくないこと」を、改めて聞かれて、初めて決めていなかったことに気づく。これは、逆質問の、思わぬ利点です。</p>
+<p>質問の観点を、自分で指定するのも、コツです。観点を決めないと、AIは、当たり障りのない質問ばかりを選ぶことがあります。観点を決めれば、質問が、あなたの仕事に、近づきます。</p>
+<h2 id="tool">手間を減らす道具</h2>
+<p>逆質問の一言は、毎回打つと、手間です。LB AI Prompt side bar には、2つの形で入っています。</p>
+<h3>【思考整理】要件定義・逆質問ヒアリング <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>アイデアの断片を貼ると、AIが、まず5つの質問を返し、その答えをもとに、要件を整理したシートを作ります。「万能・テキスト」タブにあります。</p>
+<ul>
+<li><strong>こんなときに</strong>：やりたいことが、まだぼんやりしているとき</li>
+<li><strong>選ぶ・書く項目</strong>：アイデア（箇条書きでOK）</li>
+</ul>
+<h3>スラッシュコマンド「/逆質問」</h3>
+<p>開いているAIの入力欄に、「確認したいことや足りない前提があれば、3つ質問してください」という指示を、ワンクリックで入れます。画面の上の「⚡ 追撃:」のバーに、ボタンがあります。</p>
+<ul>
+<li><strong>こんなときに</strong>：答えが的外れだったあとの、聞き返しの一言に</li>
+</ul>
+<p>どちらも、書き方の型を、ボタンに置き換えただけです。内容は、この記事で説明した、「質問の数を決めて、答えは質問のあとに」と同じ考え方です。</p>
+<div class="note">書いたプロンプトや、入力した内容は、LB AI Prompt side bar の弊社のサーバーには送られず、弊社からは見えません。⚡ で入れた内容は、送り先のAIのサービスに渡ります。個人情報や社外秘の情報をAIに入れるときは、会社や学校のルールに沿って、伏せてから入れてください。</div>
+<div class="note">「無料のおすすめ」の印があるコマンドは、無料版でずっと使えます。ほかのコマンドは、はじめの14日間のお試し（カードの登録なし）か、有料プランで使えます（<a href="free-trial-plans.html">無料版と有料プランの違い</a>）。スラッシュコマンドは、無料版でも使えます。</div>
+<h2 id="faq">よくある疑問</h2>
+<h3>AIが、質問をせずに、そのまま答えてしまいます</h3>
+<p>「質問に答えるまで、本番の答えは書かないでください」と、はっきり書きます。それでも書いてしまう場合は、「質問だけを出してください。それ以外は、何も書かないでください」と、役割を1つに絞ります。</p>
+<h3>質問が、ピントのずれたものばかりです</h3>
+<p>最初の依頼に、<strong>何に使うか</strong>が書かれていないことが多いです。「これは、部長への報告用です」のように、使い道を足すと、質問の質が上がります。型の全体は、<a href="prompt-basics-template.html">プロンプトの基本の型</a>にまとめています。</p>
+<h3>1回の質問で、足りなかったら？</h3>
+<p>もう一度、「まだ足りない前提があれば、あと2つだけ質問してください」と頼みます。ただし、2回までにして、それ以上は、たたき台を出してもらって、直す形に切り替えます。</p>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="prompt-basics-template.html">プロンプトの基本の型：役割・目的・背景・出力形式を決める</a>
+<a href="presets-text-basics.html">「万能・テキスト」タブ①：万能テンプレート・XMLタグ・逆質問・推敲・議事録・壁打ち</a>
+<a href="slash-commands.html">スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>
