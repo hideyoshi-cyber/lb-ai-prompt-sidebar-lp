@@ -71,6 +71,7 @@
 - [複数のAIを使い分ける：同じプロンプトで比べる方法](https://aipromptbar.liquid-block.com/blog/compare-ai-with-same-prompt.html): ChatGPT・Claude・Geminiなど、複数のAIを使う時代。どれが良いか迷うより、同じプロンプトを入れて比べるのが近道です。比べ方の手順と、見る観点を紹介します。
 - [AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト](https://aipromptbar.liquid-block.com/blog/ask-ai-to-ask-questions-first.html): AIの答えが的外れになるのは、足りない情報を、AIが想像で補うからです。先にAIから質問してもらう「逆質問」の頼み方を、悪い例と良い例、使える一言、やり過ぎないコツでまとめました。
 - [AIの答えを「表」「箇条書き」「JSON」で返してもらう：出力形式の指定のしかた](https://aipromptbar.liquid-block.com/blog/ask-ai-for-table-bullets-json-output.html): AIの答えは、形を指定しないと、長い文章で返ってきます。表・箇条書き・JSONなど、出力形式を指定する書き方と、列の決め方、崩れたときの直し方を、悪い例と良い例で説明します。
+- [長い文章をAIに要約させるプロンプト：字数・読者・用途の決め方](https://aipromptbar.liquid-block.com/blog/how-to-ask-ai-to-summarize-long-text.html): AIに要約を頼むと、長すぎたり、大事なところが抜けたりします。字数・読者・用途の3つを決める書き方と、要約の確かめ方、長い資料を分けて頼む方法を、悪い例と良い例で説明します。
 
 ## Blog (Japanese): 仕事術
 
