@@ -72,6 +72,7 @@
 - [AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト](https://aipromptbar.liquid-block.com/blog/ask-ai-to-ask-questions-first.html): AIの答えが的外れになるのは、足りない情報を、AIが想像で補うからです。先にAIから質問してもらう「逆質問」の頼み方を、悪い例と良い例、使える一言、やり過ぎないコツでまとめました。
 - [AIの答えを「表」「箇条書き」「JSON」で返してもらう：出力形式の指定のしかた](https://aipromptbar.liquid-block.com/blog/ask-ai-for-table-bullets-json-output.html): AIの答えは、形を指定しないと、長い文章で返ってきます。表・箇条書き・JSONなど、出力形式を指定する書き方と、列の決め方、崩れたときの直し方を、悪い例と良い例で説明します。
 - [長い文章をAIに要約させるプロンプト：字数・読者・用途の決め方](https://aipromptbar.liquid-block.com/blog/how-to-ask-ai-to-summarize-long-text.html): AIに要約を頼むと、長すぎたり、大事なところが抜けたりします。字数・読者・用途の3つを決める書き方と、要約の確かめ方、長い資料を分けて頼む方法を、悪い例と良い例で説明します。
+- [AIの答えが長すぎるときの直し方：追加で送る、3つの一言](https://aipromptbar.liquid-block.com/blog/shorten-too-long-ai-answers.html): AIの答えが長くて読めないときは、頼み直さなくても、追加の一言で直せます。「半分に」「3行で」「結論から」の3つの一言と、最初から長くさせない書き方を、悪い例と良い例で紹介します。
 
 ## Blog (Japanese): 仕事術
 
