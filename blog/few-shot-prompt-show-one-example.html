@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方｜LB AI Prompt side bar</title>
+<meta name="description" content="AIに「こういう形で」と伝えるとき、言葉で説明するより、例を1つ見せるほうが伝わります。例示（Few-shot）の書き方、例の数、区切り方、例にとらわれすぎない工夫を、悪い例と良い例で解説します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/few-shot-prompt-show-one-example.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方｜LB AI Prompt side bar">
+<meta property="og:description" content="AIに「こういう形で」と伝えるとき、言葉で説明するより、例を1つ見せるほうが伝わります。例示（Few-shot）の書き方、例の数、区切り方、例にとらわれすぎない工夫を、悪い例と良い例で解説します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/few-shot-prompt-show-one-example.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/blog/few-shot-prompt-show-one-example-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方",
+ "description": "AIに「こういう形で」と伝えるとき、言葉で説明するより、例を1つ見せるほうが伝わります。例示（Few-shot）の書き方、例の数、区切り方、例にとらわれすぎない工夫を、悪い例と良い例で解説します。",
+ "datePublished": "2026-11-18",
+ "dateModified": "2026-11-18",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/blog/few-shot-prompt-show-one-example-og.jpg",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/few-shot-prompt-show-one-example.html",
+ "author": {
+  "@type": "Organization",
+  "name": "株式会社リキッドブロック（Liquid Block Inc.）",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ },
+ "about": {
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "url": "https://aipromptbar.liquid-block.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "LB AI Prompt side bar",
+   "item": "https://aipromptbar.liquid-block.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "ブログ",
+   "item": "https://aipromptbar.liquid-block.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方",
+   "item": "https://aipromptbar.liquid-block.com/blog/few-shot-prompt-show-one-example.html"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#commands">コマンド</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh?hl=ja" target="_blank" rel="noopener" aria-label="Chromeに追加（Chrome ウェブストアが開きます）">Chromeに追加<small>無料</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方</h1>
+    <div class="post-meta">
+      <span class="post-tag">プロンプトの書き方</span>
+      <span><time datetime="2026-11-18">2026年11月18日</time></span>
+      <span>読む時間：約7分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<figure class="post-cover"><img src="../img/blog/few-shot-prompt-show-one-example.webp" width="1344" height="756" alt="具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方のイメージ" fetchpriority="high"></figure>
+<p class="post-lead">「やさしい文体で」「かたすぎない感じで」と、言葉で説明しても、思ったとおりにならない。そんなときは、<strong>例を1つ見せる</strong>のが、いちばん早いです。これを、例示（Few-shot）と呼びます。この記事では、例の選び方、置き方、例にとらわれすぎないための工夫を紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#what">例示（Few-shot）とは</a></li>
+<li><a href="#why">言葉の説明より、例が伝わる理由</a></li>
+<li><a href="#write">書き方の型</a></li>
+<li><a href="#example">悪い例と、良い例</a></li>
+<li><a href="#count">例は、いくつ見せるか</a></li>
+<li><a href="#trap">例にとらわれすぎないために</a></li>
+<li><a href="#more">もう1つの例：文体をそろえる</a></li>
+<li><a href="#qa">よくある疑問</a></li>
+<li><a href="#tool">手間を減らす道具</a></li>
+</ol></nav>
+<h2 id="what">例示（Few-shot）とは</h2>
+<p>例示は、プロンプトの中に、<strong>「入力と、望ましい出力」のペア</strong>を、見本として入れる書き方です。例を1つだけ見せるのは「ワンショット」、2〜3つ見せるのを「Few-shot（フューショット）」と呼びます。見本を見せずに頼む書き方は「ゼロショット」です。</p>
+<h2 id="why">言葉の説明より、例が伝わる理由</h2>
+<p>「かたすぎない文体で」と書いても、どれくらいの「かたさ」なのかは、人によって違います。AIも、同じです。でも、実際の文を1つ見せれば、<strong>言葉づかい・長さ・語尾・改行</strong>が、一度に伝わります。</p>
+<table>
+<tr><th>伝えたいこと</th><th>言葉で説明すると</th><th>例を見せると</th></tr>
+<tr><td>文体</td><td>「親しみやすく、くだけすぎない」</td><td>実際の1文で、語尾や距離感が伝わる</td></tr>
+<tr><td>形式</td><td>「見出し、要点、一言の順で」</td><td>1件分の完成形を見せれば、そろう</td></tr>
+<tr><td>長さ</td><td>「短め」</td><td>見本の長さが、基準になる</td></tr>
+<tr><td>分類</td><td>「問い合わせを、種類ごとに」</td><td>1件の分類結果を見せれば、基準が伝わる</td></tr>
+</table>
+<h2 id="write">書き方の型</h2>
+<ol>
+<li><strong>やってほしいことを、1文で書く。</strong>（例：問い合わせを、3つの種類に分類してください。）</li>
+<li><strong>例を、区切りをつけて見せる。</strong>「入力：」「出力：」と、ラベルを付けます。</li>
+<li><strong>本番の入力を、同じ形で書く。</strong>最後の「出力：」を空欄にして、AIに続きを書かせます。</li>
+</ol>
+<p>見本と、本番の入力の形が、<strong>同じ書式</strong>であることが大切です。ラベルや、改行の仕方がずれると、AIが、どこを真似るか、迷います。</p>
+<h2 id="example">悪い例と、良い例</h2>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例（言葉だけで説明）</div><pre>お客様からの問い合わせを、「注文」「配送」「その他」に分類してください。分類は、いい感じにお願いします。
+
+問い合わせ：先週頼んだ商品が、まだ届きません。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例（見本を見せる）</div><pre>お客様からの問い合わせを、「注文」「配送」「その他」のどれか1つに分類してください。
+分類名だけを、出力してください。
+
+入力：色を変更したいのですが、可能ですか。
+出力：注文
+
+入力：荷物が、予定の日になっても届きません。
+出力：配送
+
+入力：先週頼んだ商品が、まだ届きません。
+出力：</pre></div><p>良い例では、「分類名だけ」と、見本の2件が、答えの形を決めています。AIは、次の「出力：」に、「配送」とだけ、続けるはずです。</p>
+<p>文章を書く場面でも、同じです。「次の文のような、やわらかい文体で」と、自分が気に入っている文章を1つ貼ると、言葉で説明するより、近づきます。</p>
+<h2 id="count">例は、いくつ見せるか</h2>
+<ul>
+<li><strong>1つ</strong>：形式や文体を、そろえたいとき。まずは、ここから。</li>
+<li><strong>2〜3つ</strong>：分類のように、答えが複数あるとき。それぞれの答えを、1つずつ見せます。</li>
+<li><strong>それ以上</strong>：普通は、要りません。増やすほど、プロンプトが長くなり、AIが、見本の細部に引っ張られます。</li>
+</ul>
+<p>例を、2つ以上、見せるときは、<strong>違いのある例</strong>を選びます。似た例ばかりだと、AIは、その形だけを覚えます。</p>
+<h2 id="trap">例にとらわれすぎないために</h2>
+<p>例を見せると、AIは、その例に、強く引っ張られます。内容まで、似てしまうことがあります。次の工夫で、防げます。</p>
+<ul>
+<li><strong>「形だけ、参考にしてください」</strong>と、書く。「内容は、まねしないでください」も、効きます。</li>
+<li><strong>例の中身を、本番と離す。</strong>本番が「配送の問い合わせ」なら、例は、別の話題にします。</li>
+<li><strong>例を、複数にして、バラつかせる。</strong>1つだけだと、その1つの癖が、強く出ます。</li>
+<li><strong>個人情報や、社外秘は、例に入れない。</strong>見本には、架空の内容を使います。</li>
+</ul>
+<h2 id="more">もう1つの例：文体をそろえる</h2>
+<p>分類だけでなく、<strong>文章の文体</strong>をそろえるときにも、見本が、役に立ちます。たとえば、お知らせの文章を、いつも同じ調子で書きたいときです。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>やわらかい調子で、新しい営業時間のお知らせを書いてください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例</div><pre>次の見本の調子と長さで、新しい営業時間のお知らせを書いてください。内容は、まねしないでください。
+
+見本：
+いつも、ご利用ありがとうございます。来月から、駐車場の場所が変わります。少し分かりにくくなりますが、スタッフが、ご案内します。ご不便をおかけしますが、よろしくお願いします。
+
+新しいお知らせの内容：来月から、営業時間が、10時〜19時になります。</pre></div><p>見本の文には、<strong>語尾（です・ます）、1文の長さ、お詫びの入れ方、結びの言葉</strong>が、すべて含まれています。「やわらかい」という一言では、伝えきれない情報です。</p>
+<p>見本は、<strong>自分や、自社の過去の文章</strong>を使うのが、いちばん確実です。ただし、お客様の名前や、社内の情報が入っている文章は、そのまま貼らず、伏せるか、架空の内容に書き換えてから使ってください。</p>
+<h2 id="qa">よくある疑問</h2>
+<h3>見本が、ないときは、どうしますか</h3>
+<p>先に、AIに、見本を作ってもらう方法があります。「この条件で、見本を3つ作ってください」と頼み、その中から、気に入ったものを選んで、次の依頼の見本にします。自分の好みが、はっきりしてきます。</p>
+<h3>見本と、そっくりな答えしか出ません</h3>
+<p>「形だけ、参考にしてください。内容は、まねしないでください」と書きます。見本を、2〜3つに増やして、内容を、離しておくのも、効きます。</p>
+<h3>見本は、日本語と英語で、言語をそろえるべきですか</h3>
+<p>本番の入力と、出力に使う言語に、そろえるのが、基本です。英語で出力してほしいなら、見本の出力も、英語にします。</p>
+<p>見本を見せる方法は、慣れると、ほかの場面でも使えます。たとえば、表の列の書き方、メールの冒頭の一文、箇条書きの粒度。<strong>言葉で説明しにくいことほど、見本が効く</strong>と覚えておくと、迷ったときの、助けになります。</p>
+<h2 id="tool">手間を減らす道具</h2>
+<p>良い見本は、作るのに手間がかかります。一度作ったら、取っておいて、使い回したいところです。</p>
+<ul>
+<li><strong>空欄にして、型にする</strong>：見本の部分は固定して、毎回変わる入力の所だけを、空欄「{{ }}」にします。<a href="organize-your-prompts.html">よく使うプロンプトの整理術</a>で、型にして取っておく方法を紹介しています。</li>
+<li><strong>「/プロンプト化」</strong>：うまくいったやり取りを、「役割・目的・制約・出力形式・変数」のある、再利用できるプロンプトに、まとめ直す指示です。うまくいった見本つきのやり取りを、型にするときに使えます。スラッシュコマンドは、無料版でも使えます（<a href="slash-commands.html">スラッシュコマンドの使い方</a>）。</li>
+<li><strong>「📝 メモ編集」「⤢ 拡大メモ」</strong>：見本が、長くなったときに、大きな画面で見ながら直してから、AIに入れられます。</li>
+</ul>
+<p>LB AI Prompt side bar では、プロンプトの空欄や選択肢を、プレビューで確かめて、「⚡ 挿入」でAIの入力欄に入れられます（<a href="adjust-variables-preview.html">選択肢・空欄を整えて、プレビューで確かめる</a>）。</p>
+<div class="note">書いたプロンプトや、入力した内容は、LB AI Prompt side bar の弊社のサーバーには送られず、弊社からは見えません。⚡ で入れた内容は、送り先のAIのサービスに渡ります。個人情報や社外秘の情報をAIに入れるときは、会社や学校のルールに沿って、伏せてから入れてください。</div>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="prompt-basics-template.html">プロンプトの基本の型：役割・目的・背景・出力形式を決める</a>
+<a href="organize-your-prompts.html">よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす</a>
+<a href="slash-commands.html">スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</a>
+<a href="adjust-variables-preview.html">プロンプトを整える：選択肢・空欄・プレビュー・拡大メモ</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

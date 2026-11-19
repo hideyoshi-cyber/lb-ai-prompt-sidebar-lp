@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面｜LB AI Prompt side bar</title>
+<meta name="description" content="「あなたは〇〇の専門家です」と書くと、AIの答えは良くなるのでしょうか。効く場面（文体・視点・深さ）と、効かない場面（事実の正確さ）を分けて、役割の書き方を、悪い例と良い例で説明します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/does-giving-ai-a-role-work.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面｜LB AI Prompt side bar">
+<meta property="og:description" content="「あなたは〇〇の専門家です」と書くと、AIの答えは良くなるのでしょうか。効く場面（文体・視点・深さ）と、効かない場面（事実の正確さ）を分けて、役割の書き方を、悪い例と良い例で説明します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/does-giving-ai-a-role-work.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/blog/does-giving-ai-a-role-work-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面",
+ "description": "「あなたは〇〇の専門家です」と書くと、AIの答えは良くなるのでしょうか。効く場面（文体・視点・深さ）と、効かない場面（事実の正確さ）を分けて、役割の書き方を、悪い例と良い例で説明します。",
+ "datePublished": "2026-11-17",
+ "dateModified": "2026-11-17",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/blog/does-giving-ai-a-role-work-og.jpg",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/does-giving-ai-a-role-work.html",
+ "author": {
+  "@type": "Organization",
+  "name": "株式会社リキッドブロック（Liquid Block Inc.）",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ },
+ "about": {
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "url": "https://aipromptbar.liquid-block.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "LB AI Prompt side bar",
+   "item": "https://aipromptbar.liquid-block.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "ブログ",
+   "item": "https://aipromptbar.liquid-block.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面",
+   "item": "https://aipromptbar.liquid-block.com/blog/does-giving-ai-a-role-work.html"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#commands">コマンド</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh?hl=ja" target="_blank" rel="noopener" aria-label="Chromeに追加（Chrome ウェブストアが開きます）">Chromeに追加<small>無料</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面</h1>
+    <div class="post-meta">
+      <span class="post-tag">プロンプトの書き方</span>
+      <span><time datetime="2026-11-17">2026年11月17日</time></span>
+      <span>読む時間：約7分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<figure class="post-cover"><img src="../img/blog/does-giving-ai-a-role-work.webp" width="1344" height="756" alt="プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面のイメージ" fetchpriority="high"></figure>
+<p class="post-lead">プロンプトの解説には、「あなたは〇〇の専門家です」と、先に書く方法がよく出てきます。でも、これは本当に効くのでしょうか。結論を先に言うと、<strong>効く場面と、効かない場面があります</strong>。この記事では、その見分け方と、役割の書き方を紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#what">「役割を与える」とは</a></li>
+<li><a href="#works">効く場面</a></li>
+<li><a href="#notwork">効かない場面</a></li>
+<li><a href="#write">役割の書き方：3つの要素</a></li>
+<li><a href="#example">悪い例と、良い例</a></li>
+<li><a href="#mistakes">やりがちな失敗</a></li>
+<li><a href="#more">役割が、効いたかを、試す方法</a></li>
+<li><a href="#qa">よくある疑問</a></li>
+<li><a href="#tool">手間を減らす道具</a></li>
+</ol></nav>
+<h2 id="what">「役割を与える」とは</h2>
+<p>プロンプトの最初に、「あなたは、経験10年の人事担当者です」のように、AIに<strong>立場</strong>を伝える書き方です。「ロール（役割）プロンプト」とも呼ばれます。</p>
+<p>この書き方は、「AIが、その分野の専門知識を、突然、身につける」ものではありません。AIに、<strong>どの立場の言葉づかいで、どの視点から答えるか</strong>を、伝えているだけです。この違いを知っておくと、期待しすぎずに済みます。</p>
+<h2 id="works">効く場面</h2>
+<table>
+<tr><th>場面</th><th>役割の効果</th><th>例</th></tr>
+<tr><td>文体を決めたい</td><td>言葉づかいが、そろう</td><td>「やさしい小学校の先生として」説明する</td></tr>
+<tr><td>視点を変えたい</td><td>見落としていた観点が出る</td><td>「購入を迷っている顧客として」、この説明文を読む</td></tr>
+<tr><td>点検してほしい</td><td>厳しさの度合いが決まる</td><td>「厳しい編集者として」、文章の弱点を指摘する</td></tr>
+<tr><td>練習の相手がほしい</td><td>会話の相手役になる</td><td>「採用面接官として」、質問してください</td></tr>
+</table>
+<p>共通点は、<strong>「どう答えるか」を決めたい</strong>場面です。文体・視点・厳しさ・相手役は、役割を書くと、はっきり変わります。</p>
+<h2 id="notwork">効かない場面</h2>
+<ul>
+<li><strong>事実の正確さを上げたいとき</strong>：「あなたは、法律の専門家です」と書いても、AIが知らないことは、知りません。間違いが、減るとは限りません。それどころか、もっともらしい口調で、間違いを言うことがあります。</li>
+<li><strong>最新の情報が必要なとき</strong>：役割を与えても、AIの知識が、新しくなるわけではありません。</li>
+<li><strong>条件が足りないとき</strong>：誰向けか、何のためかが書かれていなければ、役割だけでは、的外れになります。</li>
+</ul>
+<p>医療・法律・お金の判断のように、間違いの代償が大きい場面では、役割を書いても、専門家の助言の代わりにはなりません。AIの答えは、助言ではなく、考えるための材料として使い、最終的な判断は、専門家に確かめてください。</p>
+<h2 id="write">役割の書き方：3つの要素</h2>
+<p>役割は、「肩書き」だけで終わらせず、次の3つを添えると、効きやすくなります。</p>
+<ol>
+<li><strong>立場</strong>：誰として答えるか（例：中小企業の経理担当者）。</li>
+<li><strong>読み手</strong>：誰に向けて答えるか（例：簿記を習っていない新入社員）。</li>
+<li><strong>姿勢</strong>：どんな態度で答えるか（例：専門用語を使わず、例を1つ添える）。</li>
+</ol>
+<h2 id="example">悪い例と、良い例</h2>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例（肩書きだけ）</div><pre>あなたは、優秀なマーケターです。新商品の宣伝文を書いてください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例（立場・読み手・姿勢）</div><pre>あなたは、食品メーカーの広報担当者です。
+読み手は、30〜40代の共働きの親です。
+押しつけがましくない、やわらかい調子で、新商品「やさしい麦茶」の宣伝文を、150字で書いてください。
+大げさな表現は、使わないでください。</pre></div><p>「優秀な」のような、ほめ言葉は、あまり効きません。<strong>具体的な立場と、読み手</strong>のほうが、答えを変えます。</p>
+<h2 id="mistakes">やりがちな失敗</h2>
+<ul>
+<li><strong>肩書きを盛りすぎる</strong>：「世界一のコンサルタントで、医師で、弁護士です」のように、盛っても、答えは良くなりません。</li>
+<li><strong>役割と、依頼が合っていない</strong>：「小学生」の役割で、専門的な分析を頼むと、答えがちぐはぐになります。</li>
+<li><strong>役割を、信じすぎる</strong>：「専門家として答えたから、正しい」とは、限りません。数字や固有名詞は、自分で確かめます。</li>
+<li><strong>役割を、変え忘れる</strong>：長い会話の途中で、役割が合わなくなったら、「ここからは、〇〇として答えてください」と、切り替えます。</li>
+</ul>
+<p>もう1つ、試しやすい使い方があります。<strong>同じ文章を、役割を変えて、2回読んでもらう</strong>ことです。「書き手として」と「初めて読む顧客として」で、返ってくる指摘が変わります。同じ依頼で比べる方法は、<a href="compare-ai-with-same-prompt.html">同じプロンプトで比べる方法</a>が参考になります。</p>
+<h2 id="more">役割が、効いたかを、確かめる方法</h2>
+<p>役割の効果は、AIの種類や、その時の更新によって、変わります。ネットの評判より、<strong>自分の依頼で、試す</strong>のが、確かです。次の手順で、すぐに比べられます。</p>
+<ol>
+<li>同じ依頼を、2つ用意する。1つは、役割なし。もう1つは、役割あり（立場・読み手・姿勢つき）。</li>
+<li>別々の会話で、それぞれ送る。同じ会話で続けると、前の答えの影響を受けます。</li>
+<li>答えを、並べて見比べる。見るのは、「言葉づかい」「具体性」「自分が直す手間」の3つ。</li>
+<li>差が小さければ、役割は省く。差が大きければ、その役割を、型にして、取っておく。</li>
+</ol>
+<p>「差が小さければ、省く」という判断も、大事です。役割の一文を、足すだけで、答えが、必ず良くなるとは限りません。毎回、同じ役割を書くより、<strong>効いた役割だけを、取っておいて、使い回す</strong>ほうが、無駄がありません。</p>
+<p>もう1つのコツは、<strong>役割を、1つに絞る</strong>ことです。「営業で、経理で、法務でもある人」のように、役割を重ねると、AIは、どの視点で答えれば良いか、迷います。視点を変えたいときは、役割を、順番に切り替えて、同じ内容を、何度か見てもらいます。</p>
+<h2 id="qa">よくある疑問</h2>
+<h3>「あなたは専門家です」は、書かないほうが良いですか</h3>
+<p>書いても、害はありません。ただし、それだけで、答えの正確さは上がりません。書くなら、読み手と、答え方の姿勢を、一緒に書きます。専門家の肩書きを、信用の代わりにしないでください。</p>
+<h3>役割を、毎回、書くのが面倒です</h3>
+<p>よく使う役割は、型にして、取っておきます。役割の欄だけを、選択肢にして、選び直せるようにしておくと、毎回、書かずに済みます。</p>
+<h3>役割と、会話の途中で、切り替えられますか</h3>
+<p>切り替えられます。「ここからは、初めてこの商品を知る顧客として、いまの説明を読んで、分かりにくい所を、教えてください」のように、新しい役割を、はっきり伝えます。前の役割の癖が残るときは、「前の役割は、忘れてください」と添えます。</p>
+<h2 id="tool">手間を減らす道具</h2>
+<p>役割は、毎回、書き直すと、手間です。LB AI Prompt side bar では、次のように使えます。</p>
+<h3>【万能構造】3大AI公式推奨・万能テンプレート <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>役割・目的・背景・入力データ・制約・出力形式を、1つの型にしたコマンドです。「役割設定」で、経営・業務コンサルタント／シニアITプロダクトマネージャー／リサーチャー／コピーライターから選べます。「万能・テキスト」タブの先頭にあります。</p>
+<ul>
+<li><strong>こんなときに</strong>：何にでも使える、基本の型から始めたいとき</li>
+<li><strong>選ぶ・書く項目</strong>：役割設定、出力形式、目的、背景、入力データ</li>
+</ul>
+<p>また、スラッシュコマンドには、「役割スイッチ」の分類があります。「/編集者」（読者が飽きる所の指摘と、構成の組み替え）、「/コーチ」（相手の話を聞きながら、伴走する）、「/CFO」（採算の面から、辛口で点検する）などです。名前を押すだけで、その視点を、追加の指示として、開いているAIの入力欄に入れられます。スラッシュコマンドは、無料版でも使えます（<a href="slash-commands.html">スラッシュコマンドの使い方</a>）。</p>
+<div class="note">「無料のおすすめ」の印があるコマンドは、無料版でずっと使えます。ほかのコマンドは、はじめの14日間のお試し（カードの登録なし）か、有料プランで使えます（<a href="free-trial-plans.html">無料版と有料プランの違い</a>）。スラッシュコマンドは、無料版でも使えます。</div>
+<div class="note">書いたプロンプトや、入力した内容は、LB AI Prompt side bar の弊社のサーバーには送られず、弊社からは見えません。⚡ で入れた内容は、送り先のAIのサービスに渡ります。個人情報や社外秘の情報をAIに入れるときは、会社や学校のルールに沿って、伏せてから入れてください。</div>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="prompt-basics-template.html">プロンプトの基本の型：役割・目的・背景・出力形式を決める</a>
+<a href="slash-commands.html">スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</a>
+<a href="compare-ai-with-same-prompt.html">複数のAIを使い分ける：同じプロンプトで比べる方法</a>
+<a href="ask-ai-to-ask-questions-first.html">AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>
