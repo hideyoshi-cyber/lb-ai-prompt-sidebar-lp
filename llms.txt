@@ -76,6 +76,7 @@
 - [プロンプトで「役割を与える」は、本当に効くのか：効く場面と、効かない場面](https://aipromptbar.liquid-block.com/blog/does-giving-ai-a-role-work.html): 「あなたは〇〇の専門家です」と書くと、AIの答えは良くなるのでしょうか。効く場面（文体・視点・深さ）と、効かない場面（事実の正確さ）を分けて、役割の書き方を、悪い例と良い例で説明します。
 - [具体例を1つ見せる：プロンプトの「例示（Few-shot）」の書き方](https://aipromptbar.liquid-block.com/blog/few-shot-prompt-show-one-example.html): AIに「こういう形で」と伝えるとき、言葉で説明するより、例を1つ見せるほうが伝わります。例示（Few-shot）の書き方、例の数、区切り方、例にとらわれすぎない工夫を、悪い例と良い例で解説します。
 - [AIに文章を添削・推敲してもらう頼み方：辛口で直してもらうときのコツ](https://aipromptbar.liquid-block.com/blog/ask-ai-to-proofread-your-writing.html): 「添削して」とだけ頼むと、AIは、ほめて、少しだけ直して終わりがちです。目的・読み手・直す範囲を決めて、辛口で指摘してもらう頼み方と、直されすぎない工夫を、悪い例と良い例で紹介します。
+- [英語のビジネスメールを、AIで書いて直す：失礼にならない頼み方と、確かめ方](https://aipromptbar.liquid-block.com/blog/write-and-fix-english-email-with-ai.html): 英語のメールをAIに書いてもらうときは、相手との関係と、日本語のニュアンスを伝えるのがコツです。頼み方の型、日本語に戻して確かめる方法、送る前の点検を、悪い例と良い例で紹介します。
 
 ## Blog (Japanese): 仕事術
 
