@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる｜LB AI Prompt side bar</title>
+<meta name="description" content="AIは、もっともらしい間違いを、自信ありげに答えることがあります。資料を渡す、根拠を添えさせる、「分からない」と言わせる、など、間違いを減らす頼み方と、人が確かめる手順を紹介します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/reduce-ai-hallucinations-prompts.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる｜LB AI Prompt side bar">
+<meta property="og:description" content="AIは、もっともらしい間違いを、自信ありげに答えることがあります。資料を渡す、根拠を添えさせる、「分からない」と言わせる、など、間違いを減らす頼み方と、人が確かめる手順を紹介します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/reduce-ai-hallucinations-prompts.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/blog/reduce-ai-hallucinations-prompts-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる",
+ "description": "AIは、もっともらしい間違いを、自信ありげに答えることがあります。資料を渡す、根拠を添えさせる、「分からない」と言わせる、など、間違いを減らす頼み方と、人が確かめる手順を紹介します。",
+ "datePublished": "2026-11-21",
+ "dateModified": "2026-11-21",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/blog/reduce-ai-hallucinations-prompts-og.jpg",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/reduce-ai-hallucinations-prompts.html",
+ "author": {
+  "@type": "Organization",
+  "name": "株式会社リキッドブロック（Liquid Block Inc.）",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ },
+ "about": {
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "url": "https://aipromptbar.liquid-block.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "LB AI Prompt side bar",
+   "item": "https://aipromptbar.liquid-block.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "ブログ",
+   "item": "https://aipromptbar.liquid-block.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる",
+   "item": "https://aipromptbar.liquid-block.com/blog/reduce-ai-hallucinations-prompts.html"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#commands">コマンド</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh?hl=ja" target="_blank" rel="noopener" aria-label="Chromeに追加（Chrome ウェブストアが開きます）">Chromeに追加<small>無料</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる</h1>
+    <div class="post-meta">
+      <span class="post-tag">プロンプトの書き方</span>
+      <span><time datetime="2026-11-21">2026年11月21日</time></span>
+      <span>読む時間：約8分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<figure class="post-cover"><img src="../img/blog/reduce-ai-hallucinations-prompts.webp" width="1344" height="756" alt="AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせるのイメージ" fetchpriority="high"></figure>
+<p class="post-lead">AIが、事実と違うことを、もっともらしく答える。これを「ハルシネーション（幻覚）」と呼びます。残念ながら、頼み方だけで、完全になくすことはできません。それでも、<strong>減らす</strong>ことと、<strong>見つけやすくする</strong>ことは、できます。この記事では、そのための頼み方と、人が確かめる手順を紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#why">AIは、なぜ間違えるのか</a></li>
+<li><a href="#four">間違いを減らす4つの頼み方</a></li>
+<li><a href="#example">悪い例と、良い例</a></li>
+<li><a href="#find">間違いを、見つけやすくする</a></li>
+<li><a href="#human">人が確かめる手順</a></li>
+<li><a href="#more">ハルシネーションが、起きやすい頼み方の例</a></li>
+<li><a href="#qa">よくある疑問</a></li>
+<li><a href="#tool">手間を減らす道具</a></li>
+<li><a href="#rule">大事な判断は、AIに任せない</a></li>
+</ol></nav>
+<h2 id="why">AIは、なぜ間違えるのか</h2>
+<p>AIは、「もっともらしい言葉の続き」を作るのが得意です。事実を調べて答えているのではなく、<strong>それらしい文章を作っている</strong>面があります。だから、知らないことを聞かれても、「分かりません」と言わずに、それらしく答えてしまうことがあります。</p>
+<p>特に、間違いが起きやすいのは、次のような質問です。</p>
+<ul>
+<li><strong>固有名詞・数字・日付</strong>（人名、法律の条文番号、統計の数字など）</li>
+<li><strong>最新の出来事</strong></li>
+<li><strong>出典の指定</strong>（「〇〇の論文を挙げて」）。実在しない出典を、作ってしまうことがあります。</li>
+<li><strong>ごく狭い分野</strong>や、<strong>社内だけの話</strong></li>
+</ul>
+<h2 id="four">間違いを減らす4つの頼み方</h2>
+<h3>1. 資料を渡して、「この資料だけで」と頼む</h3>
+<p>いちばん効く方法です。AIの記憶に頼らず、<strong>自分で集めた、確かな資料</strong>を貼って、「この資料に書いてあることだけで、答えてください」と頼みます。資料にないことは、「記載なし」と答えさせます。</p>
+<h3>2. 「分からないときは、分からないと言って」と書く</h3>
+<p>「推測で埋めず、確実なことだけを書いてください。確認が必要な所には、【要確認】と付けてください」と書きます。AIが、無理に答えるのを、減らせます。</p>
+<h3>3. 根拠を添えさせる</h3>
+<p>「それぞれの主張に、根拠を添えてください」と頼むと、根拠が弱い所が、見えやすくなります。ただし、根拠として挙げられた出典も、間違っていることがあります。<strong>出典は、必ず、自分で開いて確かめます。</strong></p>
+<h3>4. 範囲を、狭くする</h3>
+<p>「日本の税制について、全部教えて」より、「この資料の、3ページ目の表の意味を教えて」のほうが、間違いにくいです。質問を細かく分けると、確かめるのも、楽になります。</p>
+<h2 id="example">悪い例と、良い例</h2>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>来年度の、中小企業向けの補助金について、金額と申請期限を教えてください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例</div><pre>以下は、公式サイトの案内ページの本文です。この本文に書いてあることだけで、補助金の「金額」と「申請期限」を、答えてください。
+・本文に書かれていない場合は、推測せず「記載なし」と答える
+・答えの横に、本文のどの部分から取ったかを、引用で添える
+・確認が必要な点は、【要確認】と付ける
+
+（公式サイトの本文）</pre></div><p>悪い例では、AIが、古い情報や、それらしい数字を答える可能性があります。良い例では、<strong>確かな資料と、確認の手順</strong>を、依頼の中に入れています。</p>
+<div class="note">補助金・税金・法律・医療・投資のような話題では、AIの答えを、そのまま信じて判断しないでください。AIの答えは、助言ではありません。最終的な確認は、公式の情報と、専門家に行ってください。</div>
+<h2 id="find">間違いを、見つけやすくする</h2>
+<table>
+<tr><th>頼み方</th><th>見つけやすくなること</th></tr>
+<tr><td>「事実と、あなたの推測を、分けて書いて」</td><td>どこが、確かな事実で、どこが推測か</td></tr>
+<tr><td>「確信が低い所に、印を付けて」</td><td>AI自身が、自信のない所</td></tr>
+<tr><td>「確認に使える、調べ方を添えて」</td><td>何を、どこで確かめれば良いか</td></tr>
+<tr><td>「この答えの、弱点を3つ挙げて」</td><td>見落としている前提や、例外</td></tr>
+</table>
+<p>同じ質問を、別のAIにもして、答えを比べるのも、有効です。答えが食い違う所が、確かめるべき所です（<a href="compare-ai-with-same-prompt.html">同じプロンプトで比べる方法</a>）。</p>
+<h2 id="human">人が確かめる手順</h2>
+<ol>
+<li><strong>数字・日付・名前</strong>に、線を引く（目印を付ける）。</li>
+<li>それぞれを、<strong>元の資料や、公式のページ</strong>で、開いて確かめる。</li>
+<li>出典が付いていたら、<strong>実在するか、書いてある通りの内容か</strong>を、確かめる。</li>
+<li>確かめられなかったものは、<strong>使わない</strong>。または、「未確認」と明記して使う。</li>
+</ol>
+<p>手間はかかりますが、<strong>確かめる手順を、決めておく</strong>と、迷わず、早く済みます。</p>
+<h2 id="more">間違いが、起きやすい頼み方の例</h2>
+<p>次のような頼み方は、AIが、もっともらしく作ってしまう可能性が、高くなります。避けるか、確かめる手順を、必ず付けます。</p>
+<table>
+<tr><th>起きやすい頼み方</th><th>安全な頼み方に変える</th></tr>
+<tr><td>「この件に関する論文を、5本挙げて」</td><td>「論文の探し方と、検索に使う言葉を、教えて」。論文そのものは、自分で探す</td></tr>
+<tr><td>「〇〇法の第△条には、何と書いてある？」</td><td>条文は、公式のサイトで読み、本文を貼って、「この条文の意味を、やさしく説明して」と頼む</td></tr>
+<tr><td>「この会社の、去年の売上は？」</td><td>決算資料を貼って、「この資料の、売上の欄を、教えて」と頼む</td></tr>
+<tr><td>「最新の、〇〇の価格は？」</td><td>公式サイトで、いまの価格を確かめる。AIは、最新の価格を、知らないことがある</td></tr>
+</table>
+<p>共通するのは、<strong>AIに、記憶から答えさせない</strong>ことです。調べるのは、人。意味を説明したり、整理したりするのが、AI。この分担にすると、間違いが、ずっと、減ります。</p>
+<p>それでも、AIが、本文の中に、書かれていないことを、足すことはあります。「本文の、どの部分から取ったか、引用して」と頼み、引用が、本当に本文にあるか、確かめます。引用が、見つからなければ、その答えは、使いません。</p>
+<h2 id="qa">よくある疑問</h2>
+<h3>間違いを、完全に、なくす方法は、ありますか</h3>
+<p>ありません。減らす工夫と、見つけやすくする工夫、確かめる手順を、組み合わせるのが、現実的です。</p>
+<h3>「正確に答えて」と、書けば、効きますか</h3>
+<p>書いても、害はありませんが、それだけで、間違いは、あまり減りません。それより、<strong>資料を渡して、その資料だけで答えさせる</strong>ほうが、効きます。</p>
+<h3>資料を貼るのが、面倒です</h3>
+<p>貼る資料は、質問に関係する部分だけで構いません。全文を貼らず、必要な段落や、表だけを、渡します。資料が、長いときは、章ごとに、分けて頼みます。</p>
+<h2 id="tool">手間を減らす道具</h2>
+<p>LB AI Prompt side bar には、「資料だけで答えさせる」ための機能があります。</p>
+<ul>
+<li><strong>ソースポケットの「限定ソースモード」</strong>：Webページの本文や、メモを、「ソースポケット」に集めておくと、集めた資料だけを根拠に答えるよう、AIに指示します。推測や、資料にない知識で答えないこと、根拠に「[ソース1]」のような出典番号をつけることも、求めます。集められるのは、最大12件、1件あたり35,000字までです。限定ソースモードでも、AIが間違えることはあります。出典番号を頼りに、元の資料で確かめてください（<a href="source-pocket.html">ソースポケット</a>、<a href="ai-answer-only-from-your-sources.html">AIに「集めた資料だけ」で答えさせる方法</a>）。</li>
+<li><strong>スラッシュコマンド</strong>：「/事実のみ」（推測で埋めず、不明点は「要確認」と書く）、「/根拠」（主張ごとに、根拠や出典を明記する）、「/自己採点」（AI自身の答えを、100点満点で採点させて、直す）。名前を押すだけで、追加の指示になります。スラッシュコマンドと、ソースポケットは、無料版でも使えます（<a href="slash-commands.html">スラッシュコマンドの使い方</a>）。</li>
+</ul>
+<p>調べものに使ったページを、あとで確かめるために、開き直したいときは、<a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>で、ページを1つのグループに保存しておくと、▶ でまとめて開き直せます。保存先は、Chrome のブックマークです。</p>
+<div class="note">書いたプロンプトや、入力した内容は、LB AI Prompt side bar の弊社のサーバーには送られず、弊社からは見えません。⚡ で入れた内容は、送り先のAIのサービスに渡ります。個人情報や社外秘の情報をAIに入れるときは、会社や学校のルールに沿って、伏せてから入れてください。</div>
+<h2 id="rule">大事な判断は、AIに任せない</h2>
+<p>AIは、考えを整理し、たたき台を作る道具です。最終的な判断と、責任は、人にあります。「AIがそう言ったから」は、間違いが起きたときの、理由にはなりません。<strong>AIに頼む部分と、人が確かめる部分を、先に分けておく</strong>ことが、いちばんの対策です。</p>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="ai-answer-only-from-your-sources.html">AIに「集めた資料だけ」で答えさせる方法：調べもののタブから、出典つきの答えへ</a>
+<a href="source-pocket.html">ソースポケット：ページの本文を集めて、集めた資料だけで答えさせる</a>
+<a href="slash-commands.html">スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</a>
+<a href="compare-ai-with-same-prompt.html">複数のAIを使い分ける：同じプロンプトで比べる方法</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>
