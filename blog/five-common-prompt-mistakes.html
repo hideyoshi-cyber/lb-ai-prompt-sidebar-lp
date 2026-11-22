@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す｜LB AI Prompt side bar</title>
+<meta name="description" content="AIの答えがいまひとつなとき、原因はプロンプトにあることが多いです。曖昧な言葉、目的がない、詰め込みすぎ、材料を渡さない、1回で諦める。5つの失敗と、その直し方を、悪い例と良い例で紹介します。">
+<link rel="canonical" href="https://aipromptbar.liquid-block.com/blog/five-common-prompt-mistakes.html">
+<meta name="theme-color" content="#0b0711">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="LB AI Prompt side bar">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す｜LB AI Prompt side bar">
+<meta property="og:description" content="AIの答えがいまひとつなとき、原因はプロンプトにあることが多いです。曖昧な言葉、目的がない、詰め込みすぎ、材料を渡さない、1回で諦める。5つの失敗と、その直し方を、悪い例と良い例で紹介します。">
+<meta property="og:url" content="https://aipromptbar.liquid-block.com/blog/five-common-prompt-mistakes.html">
+<meta property="og:image" content="https://aipromptbar.liquid-block.com/img/blog/five-common-prompt-mistakes-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="../img/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/logo256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="stylesheet" href="../legal.css">
+<link rel="stylesheet" href="../blog.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す",
+ "description": "AIの答えがいまひとつなとき、原因はプロンプトにあることが多いです。曖昧な言葉、目的がない、詰め込みすぎ、材料を渡さない、1回で諦める。5つの失敗と、その直し方を、悪い例と良い例で紹介します。",
+ "datePublished": "2026-11-22",
+ "dateModified": "2026-11-22",
+ "inLanguage": "ja",
+ "image": "https://aipromptbar.liquid-block.com/img/blog/five-common-prompt-mistakes-og.jpg",
+ "mainEntityOfPage": "https://aipromptbar.liquid-block.com/blog/five-common-prompt-mistakes.html",
+ "author": {
+  "@type": "Organization",
+  "name": "株式会社リキッドブロック（Liquid Block Inc.）",
+  "url": "https://www.liquid-block.com"
+ },
+ "publisher": {
+  "@type": "Organization",
+  "name": "Liquid Block Inc.",
+  "url": "https://www.liquid-block.com",
+  "logo": {
+   "@type": "ImageObject",
+   "url": "https://aipromptbar.liquid-block.com/img/logo256.png"
+  }
+ },
+ "about": {
+  "@type": "SoftwareApplication",
+  "name": "LB AI Prompt side bar",
+  "url": "https://aipromptbar.liquid-block.com/"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "LB AI Prompt side bar",
+   "item": "https://aipromptbar.liquid-block.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "ブログ",
+   "item": "https://aipromptbar.liquid-block.com/blog/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す",
+   "item": "https://aipromptbar.liquid-block.com/blog/five-common-prompt-mistakes.html"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#content">本文へ</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bolt" viewBox="0 0 24 24"><path d="M13.6 1.8 4.2 13.4h6.1l-1.4 8.8 10.9-12.6h-6.3z"/></symbol></svg>
+<header class="site-header scrolled" id="top">
+  <div class="wrap bar">
+    <a class="brand" href="../" aria-label="LB AI Prompt side bar（トップへ）">
+      <img src="../img/logo256.png" width="36" height="36" alt="">
+      <span class="brand-name">AI Prompt <span>side bar</span></span>
+    </a>
+    <nav class="nav" aria-label="メニュー">
+      <a href="../#how">使い方</a>
+      <a href="../#features">機能</a>
+      <a href="../#commands">コマンド</a>
+      <a href="../#privacy">プライバシー</a>
+      <a href="../#pricing">料金</a>
+      <a href="../#faq">FAQ</a>
+      <a href="./">ブログ</a>
+      <details class="lang-menu"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z"/></svg>JA</summary><div class="lang-list"><a href="../" hreflang="ja" lang="ja" aria-current="page">日本語</a><a href="../en/" hreflang="en" lang="en">English</a><a href="../zh-tw/" hreflang="zh-TW" lang="zh-TW">繁體中文</a><a href="../ko/" hreflang="ko" lang="ko">한국어</a><a href="../es/" hreflang="es" lang="es">Español</a><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a><a href="../fr/" hreflang="fr" lang="fr">Français</a></div></details>
+    </nav>
+    <a class="btn btn-sm" href="https://chromewebstore.google.com/detail/eilgmkiljehjhpdienfpahaogneahmeh?hl=ja" target="_blank" rel="noopener" aria-label="Chromeに追加（Chrome ウェブストアが開きます）">Chromeに追加<small>無料</small></a>
+  </div>
+</header>
+
+<section class="post-hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap legal-wrap">
+    <p class="eyebrow">ブログ</p>
+    <h1>プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す</h1>
+    <div class="post-meta">
+      <span class="post-tag">プロンプトの書き方</span>
+      <span><time datetime="2026-11-22">2026年11月22日</time></span>
+      <span>読む時間：約7分</span>
+    </div>
+  </div>
+</section>
+
+<main class="legal article" id="content">
+<div class="wrap legal-wrap">
+<figure class="post-cover"><img src="../img/blog/five-common-prompt-mistakes.webp" width="1344" height="756" alt="プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直すのイメージ" fetchpriority="high"></figure>
+<p class="post-lead">AIの答えが、思ったものと違うとき、「AIが使えない」と思ってしまいがちです。でも、プロンプトを見直すと、原因は、<strong>よくある5つの失敗</strong>のどれかに、当てはまることが多いです。この記事では、その5つと、直し方を紹介します。</p>
+<nav class="toc" aria-label="目次"><b>CONTENTS</b>
+<ol>
+<li><a href="#one">失敗1：言葉が、曖昧</a></li>
+<li><a href="#two">失敗2：目的（何に使うか）がない</a></li>
+<li><a href="#three">失敗3：1回に、詰め込みすぎ</a></li>
+<li><a href="#four">失敗4：材料を渡さずに、「調べて」と頼む</a></li>
+<li><a href="#five">失敗5：1回で諦める、または、そのまま信じる</a></li>
+<li><a href="#check">送る前の、5つのチェック</a></li>
+<li><a href="#more">5つの失敗を、直した例</a></li>
+<li><a href="#qa">よくある疑問</a></li>
+<li><a href="#tool">手間を減らす道具</a></li>
+</ol></nav>
+<h2 id="one">失敗1：言葉が、曖昧</h2>
+<p>「いい感じに」「分かりやすく」「短めに」「ちゃんとした」。人間同士でも、受け取り方が違う言葉です。AIは、自分の基準で解釈します。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>分かりやすい、短めの説明文を、いい感じに書いてください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例</div><pre>中学生が読んでも分かる言葉で、150字以内の説明文を書いてください。専門用語は、使わないでください。</pre></div><p>直し方は、<strong>数字と、具体的な言葉に置き換える</strong>ことです。「短め」は「150字以内」、「分かりやすく」は「中学生が分かる言葉で」にします。</p>
+<h2 id="two">失敗2：目的（何に使うか）がない</h2>
+<p>「会議の議事録を書いて」と頼んでも、<strong>誰が、何のために</strong>読むのかを、AIは知りません。社長への報告用か、欠席者への共有か、記録として残すためかで、書き方は変わります。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>会議の内容を、まとめてください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例</div><pre>会議の内容を、欠席した同僚に共有するために、まとめてください。同僚が、自分の担当の作業を、すぐに始められるように、決まったことと、担当者・期限を、先に書いてください。</pre></div><p>直し方は、「<strong>〇〇のために、〇〇に向けて</strong>」を、一文、足すことです。型の全体は、<a href="prompt-basics-template.html">プロンプトの基本の型</a>にまとめています。</p>
+<h2 id="three">失敗3：1回に、詰め込みすぎ</h2>
+<p>「要約して、英訳して、メールの形にして、3案出して、表にして」。1回の依頼に、たくさんの仕事を入れると、どれかが、雑になります。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>この資料を要約して、課題を5つ挙げて、解決策を考えて、メールの文面にして、英語にも訳してください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例（段階を分ける）</div><pre>1回目：この資料を、300字で要約してください。
+2回目：その要約から、課題を5つ挙げてください。
+3回目：課題のうち、上の2つについて、解決策を、それぞれ3案、出してください。</pre></div><p>直し方は、<strong>1回の依頼は、1つの仕事</strong>にして、答えを見ながら、次に進むことです。長い依頼を、1つの文章に書くより、結果として早く仕上がります。</p>
+<h2 id="four">失敗4：材料を渡さずに、「調べて」と頼む</h2>
+<p>「自社の、先月の売上を分析して」と頼んでも、AIは、自社の売上を知りません。材料がないので、<strong>それらしい数字や、一般論</strong>を、答えてしまいます。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例</div><pre>自社の先月の売上を、分析してください。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例</div><pre>以下は、先月の商品別の売上の表です。売上が、前の月より下がった商品を挙げて、考えられる原因を、3つ書いてください。表に、書かれていないことは、推測せず、「データなし」と書いてください。
+
+（売上の表）</pre></div><p>直し方は、<strong>材料は、貼り付けて渡す</strong>ことです。「資料を見て」とは、書けません。AIは、あなたの手元の資料を、勝手には、見られません。</p>
+<div class="note">個人情報や、社外秘の資料を貼るときは、会社や学校のルールに沿って、名前や数字を伏せてから入れてください。</div>
+<h2 id="five">失敗5：1回で諦める、または、そのまま信じる</h2>
+<p>1回目の答えは、たたき台です。思ったものと違っても、そこで諦めると、もったいないです。反対に、AIの答えを、確かめずに、そのまま使うのも、危険です。</p>
+<ul>
+<li><strong>諦めずに、一言足す</strong>：「もう少し短く」「結論を先に」「例を1つ足して」。会話を続けるつもりで、直します（<a href="shorten-too-long-ai-answers.html">答えが長すぎるときの直し方</a>）。</li>
+<li><strong>信じすぎずに、確かめる</strong>：数字・日付・名前は、元の資料で、確かめます（<a href="reduce-ai-hallucinations-prompts.html">AIの間違いを減らす頼み方</a>）。</li>
+</ul>
+<h2 id="check">送る前の、5つのチェック</h2>
+<table>
+<tr><th>チェック</th><th>確かめること</th></tr>
+<tr><td>1. 曖昧な言葉は、ないか</td><td>「いい感じ」「短め」を、数字や具体的な言葉に変えたか</td></tr>
+<tr><td>2. 目的は、書いたか</td><td>誰が、何のために使うか、一文あるか</td></tr>
+<tr><td>3. 仕事は、1つか</td><td>複数あるなら、段階に分けたか</td></tr>
+<tr><td>4. 材料は、貼ったか</td><td>「調べて」ではなく、資料を渡したか</td></tr>
+<tr><td>5. 直す前提か</td><td>1回で終わらせず、一言足して直す気があるか</td></tr>
+</table>
+<p>この5つを、プロンプトを送る前の、10秒の確認にしておくと、やり直しが減ります。</p>
+<h2 id="more">5つを、まとめて直した例</h2>
+<p>5つの失敗は、1つの依頼の中に、まとめて入っていることもよくあります。ひとつの例で、直してみます。</p>
+<div class="prompt-box bad"><div class="prompt-box-label">悪い例（5つとも、入っている）</div><pre>うちの商品について、いい感じのお知らせを、ちゃんと書いて。あと、英語にも訳して、SNS用にも作って、売上も分析して。</pre></div><div class="prompt-box"><div class="prompt-box-label">良い例（直したあと）</div><pre>【1回目】
+あなたは、食品メーカーの広報担当者です。
+新商品「やさしい麦茶」を、既存のお客様に知らせる、メールのお知らせを書いてください（目的）。
+読み手は、30〜40代の、共働きの親です。
+200字以内で、やわらかい調子で。大げさな表現は、使わないでください（曖昧さを、数字に）。
+商品の特徴は、次の3つです（材料を渡す）：カフェインなし／ティーバッグ／1箱20袋
+
+【2回目以降】
+出てきた案を見て、直す一言を足す。英訳・SNS用は、その後に、1つずつ頼む（仕事を分ける、一言足す）。</pre></div><p>悪い例は、1行です。良い例は、何倍も長く見えます。でも、悪い例は、あとから、何回も聞き直すことになります。<strong>最初の1分を、条件を書くことに使う</strong>ほうが、結果として、早くなります。</p>
+<p>「売上の分析」は、材料（売上の表）がないと、できません。別の依頼に、分けて、表を貼ったうえで、頼みます。</p>
+<h2 id="qa">よくある疑問</h2>
+<h3>毎回、これだけ条件を書くのは、大変です</h3>
+<p>全部の依頼に、全部を書く必要は、ありません。簡単な質問は、短くて構いません。迷うときだけ、「目的」と「出力の形」の、2つを足してください。</p>
+<h3>長いプロンプトは、かえって、悪くなりませんか</h3>
+<p>条件が、多すぎて、矛盾すると、悪くなることがあります。条件は、5つ前後に絞り、「やってほしいこと」と、「やってほしくないこと」を、分けて書きます。</p>
+<h3>失敗しても、同じ会話で、続けて良いですか</h3>
+<p>続けて構いません。ただし、会話が長くなると、前の内容に、引っ張られることがあります。話が、混ざってきたら、新しい会話に、替えます。</p>
+<h2 id="tool">手間を減らす道具</h2>
+<p>5つの失敗は、型にしておくと、減らせます。LB AI Prompt side bar では、次のように使えます。</p>
+<h3>【万能構造】3大AI公式推奨・万能テンプレート <span class="post-tag" style="color:var(--rose);background:var(--paper-2);box-shadow:none;vertical-align:.15em">無料のおすすめ</span></h3>
+<p>役割・目的・背景・入力データ・制約・出力形式の欄が、あらかじめ並んでいるコマンドです。目的や背景を、空欄に書くので、「目的がない」「材料がない」を、防げます。「万能・テキスト」タブの先頭にあります。</p>
+<ul>
+<li><strong>こんなときに</strong>：何にでも使える、基本の型から始めたいとき</li>
+<li><strong>選ぶ・書く項目</strong>：役割設定、出力形式、目的、背景、入力データ</li>
+</ul>
+<p>また、スラッシュコマンドの「/自己採点」は、AI自身の答えを、100点満点で採点させて、足りない点を直した版を出させます。「/プロンプト化」は、うまくいったやり取りを、再利用できる型にまとめ直す指示です（<a href="slash-commands.html">スラッシュコマンドの使い方</a>）。スラッシュコマンドは、無料版でも使えます。</p>
+<p>型を、取っておいて、探しやすく整理する方法は、<a href="organize-your-prompts.html">よく使うプロンプトの整理術</a>にまとめています。</p>
+<div class="note">「無料のおすすめ」の印があるコマンドは、無料版でずっと使えます。ほかのコマンドは、はじめの14日間のお試し（カードの登録なし）か、有料プランで使えます（<a href="free-trial-plans.html">無料版と有料プランの違い</a>）。スラッシュコマンドは、無料版でも使えます。</div>
+<div class="note">書いたプロンプトや、入力した内容は、LB AI Prompt side bar の弊社のサーバーには送られず、弊社からは見えません。⚡ で入れた内容は、送り先のAIのサービスに渡ります。個人情報や社外秘の情報をAIに入れるときは、会社や学校のルールに沿って、伏せてから入れてください。</div>
+
+<aside class="cta-box">
+  <h2>選んで、整えて、いつものAIへ。</h2>
+  <p>LB AI Prompt side bar は、目的別のプロンプトを選んで、選択肢や空欄で整えて、ワンクリックでAIの入力欄に入れるための、Chrome のサイドパネルです。はじめの14日間は、すべての機能を、カードの登録なしで試せます。</p>
+  <a class="btn btn-lg" href="../#how">くわしく見る</a>
+</aside>
+
+<div class="related">
+  <h2>あわせて読みたい</h2>
+  <div class="related-list">
+<a href="prompt-basics-template.html">プロンプトの基本の型：役割・目的・背景・出力形式を決める</a>
+<a href="slash-commands.html">スラッシュコマンドの使い方：「/3行」「/表」「/辛口」など45種</a>
+<a href="organize-your-prompts.html">よく使うプロンプトの整理術：保存・分類・検索で、探す時間をなくす</a>
+<a href="ask-ai-to-ask-questions-first.html">AIに質問させる「逆質問」のやり方：足りない情報を、先に聞いてもらうプロンプト</a>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="../"><img src="../img/logo256.png" width="36" height="36" alt=""><span class="brand-name">AI Prompt <span>side bar</span></span></a>
+        <p>Liquid Block Inc.<br>株式会社リキッドブロック</p>
+      </div>
+      <div class="foot-col">
+        <h4>Products</h4>
+        <a href="https://www.liquid-block.com/video-pool">Video Pool</a>
+        <a href="https://tablayers.liquid-block.com/">LB TAB Layers</a>
+        <a href="https://gijimemorec.liquid-block.com/">議事メモレック</a>
+      </div>
+      <div class="foot-col">
+        <h4>Company</h4>
+        <a href="https://www.liquid-block.com/company">会社概要</a>
+        <a href="./">ブログ</a>
+        <a href="../privacy.html">プライバシーポリシー</a>
+        <a href="../tokushoho.html">特定商取引法に基づく表記</a>
+        <a href="../refund.html">返金・解約について</a>
+        <a href="mailto:info@liquid-block.com">お問い合わせ</a>
+      </div>
+    </div>
+    <p class="foot-note">ChatGPT・Claude・Gemini などの名称は、各社の商標です。本拡張機能は、各社とは関係のない、独立した製品です。</p>
+    <p class="foot-copy">© 2026 Liquid Block Inc.</p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

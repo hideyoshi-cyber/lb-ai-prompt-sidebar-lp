@@ -78,6 +78,7 @@
 - [AIに文章を添削・推敲してもらう頼み方：辛口で直してもらうときのコツ](https://aipromptbar.liquid-block.com/blog/ask-ai-to-proofread-your-writing.html): 「添削して」とだけ頼むと、AIは、ほめて、少しだけ直して終わりがちです。目的・読み手・直す範囲を決めて、辛口で指摘してもらう頼み方と、直されすぎない工夫を、悪い例と良い例で紹介します。
 - [英語のビジネスメールを、AIで書いて直す：失礼にならない頼み方と、確かめ方](https://aipromptbar.liquid-block.com/blog/write-and-fix-english-email-with-ai.html): 英語のメールをAIに書いてもらうときは、相手との関係と、日本語のニュアンスを伝えるのがコツです。頼み方の型、日本語に戻して確かめる方法、送る前の点検を、悪い例と良い例で紹介します。
 - [AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる](https://aipromptbar.liquid-block.com/blog/reduce-ai-hallucinations-prompts.html): AIは、もっともらしい間違いを、自信ありげに答えることがあります。資料を渡す、根拠を添えさせる、「分からない」と言わせる、など、間違いを減らす頼み方と、人が確かめる手順を紹介します。
+- [プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す](https://aipromptbar.liquid-block.com/blog/five-common-prompt-mistakes.html): AIの答えがいまひとつなとき、原因はプロンプトにあることが多いです。曖昧な言葉、目的がない、詰め込みすぎ、材料を渡さない、1回で諦める。5つの失敗と、その直し方を、悪い例と良い例で紹介します。
 
 ## Blog (Japanese): 仕事術
 
