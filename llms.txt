@@ -92,3 +92,4 @@
 - [ゼミと講義の記録から、レポートの構成をつくる方法：学生のためのAIの使い方（丸写しはしない）](https://aipromptbar.liquid-block.com/blog/students-seminar-notes-to-report-outline.html): ゼミや講義の記録、読んだ文献のメモから、レポートの構成（章立て）をつくる手順です。録音の許可、AIに頼んでよいことと自分で書くこと、文献のタブの整理まで、大学や授業のルールに沿って使う前提でまとめました。
 - [同じ議事録を3つのAIに要約させて比べる：ChatGPT・Claude・Gemini で見る6つの観点](https://aipromptbar.liquid-block.com/blog/compare-three-ais-meeting-summary.html): 会議の要約は、AIによって、拾うところと落とすところが違います。同じ議事録と同じ指示を ChatGPT・Claude・Gemini に入れて比べる手順と、会議ならではの見る観点、結果の残し方をまとめました。
 - [データを持たない道具を選ぶ理由：会議・AI・タブの道具を「どこに何が残るか」で比べる](https://aipromptbar.liquid-block.com/blog/choosing-tools-that-dont-keep-your-data.html): 仕事の道具を選ぶとき、機能や値段と同じくらい大事なのが、「入れたデータがどこに残るか」です。確かめる6つの観点と、データを預からない作りの長所と短所を、弊社の3つの道具を例に、正直にまとめました。
+- [お詫びのメールを、角を立てずに書く：AIと作る謝罪文の型と、悪い例・良い例](https://aipromptbar.liquid-block.com/blog/apology-email-without-sounding-defensive.html): お詫びのメールは、言い訳が先に立つと逆効果です。お詫び、事実、対応、再発防止、お願いの順に書く型と、AIへの頼み方、重大な件でメールだけで済ませない線引きを、悪い例と良い例でまとめました。
