@@ -79,6 +79,7 @@
 - [英語のビジネスメールを、AIで書いて直す：失礼にならない頼み方と、確かめ方](https://aipromptbar.liquid-block.com/blog/write-and-fix-english-email-with-ai.html): 英語のメールをAIに書いてもらうときは、相手との関係と、日本語のニュアンスを伝えるのがコツです。頼み方の型、日本語に戻して確かめる方法、送る前の点検を、悪い例と良い例で紹介します。
 - [AIの間違い（ハルシネーション）を減らす頼み方：出典・根拠・「分からない」を言わせる](https://aipromptbar.liquid-block.com/blog/reduce-ai-hallucinations-prompts.html): AIは、もっともらしい間違いを、自信ありげに答えることがあります。資料を渡す、根拠を添えさせる、「分からない」と言わせる、など、間違いを減らす頼み方と、人が確かめる手順を紹介します。
 - [プロンプトのよくある失敗5つ：曖昧・目的がない・詰め込みすぎを直す](https://aipromptbar.liquid-block.com/blog/five-common-prompt-mistakes.html): AIの答えがいまひとつなとき、原因はプロンプトにあることが多いです。曖昧な言葉、目的がない、詰め込みすぎ、材料を渡さない、1回で諦める。5つの失敗と、その直し方を、悪い例と良い例で紹介します。
+- [SNSの投稿文を、AIと作る：ThreadsやXの下書きの頼み方と、自分らしさの残し方](https://aipromptbar.liquid-block.com/blog/write-social-posts-with-ai-threads-x.html): ThreadsやXの投稿を、AIに下書きしてもらうときの頼み方を紹介します。誰に・何を・どんな口調で、を決める型、3案を出して選ぶ方法、宣伝くさくしないコツと、投稿前の確認をまとめました。
 
 ## Blog (Japanese): 仕事術
 
@@ -94,3 +95,4 @@
 - [データを持たない道具を選ぶ理由：会議・AI・タブの道具を「どこに何が残るか」で比べる](https://aipromptbar.liquid-block.com/blog/choosing-tools-that-dont-keep-your-data.html): 仕事の道具を選ぶとき、機能や値段と同じくらい大事なのが、「入れたデータがどこに残るか」です。確かめる6つの観点と、データを預からない作りの長所と短所を、弊社の3つの道具を例に、正直にまとめました。
 - [お詫びのメールを、角を立てずに書く：AIと作る謝罪文の型と、悪い例・良い例](https://aipromptbar.liquid-block.com/blog/apology-email-without-sounding-defensive.html): お詫びのメールは、言い訳が先に立つと逆効果です。お詫び、事実、対応、再発防止、お願いの順に書く型と、AIへの頼み方、重大な件でメールだけで済ませない線引きを、悪い例と良い例でまとめました。
 - [面接の練習を、AIとする方法：想定問答の作り方と、深掘りに強くなる練習のしかた](https://aipromptbar.liquid-block.com/blog/interview-practice-with-ai-roleplay.html): 面接の練習は、ひとりだと続きません。AIに面接官役を頼み、深掘りされる練習をして、答えを自分の言葉に直す手順を紹介します。AIの採点の見方、練習の回数、学生と転職での使い分けも書きました。
+- [ES・履歴書をAIに添削してもらうときの注意：丸写しにしない、盛らない、数えて確かめる](https://aipromptbar.liquid-block.com/blog/es-resume-ai-feedback-cautions.html): ESや履歴書をAIに添削してもらうと、早く整います。でも、事実を変える、同じ文面になる、文字数が合わない、という落とし穴があります。頼み方の型と、自分の言葉で仕上げる手順をまとめました。
