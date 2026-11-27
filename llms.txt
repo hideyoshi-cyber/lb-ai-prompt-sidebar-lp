@@ -96,3 +96,4 @@
 - [お詫びのメールを、角を立てずに書く：AIと作る謝罪文の型と、悪い例・良い例](https://aipromptbar.liquid-block.com/blog/apology-email-without-sounding-defensive.html): お詫びのメールは、言い訳が先に立つと逆効果です。お詫び、事実、対応、再発防止、お願いの順に書く型と、AIへの頼み方、重大な件でメールだけで済ませない線引きを、悪い例と良い例でまとめました。
 - [面接の練習を、AIとする方法：想定問答の作り方と、深掘りに強くなる練習のしかた](https://aipromptbar.liquid-block.com/blog/interview-practice-with-ai-roleplay.html): 面接の練習は、ひとりだと続きません。AIに面接官役を頼み、深掘りされる練習をして、答えを自分の言葉に直す手順を紹介します。AIの採点の見方、練習の回数、学生と転職での使い分けも書きました。
 - [ES・履歴書をAIに添削してもらうときの注意：丸写しにしない、盛らない、数えて確かめる](https://aipromptbar.liquid-block.com/blog/es-resume-ai-feedback-cautions.html): ESや履歴書をAIに添削してもらうと、早く整います。でも、事実を変える、同じ文面になる、文字数が合わない、という落とし穴があります。頼み方の型と、自分の言葉で仕上げる手順をまとめました。
+- [契約書の確認を、AIに手伝ってもらう：できることと限界、弁護士に回す線引き](https://aipromptbar.liquid-block.com/blog/contract-check-with-ai-limits-lawyer.html): 契約書のチェックにAIを使うと、見落としが減ります。ただし、AIの答えは法律の助言ではありません。AIが得意なこと、苦手なこと、弁護士に回すべき条項の線引き、入力するときの秘密の守り方を具体的にまとめました。
